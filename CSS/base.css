@@ -1,0 +1,229 @@
+:root{
+    --heading-poppins: 'Poppins', sans-serif;
+    --paragraph-sf-ui: 'SF UI Display';
+    
+    --heading-bold: 700;
+    --heading-medium: 600;
+    --heading-regular: 400;
+
+    --paragraph-bold: 500;
+    --paragraph-medium: 400;
+    --paragraph-regular: 300;
+
+    --blue-primary: #329FC0;
+    --green-primary: #2FBF90;
+    --orange-primary: #FF9D00;
+    --red-primary: #C82B5E;
+
+    --low-pure: #131416;
+    --low-medium: #A3A3A3;
+    --high-pure: #FDFEFF;
+    
+
+    --tittle-light: #292A2C;
+    --tittle-smaller-primary: #A3A3A3;
+
+    --subheads: #8A94A6;
+    --paragraphs: #A9AFB9;
+    --extra: #C8C8C8;
+
+
+    --line-xs:  115.2%;
+    --line-sm:  120%;
+    --line-md:  133%;
+    --line-lg:  150%;
+    --line-xl:  170%;
+    --line-xxl: 200%;
+    
+    --font-xs: 24px;
+    --font-sm: 32px;
+    --font-md: 48px;
+    --font-lg: 72px;
+    --font-xl: 96px;
+    --font-xxl: 208px;
+
+    --border-circular: 50%
+
+
+}
+body a{
+    color: #FFFFFF;
+}
+body{
+    overflow-x: hidden;
+    cursor: url("../Assets/Interações/Cursor/CursorStudio.svg"), default;
+
+    scroll-behavior: smooth;
+}
+
+#body{
+    scroll-behavior: smooth;
+}
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.ponto__red{
+    color: var(--primary-medium);
+}
+.ponto__white{
+    color: var(--high-pure);
+}
+.stroke{
+    -webkit-text-stroke: 1px var(--high-pure);
+    color: transparent;
+}
+.stroke-black{
+    -webkit-text-stroke: 1px var(--low-pure);
+    color: transparent;
+}
+
+.gradient{
+    position: relative;
+    background:linear-gradient(180deg, rgba(101, 101, 101, 0), rgba(75, 75, 75, 0.171875) 21.12%, rgba(35, 35, 35, 0.773646), #0D0D0D);
+    height: 48rem;
+    width: 23.05rem;
+    top: -51.6rem;
+
+    opacity: 0;
+    z-index: 10;
+
+}
+
+@keyframes animaInfo {
+    to{
+        opacity: 1;
+        transform: translateY(-10rem)
+    }
+}
+@keyframes opacidade-we-1{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes opacidade-we-2 {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes opacidadeBG {
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes mudaNome {
+    0%{
+        position: relative;
+        top: -15rem;
+    }
+    25%{
+        animation: paused;
+    }
+    50%{
+        position: relative;
+        top: -30rem;
+    }
+    75%{
+        animation: paused;
+    }
+    100%{
+        position: relative;
+        top: -45rem;
+    }
+}
+
+@keyframes movimenta-titulo-1 {
+    0%{
+        position: relative;
+        right: 10%;
+    }
+    75%{
+        animation: paused;
+    }
+    100%{
+        position: relative;
+        right: 400%;
+    }  
+}
+
+@keyframes movimenta-titulo-2 {
+    0%{
+        position: relative;
+        left: -400%;
+    }
+    35%{
+        animation: paused;
+    }
+    100%{
+        position: relative;
+        left: 10%;
+    }  
+}
+
+
+@keyframes anima-logo-1 {
+    0%{
+        animation: paused;
+    }
+    25%{
+        top: 0;
+        opacity: 1;
+    }
+    50%{
+        top: 0;
+        opacity: 1;
+    }
+    75%{
+        top: -56px;
+        opacity: 0;
+    }
+    100%{
+        top: -56px;
+        opacity: 0;
+    }
+
+}
+@keyframes anima-logo-2 {
+    0%{
+        animation: paused;
+    }
+    25%{
+        top: 0;
+        opacity: 0;
+    }
+    50%{
+        top: 0;
+        opacity: 0;
+    }
+    75%{
+        top: 56px;
+        opacity: 1;
+    }
+    100%{
+        top: 56px;
+        opacity: 1;
+    }
+}
+
+
+/*----6s de animação----*/
