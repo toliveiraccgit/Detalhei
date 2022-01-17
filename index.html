@@ -21,6 +21,7 @@
             src: local('SF UI Display Medium'), url("./Fonts/SF-UI-DISPLAY/sf-ui-display-medium-58646be638f96.woff") format('woff');
             }
         </style>
+        <link rel="stylesheet" href="./CSS/Home/home.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
@@ -32,9 +33,121 @@
         
         <header class="cabecalho">
 
+            <section class="container___cabecalho">
+                
+                <img src="./Assets/Vetores/LOGO-DETALHIE-NOME.svg" alt="Logo Detalhei" class="logo__detalhei">
+
+                <input type="text" class="input__busca-navegacao" placeholder="Faça aqui sua pesquisa">
+
+                <a href="#" class="botao__acessa-conta">Acesse sua conta</a>
+            
+            </section>
+
+            <nav class="container__navegacao___cabecalho">
+                
+                <div class="container__botao___navegacao">
+
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+
+                </div>
+
+                <ul class="lista__navegacao">
+
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Detalhei</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link dropdown-top-5">Top 5</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Comparativo</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Blog</a>
+                    </li>
+
+                </ul>
+
+            </nav>
         </header>
 
         <main class="conteudo">
+
+            <section class="banner">
+
+
+                <div class="container__info___banner">
+                
+                    <section class="secao__banner___intro">
+
+                        <h1 class="titulo__banner___intro">
+                            As mais completas <span class="destaque__blue">avaliações</span> de produtos.
+                        </h1>
+                        
+                        <p class="subtitulo__banner___intro">De olho em todos os produtos, antes da sua compra.</p>
+
+                        <a href="#" class="botao__saiba-mais">Saiba Mais</a>
+
+                    </section>
+
+                    <section class="secao__banner___info">
+
+                        <div class="container__card___banner-info  card-avaliacao__banner-info">
+
+                            <img src="./Assets/Vector(1).svg" alt="Imagem Avaliações" class="imagem__avaliações___card-banner-info">
+
+                            <div class="container__texto___card____banner-info">
+                                <h2 class="titulo__card___banner-info">1274 Avaliações</h2>
+                                <p class="subtitulo__card___banner-info">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                            
+                        </div>
+
+                        <div class="container__card___banner-info  card-teste__banner-info">
+                            
+                            <img src="./Assets/Vector(2).svg" alt="Imagem Testes" class="imagem__teste___card-banner-info">
+
+                            <div class="container__texto___card____banner-info">
+                                <h2 class="titulo__card___banner-info">400 Testes</h2>
+                                <p class="subtitulo__card___banner-info">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        
+                        </div>
+
+                        <div class="container__card___banner-info  card-opiniao__banner-info">
+                            
+                            <img src="./Assets/Vector(3).svg" alt="Imagem Opinião" class="imagem__opiniao___card-banner-info">
+
+                            <div class="container__texto___card____banner-info">
+                                <h2 class="titulo__card___banner-info">90 Opiniões</h2>
+                                <p class="subtitulo__card___banner-info">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        
+                        </div>
+
+                        <div class="container__card___banner-info  card-descrito__banner-info">
+                            
+                            <img src="./Assets/Vector(4).svg" alt="Imagem Descritos" class="imagem__descrito___card-banner-info">
+
+                            <div class="container__texto___card____banner-info">
+                                <h2 class="titulo__card___banner-info">1000 Descritos</h2>
+                                <p class="subtitulo__card___banner-info">Lorem ipsum dolor sit amet, consectetur.</p>
+                            </div>
+                        
+                        </div>
+
+                    </section>
+                    
+                </div>
+
+                <button class="botao__scroll___banner">scroll</button>
+
+            </section>
 
         </main>
 
