@@ -168,10 +168,12 @@
         gap: 1rem;
         width: 23.063rem;
 
+        background-color: #FFFFFF;
+
         padding-right: 1.375rem;
         padding-left: 0.938rem;
-        padding-top: 1rem;
-        padding-bottom: 0.813rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
 
         font-family: var(--heading-poppins);
 
@@ -470,13 +472,13 @@
 
         border-radius: 8px;
     }
+    /*---------------------------LOGIN-SECAO-AVALIACOES----------------------------*/
     .container__login-avaliacoes{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
     }
-    /*---------------------------LOGIN-SECAO-AVALIACOES----------------------------*/
     .titulo__login___avaliacoes{
         font-family: var(--paragraph-SF-Medium);
         font-weight: var(--paragraph-bold);
@@ -550,6 +552,15 @@
 
         margin-top: 4.625rem;
     }
+    .container__abas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 15.063rem;
+        padding-left: 13.938rem;
+        padding-top: 0;
+        padding-bottom: 11.5rem;
+    } 
     .tablinks-testes{
         width: 9rem;
 
@@ -592,13 +603,13 @@
     /*---------------------------SECAO-TESTES-TODOS-PROUTOS---------------------------*/
     .secao__testes___aba{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
 
         width: 61rem;
 
         padding-top: 0;
-        padding-bottom: 11.5rem;
+        padding-bottom: 4.625rem;
     }
     .lista__testes{
         display: flex;
@@ -638,10 +649,10 @@
         background-position-y: center;
         padding: 1rem;
     }
-    .botao__anterior___caroussel{
+    .botao__anterior___caroussel-testes{
         background-image: url("../../Assets/Setas/SETA-ESQUERDA-GREEN.svg");
     }
-    .botao__proximo___caroussel{
+    .botao__proximo___caroussel-testes{
         background-image: url("../../Assets/Setas/SETA-DIREITA-GREEN.svg");
     }
     .imagem__carousel___testes{
@@ -776,17 +787,7 @@
         align-items: center;
         gap: 1.5rem;
     }
-    /*---------------------------SECAO-TESTES-TODOS-PROUTOS---------------------------*/
-    .secao__testes___aba-cozinha{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        width: 61rem;
-
-        padding-top: 0;
-        padding-bottom: 11.5rem;
-    }
+    /*---------------------------SECAO-TESTES-COZINHA---------------------------*/
     .lista__testes-cozinha{
         display: flex;
         flex-direction: row;
@@ -807,10 +808,188 @@
 
         border-radius: 6.7451px;
     }
-    .item__lista___testes-cozinha{
+    .container__abas-cozinha{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 15.063rem;
+        padding-left: 13.938rem;
+        padding-top: 0;
+        padding-bottom: 11.5rem;
+    } 
+     /*---------------------------SECAO-TESTES-CASA---------------------------*/
+    .lista__testes-casa{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        
+        width: auto;
+        
+        transition: all .4s ease-out;
+    }
+    .container__carousel___testes-casa{
+        width: 61rem;
+        height: 21.375rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+        margin-top: 4.625rem;
+        margin-bottom: 2.25rem;
+
         border-radius: 6.7451px;
     }
-    .botao__carrousel-testes-cozinha{
+    .container__abas-casa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 15.063rem;
+        padding-left: 13.938rem;
+        padding-top: 0;
+        padding-bottom: 11.5rem;
+    }
+    /*---------------------------LOGIN-SECAO-AVALIACOES----------------------------*/
+    .container__login-testes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .titulo__login___testes{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+
+        color: var(--subheads);
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+    }
+    .botao__login-testes{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        padding: 1rem 4.188rem;
+
+        background-color: var(--green-primary);
+        border-radius: 8px;
+
+        color: #FFFFFF;
+    }
+    /*-------------------------CABECALHO-SECAO-OPNIAO----------------------------*/
+    .container__cabecalho___opinioes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .titulo__cabecalho___opinioes{
+        font-family: var(--paragraph-SF-Bold);
+        font-weight: var(--heading-bold);
+        font-size: var(--font-sm);
+        
+        color: var(--low-pure);
+
+        padding-left: 2.563rem;
+
+        background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-OPINIOES.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: left;
+
+        margin: 0%;
+    }
+    .subtitulo__cabecalho___opinioes{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        color: var(--subheads);
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+    }
+    /*---------------------------SECAO-OPNIAO----------------------------*/
+    .secao__cards{
+        margin-right: 3rem;
+    }
+    .lista-opinioes{
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+
+        padding-right: .5rem;
+        padding-left: .5rem;
+        padding-bottom: 3rem;
+
+        border-radius: 8px;
+
+        transition: all .4s ease-out;
+    }
+    .container__carousel-opnioes{
+        width: 40.375rem;
+
+        border-radius: 8px;
+
+        overflow-x: hidden;
+    }
+    .secao__opnioes{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+
+        gap: 4.625rem;
+
+        padding-bottom: 11.5rem;
+    }
+    .container__secao___opnioes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding-right: 13.375rem;
+        padding-left: 13.313rem;
+        padding-top: 0;
+        padding-bottom: 3.9rem;
+    }
+    .secao__imagem___cards{
+        height: 8.813rem;
+
+        border-radius: 8px;
+        background: linear-gradient(2.02deg, rgba(36, 49, 65, 0.5) -64.1%, rgba(0, 0, 0, 0) 144.19%);
+
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .container__card-opniao{
+        height: 25.813rem;
+
+        overflow-y: hidden;
+        overflow-x: hidden;
+        border-radius: 8px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+        background-color: #FFFFFF;
+    }
+    .imagem__produto-avaliado{
+        border-radius: 8px;
+        
+        clip-path: inset(6rem 0rem);
+        
+        position: relative;
+        
+        top: -6rem;
+
+        background: linear-gradient(2.02deg, rgba(36, 49, 65, 0.5) -64.1%, rgba(0, 0, 0, 0) 144.19%);
+    }
+    .container__botao___caroussel-opinioes{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 3rem;
+
+        margin-bottom: .5rem;
+    }
+    .botao__carrousel-opinioes{
         border: none;
         background-color: transparent;
         background-repeat: no-repeat;
@@ -818,5 +997,223 @@
         background-position-y: center;
         padding: 1rem;
     }
+    .botao__anterior___caroussel-opinioes{
+        background-image: url("../../Assets/Setas/SETA-ESQUERDA-YELLOW.svg");
+    }
+    .botao__proximo___caroussel-opinioes{
+        background-image: url("../../Assets/Setas/SETA-DIREITA-YELLOW.svg");
+    }
+    /*---------------------------SECAO-INFO-OPNIAO----------------------------*/
+    .info__card-opiniao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.563rem;
+    }
+    .icone__perfil-avaliador{
+        position: relative;
+        top: -2.5rem;
+    }
+    .container__opiniao{
+        position: relative;
+        top: -1rem; 
+    }
+    .opiniao{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        margin-bottom: 1.063rem;
+    }
+    .titulo__opiniao{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+        color: var(--low-pure);
+
+        line-height: 1.5rem;
+    }
+    .descricao__opiniao{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+        color: #B6B6B6;
+
+        line-height: 1.5rem;
+        letter-spacing: .015rem;
+
+        margin: 0%;
+    }
+    .container__ico-perfil{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.563rem;
+    }
+    .nome__perfil-opiniao{
+        margin: 0%;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 13px;
+        color:#B6B6B6;
+
+        line-height: 1.5rem;
+        letter-spacing: .015rem;
+
+        margin: 0%;
+    }
+    /*---------------------------SECAO-REACAO-OPNIAO----------------------------*/
+    .container__reacao-avaliacao{
+        display: flex;
+        flex-direction: row;
+        gap: 1.875rem;
+
+        width: 15.375rem;
+        
+    }
+    .reacao__usuarios{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .imagem-usuario__reacao:nth-child(2){
+        position: relative;
+        left: -.7rem;
+    }
+    .imagem-usuario__reacao:nth-child(3){
+        position: relative;
+        left: -1.4rem;
+    }
+    .imagem-usuario__reacao:nth-child(4){
+        position: relative;
+        left: -2.1rem;
+    }
+    .reacao-excedente{
+        position: relative;
+        left: -1.5rem;
+
+        font-family: var(--montserrat);
+        font-weight: var(--heading-medium);
+        font-size: 14px;
+
+        color: #243141;
+
+    }
+    .icones__reacao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.623rem;
+    }
+    .botao__favoritar-avaliacao{
+        border: none;
+        background-color: transparent;
+        background-image: url("/Assets/Vector.svg");
+        background-repeat: no-repeat;
+
+        width: 1.427rem;
+        height: 1.357rem;
+    }
+    .botao__curtir-avaliacao{
+        border: none;
+        background-color: transparent;
+        background-image: url("/Assets/ico-curtir.svg");
+        background-repeat: no-repeat;
+        background-position-y: .1rem;
+
+        width: 1.45rem;
+        height: 1.357rem;
+    }
+    /*---------------------------SECAO-TOP-PARTICIPANTES-OPNIAO----------------------------*/
+    .secao__top-participantes{
+        display: flex;
+        flex-direction: column;
+        gap: 3.625rem;
+
+        height: 26.125rem;
+
+        padding-left: 2.75rem;
+
+        background-image: url("/Assets/Vetores//border-line.svg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+    }
+    .titulo__top-participantes{
+        font-family: var(--paragraph-SF-Bold);
+        font-weight: var(--heading-bold);
+        font-size: 24px;
+
+        background-image: url("/Assets/Vetores/ICO-TOP-PARTICIPANTES.svg");
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: center;
+
+        padding-right: 3.5rem;
+    }
+    .lista__top-participantes{
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+    }
+    .item__lista___top-participantes{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.938rem;
+    }
+    .container__info___top-participante{
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .nome__perfil___top-participante{
+        font-family:var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+
+        color: #243141;
+    }
+    .pontuacao-acumulada__perfil___top-participante{
+        font-family:var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 12.8px;
+
+        color: var(--subheads);
+
+        margin: 0%;
+    }
+    /*---------------------------LOGIN-SECAO-AVALIACOES----------------------------*/
+    .container__login-opinioes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .titulo__login___opinioes{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+
+        color: var(--subheads);
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+    }
+    .botao__login-opinioes{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        padding: 1rem 4.188rem;
+
+        background-color: var(--orange-primary);
+        border-radius: 8px;
+
+        color: #FFFFFF;
+    }
 }

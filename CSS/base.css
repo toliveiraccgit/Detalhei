@@ -62,7 +62,6 @@ body a{
 }
 body{
     overflow-x: hidden;
-    cursor: url("../Assets/Interações/Cursor/CursorStudio.svg"), default;
 
     scroll-behavior: smooth;
 }
@@ -79,6 +78,9 @@ html{
     background-color: #F5FCF9;
     opacity: 1;
 }
+.apaga__tab{
+    display: none;
+}
 
 .destaque__blue{
     color: var(--blue-primary);
@@ -88,6 +90,11 @@ html{
     color: var(--green-primary);
     font-family: var(--heading-poppins);
 }
+.destaque__yellow{
+    color: var(--orange-primary);
+    font-family: var(--heading-poppins);
+}
+
 .gradient{
     position: relative;
     background: linear-gradient(360deg, rgba(7, 7, 14, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%);

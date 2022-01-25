@@ -1,4 +1,4 @@
-export class CarouselTesteCozinha {
+export class CarouselCozinha {
     constructor(anteriorCozinha, proximoCozinha, listaProdutosCozinha) {
         this.anteriorCozinha = document.querySelector(anteriorCozinha)
         this.proximoCozinha = document.querySelector(proximoCozinha)

@@ -8,20 +8,29 @@ new CarouselAvaliacoes(anteriorAvaliacoes, proximoAvaliacoes, listaProdutosAvali
 
 
 
-import { CarouselTestesTodosProdutos } from "./CarousselHome/carousselHomeTestesTodosProdutos.js"
+import { CarouselTestes } from "./CarousselHome/carousselHomeTestesTodosProdutos.js"
 
 const anteriorTodosProdutos = '[data-anterior-todos-produtos]'
 const proximoTodosProdutos = '[data-proximo-todos-produtos]'
 const listaProdutosTodosProdutos = '[data-lista-todos-produtos]'
 
-new CarouselTestesTodosProdutos(anteriorTodosProdutos, proximoTodosProdutos, listaProdutosTodosProdutos)
+new CarouselTestes(anteriorTodosProdutos, proximoTodosProdutos, listaProdutosTodosProdutos)
+
+import { CarouselCozinha } from "./CarousselHome/carousselHomeTestesCozinha.js"
+
+const anteriorCozinha = '[data-anterior-cozinha]'
+const proximoCozinha = '[data-proximo-cozinha]'
+const listaProdutosCozinha = '[data-lista-cozinha]'
+
+new CarouselCozinha(anteriorCozinha, proximoCozinha, listaProdutosCozinha)
+
+import { CarouselOpinioes } from "./CarousselHome/carousselHomeOpinioes.js"
+
+const anteriorOpinioes = '[data-anterior-opinioes]'
+const proximoOpinioes = '[data-proximo-opinioes]'
+const listaProdutosOpinioes = '[data-lista-opinioes]'
+
+new CarouselOpinioes(anteriorOpinioes, proximoOpinioes, listaProdutosOpinioes)
 
 
 
-import { CarouselTesteCozinha } from "./CarousselHome/carousselHomeTestesCozinha.js"
-
-const anteriorCozinha = '[data-anterior-testes-cozinha]'
-const proximoCozinha = '[data-proximo-testes-cozinha]'
-const listaProdutosCozinha = '[data-lista-testes-cozinha]'
-
-new CarouselTesteCozinha(anteriorCozinha, proximoCozinha, listaProdutosCozinha)

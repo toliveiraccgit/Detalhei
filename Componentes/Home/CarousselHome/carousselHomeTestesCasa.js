@@ -1,23 +1,23 @@
-export class CarouselTestes {
-    constructor(anteriorTodosProdutos, proximoTodosProdutos, listaProdutosTodosProdutos) {
-        this.anteriorTodosProdutos = document.querySelector(anteriorTodosProdutos)
-        this.proximoTodosProdutos = document.querySelector(proximoTodosProdutos)
-        this.listaProdutosTodosProdutos = document.querySelector(listaProdutosTodosProdutos)
+export class CarouselCasa {
+    constructor(anteriorCasa, proximoCasa, listaProdutosCasa) {
+        this.anteriorCasa = document.querySelector(anteriorCasa)
+        this.proximoCasa = document.querySelector(proximoCasa)
+        this.listaProdutosCasa = document.querySelector(listaProdutosCasa)
 
         this.slides = this.getListaSlides()
         this.tamanhoSlide = this.getTamanhoSlide()
 
         this.indiceDoSlideAtual = 0
 
-        this.proximoTodosProdutos.addEventListener('click', this.proximoSlide.bind(this))
+        this.proximoCasa.addEventListener('click', this.proximoSlide.bind(this))
 
-        this.anteriorTodosProdutos.addEventListener('click', this.slideAnterior.bind(this))
+        this.anteriorCasa.addEventListener('click', this.slideAnterior.bind(this))
 
         this.preparaSlides()
     }
 
     getListaSlides() {
-        return Array.from(this.listaProdutosTodosProdutos.children)
+        return Array.from(this.listaProdutosCasa.children)
     }
 
     getTamanhoSlide() {
@@ -53,13 +53,13 @@ export class CarouselTestes {
     }
 
     scrollParaSlide(slideSelecionado) {
-        this.listaProdutosTodosProdutos.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
+        this.listaProdutosCasa.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
 
     }
 
     preparaSlides() {
-        this.slides.forEach((slide, i) => {
-            slide.style.left = this.tamanhoSlide * i + 'px'
+        this.slides.forEach((slide, n) => {
+            slide.style.left = this.tamanhoSlide * n + 'px'
         })
     }
 }
