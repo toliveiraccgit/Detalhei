@@ -94,6 +94,10 @@ html{
     color: var(--orange-primary);
     font-family: var(--heading-poppins);
 }
+.destaque__red{
+    color: var(--red-primary);
+    font-family: var(--heading-poppins);
+}
 
 .gradient{
     position: relative;

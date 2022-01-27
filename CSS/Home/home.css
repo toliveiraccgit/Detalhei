@@ -32,7 +32,7 @@
         background-color: #FFFFFF;
         background-image: url("../../Assets/Vetores/ICO-BUSCA.svg");
         background-repeat: no-repeat;
-        background-position-x: 5.5%;
+        background-position-x: 2.3rem;
         background-position-y: center;
 
         border-radius: 8px;
@@ -55,7 +55,7 @@
         background-color: var(--low-pure);
         background-image: url("../../Assets/Vetores/ICO-LOGIN.svg");
         background-repeat: no-repeat;
-        background-position-x: 11.5%;
+        background-position-x: 1.3rem;
         background-position-y: .8rem;
 
         border-radius: 8px;
@@ -950,7 +950,7 @@
         padding-right: 13.375rem;
         padding-left: 13.313rem;
         padding-top: 0;
-        padding-bottom: 3.9rem;
+        padding-bottom: 0;
     }
     .secao__imagem___cards{
         height: 8.813rem;
@@ -1187,7 +1187,7 @@
 
         margin: 0%;
     }
-    /*---------------------------LOGIN-SECAO-AVALIACOES----------------------------*/
+    /*---------------------------LOGIN-SECAO-OPINIAO----------------------------*/
     .container__login-opinioes{
         display: flex;
         flex-direction: column;
@@ -1216,4 +1216,529 @@
 
         color: #FFFFFF;
     }
+    /*---------------------------CABECALHO-SECAO-DESCRICAO----------------------------*/
+    .secao__descricao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-right: 15.063rem;
+        padding-left: 13.938rem;
+        padding-top: 0;
+        padding-bottom: 11.5rem;
+    }
+    .container__cabecalho___descricao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .titulo__cabecalho___descricao{
+        font-family: var(--paragraph-SF-Bold);
+        font-weight: var(--heading-bold);
+        font-size: var(--font-sm);
+        
+        color: var(--low-pure);
+
+        padding-left: 2.563rem;
+
+        background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-DESCRICOES.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: left;
+
+        margin: 0%;
+    }
+    .subtitulo__cabecalho___descricao{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        color: var(--subheads);
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+    }
+    /*---------------------------LISTA-SECAO-DESCRICAO----------------------------*/
+    .lista__descricao{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        
+        width: auto;
+        
+        transition: all .4s ease-out;
+    }
+    .container__carousel{
+        width: 61rem;
+        height: 21.375rem;
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+        margin-top: 4.625rem;
+        margin-bottom: 2.25rem;
+
+        border-radius: 6.7451px;
+    }
+    .container__botao___caroussel{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 3rem;
+
+        width: 65.013rem;
+
+        margin-bottom: 4.625rem;
+    }
+    .botao__carrousel-descricao{
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        padding: 1rem;
+    }
+    .botao__anterior___caroussel{
+        background-image: url("../../Assets/Setas/SETA-ESQUERDA-RED.svg");
+    }
+    .botao__proximo___caroussel{
+        background-image: url("../../Assets/Setas/SETA-DIREITA-RED.svg");
+    }
+    .imagem__carousel___descricao{
+        border-radius: 6.7451px;
+        z-index: 1;
+    }
+    .item__lista___descricao{
+        border-radius: 6.7451px;
+    }
+    .container__info___item-descricao{
+        display: flex;
+        flex-direction: column;
+
+        height: 21.375rem;
+        width: 19rem;
+
+        padding-right: 0.688rem;
+        padding-left: 1.188rem;
+        padding-top: 0.875rem;
+        padding-bottom: 0.938rem;
+
+        position: relative;
+        top: -21.625rem;
+        
+        z-index: 2;
+
+        background: linear-gradient(360deg, rgba(7, 7, 14, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%), linear-gradient(360deg, rgba(36, 49, 65, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%);
+
+        border-radius: 6.7451px;
+    }
+    .container__info___descricao{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        margin-top: 12.938rem;
+        margin-bottom: 0.688rem;
+        padding-right: 2.125rem;
+    }
+    .titulo__info___descricao{
+        font-family: var(--montserrat);
+        font-weight: var(--heading-bold);
+        font-size: 20px;
+
+        color: #FFFFFF;
+    }
+    .descricao__info___descricao{
+        font-family: var(--paragraph-SF-Ultralight);
+        font-weight: var(--paragraph-regular);
+        font-size: 14px;
+
+        line-height: 20px;
+        letter-spacing: .03rem;
+
+        color: #FFFFFF;
+
+        margin: 0%;
+        opacity: .8;
+    }
+    .container__perfil-botao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .container__perfil{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.313rem;
+    }
+    .nome__perfil{
+        font-family: var(--paragraph-SF-Ultralight);
+        font-weight: var(--paragraph-regular);
+        font-weight: 400;
+        font-size: 11.8px;
+
+        letter-spacing: .1rem;
+
+        color: #FFFFFF;
+
+        margin: 0%;
+    }
+    .botao__ver___descricao{
+        padding: 1.3rem 1.6rem;
+
+        background-color: var(--red-primary);
+        background-image: url("../../Assets/Setas/SETA-DIREITA-BRANCA.svg");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+
+        border-radius: 8px;
+    }
+    /*---------------------------LOGIN-SECAO-DESCRICAO----------------------------*/
+    .container__login-descricao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .titulo__login___descricao{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+
+        color: var(--subheads);
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+    }
+    .botao__login-descricao{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        padding: 1rem 4.188rem;
+
+        background-color: var(--red-primary);
+        border-radius: 8px;
+
+        color: #FFFFFF;
+    }
+    /*---------------------------SECAO-BLOG----------------------------*/
+    .container__cabecalho___blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .titulo__cabecalho___blog{
+        font-family: var(--paragraph-SF-Bold);
+        font-weight: var(--heading-bold);
+        font-size: var(--font-sm);
+        
+        color: var(--low-pure);
+
+        padding-left: 2.563rem;
+
+        background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-BLOG.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: left;
+
+        margin: 0%;
+    }
+    .subtitulo__cabecalho___blog{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        color: var(--subheads);
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+    }
+    .secao__cards-blog{
+        margin-right: 3rem;
+    }
+    .lista-blog{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+
+        padding-right: .5rem;
+        padding-left: .5rem;
+        padding-bottom: 3rem;
+
+        border-radius: 8px;
+
+        transition: all .4s ease-out;
+    }
+    .container__carousel-blog{
+        width: 60.938rem;
+
+        border-radius: 8px;
+
+        overflow-x: hidden;
+    }
+    .secao__blog{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+
+        gap: 4.625rem;
+
+        padding-bottom: 11.5rem;
+    }
+    .container__secao___blog{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        padding-right: 14.563rem;
+        padding-left: 14.438rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .secao__imagem___cards-blog{
+        height: 8.813rem;
+
+        background: linear-gradient(360deg, rgba(36, 49, 65, 0.5) 0%, rgba(0, 0, 0, 0) 204.26%);
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+    }
+    .container__gradient-blog{
+        width: 18.938rem;
+        height: 8.813rem;
+
+        background: linear-gradient(360deg, rgba(36, 49, 65, 0.5) 0%, rgba(0, 0, 0, 0) 204.26%);
+
+        position: relative;
+        top: -9.2rem;
+    }
+    .container__card-blog{
+        height: 25.813rem;
+        width: 18.938rem;
+
+        overflow-y: hidden;
+        overflow-x: hidden;
+        border-radius: 8px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
+        background-color: #FFFFFF;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .imagem__produto-blog{
+        border-radius: 8px;
+        background: linear-gradient(360deg, rgba(36, 49, 65, 0.5) 0%, rgba(0, 0, 0, 0) 204.26%);
+    }
+    .container__botao___caroussel-blog{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 3rem;
+
+        margin-bottom: .5rem;
+    }
+    .botao__carrousel-blog{
+        border: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        padding: 1rem;
+    }
+    .botao__anterior___caroussel-blog{
+        background-image: url("../../Assets/Setas/SETA-ESQUERDA-YELLOW.svg");
+    }
+    .botao__proximo___caroussel-blog{
+        background-image: url("../../Assets/Setas/SETA-DIREITA-YELLOW.svg");
+    }
+    /*---------------------------SECAO-INFO-BLOG----------------------------*/
+    .info__card-blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        padding-bottom: 1.563rem;
+    }
+    .container__blog{
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-between;
+
+        height: 14.625rem;
+    }
+    .icone__perfil-blog{
+        position: relative;
+        top: -2.5rem;
+    }
+    .blog{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        margin-bottom: 1.063rem;
+    }
+    .titulo__blog{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+        color: var(--low-pure);
+
+        line-height: 1.5rem;
+    }
+    .descricao__blog{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 13px;
+        color: #B6B6B6;
+
+        line-height: 1.5rem;
+        letter-spacing: .015rem;
+
+        margin: 0%;
+
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .container__ico-perfil{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.563rem;
+    }
+    .nome__perfil-blog{
+        margin: 0%;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 13px;
+        color:#B6B6B6;
+
+        line-height: 1.5rem;
+        letter-spacing: .015rem;
+
+        margin: 0%;
+    }
+    .botao__ver___blog{
+        padding: 1.3rem 1.6rem;
+
+        background-color: var(--subheads);
+        background-image: url("../../Assets/Setas/SETA-DIREITA-BRANCA.svg");
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+
+        border-radius: 8px;
+    }
+    /*---------------------------LOGIN-SECAO-BLOG----------------------------*/
+    .container__login-blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .titulo__login___blog{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+
+        color: var(--subheads);
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+    }
+    .botao__login-blog{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        padding: 1rem 4.188rem;
+
+        background-color: var(--subheads);
+        border-radius: 8px;
+
+        color: #FFFFFF;
+    }
+    /*---------------------------RODAPE----------------------------*/
+    .rodape{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 4.5rem;
+
+        padding-left: 18.563rem;
+        padding-right: 18.625rem;
+        padding-top: 4.375rem;
+        padding-bottom: 6.5rem;
+
+        border-top: 1px solid #F3F4F6;
+    }
+    .secao__marca{
+        width: 17.688rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.438rem;
+
+        margin-right: 2.5rem;
+    }
+    .logo___detalhei-footer{
+        margin-bottom: 0.875rem;
+    }
+    .texto__copyright{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-regular);
+        font-style: normal;
+        font-size: 14px;
+
+        color: var(--subheads);
+
+        margin: 0%;
+    }
+    .container__redes-sociais{
+        display: flex;
+        flex-direction: row;
+        gap: 1.2rem;
+    }
+    .secao__lista{
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+    #secao__lista-footer-margin{
+        margin-right: 2.5rem;
+    }
+    .titulo__lista-footer{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+        color: var(--low-pure);
+    }
+    .lista__detalhei{
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+    }
+    .item__lista-footer{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-regular);
+        font-style: normal;
+        font-size: 14px;
+
+        color: var(--subheads);
+
+        margin: 0%;
+
+        opacity: .8;
+    }
+
 }

@@ -33,4 +33,10 @@ const listaProdutosOpinioes = '[data-lista-opinioes]'
 new CarouselOpinioes(anteriorOpinioes, proximoOpinioes, listaProdutosOpinioes)
 
 
+import { CarouselDescricao } from "./CarousselHome/carousselHomeDescricao.js"
 
+const anteriorDescricao = '[data-anterior-descricao]'
+const proximoDescricao = '[data-proximo-descricao]'
+const listaProdutosDescricao = '[data-lista-produtos-descricao]'
+
+new CarouselDescricao(anteriorDescricao, proximoDescricao, listaProdutosDescricao)
