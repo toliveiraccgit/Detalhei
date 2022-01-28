@@ -320,11 +320,10 @@
 
         border-radius: 6.7451px;
     }
-    .container__botao___caroussel{
+    .container__botao___caroussel-avaliacoes{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        gap: 3rem;
 
         width: 65.013rem;
 
@@ -338,11 +337,35 @@
         background-position-y: center;
         padding: 1rem;
     }
-    .botao__anterior___caroussel{
+    .botao__anterior___caroussel-avaliacoes{
         background-image: url("../../Assets/Setas/SETA-ESQUERDA-BLUE.svg");
     }
-    .botao__proximo___caroussel{
+    .botao__proximo___caroussel-avaliacoes{
         background-image: url("../../Assets/Setas/SETA-DIREITA-BLUE.svg");
+    }
+    .carousel__indicadores{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        transition: all .4s ease-out;
+    }
+    .carousel__indicador{
+        background-color: var(--blue-primary);
+        border: none;
+        visibility: hidden;
+        opacity: 0;
+
+        height: 0.25rem;
+        width: 2.25rem;
+
+        border-radius: 8px;
+
+        transition: all .1s ease-in-out;
+    }
+    .carousel__indicador--ativo{
+        visibility: visible;
+        opacity: 1;
     }
     .imagem__carousel___avaliacoes{
         border-radius: 6.7451px;
@@ -635,7 +658,6 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
-        gap: 3rem;
 
         width: 63.013rem;
 
@@ -654,6 +676,30 @@
     }
     .botao__proximo___caroussel-testes{
         background-image: url("../../Assets/Setas/SETA-DIREITA-GREEN.svg");
+    }
+    .carousel__indicadores-todos-produtos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        transition: all .4s ease-out;
+    }
+    .carousel__indicador-todos-produtos{
+        background-color: var(--green-primary);
+        border: none;
+        visibility: hidden;
+        opacity: 0;
+
+        height: 0.25rem;
+        width: 2.25rem;
+
+        border-radius: 8px;
+
+        transition: all .1s ease-in-out;
+    }
+    .carousel__indicador--ativo{
+        visibility: visible;
+        opacity: 1;
     }
     .imagem__carousel___testes{
         border-radius: 6.7451px;

@@ -1,8 +1,11 @@
 export class CarouselAvaliacoes {
-    constructor(anteriorAvaliacoes, proximoAvaliacoes, listaProdutosAvaliacoes) {
+    constructor(anteriorAvaliacoes, proximoAvaliacoes, listaProdutosAvaliacoes, navegacaoAvaliacoes) {
         this.anteriorAvaliacoes = document.querySelector(anteriorAvaliacoes)
         this.proximoAvaliacoes = document.querySelector(proximoAvaliacoes)
         this.listaProdutosAvaliacoes = document.querySelector(listaProdutosAvaliacoes)
+        this.navegacaoAvaliacoes = document.querySelector(navegacaoAvaliacoes)
+
+        this.indicadores = this.getListaIndicadores()
 
         this.slides = this.getListaSlides()
         this.tamanhoSlide = this.getTamanhoSlide()
@@ -19,13 +22,18 @@ export class CarouselAvaliacoes {
     getListaSlides() {
         return Array.from(this.listaProdutosAvaliacoes.children)
     }
-
+    getListaIndicadores() {
+        return Array.from(this.navegacaoAvaliacoes.children)
+    }
     getTamanhoSlide() {
         return this.slides[0].getBoundingClientRect().width
     }
 
     getSlideAtual() {
         return this.slides[this.indiceDoSlideAtual]
+    }
+    getIndiceAtual() {
+        return this.indicadores[this.indiceDoSlideAtual]
     }
 
     proximoSlide() {
@@ -47,14 +55,24 @@ export class CarouselAvaliacoes {
     }
 
     vaParaSlide(posicao) {
+        const indicadorAtual = this.getIndiceAtual()
         this.indiceDoSlideAtual = posicao
+        const indicadorSelecionado = this.getIndiceAtual()
 
         this.scrollParaSlide(this.getSlideAtual())
+        this.atualizaIndicadores(indicadorAtual, indicadorSelecionado)
     }
 
     scrollParaSlide(slideSelecionado) {
         this.listaProdutosAvaliacoes.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
 
+    }
+
+    atualizaIndicadores(indicadorAtual, indicadorSelecionado){
+
+    indicadorAtual.classList.remove('carousel__indicador--ativo')
+
+    indicadorSelecionado.classList.add('carousel__indicador--ativo')
     }
 
     preparaSlides() {

@@ -3,8 +3,9 @@ import { CarouselAvaliacoes } from "./CarousselHome/carrouselHomeAvaliacoes.js"
 const anteriorAvaliacoes = '[data-anterior-avaliacoes]'
 const proximoAvaliacoes = '[data-proximo-avaliacoes]'
 const listaProdutosAvaliacoes = '[data-lista-produtos-avaliacoes]'
+const navegacaoAvaliacoes = '[data-navegacao-avaliacoes]'
 
-new CarouselAvaliacoes(anteriorAvaliacoes, proximoAvaliacoes, listaProdutosAvaliacoes)
+new CarouselAvaliacoes(anteriorAvaliacoes, proximoAvaliacoes, listaProdutosAvaliacoes, navegacaoAvaliacoes)
 
 
 
@@ -13,8 +14,9 @@ import { CarouselTestes } from "./CarousselHome/carousselHomeTestesTodosProdutos
 const anteriorTodosProdutos = '[data-anterior-todos-produtos]'
 const proximoTodosProdutos = '[data-proximo-todos-produtos]'
 const listaProdutosTodosProdutos = '[data-lista-todos-produtos]'
+const navegacaoTestesTodosProdutos = '[data-navegacao-testes-todos-produtos]'
 
-new CarouselTestes(anteriorTodosProdutos, proximoTodosProdutos, listaProdutosTodosProdutos)
+new CarouselTestes(anteriorTodosProdutos, proximoTodosProdutos, listaProdutosTodosProdutos, navegacaoTestesTodosProdutos)
 
 import { CarouselCozinha } from "./CarousselHome/carousselHomeTestesCozinha.js"
 
