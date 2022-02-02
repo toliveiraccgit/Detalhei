@@ -1,8 +1,11 @@
 export class CarouselDescricao {
-    constructor(anteriorDescricao, proximoDescricao, listaProdutosDescricao) {
+    constructor(anteriorDescricao, proximoDescricao, listaProdutosDescricao, navegacaoDescricao) {
         this.anteriorDescricao = document.querySelector(anteriorDescricao)
         this.proximoDescricao = document.querySelector(proximoDescricao)
         this.listaProdutosDescricao = document.querySelector(listaProdutosDescricao)
+        this.navegacaoDescricao = document.querySelector(navegacaoDescricao)
+
+        this.indicadoresOpiniao = this.getListaIndicadores()
 
         this.slides = this.getListaSlides()
         this.tamanhoSlide = this.getTamanhoSlide()
@@ -19,13 +22,18 @@ export class CarouselDescricao {
     getListaSlides() {
         return Array.from(this.listaProdutosDescricao.children)
     }
-
+    getListaIndicadores() {
+        return Array.from(this.navegacaoDescricao.children)
+    }
     getTamanhoSlide() {
         return this.slides[0].getBoundingClientRect().width
     }
 
     getSlideAtual() {
         return this.slides[this.indiceDoSlideAtual]
+    }
+    getIndiceAtual() {
+        return this.indicadoresOpiniao[this.indiceDoSlideAtual]
     }
 
     proximoSlide() {
@@ -47,9 +55,12 @@ export class CarouselDescricao {
     }
 
     vaParaSlide(posicao) {
+        const indicadorAtual = this.getIndiceAtual()
         this.indiceDoSlideAtual = posicao
+        const indicadorSelecionado = this.getIndiceAtual()
 
         this.scrollParaSlide(this.getSlideAtual())
+        this.atualizaIndicadores(indicadorAtual, indicadorSelecionado)
     }
 
     scrollParaSlide(slideSelecionado) {
@@ -57,9 +68,16 @@ export class CarouselDescricao {
 
     }
 
+    atualizaIndicadores(indicadorAtual, indicadorSelecionado){
+
+    indicadorAtual.classList.remove('carousel__indicador--ativo-descricao')
+
+    indicadorSelecionado.classList.add('carousel__indicador--ativo-descricao')
+    }
+
     preparaSlides() {
-        this.slides.forEach((slide, n) => {
-            slide.style.left = this.tamanhoSlide * n + 'px'
+        this.slides.forEach((slide, i) => {
+            slide.style.left = this.tamanhoSlide * i + 'px'
         })
     }
 }

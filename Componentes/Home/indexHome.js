@@ -14,25 +14,18 @@ import { CarouselTestes } from "./CarousselHome/carousselHomeTestesTodosProdutos
 const anteriorTodosProdutos = '[data-anterior-todos-produtos]'
 const proximoTodosProdutos = '[data-proximo-todos-produtos]'
 const listaProdutosTodosProdutos = '[data-lista-todos-produtos]'
-const navegacaoTestesTodosProdutos = '[data-navegacao-testes-todos-produtos]'
 
-new CarouselTestes(anteriorTodosProdutos, proximoTodosProdutos, listaProdutosTodosProdutos, navegacaoTestesTodosProdutos)
+new CarouselTestes(anteriorTodosProdutos, proximoTodosProdutos, listaProdutosTodosProdutos)
 
-import { CarouselCozinha } from "./CarousselHome/carousselHomeTestesCozinha.js"
-
-const anteriorCozinha = '[data-anterior-cozinha]'
-const proximoCozinha = '[data-proximo-cozinha]'
-const listaProdutosCozinha = '[data-lista-cozinha]'
-
-new CarouselCozinha(anteriorCozinha, proximoCozinha, listaProdutosCozinha)
 
 import { CarouselOpinioes } from "./CarousselHome/carousselHomeOpinioes.js"
 
 const anteriorOpinioes = '[data-anterior-opinioes]'
 const proximoOpinioes = '[data-proximo-opinioes]'
 const listaProdutosOpinioes = '[data-lista-opinioes]'
+const navegacaoOpinioes = '[data-navegacao-opinioes]'
 
-new CarouselOpinioes(anteriorOpinioes, proximoOpinioes, listaProdutosOpinioes)
+new CarouselOpinioes(anteriorOpinioes, proximoOpinioes, listaProdutosOpinioes, navegacaoOpinioes)
 
 
 import { CarouselDescricao } from "./CarousselHome/carousselHomeDescricao.js"
@@ -40,5 +33,15 @@ import { CarouselDescricao } from "./CarousselHome/carousselHomeDescricao.js"
 const anteriorDescricao = '[data-anterior-descricao]'
 const proximoDescricao = '[data-proximo-descricao]'
 const listaProdutosDescricao = '[data-lista-produtos-descricao]'
+const navegacaoDescricao = '[data-navegacao-descricoes]'
 
-new CarouselDescricao(anteriorDescricao, proximoDescricao, listaProdutosDescricao)
+new CarouselDescricao(anteriorDescricao, proximoDescricao, listaProdutosDescricao, navegacaoDescricao)
+
+import { CarouselBlog } from "./CarousselHome/carousselHomeBlog.js"
+
+const anteriorBlog = '[data-anterior-blog]'
+const proximoBlog = '[data-proximo-blog]'
+const listaProdutosBlog = '[data-lista-produtos-blog]'
+const navegacaoBlog = '[data-navegacao-blog]'
+
+new CarouselBlog(anteriorBlog, proximoBlog, listaProdutosBlog, navegacaoBlog)

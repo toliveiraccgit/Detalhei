@@ -170,7 +170,7 @@
 
         background-color: #FFFFFF;
 
-        padding-right: 1.375rem;
+        padding-right: 0.375rem;
         padding-left: 0.938rem;
         padding-top: 0.75rem;
         padding-bottom: 0.75rem;
@@ -309,18 +309,15 @@
         
         transition: all .4s ease-out;
     }
-    .container__carousel{
-        width: 61rem;
-        height: 21.375rem;
+    .container__carousel {
+        width: 62.5rem;
+        height: auto;
         overflow-x: hidden;
         overflow-y: hidden;
-
         margin-top: 4.625rem;
         margin-bottom: 2.25rem;
-
         border-radius: 6.7451px;
-    }
-    .container__botao___caroussel-avaliacoes{
+    }.container__botao___caroussel-avaliacoes{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -367,133 +364,96 @@
         visibility: visible;
         opacity: 1;
     }
-    .imagem__carousel___avaliacoes{
-        border-radius: 6.7451px;
-        z-index: 1;
-    }
     .item__lista___avaliacoes{
-        border-radius: 6.7451px;
-    }
-    .container__info___item-avaliacoes{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        height: 28.25rem;
+        width: 20.125rem;
 
-        height: 21.375rem;
-        width: 19rem;
+        border-radius: 6.7451px;
 
-        padding-right: 0.688rem;
+        padding-top: 1.563rem;
         padding-left: 1.188rem;
-        padding-top: 0.875rem;
-        padding-bottom: 0.938rem;
-
-        position: relative;
-        top: -21.625rem;
-        
-        z-index: 2;
-
-        background: linear-gradient(360deg, rgba(7, 7, 14, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%), linear-gradient(360deg, rgba(36, 49, 65, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%);
-
-        border-radius: 6.7451px;
+        padding-right: 1.188rem;
+        padding-bottom: 1.375rem;
     }
-    .container__avaliacao-produto{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .avaliacao__nota-red{
-        font-family: var(--montserrat);
-        font-weight: var(--heading-bold);
-        font-size: 16px;
-
-        color: #FFFFFF;
-
-        background-color: var(--red-pure);
-        border-radius: 42.1569px;
-        border: none;
-
-        margin: 0%;
-        margin-right: 1.063rem;
-        padding: .1rem .6rem .2rem .6rem;
-    }
-    .avaliacao__nota-blue{
-        font-family: var(--montserrat);
-        font-weight: var(--heading-bold);
-        font-size: 16px;
-
-        color: #FFFFFF;
-
-        background-color: #004CBA;
-        border-radius: 42.1569px;
-        border: none;
-
-        margin: 0%;
-        margin-right: 1.063rem;
-        padding: .1rem .6rem .2rem .6rem;
-    }
-    .container__info___avaliacao{
+    .secao__perfil-avaliador{
         display: flex;
         flex-direction: column;
-        gap: .5rem;
-
-        margin-top: 9.031rem;
-        margin-bottom: 0.688rem;
-        padding-right: 2.125rem;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
     }
-    .titulo__info___avaliacao{
-        font-family: var(--montserrat);
-        font-weight: var(--heading-bold);
-        font-size: 20px;
-
-        color: #FFFFFF;
+    .icone__avaliacoes___perfil-avaliador{
+        border-radius: 50%;
     }
-    .descricao__info___avaliacao{
-        font-family: var(--paragraph-SF-Ultralight);
-        font-weight: var(--paragraph-regular);
+    .container__info___perfil-avaliador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .3rem;
+    }
+    .nome__perfil-avaliador{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-medium);
+        font-size: var(--font-xs);
+        color: #243141;
+    }
+    .profissao__perfil-avaliador{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
         font-size: 14px;
-
-        line-height: 20px;
-        letter-spacing: .03rem;
-
-        color: #FFFFFF;
+        color:  #B6B6B6;
 
         margin: 0%;
-        opacity: .8;
+        letter-spacing: .05rem;
     }
-    .container__perfil-botao{
+    .secao__produto-avaliado{
         display: flex;
-        flex-direction: row;
+        flex-direction:column;
         align-items: center;
-        justify-content: space-between;
-    }
-    .container__perfil{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.313rem;
-    }
-    .nome__perfil{
-        font-family: var(--paragraph-SF-Ultralight);
-        font-weight: var(--paragraph-regular);
-        font-weight: 400;
-        font-size: 11.8px;
+        justify-content: center;
 
-        letter-spacing: .1rem;
+        width: 17.375rem;
+        height: 8.563rem;
 
-        color: #FFFFFF;
-
-        margin: 0%;
-    }
-    .botao__ver___avaliacao{
-        padding: 1.3rem 1.6rem;
-
-        background-color: var(--blue-primary);
-        background-image: url("../../Assets/Setas/SETA-DIREITA-BRANCA.svg");
+        background-image: url("../../Assets/Icones-Secoes/background-produto-avaliacoes.svg");
         background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
+        background-size: cover;
 
-        border-radius: 8px;
+        margin-bottom: 1rem;
+
+    }
+    .secao__avaliacao___produto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+
+        height: 6rem;
+
+        padding-left: 2.313rem;
+        padding-right: 2.313rem;
+    }
+    .avaliacao__produto{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 12px;
+        color:  #243141;
+
+        margin: 0%;
+        letter-spacing: .05rem;
+    }
+    .botao__ver-detalhes{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-bold);
+        font-size: 14px;
+        color:  #243141;
+
+        margin: 0%;
+        letter-spacing: .05rem;
     }
     /*---------------------------LOGIN-SECAO-AVALIACOES----------------------------*/
     .container__login-avaliacoes{
@@ -525,7 +485,7 @@
         color: #FFFFFF;
     }
     /*---------------------------CABECALHO-SECAO-TESTES----------------------------*/
-    .secao__testes{
+    .secao__revisoes{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -535,13 +495,13 @@
         padding-top: 0;
         padding-bottom: 11.5rem;
     }
-    .container__cabecalho___testes{
+    .container__cabecalho___revisoes{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
     }
-    .titulo__cabecalho___testes{
+    .titulo__cabecalho___revisoes{
         font-family: var(--paragraph-SF-Bold);
         font-weight: var(--heading-bold);
         font-size: var(--font-sm);
@@ -557,7 +517,7 @@
 
         margin: 0%;
     }
-    .subtitulo__cabecalho___testes{
+    .subtitulo__cabecalho___revisoes{
         font-family: var(--paragraph-SF-Medium);
         font-weight: var(--paragraph-bold);
         font-size: 16px;
@@ -567,85 +527,29 @@
 
         margin: 0%;
     }
-    /*---------------------------TABS-SECAO-TESTES----------------------------*/
-    .secao__testes___tabs{
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-
-        margin-top: 4.625rem;
-    }
-    .container__abas{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-right: 15.063rem;
-        padding-left: 13.938rem;
-        padding-top: 0;
-        padding-bottom: 11.5rem;
-    } 
-    .tablinks-testes{
-        width: 9rem;
-
-        font-family: var(--montserrat);
-        font-weight: var(--heading-bold);
-        font-size: 14px;
-        color: var(--subheads);
-
-        border: none;
-        border-radius: 8px;
-
-        background-color: #F9FAFB;
-        background-position-x: center;
-        background-position-y: 1rem;
-        background-repeat: no-repeat;
-
-        padding-top: 3.188rem;
-        padding-bottom: 1rem;
-
-        text-align: center;
-        opacity: .5;
-
-        filter:saturate(0%); 
-    }
-    .tab-todos-produtos{
-        background-image: url("../../Assets/Icones-Secao-Testes/ICO-TODOS-PRODUTOS-SECAO-TESTES.svg");
-    }
-    .tab-cozinha{
-        background-image: url("../../Assets/Icones-Secao-Testes/ICO-COZINHA-SECAO-TESTES.svg");
-    }
-    .tab-casa{
-        background-image: url("../../Assets/Icones-Secao-Testes/ICO-CASA-SECAO-TESTES.svg");
-    }
-    .tab-limpeza{
-        background-image: url("../../Assets/Icones-Secao-Testes/ICO-LIMPEZA-SECAO-TESTES.svg");
-    }
-    .tab-produtos-curiosos{
-        background-image: url("../../Assets/Icones-Secao-Testes/ICO-PRODUTOS-CURIOSOS-SECAO-TESTES.svg");
-    }
-    /*---------------------------SECAO-TESTES-TODOS-PROUTOS---------------------------*/
-    .secao__testes___aba{
+    /*---------------------------SECAO-revisoes-TODOS-PROUTOS---------------------------*/
+    .secao__revisoes___aba{
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        width: 61rem;
+        width: 69rem;
 
         padding-top: 0;
         padding-bottom: 4.625rem;
     }
-    .lista__testes{
+    .lista__revisoes{
         display: flex;
         flex-direction: row;
         gap: 2rem;
         
         width: auto;
         
-        transition: all .4s ease-out;
+        transition: all 1s ease-in-out;
     }
-    .container__carousel___testes{
-        width: 61rem;
-        height: 21.375rem;
+    .container__carousel___revisoes{
+        width: 69rem;
+        height: auto;
         overflow-x: hidden;
         overflow-y: hidden;
 
@@ -653,9 +557,10 @@
         margin-bottom: 2.25rem;
 
         border-radius: 6.7451px;
+        transition: all 1s ease-in-out;
     }
-    .container__botao___caroussel-testes{
-        display: flex;
+    .container__botao___caroussel-revisoes{
+        display: none;
         flex-direction: row;
         justify-content: flex-end;
 
@@ -663,7 +568,7 @@
 
         margin-bottom: .5rem;
     }
-    .botao__carrousel-testes{
+    .botao__carrousel-revisoes{
         border: none;
         background-color: transparent;
         background-repeat: no-repeat;
@@ -671,44 +576,41 @@
         background-position-y: center;
         padding: 1rem;
     }
-    .botao__anterior___caroussel-testes{
+    .botao__anterior___caroussel-revisoes{
         background-image: url("../../Assets/Setas/SETA-ESQUERDA-GREEN.svg");
     }
-    .botao__proximo___caroussel-testes{
+    .botao__proximo___caroussel-revisoes{
         background-image: url("../../Assets/Setas/SETA-DIREITA-GREEN.svg");
     }
-    .carousel__indicadores-todos-produtos{
+    .item__lista___revisoes{
         display: flex;
         flex-direction: row;
+        gap: 8rem;
+
+        width: 67rem;
+        height: 35.188rem;
+        
+        padding-left: 5.188rem;
+        padding-top: 5.688rem;
+    }
+    /*---------------------------SECAO-PRODUTO-REVISOES----------------------------*/
+    .secao__produto-revisado{
+        display: flex;
+        flex-direction: column;
         align-items: center;
+        gap: 2rem;
+    }
+    .container__sombra{
+        background-image: url("../../Assets/Vetores/imagem-sombra.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
 
-        transition: all .4s ease-out;
+        width: 13.688rem;
+        height: 6.813rem;
     }
-    .carousel__indicador-todos-produtos{
-        background-color: var(--green-primary);
-        border: none;
-        visibility: hidden;
-        opacity: 0;
-
-        height: 0.25rem;
-        width: 2.25rem;
-
-        border-radius: 8px;
-
-        transition: all .1s ease-in-out;
-    }
-    .carousel__indicador--ativo{
-        visibility: visible;
-        opacity: 1;
-    }
-    .imagem__carousel___testes{
-        border-radius: 6.7451px;
-        z-index: 1;
-    }
-    .item__lista___testes{
-        border-radius: 6.7451px;
-    }
-    .container__info___item-testes{
+    .container__info___item-revisoes{
         display: flex;
         flex-direction: column;
 
@@ -729,178 +631,144 @@
 
         border-radius: 6.7451px;
     }
-    .container__testes-nota{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-    }
-    .avaliacao__nota-red-testes{
-        font-family: var(--montserrat);
-        font-weight: var(--heading-bold);
-        font-size: 16px;
+    /*---------------------------SECAO-REVISOR-REVISOES----------------------------*/
+    .secao__revisao-produto{
+        width: 40.063rem;
 
-        color: #FFFFFF;
-
-        background-color: var(--red-pure);
-        border-radius: 42.1569px;
-        border: none;
-
-        margin: 0%;
-        padding: .1rem .6rem .2rem .6rem;
-    }
-    .avaliacao__nota-blue-testes{
-        font-family: var(--montserrat);
-        font-weight: var(--heading-bold);
-        font-size: 16px;
-
-        color: #FFFFFF;
-
-        background-color: #004CBA;
-        border-radius: 42.1569px;
-        border: none;
-
-        margin: 0%;
-        padding: .1rem .6rem .2rem .6rem;
-    }
-    .container__info___testes{
         display: flex;
         flex-direction: column;
-        gap: .5rem;
-
-        margin-top: 12.031rem;
-        margin-bottom: 0.688rem;
-        padding-right: 2.125rem;
+        justify-content: space-between;
+        align-items: flex-end;
     }
-    .titulo__info___testes{
-        font-family: var(--montserrat);
+    .container__revisao{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.875rem;
+
+        margin-bottom: 1.813rem;
+
+        margin-right: 3.375rem;
+    }
+    .titulo__revisao{
+        font-family: var(--paragraph-SF-Semibold);
         font-weight: var(--heading-bold);
+        font-size: var(--font-xs);
+        
+        color: #243141;
+
+        width: 34.938rem;
+    }
+    .descricao__revisao{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        width: 37.688rem;
+
+        color: #718096;
+        letter-spacing: 0.02rem;
+        line-height: 160%;
+
+        margin: 0%;
+    }
+    .botao__detalhes-revisao{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-medium);
+        font-size: 14px;
+        
+        color: #FFFFFF;
+
+        background-color: var(--green-primary);
+
+        padding: 0.875rem 1.625rem;
+        
+        border-radius: 8px;
+    }
+    .container__revisor{
+        display: flex;
+        flex-direction: column;
+        gap: 1.313rem;
+
+        width: 20.813rem;
+        height: 10.438rem;
+
+        background-color: var(--green-primary);
+
+        border-radius: 9px;
+
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-top: 0.625rem;
+    }
+    .cabecalho__container___revisor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .titulo__cabecalho___revisor{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
         font-size: 20px;
 
         color: #FFFFFF;
     }
-    .descricao__info___testes{
-        font-family: var(--paragraph-SF-Ultralight);
-        font-weight: var(--paragraph-regular);
+    .nota__revisao{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 22px;
+
+        color: #FFFFFF;
+
+        margin: 0%;
+
+        padding-left: 1.4rem;
+        background-image: url("../../Assets/Vetores/icone-star-gold.svg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: .15rem;
+    }
+    .container__perfil___revisor{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.875rem;
+    }
+    .foto__perfil-revisor{
+        border-radius: 50%;
+    }
+    .container__info___revisor{
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+    .nome__perfil___revisor{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-medium);
+        font-size: 24px;
+
+        color: #FFFFFF;
+    }
+    .profissao__perfil___revisor{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-bold);
         font-size: 14px;
 
-        line-height: 20px;
-        letter-spacing: .03rem;
-
-        color: #FFFFFF;
+        color: #FAFAFA;
 
         margin: 0%;
-        opacity: .8;
-    }
-    .container__perfil-botao{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .container__perfil{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.313rem;
-    }
-    .nome__perfil{
-        font-family: var(--paragraph-SF-Ultralight);
-        font-weight: var(--paragraph-regular);
-        font-weight: 400;
-        font-size: 11.8px;
 
-        letter-spacing: .1rem;
-
-        color: #FFFFFF;
-
-        margin: 0%;
-    }
-    .botao__ver___testes{
-        padding: 1.3rem 1.6rem;
-
-        background-color: var(--green-primary);
-        background-image: url("../../Assets/Setas/SETA-DIREITA-BRANCA.svg");
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
-
-        border-radius: 8px;
-    }
-    .container__login-testes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-    /*---------------------------SECAO-TESTES-COZINHA---------------------------*/
-    .lista__testes-cozinha{
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        
-        width: auto;
-        
-        transition: all .4s ease-out;
-    }
-    .container__carousel___testes-cozinha{
-        width: 61rem;
-        height: 21.375rem;
-        overflow-x: hidden;
-        overflow-y: hidden;
-
-        margin-top: 4.625rem;
-        margin-bottom: 2.25rem;
-
-        border-radius: 6.7451px;
-    }
-    .container__abas-cozinha{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-right: 15.063rem;
-        padding-left: 13.938rem;
-        padding-top: 0;
-        padding-bottom: 11.5rem;
-    } 
-     /*---------------------------SECAO-TESTES-CASA---------------------------*/
-    .lista__testes-casa{
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        
-        width: auto;
-        
-        transition: all .4s ease-out;
-    }
-    .container__carousel___testes-casa{
-        width: 61rem;
-        height: 21.375rem;
-        overflow-x: hidden;
-        overflow-y: hidden;
-
-        margin-top: 4.625rem;
-        margin-bottom: 2.25rem;
-
-        border-radius: 6.7451px;
-    }
-    .container__abas-casa{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-right: 15.063rem;
-        padding-left: 13.938rem;
-        padding-top: 0;
-        padding-bottom: 11.5rem;
+        letter-spacing: .02rem;
     }
     /*---------------------------LOGIN-SECAO-AVALIACOES----------------------------*/
-    .container__login-testes{
+    .container__login-revisoes{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.5rem;
     }
-    .titulo__login___testes{
+    .titulo__login___revisoes{
         font-family: var(--paragraph-SF-Medium);
         font-weight: var(--paragraph-bold);
         font-size: 18px;
@@ -910,7 +778,7 @@
 
         margin: 0%;
     }
-    .botao__login-testes{
+    .botao__login-revisoes{
         font-family: var(--paragraph-SF-Medium);
         font-weight: var(--paragraph-bold);
         font-size: 14px;
@@ -973,7 +841,7 @@
         transition: all .4s ease-out;
     }
     .container__carousel-opnioes{
-        width: 40.375rem;
+        width: 41.375rem;
 
         border-radius: 8px;
 
@@ -998,40 +866,101 @@
         padding-top: 0;
         padding-bottom: 0;
     }
-    .secao__imagem___cards{
-        height: 8.813rem;
+    .item__lista___opinioes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 28.25rem;
+        width: 20.125rem;
 
-        border-radius: 8px;
-        background: linear-gradient(2.02deg, rgba(36, 49, 65, 0.5) -64.1%, rgba(0, 0, 0, 0) 144.19%);
+        border-radius: 6.7451px;
 
-        overflow-y: hidden;
-        overflow-x: hidden;
+        padding-top: 1.563rem;
+        padding-left: 1.188rem;
+        padding-right: 1.188rem;
+        padding-bottom: 1.375rem;
     }
-    .container__card-opniao{
-        height: 25.813rem;
-
-        overflow-y: hidden;
-        overflow-x: hidden;
-        border-radius: 8px;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
-        background-color: #FFFFFF;
+    .secao__perfil-opiniao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
     }
-    .imagem__produto-avaliado{
-        border-radius: 8px;
-        
-        clip-path: inset(6rem 0rem);
-        
-        position: relative;
-        
-        top: -6rem;
+    .icone__opinioes___perfil-opiniao{
+        border-radius: 50%;
+    }
+    .container__info___perfil-opiniao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .3rem;
+    }
+    .nome__perfil-opiniao-card{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-medium);
+        font-size: var(--font-xs);
+        color: #243141;
+    }
+    .profissao__perfil-opiniao{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+        color:  #B6B6B6;
 
-        background: linear-gradient(2.02deg, rgba(36, 49, 65, 0.5) -64.1%, rgba(0, 0, 0, 0) 144.19%);
+        margin: 0%;
+        letter-spacing: .05rem;
+    }
+    .secao__produto-opiniao{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+
+        width: 17.375rem;
+        height: 8.563rem;
+
+        background-image: url("../../Assets/Icones-Secoes/background-produto-opiniao.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin-bottom: 1rem;
+
+    }
+    .secao__avaliacao___produto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+
+        height: 6rem;
+
+        padding-left: 2.313rem;
+        padding-right: 2.313rem;
+    }
+    .avaliacao__produto{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 12px;
+        color:  #243141;
+
+        margin: 0%;
+        letter-spacing: .05rem;
+    }
+    .botao__ver-detalhes{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-bold);
+        font-size: 14px;
+        color:  #243141;
+
+        margin: 0%;
+        letter-spacing: .05rem;
     }
     .container__botao___caroussel-opinioes{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        gap: 3rem;
 
         margin-bottom: .5rem;
     }
@@ -1049,130 +978,29 @@
     .botao__proximo___caroussel-opinioes{
         background-image: url("../../Assets/Setas/SETA-DIREITA-YELLOW.svg");
     }
-    /*---------------------------SECAO-INFO-OPNIAO----------------------------*/
-    .info__card-opiniao{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-bottom: 1.563rem;
-    }
-    .icone__perfil-avaliador{
-        position: relative;
-        top: -2.5rem;
-    }
-    .container__opiniao{
-        position: relative;
-        top: -1rem; 
-    }
-    .opiniao{
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-
-        margin-bottom: 1.063rem;
-    }
-    .titulo__opiniao{
-        font-family: var(--heading-poppins);
-        font-weight: var(--heading-bold);
-        font-size: 16px;
-        color: var(--low-pure);
-
-        line-height: 1.5rem;
-    }
-    .descricao__opiniao{
-        font-family: var(--paragraph-SF-Medium);
-        font-weight: var(--paragraph-bold);
-        font-size: 14px;
-        color: #B6B6B6;
-
-        line-height: 1.5rem;
-        letter-spacing: .015rem;
-
-        margin: 0%;
-    }
-    .container__ico-perfil{
+    .carousel__indicadores-opiniao{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 0.563rem;
-    }
-    .nome__perfil-opiniao{
-        margin: 0%;
 
-        font-family: var(--paragraph-SF-Medium);
-        font-weight: var(--paragraph-medium);
-        font-size: 13px;
-        color:#B6B6B6;
-
-        line-height: 1.5rem;
-        letter-spacing: .015rem;
-
-        margin: 0%;
+        transition: all .4s ease-out;
     }
-    /*---------------------------SECAO-REACAO-OPNIAO----------------------------*/
-    .container__reacao-avaliacao{
-        display: flex;
-        flex-direction: row;
-        gap: 1.875rem;
-
-        width: 15.375rem;
-        
-    }
-    .reacao__usuarios{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    .imagem-usuario__reacao:nth-child(2){
-        position: relative;
-        left: -.7rem;
-    }
-    .imagem-usuario__reacao:nth-child(3){
-        position: relative;
-        left: -1.4rem;
-    }
-    .imagem-usuario__reacao:nth-child(4){
-        position: relative;
-        left: -2.1rem;
-    }
-    .reacao-excedente{
-        position: relative;
-        left: -1.5rem;
-
-        font-family: var(--montserrat);
-        font-weight: var(--heading-medium);
-        font-size: 14px;
-
-        color: #243141;
-
-    }
-    .icones__reacao{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.623rem;
-    }
-    .botao__favoritar-avaliacao{
+    .carousel__indicador-opiniao{
+        background-color: var(--orange-primary);
         border: none;
-        background-color: transparent;
-        background-image: url("/Assets/Vector.svg");
-        background-repeat: no-repeat;
+        visibility: hidden;
+        opacity: 0;
 
-        width: 1.427rem;
-        height: 1.357rem;
+        height: 0.25rem;
+        width: 2.25rem;
+
+        border-radius: 8px;
+
+        transition: all .1s ease-in-out;
     }
-    .botao__curtir-avaliacao{
-        border: none;
-        background-color: transparent;
-        background-image: url("/Assets/ico-curtir.svg");
-        background-repeat: no-repeat;
-        background-position-y: .1rem;
-
-        width: 1.45rem;
-        height: 1.357rem;
+    .carousel__indicador--ativo-opiniao{
+        visibility: visible;
+        opacity: 1;
     }
     /*---------------------------SECAO-TOP-PARTICIPANTES-OPNIAO----------------------------*/
     .secao__top-participantes{
@@ -1315,17 +1143,6 @@
         
         transition: all .4s ease-out;
     }
-    .container__carousel{
-        width: 61rem;
-        height: 21.375rem;
-        overflow-x: hidden;
-        overflow-y: hidden;
-
-        margin-top: 4.625rem;
-        margin-bottom: 2.25rem;
-
-        border-radius: 6.7451px;
-    }
     .container__botao___caroussel{
         display: flex;
         flex-direction: row;
@@ -1344,103 +1161,133 @@
         background-position-y: center;
         padding: 1rem;
     }
-    .botao__anterior___caroussel{
+    .botao__anterior___caroussel-descricao{
         background-image: url("../../Assets/Setas/SETA-ESQUERDA-RED.svg");
     }
-    .botao__proximo___caroussel{
+    .botao__proximo___caroussel-descricao{
         background-image: url("../../Assets/Setas/SETA-DIREITA-RED.svg");
     }
-    .imagem__carousel___descricao{
-        border-radius: 6.7451px;
-        z-index: 1;
-    }
-    .item__lista___descricao{
-        border-radius: 6.7451px;
-    }
-    .container__info___item-descricao{
+    .item__lista___descricoes{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        height: 20.375rem;
+        width: 20.125rem;
 
-        height: 21.375rem;
-        width: 19rem;
+        border-radius: 6.7451px;
 
-        padding-right: 0.688rem;
+        padding-top: 1.563rem;
         padding-left: 1.188rem;
-        padding-top: 0.875rem;
-        padding-bottom: 0.938rem;
-
-        position: relative;
-        top: -21.625rem;
-        
-        z-index: 2;
-
-        background: linear-gradient(360deg, rgba(7, 7, 14, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%), linear-gradient(360deg, rgba(36, 49, 65, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%);
-
-        border-radius: 6.7451px;
+        padding-right: 1.188rem;
+        padding-bottom: 1.375rem;
     }
-    .container__info___descricao{
+    .secao__perfil-descricoes{
         display: flex;
         flex-direction: column;
-        gap: .5rem;
-
-        margin-top: 12.938rem;
-        margin-bottom: 0.688rem;
-        padding-right: 2.125rem;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
     }
-    .titulo__info___descricao{
-        font-family: var(--montserrat);
-        font-weight: var(--heading-bold);
-        font-size: 20px;
-
-        color: #FFFFFF;
+    .icone__descricoes___perfil-descricoes{
+        border-radius: 50%;
     }
-    .descricao__info___descricao{
-        font-family: var(--paragraph-SF-Ultralight);
-        font-weight: var(--paragraph-regular);
+    .container__info___perfil-descricoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .3rem;
+    }
+    .nome__perfil-descricoes{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-medium);
+        font-size: var(--font-xs);
+        color: #243141;
+    }
+    .profissao__perfil-descricoes{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
         font-size: 14px;
-
-        line-height: 20px;
-        letter-spacing: .03rem;
-
-        color: #FFFFFF;
+        color:  #B6B6B6;
 
         margin: 0%;
-        opacity: .8;
+        letter-spacing: .05rem;
     }
-    .container__perfil-botao{
+    .secao__produto-descricao{
         display: flex;
-        flex-direction: row;
+        flex-direction:column;
         align-items: center;
-        justify-content: space-between;
-    }
-    .container__perfil{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.313rem;
-    }
-    .nome__perfil{
-        font-family: var(--paragraph-SF-Ultralight);
-        font-weight: var(--paragraph-regular);
-        font-weight: 400;
-        font-size: 11.8px;
+        justify-content: center;
 
-        letter-spacing: .1rem;
+        width: 17.375rem;
+        height: 8.563rem;
 
-        color: #FFFFFF;
-
-        margin: 0%;
-    }
-    .botao__ver___descricao{
-        padding: 1.3rem 1.6rem;
-
-        background-color: var(--red-primary);
-        background-image: url("../../Assets/Setas/SETA-DIREITA-BRANCA.svg");
+        background-image: url("../../Assets/Icones-Secoes/background-produto-descricoes.svg");
         background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
+        background-size: cover;
+
+        margin-bottom: 1rem;
+
+    }
+    .secao__descricao___produto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+
+        height: 6rem;
+
+        padding-left: 2.313rem;
+        padding-right: 2.313rem;
+    }
+    .descricao__produto{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 12px;
+        color:  #243141;
+
+        margin: 0%;
+        letter-spacing: .05rem;
+    }
+    .botao__ver-detalhes{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-bold);
+        font-size: 14px;
+        color:  #243141;
+
+        margin: 0%;
+        letter-spacing: .05rem;
+    }
+    .container__botao___caroussel-descricao{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 65.013rem;
+        margin-bottom: .5rem;
+    }
+    .carousel__indicadores-descricao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        transition: all .4s ease-out;
+    }
+    .carousel__indicador-descricao{
+        background-color: var(--red-primary);
+        border: none;
+        visibility: hidden;
+        opacity: 0;
+
+        height: 0.25rem;
+        width: 2.25rem;
 
         border-radius: 8px;
+
+        transition: all .1s ease-in-out;
+    }
+    .carousel__indicador--ativo-descricao{
+        visibility: visible;
+        opacity: 1;
     }
     /*---------------------------LOGIN-SECAO-DESCRICAO----------------------------*/
     .container__login-descricao{
@@ -1483,9 +1330,9 @@
         font-weight: var(--heading-bold);
         font-size: var(--font-sm);
         
-        color: var(--low-pure);
+        color: #939393;
 
-        padding-left: 2.563rem;
+        padding-left: 2.9rem;
 
         background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-BLOG.svg");
         background-repeat: no-repeat;
@@ -1501,11 +1348,11 @@
 
         color: var(--subheads);
         letter-spacing: 0.02rem;
+        text-align: center;
 
         margin: 0%;
-    }
-    .secao__cards-blog{
-        margin-right: 3rem;
+
+        width: 22.375rem;
     }
     .lista-blog{
         display: flex;
@@ -1521,7 +1368,7 @@
         transition: all .4s ease-out;
     }
     .container__carousel-blog{
-        width: 60.938rem;
+        width: 62.8rem;
 
         border-radius: 8px;
 
@@ -1546,48 +1393,103 @@
         padding-top: 0;
         padding-bottom: 0;
     }
-    .secao__imagem___cards-blog{
-        height: 8.813rem;
-
-        background: linear-gradient(360deg, rgba(36, 49, 65, 0.5) 0%, rgba(0, 0, 0, 0) 204.26%);
-        overflow-y: hidden;
-        overflow-x: hidden;
-
-    }
-    .container__gradient-blog{
-        width: 18.938rem;
-        height: 8.813rem;
-
-        background: linear-gradient(360deg, rgba(36, 49, 65, 0.5) 0%, rgba(0, 0, 0, 0) 204.26%);
-
-        position: relative;
-        top: -9.2rem;
-    }
-    .container__card-blog{
-        height: 25.813rem;
-        width: 18.938rem;
-
-        overflow-y: hidden;
-        overflow-x: hidden;
-        border-radius: 8px;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
-        background-color: #FFFFFF;
-
+    .item__lista___blog{
         display: flex;
         flex-direction: column;
-        gap: 1rem;
+        align-items: center;
+        height: 20.375rem;
+        width: 20.125rem;
+
+        border-radius: 6.7451px;
+
+        padding-top: 1.563rem;
+        padding-left: 1.188rem;
+        padding-right: 1.188rem;
+        padding-bottom: 1.375rem;
     }
-    .imagem__produto-blog{
-        border-radius: 8px;
-        background: linear-gradient(360deg, rgba(36, 49, 65, 0.5) 0%, rgba(0, 0, 0, 0) 204.26%);
+    .secao__perfil-blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+    .secao__produto-blog{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+
+        width: 17.375rem;
+        height: 8.563rem;
+
+        background-image: url("../../Assets/Icones-Secoes/background-produto-blog.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin-bottom: 1rem;
+
+    }
+    .secao__blog___produto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+
+        height: 6rem;
+
+        padding-left: 2.313rem;
+        padding-right: 2.313rem;
+    }
+    .blog__produto{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 12px;
+        color:  #243141;
+
+        margin: 0%;
+        letter-spacing: .05rem;
+    }
+    .botao__ver-detalhes{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-bold);
+        font-size: 14px;
+        color:  #243141;
+
+        margin: 0%;
+        letter-spacing: .05rem;
     }
     .container__botao___caroussel-blog{
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
-        gap: 3rem;
-
+        justify-content: flex-end;
+        width: 65.013rem;
         margin-bottom: .5rem;
+    }
+    .carousel__indicadores-blog{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        transition: all .4s ease-out;
+    }
+    .carousel__indicador-blog{
+        background-color: #939393;
+        border: none;
+        visibility: hidden;
+        opacity: 0;
+
+        height: 0.25rem;
+        width: 2.25rem;
+
+        border-radius: 8px;
+
+        transition: all .1s ease-in-out;
+    }
+    .carousel__indicador--ativo-blog{
+        visibility: visible;
+        opacity: 1;
     }
     .botao__carrousel-blog{
         border: none;
@@ -1598,91 +1500,10 @@
         padding: 1rem;
     }
     .botao__anterior___caroussel-blog{
-        background-image: url("../../Assets/Setas/SETA-ESQUERDA-YELLOW.svg");
+        background-image: url("../../Assets/Setas/SETA-DIREITA-GREY.svg");
     }
     .botao__proximo___caroussel-blog{
-        background-image: url("../../Assets/Setas/SETA-DIREITA-YELLOW.svg");
-    }
-    /*---------------------------SECAO-INFO-BLOG----------------------------*/
-    .info__card-blog{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        padding-left: 1.5rem;
-        padding-right: 1.5rem;
-        padding-bottom: 1.563rem;
-    }
-    .container__blog{
-        display: flex;
-        flex-direction: column;
-        align-content: space-between;
-        justify-content: space-between;
-
-        height: 14.625rem;
-    }
-    .icone__perfil-blog{
-        position: relative;
-        top: -2.5rem;
-    }
-    .blog{
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-
-        margin-bottom: 1.063rem;
-    }
-    .titulo__blog{
-        font-family: var(--heading-poppins);
-        font-weight: var(--heading-bold);
-        font-size: 16px;
-        color: var(--low-pure);
-
-        line-height: 1.5rem;
-    }
-    .descricao__blog{
-        font-family: var(--paragraph-SF-Medium);
-        font-weight: var(--paragraph-bold);
-        font-size: 13px;
-        color: #B6B6B6;
-
-        line-height: 1.5rem;
-        letter-spacing: .015rem;
-
-        margin: 0%;
-
-        overflow-y: hidden;
-        overflow-x: hidden;
-    }
-    .container__ico-perfil{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.563rem;
-    }
-    .nome__perfil-blog{
-        margin: 0%;
-
-        font-family: var(--paragraph-SF-Medium);
-        font-weight: var(--paragraph-medium);
-        font-size: 13px;
-        color:#B6B6B6;
-
-        line-height: 1.5rem;
-        letter-spacing: .015rem;
-
-        margin: 0%;
-    }
-    .botao__ver___blog{
-        padding: 1.3rem 1.6rem;
-
-        background-color: var(--subheads);
-        background-image: url("../../Assets/Setas/SETA-DIREITA-BRANCA.svg");
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
-
-        border-radius: 8px;
+        background-image: url("../../Assets/Setas/SETA-ESQUERDA-GREY.svg");
     }
     /*---------------------------LOGIN-SECAO-BLOG----------------------------*/
     .container__login-blog{

@@ -1,11 +1,8 @@
 export class CarouselTestes {
-    constructor(anteriorTodosProdutos, proximoTodosProdutos, listaProdutosTodosProdutos, navegacaoTestesTodosProdutos) {
+    constructor(anteriorTodosProdutos, proximoTodosProdutos, listaProdutosTodosProdutos) {
         this.anteriorTodosProdutos = document.querySelector(anteriorTodosProdutos)
         this.proximoTodosProdutos = document.querySelector(proximoTodosProdutos)
         this.listaProdutosTodosProdutos = document.querySelector(listaProdutosTodosProdutos)
-        this.navegacaoTestesTodosProdutos = document.querySelector(navegacaoTestesTodosProdutos)
-
-        this.indicadores = this.getListaIndicadores()
 
 
         this.slides = this.getListaSlides()
@@ -18,16 +15,15 @@ export class CarouselTestes {
         this.anteriorTodosProdutos.addEventListener('click', this.slideAnterior.bind(this))
 
         this.preparaSlides()
+
+        setInterval(this.proximoSlide.bind(this), 5000)
     }
 
     getListaSlides() {
         return Array.from(this.listaProdutosTodosProdutos.children)
     }
-    getListaIndicadores() {
-        return Array.from(this.navegacaoTestesTodosProdutos.children)
-    }
     getTamanhoSlide() {
-        return this.slides[0].getBoundingClientRect().width
+        return this.slides[0].getBoundingClientRect().width + 20
     }
 
     getSlideAtual() {
@@ -55,24 +51,15 @@ export class CarouselTestes {
     }
 
     vaParaSlide(posicao) {
-        const indicadorAtual = this.getIndiceAtual()
         this.indiceDoSlideAtual = posicao
-        const indicadorSelecionado = this.getIndiceAtual()
 
         this.scrollParaSlide(this.getSlideAtual())
-        this.atualizaIndicadores(indicadorAtual, indicadorSelecionado)
     }
 
     scrollParaSlide(slideSelecionado) {
         this.listaProdutosTodosProdutos.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
 
     }
-    atualizaIndicadores(indicadorAtual, indicadorSelecionado){
-
-        indicadorAtual.classList.remove('carousel__indicador--ativo')
-    
-        indicadorSelecionado.classList.add('carousel__indicador--ativo')
-        }
     preparaSlides() {
         this.slides.forEach((slide, i) => {
             slide.style.left = this.tamanhoSlide * i + 'px'

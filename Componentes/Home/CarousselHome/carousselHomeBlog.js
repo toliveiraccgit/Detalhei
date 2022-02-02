@@ -1,9 +1,9 @@
-export class CarouselOpinioes {
-    constructor(anteriorOpinioes, proximoOpinioes, listaProdutosOpinioes, navegacaoOpinioes) {
-        this.anteriorOpinioes = document.querySelector(anteriorOpinioes)
-        this.proximoOpinioes = document.querySelector(proximoOpinioes)
-        this.listaProdutosOpinioes = document.querySelector(listaProdutosOpinioes)
-        this.navegacaoOpinioes = document.querySelector(navegacaoOpinioes)
+export class CarouselBlog {
+    constructor(anteriorBlog, proximoBlog, listaProdutosBlog, navegacaoBlog) {
+        this.anteriorBlog = document.querySelector(anteriorBlog)
+        this.proximoBlog = document.querySelector(proximoBlog)
+        this.listaProdutosBlog = document.querySelector(listaProdutosBlog)
+        this.navegacaoBlog = document.querySelector(navegacaoBlog)
 
         this.indicadoresOpiniao = this.getListaIndicadores()
 
@@ -12,18 +12,18 @@ export class CarouselOpinioes {
 
         this.indiceDoSlideAtual = 0
 
-        this.proximoOpinioes.addEventListener('click', this.proximoSlide.bind(this))
+        this.proximoBlog.addEventListener('click', this.proximoSlide.bind(this))
 
-        this.anteriorOpinioes.addEventListener('click', this.slideAnterior.bind(this))
+        this.anteriorBlog.addEventListener('click', this.slideAnterior.bind(this))
 
         this.preparaSlides()
     }
 
     getListaSlides() {
-        return Array.from(this.listaProdutosOpinioes.children)
+        return Array.from(this.listaProdutosBlog.children)
     }
     getListaIndicadores() {
-        return Array.from(this.navegacaoOpinioes.children)
+        return Array.from(this.navegacaoBlog.children)
     }
     getTamanhoSlide() {
         return this.slides[0].getBoundingClientRect().width
@@ -64,15 +64,15 @@ export class CarouselOpinioes {
     }
 
     scrollParaSlide(slideSelecionado) {
-        this.listaProdutosOpinioes.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
+        this.listaProdutosBlog.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
 
     }
 
     atualizaIndicadores(indicadorAtual, indicadorSelecionado){
 
-    indicadorAtual.classList.remove('carousel__indicador--ativo-opiniao')
+    indicadorAtual.classList.remove('carousel__indicador--ativo-blog')
 
-    indicadorSelecionado.classList.add('carousel__indicador--ativo-opiniao')
+    indicadorSelecionado.classList.add('carousel__indicador--ativo-blog')
     }
 
     preparaSlides() {
