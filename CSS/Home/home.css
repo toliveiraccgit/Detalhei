@@ -612,6 +612,31 @@
 
         background-color: #F1F1F1;
         border-radius: 9px;
+        opacity: 1;
+    }
+    .item__lista-opacidade{
+        transition: all .2s ease-in-out;
+        animation: animaOpacidadeCarousel .5s ease-in-out forwards;
+    }
+    .item__lista-opacidade-0{
+        animation: tiraOpacidadeCarousel .5s ease-in-out forwards;
+        transition: all .2s ease-in-out;
+    }
+    @keyframes animaOpacidadeCarousel {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes tiraOpacidadeCarousel {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
     }
     /*---------------------------LOGIN-SECAO-REVISOES----------------------------*/
     .container__login-revisoes{

@@ -51,14 +51,29 @@ export class CarouselTestes {
     }
 
     vaParaSlide(posicao) {
+        const slideAtual = this.getSlideAtual()
         this.indiceDoSlideAtual = posicao
+        const slideSelecionado = this.getSlideAtual()
 
         this.scrollParaSlide(this.getSlideAtual())
+        this.atualizaOpacidadeSlides(slideAtual, slideSelecionado)
     }
+    
+    atualizaOpacidadeSlides(slideAtual, slideSelecionado){
+
+        slideSelecionado.classList.add('item__lista-opacidade')
+        slideAtual.classList.remove('item__lista-opacidade')
+        
+        slideAtual.classList.add('item__lista-opacidade-0')
+       
+        slideSelecionado.classList.remove('item__lista-opacidade-0')
+        slideSelecionado.classList.add('item__lista-opacidade')
+        
+    }
+
 
     scrollParaSlide(slideSelecionado) {
         this.listaProdutosTodosProdutos.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
-
     }
     preparaSlides() {
         this.slides.forEach((slide, i) => {

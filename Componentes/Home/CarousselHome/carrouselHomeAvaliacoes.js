@@ -26,7 +26,7 @@ export class CarouselAvaliacoes {
         return Array.from(this.navegacaoAvaliacoes.children)
     }
     getTamanhoSlide() {
-        return this.slides[0].getBoundingClientRect().width
+        return this.slides[0].getBoundingClientRect().width - 60
     }
 
     getSlideAtual() {

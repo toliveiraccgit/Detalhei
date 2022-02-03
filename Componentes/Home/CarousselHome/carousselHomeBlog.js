@@ -26,7 +26,7 @@ export class CarouselBlog {
         return Array.from(this.navegacaoBlog.children)
     }
     getTamanhoSlide() {
-        return this.slides[0].getBoundingClientRect().width
+        return this.slides[0].getBoundingClientRect().width - 60
     }
 
     getSlideAtual() {
