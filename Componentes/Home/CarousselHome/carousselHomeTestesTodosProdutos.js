@@ -23,7 +23,7 @@ export class CarouselTestes {
         return Array.from(this.listaProdutosTodosProdutos.children)
     }
     getTamanhoSlide() {
-        return this.slides[0].getBoundingClientRect().width + 20
+        return this.slides[0].getBoundingClientRect().width + 30
     }
 
     getSlideAtual() {
