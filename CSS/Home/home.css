@@ -550,10 +550,10 @@
         flex-direction: column;
         align-items: center;
 
-        width: 69rem;
+        width: 71rem;
 
         padding-top: 0;
-        padding-bottom: 4.625rem;
+        padding-bottom: 2.75rem;
     }
     .lista__revisoes{
         display: flex;
@@ -612,6 +612,35 @@
 
         background-color: #F1F1F1;
         border-radius: 9px;
+    }
+    /*---------------------------LOGIN-SECAO-REVISOES----------------------------*/
+    .container__login-revisoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .titulo__login___revisoes{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+
+        color: var(--subheads);
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+    }
+    .botao__login-revisoes{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        padding: 1rem 4.188rem;
+
+        background-color: var(--green-primary);
+        border-radius: 8px;
+
+        color: #FFFFFF;
     }
     /*---------------------------SECAO-PRODUTO-REVISOES----------------------------*/
     .secao__produto-revisado{

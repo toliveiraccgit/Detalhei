@@ -1,0 +1,44 @@
+@media (min-width:0px){
+
+    .conteudo{
+        display: flex;
+        flex-direction: row;
+    }
+    /*-----------------SECAO-BACKGROUND-COLOR-----------------*/
+    .secao__background-color{
+        height: 100vh;
+        width: 33vw;
+        
+        padding-top: 6rem;
+        padding-left: 2.5rem;
+        padding-right: 3.313rem;
+
+        animation: mudaBackground 9s ease-in alternate infinite;
+
+        background-color: var(--blue-primary);
+
+    }
+    @keyframes mudaBackground {
+        0%{
+            background-color: var(--blue-primary);
+        }
+        50%{
+            background-color: var(--orange-primary);
+        }
+        100%{
+            background-color: var(--green-primary);
+        }
+    }
+    .descricao__background-color{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 30px;
+
+        color: #FFFFFF;
+
+        margin: 0%;
+        margin-top: 2rem;
+    }
+
+
+}
