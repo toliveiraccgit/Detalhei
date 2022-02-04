@@ -61,13 +61,11 @@ export class CarouselTestes {
     
     atualizaOpacidadeSlides(slideAtual, slideSelecionado){
 
-        slideSelecionado.classList.add('item__lista-opacidade')
         slideAtual.classList.remove('item__lista-opacidade')
         
         slideAtual.classList.add('item__lista-opacidade-0')
        
         slideSelecionado.classList.remove('item__lista-opacidade-0')
-        slideSelecionado.classList.add('item__lista-opacidade')
         
     }
 

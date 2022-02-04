@@ -131,6 +131,8 @@
         color: var(--low-pure);
 
         margin: 0%;
+
+        width: 39.25rem;
     }
     .subtitulo__banner___intro{
         font-family: var(--paragraph-SF-Medium);

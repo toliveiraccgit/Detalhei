@@ -99,6 +99,168 @@ html{
     font-family: var(--heading-poppins);
 }
 
+.container__titulo___animacao{
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    width: 26rem;
+    height: 4.2rem;
+}
+.destaque__blue-banner{
+    color: var(--blue-primary);
+    font-family: var(--heading-poppins);
+    font-weight: var(--heading-bold);
+    font-size: 56px;
+
+    animation: animaDestaqueBlue 10s  alternate infinite;
+}
+.destaque__green-banner{
+    color: var(--green-primary);
+    font-family: var(--heading-poppins);
+    font-weight: var(--heading-bold);
+    font-size: 56px;
+
+    animation: animaDestaqueGreen 10s alternate infinite;
+    
+    position: relative;
+    top: -4rem;
+}
+.destaque__yellow-banner{
+    color: var(--orange-primary);
+    font-family: var(--heading-poppins);
+    font-weight: var(--heading-bold);
+    font-size: 56px;
+
+    animation: animaDestaqueYellow 10s  alternate infinite;
+    
+    position: relative;
+    top: -8rem;
+    
+}
+.destaque__red-banner{
+    color: var(--red-primary);
+    font-family: var(--heading-poppins);
+    font-weight: var(--heading-bold);
+    font-size: 56px;
+
+    animation: animaDestaqueRed 10s  alternate infinite;
+    
+    position: relative;
+    top: -12rem;
+}
+
+@keyframes animaDestaqueBlue {
+    0%{
+        display: block;
+        opacity: 1;
+
+    }
+    25%{
+        display: block;
+        opacity: 1;
+    }
+    45%{
+        display: none;
+        opacity: 0;
+    }
+    50%{
+        display: none;
+        opacity: 0;
+    }
+    75%{
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+    }
+}
+
+@keyframes animaDestaqueGreen {
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    25%{
+        display: none;
+        opacity: 0;
+    }
+    50%{
+        display: block;
+        opacity: 1;
+        
+    }
+    70%{
+        display: none;
+        opacity: 0;
+    }
+    75%{
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+    }
+}
+
+@keyframes animaDestaqueYellow {
+    0%{
+        display: none;
+        opacity: 0;
+
+    }
+    25%{
+        display: none;
+        opacity: 0;
+
+    }
+    50%{
+        display: none;
+        opacity: 0;
+
+    }
+    75%{
+        display: block;
+        opacity: 1;
+    }
+    95%{
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        display: none;
+        opacity: 0;
+
+    }
+}
+
+@keyframes animaDestaqueRed {
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    25%{
+        display: none;
+        opacity: 0;
+    }
+    50%{
+        display: none;
+        opacity: 0;
+    }
+    75%{
+        display: none;
+        opacity: 0;
+    }
+    100%{
+        display: block;
+        opacity: 1;
+    }
+}
+
 .gradient{
     position: relative;
     background: linear-gradient(360deg, rgba(7, 7, 14, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%);
