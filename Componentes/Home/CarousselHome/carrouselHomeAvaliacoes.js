@@ -1,11 +1,9 @@
 export class CarouselAvaliacoes {
-    constructor(anteriorAvaliacoes, proximoAvaliacoes, listaProdutosAvaliacoes, navegacaoAvaliacoes) {
+    constructor(anteriorAvaliacoes, proximoAvaliacoes, listaProdutosAvaliacoes) {
         this.anteriorAvaliacoes = document.querySelector(anteriorAvaliacoes)
         this.proximoAvaliacoes = document.querySelector(proximoAvaliacoes)
         this.listaProdutosAvaliacoes = document.querySelector(listaProdutosAvaliacoes)
-        this.navegacaoAvaliacoes = document.querySelector(navegacaoAvaliacoes)
 
-        this.indicadores = this.getListaIndicadores()
 
         this.slides = this.getListaSlides()
         this.tamanhoSlide = this.getTamanhoSlide()
@@ -17,16 +15,15 @@ export class CarouselAvaliacoes {
         this.anteriorAvaliacoes.addEventListener('click', this.slideAnterior.bind(this))
 
         this.preparaSlides()
+
+        setInterval(this.proximoSlide.bind(this), 5000)
     }
 
     getListaSlides() {
         return Array.from(this.listaProdutosAvaliacoes.children)
     }
-    getListaIndicadores() {
-        return Array.from(this.navegacaoAvaliacoes.children)
-    }
     getTamanhoSlide() {
-        return this.slides[0].getBoundingClientRect().width - 60
+        return this.slides[0].getBoundingClientRect().width + 30
     }
 
     getSlideAtual() {
@@ -35,7 +32,6 @@ export class CarouselAvaliacoes {
     getIndiceAtual() {
         return this.indicadores[this.indiceDoSlideAtual]
     }
-
     proximoSlide() {
         let proximaPosicao = this.indiceDoSlideAtual + 1
         if (proximaPosicao > this.slides.length - 1) {
@@ -55,26 +51,28 @@ export class CarouselAvaliacoes {
     }
 
     vaParaSlide(posicao) {
-        const indicadorAtual = this.getIndiceAtual()
+        const slideAtual = this.getSlideAtual()
         this.indiceDoSlideAtual = posicao
-        const indicadorSelecionado = this.getIndiceAtual()
+        const slideSelecionado = this.getSlideAtual()
 
         this.scrollParaSlide(this.getSlideAtual())
-        this.atualizaIndicadores(indicadorAtual, indicadorSelecionado)
+        this.atualizaOpacidadeSlides(slideAtual, slideSelecionado)
     }
+    
+    atualizaOpacidadeSlides(slideAtual, slideSelecionado){
+
+        slideAtual.classList.remove('item__lista-opacidade')
+        
+        slideAtual.classList.add('item__lista-opacidade-0')
+       
+        slideSelecionado.classList.remove('item__lista-opacidade-0')
+        
+    }
+
 
     scrollParaSlide(slideSelecionado) {
         this.listaProdutosAvaliacoes.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
-
     }
-
-    atualizaIndicadores(indicadorAtual, indicadorSelecionado){
-
-    indicadorAtual.classList.remove('carousel__indicador--ativo')
-
-    indicadorSelecionado.classList.add('carousel__indicador--ativo')
-    }
-
     preparaSlides() {
         this.slides.forEach((slide, i) => {
             slide.style.left = this.tamanhoSlide * i + 'px'

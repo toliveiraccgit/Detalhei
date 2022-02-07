@@ -181,8 +181,31 @@
 
         box-shadow: 0px 30px 30px rgba(36, 49, 65, 0.05);
     }
-    .card-avaliacao__banner-info, .card-opiniao__banner-info{
-        margin-left: 2rem;
+    .card-avaliacao__banner-info{
+       width: 30.625rem;
+
+       border-bottom: 2px solid var(--blue-primary);
+       border-radius: 2px;
+    }
+
+    .card-teste__banner-info{
+        width: 27.063rem;
+ 
+        border-bottom: 2px solid var(--green-primary);
+        border-radius: 2px;
+    }
+    .card-opiniao__banner-info{
+        width: 24.5rem;
+ 
+        border-bottom: 2px solid var(--orange-primary);
+        border-radius: 2px;
+    }
+
+    .card-descrito__banner-info{
+        width: 22.255rem;
+ 
+        border-bottom: 2px solid var(--blue-primary);
+        border-radius: 2px;
     }
     .titulo__card___banner-info{
         color: #243141;
@@ -311,205 +334,9 @@
 
         margin: 0%;
     }
-    /*---------------------------LISTA-SECAO-AVALIACOES----------------------------*/
-    .lista__avaliacoes{
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        
-        width: auto;
-        
-        transition: all .4s ease-out;
-    }
-    .container__carousel {
-        width: 66.5rem;
-        height: 30.25rem;
-
-        overflow-x: hidden;
-        overflow-y: hidden;
-        margin-top: 4.625rem;
-        margin-bottom: 2.25rem;
-        border-radius: 6.7451px;
-        
-
-        padding-left: 2rem;
-    }.container__botao___caroussel-avaliacoes{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-
-        width: 65.013rem;
-
-        margin-bottom: .5rem;
-    }
-    .botao__carrousel-avaliacoes{
-        border: none;
-        background-color: transparent;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        background-position-y: center;
-        padding: 1rem;
-    }
-    .botao__anterior___caroussel-avaliacoes{
-        background-image: url("../../Assets/Setas/SETA-ESQUERDA-BLUE.svg");
-    }
-    .botao__proximo___caroussel-avaliacoes{
-        background-image: url("../../Assets/Setas/SETA-DIREITA-BLUE.svg");
-    }
-    .carousel__indicadores{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        height: 0.25rem;
-
-        transition: all .4s ease-out;
-
-        background: rgba(196, 196, 196, 0.2);
-        border-radius: 8px;
-    }
-    .carousel__indicador{
-        background-color: var(--blue-primary);
-        border: none;
-        visibility: hidden;
-        opacity: 0;
-
-        height: 0.25rem;
-        width: 2.25rem;
-
-        border-radius: 8px;
-
-        transition: all .1s ease-in-out;
-    }
-    .carousel__indicador--ativo{
-        visibility: visible;
-        opacity: 1;
-    }
-    .item__lista___avaliacoes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 28.25rem;
-        width: 20.125rem;
-
-        border: 1px solid #F1F1F1;
-        border-radius: 6.7451px;
-
-        padding-top: 1.563rem;
-        padding-left: 1.188rem;
-        padding-right: 1.188rem;
-        padding-bottom: 1.375rem;
-
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
-    }
-    .secao__perfil-avaliador{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.75rem;
-        margin-bottom: 1.25rem;
-    }
-    .icone__avaliacoes___perfil-avaliador{
-        border-radius: 50%;
-    }
-    .container__info___perfil-avaliador{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: .3rem;
-    }
-    .nome__perfil-avaliador{
-        font-family: var(--paragraph-SF-Medium);
-        font-weight: var(--heading-medium);
-        font-size: var(--font-xs);
-        color: #243141;
-    }
-    .profissao__perfil-avaliador{
-        font-family: var(--paragraph-SF-Medium);
-        font-weight: var(--paragraph-bold);
-        font-size: 14px;
-        color:  #B6B6B6;
-
-        margin: 0%;
-        letter-spacing: .05rem;
-    }
-    .secao__produto-avaliado{
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-
-        width: 17.375rem;
-        height: 8.563rem;
-
-        background-image: url("../../Assets/Icones-Secoes/background-produto-avaliacoes.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        margin-bottom: 1rem;
-
-    }
-    .secao__avaliacao___produto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;
-
-        height: 6rem;
-
-        padding-left: 2.313rem;
-        padding-right: 2.313rem;
-    }
-    .avaliacao__produto{
-        font-family: var(--paragraph-SF-Medium);
-        font-weight: var(--paragraph-bold);
-        font-size: 12px;
-        color:  #243141;
-
-        margin: 0%;
-        letter-spacing: .05rem;
-    }
-    .botao__ver-detalhes{
-        font-family: var(--paragraph-SF-Semibold);
-        font-weight: var(--heading-bold);
-        font-size: 14px;
-        color:  #243141;
-
-        margin: 0%;
-        letter-spacing: .05rem;
-    }
-    /*---------------------------LOGIN-SECAO-AVALIACOES----------------------------*/
-    .container__login-avaliacoes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-    }
-    .titulo__login___avaliacoes{
-        font-family: var(--paragraph-SF-Medium);
-        font-weight: var(--paragraph-bold);
-        font-size: 18px;
-
-        color: var(--subheads);
-        letter-spacing: 0.02rem;
-
-        margin: 0%;
-    }
-    .botao__login-avaliacoes{
-        font-family: var(--paragraph-SF-Medium);
-        font-weight: var(--paragraph-bold);
-        font-size: 14px;
-
-        padding: 1rem 4.188rem;
-
-        background-color: var(--blue-primary);
-        border-radius: 8px;
-
-        color: #FFFFFF;
-    }
+    
     /*---------------------------CABECALHO-SECAO-TESTES----------------------------*/
-    .secao__revisoes{
+    .secao__avaliacoes{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -519,40 +346,8 @@
         padding-top: 0;
         padding-bottom: 11.5rem;
     }
-    .container__cabecalho___revisoes{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-    .titulo__cabecalho___revisoes{
-        font-family: var(--paragraph-SF-Bold);
-        font-weight: var(--heading-bold);
-        font-size: var(--font-sm);
-        
-        color: var(--low-pure);
-
-        padding-left: 2.563rem;
-
-        background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-VIDEO.svg");
-        background-repeat: no-repeat;
-        background-position-y: center;
-        background-position-x: left;
-
-        margin: 0%;
-    }
-    .subtitulo__cabecalho___revisoes{
-        font-family: var(--paragraph-SF-Medium);
-        font-weight: var(--paragraph-bold);
-        font-size: 16px;
-
-        color: var(--subheads);
-        letter-spacing: 0.02rem;
-
-        margin: 0%;
-    }
     /*---------------------------SECAO-revisoes-TODOS-PROUTOS---------------------------*/
-    .secao__revisoes___aba{
+    .secao__avaliacoes___aba{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -562,7 +357,7 @@
         padding-top: 0;
         padding-bottom: 2.75rem;
     }
-    .lista__revisoes{
+    .lista__avaliacoes{
         display: flex;
         flex-direction: row;
         gap: 2rem;
@@ -571,7 +366,7 @@
         
         transition: all 1s ease-in-out;
     }
-    .container__carousel___revisoes{
+    .container__carousel___avaliacoes{
         width: 71rem;
         height: auto;
         overflow-x: hidden;
@@ -583,7 +378,7 @@
         border-radius: 6.7451px;
         transition: all 1s ease-in-out;
     }
-    .container__botao___caroussel-revisoes{
+    .container__botao___caroussel-avaliacao{
         display: none;
         flex-direction: row;
         justify-content: flex-end;
@@ -592,7 +387,7 @@
 
         margin-bottom: .5rem;
     }
-    .botao__carrousel-revisoes{
+    .botao__carrousel-avaliacao{
         border: none;
         background-color: transparent;
         background-repeat: no-repeat;
@@ -600,13 +395,13 @@
         background-position-y: center;
         padding: 1rem;
     }
-    .botao__anterior___caroussel-revisoes{
+    .botao__anterior___caroussel-avaliacao{
         background-image: url("../../Assets/Setas/SETA-ESQUERDA-GREEN.svg");
     }
-    .botao__proximo___caroussel-revisoes{
+    .botao__proximo___caroussel-avaliacao{
         background-image: url("../../Assets/Setas/SETA-DIREITA-GREEN.svg");
     }
-    .item__lista___revisoes{
+    .item__lista___avaliacoes{
         display: flex;
         flex-direction: row;
         gap: 8rem;
@@ -645,7 +440,204 @@
             opacity: 0;
         }
     }
-    /*---------------------------LOGIN-SECAO-REVISOES----------------------------*/
+    /*---------------------------LOGIN-SECAO-avaliacoes----------------------------*/
+    .container__login-avaliacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .titulo__login___avaliacoes{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+
+        color: var(--subheads);
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+    }
+    .botao__login-avaliacoes{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        padding: 1rem 4.188rem;
+
+        background-color: var(--blue-primary);
+        border-radius: 8px;
+
+        color: #FFFFFF;
+    }
+    /*---------------------------SECAO-PRODUTO-avaliacoes----------------------------*/
+    .secao__produto-avaliacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .container__sombra{
+        background-image: url("../../Assets/Vetores/imagem-sombra.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+
+        width: 17.688rem;
+        height: 6.813rem;
+    }
+    .container__info___item-avaliacao{
+        display: flex;
+        flex-direction: column;
+
+        height: 21.375rem;
+        width: 19rem;
+
+        padding-right: 0.688rem;
+        padding-left: 1.188rem;
+        padding-top: 0.875rem;
+        padding-bottom: 0.938rem;
+
+        position: relative;
+        top: -21.625rem;
+        
+        z-index: 2;
+
+        background: linear-gradient(360deg, rgba(7, 7, 14, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%), linear-gradient(360deg, rgba(36, 49, 65, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%);
+
+        border-radius: 6.7451px;
+    }
+    /*---------------------------SECAO-REVISOR-REVISOES----------------------------*/
+    .secao__avaliador-produto{
+        width: 40.063rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .container__avaliacoes{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.875rem;
+
+        margin-bottom: 1.813rem;
+
+        margin-right: 3.375rem;
+    }
+    .titulo__avaliador{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-bold);
+        font-size: var(--font-xs);
+        
+        color: #243141;
+
+        width: 34.938rem;
+    }
+    .descricao__avaliador{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        width: 37.688rem;
+
+        color: #718096;
+        letter-spacing: 0.02rem;
+        line-height: 160%;
+
+        margin: 0%;
+    }
+    .botao__detalhes-avaliador{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-medium);
+        font-size: 14px;
+        
+        color: #FFFFFF;
+
+        background-color: var(--blue-primary);
+
+        padding: 0.875rem 1.625rem;
+        
+        border-radius: 8px;
+    }
+    .container__avaliador{
+        display: flex;
+        flex-direction: column;
+        gap: 1.313rem;
+
+        width: 20.813rem;
+        height: 10.438rem;
+
+        background-color: var(--blue-primary);
+
+        border-radius: 9px;
+
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        padding-top: 0.625rem;
+    }
+    .cabecalho__container___avaliador{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .titulo__cabecalho___avaliador{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 20px;
+
+        color: #FFFFFF;
+    }
+    .nota__avaliador{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 22px;
+
+        color: #FFFFFF;
+
+        margin: 0%;
+
+        padding-left: 1.4rem;
+        background-image: url("../../Assets/Vetores/icone-star-gold.svg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: .15rem;
+    }
+    .container__perfil___avaliador{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.875rem;
+    }
+    .foto__perfil-avaliador{
+        border-radius: 50%;
+    }
+    .container__info___avaliador{
+        display: flex;
+        flex-direction: column;
+        gap: 0.35rem;
+    }
+    .nome__perfil___avaliador{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-medium);
+        font-size: 24px;
+
+        color: #FFFFFF;
+    }
+    .profissao__perfil___avaliador{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        color: #FAFAFA;
+
+        margin: 0%;
+
+        letter-spacing: .02rem;
+    }
+    /*---------------------------LOGIN-SECAO-AVALIACOES----------------------------*/
     .container__login-revisoes{
         display: flex;
         flex-direction: column;
@@ -669,180 +661,222 @@
 
         padding: 1rem 4.188rem;
 
-        background-color: var(--green-primary);
+        background-color: var(--blue-primary);
         border-radius: 8px;
 
         color: #FFFFFF;
     }
-    /*---------------------------SECAO-PRODUTO-REVISOES----------------------------*/
-    .secao__produto-revisado{
+    /*---------------------------CABECALHO-SECAO-AVALIACOES----------------------------*/
+    .container__cabecalho___revisoes{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1rem;
     }
-    .container__sombra{
-        background-image: url("../../Assets/Vetores/imagem-sombra.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position-x: center;
-        background-position-y: center;
-
-        width: 17.688rem;
-        height: 6.813rem;
-    }
-    .container__info___item-revisoes{
-        display: flex;
-        flex-direction: column;
-
-        height: 21.375rem;
-        width: 19rem;
-
-        padding-right: 0.688rem;
-        padding-left: 1.188rem;
-        padding-top: 0.875rem;
-        padding-bottom: 0.938rem;
-
-        position: relative;
-        top: -21.625rem;
-        
-        z-index: 2;
-
-        background: linear-gradient(360deg, rgba(7, 7, 14, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%), linear-gradient(360deg, rgba(36, 49, 65, 0.69) 29.06%, rgba(0, 0, 0, 0) 149.75%);
-
-        border-radius: 6.7451px;
-    }
-    /*---------------------------SECAO-REVISOR-REVISOES----------------------------*/
-    .secao__revisao-produto{
-        width: 40.063rem;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-end;
-    }
-    .container__revisao{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.875rem;
-
-        margin-bottom: 1.813rem;
-
-        margin-right: 3.375rem;
-    }
-    .titulo__revisao{
-        font-family: var(--paragraph-SF-Semibold);
+    .titulo__cabecalho___revisoes{
+        font-family: var(--paragraph-SF-Bold);
         font-weight: var(--heading-bold);
-        font-size: var(--font-xs);
+        font-size: var(--font-sm);
         
-        color: #243141;
+        color: var(--low-pure);
 
-        width: 34.938rem;
+        padding-left: 2.563rem;
+
+        background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-VIDEO.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: left;
+
+        margin: 0%;
     }
-    .descricao__revisao{
+    .subtitulo__cabecalho___revisoes{
         font-family: var(--paragraph-SF-Medium);
         font-weight: var(--paragraph-bold);
         font-size: 16px;
 
-        width: 37.688rem;
-
-        color: #718096;
+        color: var(--subheads);
         letter-spacing: 0.02rem;
-        line-height: 160%;
 
         margin: 0%;
     }
-    .botao__detalhes-revisao{
-        font-family: var(--paragraph-SF-Semibold);
-        font-weight: var(--heading-medium);
-        font-size: 14px;
-        
-        color: #FFFFFF;
-
-        background-color: var(--green-primary);
-
-        padding: 0.875rem 1.625rem;
-        
-        border-radius: 8px;
-    }
-    .container__revisor{
+     /*---------------------------LISTA-SECAO-AVALIACOES----------------------------*/
+    .secao__revisoes{
         display: flex;
-        flex-direction: column;
-        gap: 1.313rem;
+        flex-direction:column;
+        align-items: center;
 
-        width: 20.813rem;
-        height: 10.438rem;
+        gap: 2.25rem;
 
-        background-color: var(--green-primary);
-
-        border-radius: 9px;
-
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        padding-top: 0.625rem;
+        padding-bottom: 11.5rem;
     }
-    .cabecalho__container___revisor{
+    .lista__revisao{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
+        gap: 2rem;
+        
+        width: auto;
+        
+        transition: all .4s ease-out;
     }
-    .titulo__cabecalho___revisor{
-        font-family: var(--paragraph-SF-Medium);
-        font-weight: var(--paragraph-bold);
-        font-size: 20px;
+    .container__carousel {
+        width: 66.5rem;
+        height: 30.25rem;
 
-        color: #FFFFFF;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        margin-top: 4.625rem;
+        margin-bottom: 0rem;
+        border-radius: 6.7451px;
+        
+
+        padding-left: 2rem;
+    }.container__botao___caroussel-revisoes{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+
+        width: 65.013rem;
+
+        margin-bottom: .5rem;
     }
-    .nota__revisao{
-        font-family: var(--heading-poppins);
-        font-weight: var(--heading-bold);
-        font-size: 22px;
-
-        color: #FFFFFF;
-
-        margin: 0%;
-
-        padding-left: 1.4rem;
-        background-image: url("../../Assets/Vetores/icone-star-gold.svg");
+    .botao__carrousel-revisoes{
+        border: none;
+        background-color: transparent;
         background-repeat: no-repeat;
-        background-position-x: left;
-        background-position-y: .15rem;
+        background-position-x: center;
+        background-position-y: center;
+        padding: 1rem;
     }
-    .container__perfil___revisor{
+    .botao__anterior___caroussel-revisoes{
+        background-image: url("../../Assets/Setas/SETA-ESQUERDA-GREEN.svg");
+    }
+    .botao__proximo___caroussel-revisoes{
+        background-image: url("../../Assets/Setas/SETA-DIREITA-GREEN.svg");
+    }
+    .carousel__indicadores{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 0.875rem;
+        height: 0.25rem;
+
+        transition: all .4s ease-out;
+
+        background: rgba(196, 196, 196, 0.2);
+        border-radius: 8px;
     }
-    .foto__perfil-revisor{
-        border-radius: 50%;
+    .carousel__indicador{
+        background-color: var(--green-primary);
+        border: none;
+        visibility: hidden;
+        opacity: 0;
+
+        height: 0.25rem;
+        width: 2.25rem;
+
+        border-radius: 8px;
+
+        transition: all .1s ease-in-out;
     }
-    .container__info___revisor{
+    .carousel__indicador--ativo{
+        visibility: visible;
+        opacity: 1;
+    }
+    .item__lista___revisao{
         display: flex;
         flex-direction: column;
-        gap: 0.35rem;
+        align-items: center;
+        height: 28.25rem;
+        width: 20.125rem;
+
+        border: 1px solid #F1F1F1;
+        border-radius: 6.7451px;
+
+        padding-top: 1.563rem;
+        padding-left: 1.188rem;
+        padding-right: 1.188rem;
+        padding-bottom: 1.375rem;
+
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.05);
     }
-    .nome__perfil___revisor{
+    .secao__perfil-avaliador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        margin-bottom: 1.25rem;
+    }
+    .icone__revisao___perfil-avaliador{
+        border-radius: 50%;
+    }
+    .container__info___perfil-avaliador{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .3rem;
+    }
+    .nome__perfil-avaliador{
         font-family: var(--paragraph-SF-Medium);
         font-weight: var(--heading-medium);
-        font-size: 24px;
-
-        color: #FFFFFF;
+        font-size: var(--font-xs);
+        color: #243141;
     }
-    .profissao__perfil___revisor{
-        font-family: var(--paragraph-SF-Light);
+    .profissao__perfil-avaliador{
+        font-family: var(--paragraph-SF-Medium);
         font-weight: var(--paragraph-bold);
         font-size: 14px;
-
-        color: #FAFAFA;
+        color:  #B6B6B6;
 
         margin: 0%;
-
-        letter-spacing: .02rem;
+        letter-spacing: .05rem;
     }
-    /*---------------------------LOGIN-SECAO-AVALIACOES----------------------------*/
+    .secao__produto-avaliado{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+
+        width: 17.375rem;
+        height: 8.563rem;
+
+        background-image: url("../../Assets/Icones-Secoes/background-produto-revisoes.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        margin-bottom: 1rem;
+
+    }
+    .secao__avaliacao___produto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+
+        height: 6rem;
+
+        padding-left: 2.313rem;
+        padding-right: 2.313rem;
+    }
+    .avaliacao__produto{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 12px;
+        color:  #243141;
+
+        margin: 0%;
+        letter-spacing: .05rem;
+    }
+    .botao__ver-detalhes{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-bold);
+        font-size: 14px;
+        color:  #243141;
+
+        margin: 0%;
+        letter-spacing: .05rem;
+    }
+    /*---------------------------LOGIN-SECAO-revisao----------------------------*/
     .container__login-revisoes{
         display: flex;
         flex-direction: column;

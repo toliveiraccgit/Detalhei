@@ -1,29 +1,32 @@
 export class CarouselTestes {
-    constructor(anteriorTodosProdutos, proximoTodosProdutos, listaProdutosTodosProdutos) {
-        this.anteriorTodosProdutos = document.querySelector(anteriorTodosProdutos)
-        this.proximoTodosProdutos = document.querySelector(proximoTodosProdutos)
-        this.listaProdutosTodosProdutos = document.querySelector(listaProdutosTodosProdutos)
+    constructor(anteriorTestes, proximoTestes, listaProdutosTestes, navegacaoTestes) {
+        this.anteriorTestes = document.querySelector(anteriorTestes)
+        this.proximoTestes = document.querySelector(proximoTestes)
+        this.listaProdutosTestes = document.querySelector(listaProdutosTestes)
+        this.navegacaoTestes = document.querySelector(navegacaoTestes)
 
+        this.indicadores = this.getListaIndicadores()
 
         this.slides = this.getListaSlides()
         this.tamanhoSlide = this.getTamanhoSlide()
 
         this.indiceDoSlideAtual = 0
 
-        this.proximoTodosProdutos.addEventListener('click', this.proximoSlide.bind(this))
+        this.proximoTestes.addEventListener('click', this.proximoSlide.bind(this))
 
-        this.anteriorTodosProdutos.addEventListener('click', this.slideAnterior.bind(this))
+        this.anteriorTestes.addEventListener('click', this.slideAnterior.bind(this))
 
         this.preparaSlides()
-
-        setInterval(this.proximoSlide.bind(this), 5000)
     }
 
     getListaSlides() {
-        return Array.from(this.listaProdutosTodosProdutos.children)
+        return Array.from(this.listaProdutosTestes.children)
+    }
+    getListaIndicadores() {
+        return Array.from(this.navegacaoTestes.children)
     }
     getTamanhoSlide() {
-        return this.slides[0].getBoundingClientRect().width + 30
+        return this.slides[0].getBoundingClientRect().width - 60
     }
 
     getSlideAtual() {
@@ -32,6 +35,7 @@ export class CarouselTestes {
     getIndiceAtual() {
         return this.indicadores[this.indiceDoSlideAtual]
     }
+
     proximoSlide() {
         let proximaPosicao = this.indiceDoSlideAtual + 1
         if (proximaPosicao > this.slides.length - 1) {
@@ -51,28 +55,26 @@ export class CarouselTestes {
     }
 
     vaParaSlide(posicao) {
-        const slideAtual = this.getSlideAtual()
+        const indicadorAtual = this.getIndiceAtual()
         this.indiceDoSlideAtual = posicao
-        const slideSelecionado = this.getSlideAtual()
+        const indicadorSelecionado = this.getIndiceAtual()
 
         this.scrollParaSlide(this.getSlideAtual())
-        this.atualizaOpacidadeSlides(slideAtual, slideSelecionado)
+        this.atualizaIndicadores(indicadorAtual, indicadorSelecionado)
     }
-    
-    atualizaOpacidadeSlides(slideAtual, slideSelecionado){
-
-        slideAtual.classList.remove('item__lista-opacidade')
-        
-        slideAtual.classList.add('item__lista-opacidade-0')
-       
-        slideSelecionado.classList.remove('item__lista-opacidade-0')
-        
-    }
-
 
     scrollParaSlide(slideSelecionado) {
-        this.listaProdutosTodosProdutos.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
+        this.listaProdutosTestes.style.transform = 'translateX(-' + slideSelecionado.style.left + ')'
+
     }
+
+    atualizaIndicadores(indicadorAtual, indicadorSelecionado){
+
+    indicadorAtual.classList.remove('carousel__indicador--ativo')
+
+    indicadorSelecionado.classList.add('carousel__indicador--ativo')
+    }
+
     preparaSlides() {
         this.slides.forEach((slide, i) => {
             slide.style.left = this.tamanhoSlide * i + 'px'

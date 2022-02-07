@@ -2,20 +2,20 @@ import { CarouselAvaliacoes } from "./CarousselHome/carrouselHomeAvaliacoes.js"
 
 const anteriorAvaliacoes = '[data-anterior-avaliacoes]'
 const proximoAvaliacoes = '[data-proximo-avaliacoes]'
-const listaProdutosAvaliacoes = '[data-lista-produtos-avaliacoes]'
-const navegacaoAvaliacoes = '[data-navegacao-avaliacoes]'
+const listaProdutosAvaliacoes = '[data-lista-avaliacoes]'
 
-new CarouselAvaliacoes(anteriorAvaliacoes, proximoAvaliacoes, listaProdutosAvaliacoes, navegacaoAvaliacoes)
+new CarouselAvaliacoes(anteriorAvaliacoes, proximoAvaliacoes, listaProdutosAvaliacoes)
 
 
 
 import { CarouselTestes } from "./CarousselHome/carousselHomeTestesTodosProdutos.js"
 
-const anteriorTodosProdutos = '[data-anterior-todos-produtos]'
-const proximoTodosProdutos = '[data-proximo-todos-produtos]'
-const listaProdutosTodosProdutos = '[data-lista-todos-produtos]'
+const anteriorTestes = '[data-anterior-testes]'
+const proximoTestes = '[data-proximo-testes]'
+const listaProdutosTestes = '[data-lista-testes]'
+const navegacaoTestes = '[data-navegacao-testes]'
 
-new CarouselTestes(anteriorTodosProdutos, proximoTodosProdutos, listaProdutosTodosProdutos)
+new CarouselTestes(anteriorTestes, proximoTestes, listaProdutosTestes,navegacaoTestes)
 
 
 import { CarouselOpinioes } from "./CarousselHome/carousselHomeOpinioes.js"
