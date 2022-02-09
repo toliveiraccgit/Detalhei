@@ -207,7 +207,7 @@
         padding-bottom: 0.938rem;
     }
     .input__email___login:focus, .input__senha___login:focus{
-        outline: none;
+        outline: 1px solid #878888;
     }
     .label__input-senha{
         font-family: var(--paragraph-SF-Medium);
@@ -246,10 +246,18 @@
 
         border: none;
 
-        background-image: url("../../Assets/Login/icone-mostra-senha-login.svg");
+        background-image: url("../../Assets/Login/icone-mostra-senha-login-blur.svg");
         background-repeat: no-repeat;
         background-position: center center;
+
+        transition: all .2s ease-in-out;
     }
+    .input__senha___login:focus + .botao__visualizar-senha{
+        background-image: url("../../Assets/Login/botao-mostra-senha-focus-ativado.svg");
+
+        transition: all .2s ease-in-out;
+    }
+
     .link__esqueceu-senha{
         font-family: var(--paragraph-SF-Light);
         font-weight: var(--paragraph-regular);

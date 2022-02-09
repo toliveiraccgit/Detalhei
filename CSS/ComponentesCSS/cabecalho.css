@@ -1,0 +1,105 @@
+@media (min-width:0px){
+    /*---------------------CABECALHO-----------------------*/
+    .cabecalho{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .container___cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3.009rem;
+
+        background-color: var(--low-pure);
+
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        padding-left: 11.25rem;
+        padding-right: 7.25rem;
+    }
+    .input__busca-navegacao{
+        width: 45.7vw;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-regular);
+        font-size: 12.8px;
+        color: var(--subheads);
+
+        padding: 0.938rem 4rem;
+
+        background-color: #FFFFFF;
+        background-image: url("../../Assets/Vetores/ICO-BUSCA.svg");
+        background-repeat: no-repeat;
+        background-position-x: 2.3rem;
+        background-position-y: center;
+
+        border-radius: 8px;
+        border: none;
+    }
+    .input__busca-navegacao:focus{
+        outline: 2px solid var(--blue-primary);
+    }
+    .botao__acessa-conta{
+        width: 12.75rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-medium);
+        font-size: 14px;
+        color: #FFFFFF;
+
+        padding: 0.75rem 2.188rem 0.75rem 2.75rem;
+        margin-left: 1.491rem;
+
+        background-color: var(--low-pure);
+        background-image: url("../../Assets/Vetores/ICO-LOGIN.svg");
+        background-repeat: no-repeat;
+        background-position-x: 1.3rem;
+        background-position-y: .8rem;
+
+        border-radius: 8px;
+        border: 2px solid #FFFFFF;
+    }
+    /*---------------------CABECALHO-NAVEGACAO----------------------*/
+    .container__navegacao___cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.763rem;
+
+        background-color: var(--blue-primary);
+
+        padding: 0.813rem 0 0.875rem 11.7rem;
+    }
+    .container__botao___navegacao{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+    .botao__menu-hamburguer{
+        border: none;
+
+        width: 1.396rem;
+
+        background-image: url("../../Assets/Vetores/Vetor-Menu-Line.svg");
+        background-repeat: no-repeat;
+    }
+    .lista__navegacao{
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+
+        font-family: var(--heading-poppins);
+        font-size: 14px;
+    }
+    .dropdown-top-5{
+        background-image: url("../../Assets/Vetores/SETA-DROPDOWN.svg");
+        background-repeat: no-repeat;
+        background-position-x: 100%;
+        background-position-y: center;
+
+        padding-right: 1.2rem;
+
+    }
+}
