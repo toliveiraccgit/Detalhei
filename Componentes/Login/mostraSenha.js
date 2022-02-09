@@ -12,9 +12,18 @@ document.getElementById('olho').addEventListener('mousedown', function() {
   // Para que o password não fique exposto apos mover a imagem.
   document.getElementById('olho').addEventListener('mousemove', function() {
     document.getElementById('senha').type = 'password';
+    olho.style.backgroundImage = ' url("../../Assets/Login/botao-mostra-senha-focus-ativado.svg") '
+  });
+
+
+  document.getElementById('senha').addEventListener('mousemove', function() {
+    olho.style.backgroundImage = ' url("../../Assets/Login/botao-mostra-senha-focus-ativado.svg") '
   });
 
   document.getElementById('olho').addEventListener('mouseleave', function() {
+    olho.style.backgroundImage = 'url("../../Assets/Login/icone-mostra-senha-login-blur.svg")'
+  });
+  document.getElementById('senha').addEventListener('mouseleave', function() {
     olho.style.backgroundImage = 'url("../../Assets/Login/icone-mostra-senha-login-blur.svg")'
   });
 
