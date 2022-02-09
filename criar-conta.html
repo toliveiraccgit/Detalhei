@@ -66,11 +66,11 @@
             src: local('SF UI Display Black'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
             }
         </style>
-        <link rel="stylesheet" href="./CSS/Login/login.css">
+        <link rel="stylesheet" href="./CSS/CriarConta/criarConta.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
-        <title>Login | Detalhei</title>
+        <title>Criar Conta | Detalhei</title>
         <link rel="shortcut icon" href="./Assets/Vetores/Logo-Detalhei.svg" type="image/x-icon"/>
     </head>
 
@@ -89,18 +89,18 @@
 
                 <div class="container__link___inscrever">
 
-                    <h1 class="titulo__inscrever">não é membro?</h1>
-                    <a href="./criar-conta.html" class="link__inscrever">Inscreva-se</a>
+                    <h1 class="titulo__inscrever">já é um membro?</h1>
+                    <a href="./login.html" class="link__inscrever">Entrar</a>
 
                 </div>
 
                 <section class="secao__vincular-contas">
 
-                    <h1 class="titulo__vincular-contas">Entrar no Detalhei</h1>
+                    <h1 class="titulo__vincular-contas">Inscreva-se no Detalhei</h1>
 
                     <div class="container__botoes___vincular-contas">
 
-                        <button type="button" class="botao__vincular__google">Entrar com google</button>
+                        <button type="button" class="botao__vincular__google">Cadastre-se com google</button>
                         
                         <button type="button" class="botao__vincular___twitter"></button>
                         
@@ -112,36 +112,86 @@
 
                 </section>
 
-                <form class="secao__input___login">
+                <form class="secao__input___cadastro">
+                    
+                    <section class="secao__cadastro-nome">
 
-                    <div class="container__input___login">
+                        <div class="container__input___cadastro-login">
+
+                            <label for="Nome Completo" class="label__input-nome">Nome Completo</label>
+                            <input type="text" name="Nome Completo" class="input__nome___cadastro-login" required>
+    
+                        </div>
+
+                        <div class="container__input___cadastro-login">
+
+                            <label for="Username" class="label__input-nome">Username</label>
+                            <input type="text" name="Username" class="input__nome___cadastro-login" required>
+    
+                        </div>
+
+                    </section>
+
+                    <div class="container__input___cadastro">
 
                         <label for="E-mail" class="label__input-email">E-mail</label>
-                        <input type="email" name="E-mail" class="input__email___login" required>
+                        <input type="email" name="E-mail" class="input__email___cadastro" required>
 
                     </div>
 
-                    <div class="container__input___login">
+                    <div class="container__input___cadastro">
 
                         <label for="Senha" class="label__input-senha">Senha</label>
-                        <input type="password" name="Senha" class="input__senha___login" id="senha" required>
+                        <input type="password" name="Senha" class="input__senha___cadastro" id="senha" required>
 
                         <button type="button" class="botao__visualizar-senha" id="olho"></button>
 
                     </div>
 
-                    <a href="#" class="link__esqueceu-senha">Esqueceu a senha?</a>
+                    <section class="secao__validacao-cadastro">
 
-                    <a href="#" class="botao__logar-detalhei">Entrar na sua conta</a>
+                        <span class="texto__validacao validacao__numeros-caracteres">Conter no mínimo 8 caracteres</span>
+
+                        <span class="texto__validacao validacao__possui-numero">Um número</span>
+
+                        <span class="texto__validacao validacao__possui-caracter-especial">Um caracter especial ( ! @ # $ % ¨ + )</span>
+
+                        <span class="texto__validacao validacao__letra-maiuscula">Uma letra maiúscula</span>
+
+                    </section>
+
+                    <div class="container__input___cadastro confirma-senha">
+
+                        <label for="Senha" class="label__input-senha">Confirmar Senha</label>
+                        <input type="password" name="Senha" class="input__senha___cadastro" id="confirmar-senha" required>
+
+                        <button type="button" class="botao__visualizar-senha" id="confirma-olho"></button>
+
+                    </div>
+
+
+                    <div class="container__input___check">
+
+                        <label for="Aceitar Termos" class="label__aceitar-termos">Criar uma conta significa que você está de acordo com os
+                        <a href="#" class="link__termos-rodape">Termos de Serviço</a>, <a href="#" class="link__politica-rodape">Política de Privacidade</a> e nossas Configurações de Notificação padrão.</label>
+                        <div class="container__input___checkmarck">
+                            <input name="Aceitar Termos" type="checkbox" class="input__aceitar-termos">
+                        </div>
+                        
+
+                    </div>
+
+                    <a href="./login.html" class="botao__logar-detalhei">Criar Conta</a>
 
                 </form>
 
-                <p class="texto__rodape___login">Este site é protegido pelo <span class="recaptcha-rodape">reCAPTCHA</span> e pelo google <a href="#" class="link__politica-rodape">Política de Privacidade</a> e os <a href="#" class="link__termos-rodape">Termos de Serviço</a> se aplicam</p>
+                <p class="texto__rodape___cadastro">Este site é protegido pelo <span class="recaptcha-rodape">reCAPTCHA</span> e pelo google <a href="#" class="link__politica-rodape">Política de Privacidade</a> e os <a href="#" class="link__termos-rodape">Termos de Serviço</a> se aplicam</p>
 
             </section>
 
         </main>
         <script src="./Componentes/Login/mostraSenha.js" type="text/javascript"></script>
+        <script src="./Componentes/Login/mostraConfirmaSenha.js" type="text/javascript"></script>
     </body>
 
 </html>
