@@ -1,0 +1,234 @@
+@media (min-width:0px){
+
+    .conteudo{
+        display: flex;
+        flex-direction: row;
+    }
+    /*-----------------SECAO-BACKGROUND-COLOR-----------------*/
+    .secao__background-color{
+        height: 100vh;
+        width: 33vw;
+        
+        padding-top: 6rem;
+        padding-left: 2.5rem;
+        padding-right: 3.313rem;
+
+        background-color: var(--green-primary);
+
+    }
+    @keyframes mudaBackground {
+        0%{
+            background-color: var(--blue-primary);
+        }
+        50%{
+            background-color: var(--orange-primary);
+        }
+        100%{
+            background-color: var(--green-primary);
+        }
+    }
+    .descricao__background-color{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 30px;
+
+        color: #FFFFFF;
+
+        margin: 0%;
+        margin-top: 2rem;
+    }
+    /*-----------------SECAO-BACKGROUND-COLOR-----------------*/
+    .secao__titulo___troca-senha{
+        width: 34rem;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 0.563rem;
+    }
+    .titulo__troca-senha{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 24px;
+
+        color: #000000;
+
+        margin: 0%;
+    }
+    .secao__troca-senha___detalhei{
+        width: 67vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.438rem;
+    }
+    .secao__input___troca-senha{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        width: 34rem;
+    }
+    .container__input___troca-senha{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:.5rem;
+    }
+    .label__input-troca-senha{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        color: #000000;
+    }
+    .input__troca-senha{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-regular);
+        font-size: 14px;
+
+        color: #878888;
+
+        width: 27rem;
+
+        background: #E8E8E8;
+        border-radius: 5px;
+        border: none;
+
+        padding-top: 0.938rem;
+        padding-left: 0.625rem;
+        padding-bottom: 0.938rem;
+    }
+    .input__troca-senha:focus, .input__confirma___troca-senha:focus{
+        outline: 1px solid #878888;
+    }
+    .label__input-confirma-senha{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        color: #000000; 
+    }
+    .input__confirma___troca-senha{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-regular);
+        font-size: 14px;
+
+        color: #878888;
+
+        width: 27rem;
+
+        background: #E8E8E8;
+        border-radius: 5px;
+        border: none;
+
+        padding-top: 0.938rem;
+        padding-left: 0.625rem;
+        padding-bottom: 0.938rem;
+    }
+    .botao__visualizar-senha{
+        background-color: transparent;
+
+        position: relative;
+
+        top: -2.4rem;
+        left: 24.8rem;
+
+        width: 1.375rem;
+        height: 0.938rem;
+
+        border: none;
+
+        background-image: url("../../Assets/Login/icone-mostra-senha-login-blur.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        transition: all .2s ease-in-out;
+    }
+    .input__senha___cadastro:focus + .botao__visualizar-senha{
+        background-image: url("../../Assets/Login/botao-mostra-senha-focus-ativado.svg");
+
+        transition: all .2s ease-in-out;
+    }
+    .botao__troca-senha-detalhei{
+        background-color: #2FBF90;
+
+        width: 27.063rem;
+
+        text-align: center;
+        padding: 0.938rem 0;
+
+        border-radius: 5px;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        color: #FFFFFF;
+
+        opacity: .4;
+
+        position: relative;
+        top: -1.5rem;
+    }
+    .secao__validacao__nova-senha{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+
+        position: relative;
+        top: -2rem;
+
+        height: 3rem;
+        width: 31rem;
+    }
+    .texto__validacao{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-regular);
+        font-size: 12px;
+
+        letter-spacing: .04rem;
+
+        color: #000000;
+
+        width: 14.438rem;
+
+        padding-left: 1rem;
+
+        background-image: url("../../Assets/Login/vetor-validacao-incompleta.svg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+    }
+    .validacao__numeros-caracteres{
+        margin-right: .85rem;
+
+        background-image: url("../../Assets/Login/vetor-validacao-completa.svg");
+    }
+    .validacao__possui-caracter-especial{
+        margin-right: .875rem;
+
+        background-image: url("../../Assets/Login/vetor-validacao-completa.svg");
+    }
+    .confirma-senha{
+        position: relative;
+        top: -1.5rem;
+    }
+    #confirma-olho{
+        height: 1.5rem;
+        background-position-y: 0rem;
+    }
+    .container__input___check{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        gap: 1.25rem;
+
+        width: 27rem;
+
+        position: relative;
+        top: -2rem;
+    }
+}

@@ -1,0 +1,67 @@
+@media (min-width:0px){
+    .conteudo__verifica-email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100vw;
+        height: 100vh;
+        
+    }
+    .titulo__verifica-email{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 40px;
+
+        color: #000000;
+
+        margin: 0%;
+    }
+    .descricao__verifica-email{
+        width: 41.625rem;
+
+        text-align: center;
+
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-regular);
+        font-size: 14px;
+
+        letter-spacing: .05rem;
+
+        color: #878888;
+
+        margin: 0%;
+        margin-top: 2.5rem;
+    }
+    .imagem__verifica-email{
+        position: relative;
+        top: -4.1rem;
+    }
+    .botao__verifica-email{
+        background-color: #2FBF90;
+
+        width: 27.063rem;
+
+        text-align: center;
+        padding: 1.156rem 0rem 1.156rem 1.344rem;
+
+        border-radius: 5px;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        color: #FFFFFF;
+
+        opacity: 1;
+
+        position: relative;
+        top: -8.2rem;
+
+        background-image: url("../../Assets/Login/icone-email.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: 9rem;
+    }
+}

@@ -66,11 +66,11 @@
             src: local('SF UI Display Black'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
             }
         </style>
-        <link rel="stylesheet" href="./CSS/Login/login.css">
+        <link rel="stylesheet" href="./CSS/EsqueceuSenha/esqueceuSenha.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
-        <title>Login | Detalhei</title>
+        <title>Esqueceu Senha | Detalhei</title>
         <link rel="shortcut icon" href="./Assets/Vetores/Logo-Detalhei.svg" type="image/x-icon"/>
     </head>
 
@@ -85,59 +85,29 @@
                 <p class="descricao__background-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </section>
 
-            <section class="secao__login___detalhei">
+            <section class="secao__recupera-senha___detalhei">
 
-                <div class="container__link___inscrever">
+                <section class="secao__titulo___recupera-senha">
 
-                    <h1 class="titulo__inscrever">não é membro?</h1>
-                    <a href="./criar-conta.html" class="link__inscrever">Inscreva-se</a>
+                    <a href="./login.html" class="botao__volta___tela-login"></a>
 
-                </div>
+                    <h1 class="titulo__recupera-senha">Voltando para</br> sua conta </h1>
 
-                <section class="secao__vincular-contas">
-
-                    <h1 class="titulo__vincular-contas">Entrar no Detalhei</h1>
-
-                    <div class="container__botoes___vincular-contas">
-
-                        <button type="button" class="botao__vincular__google">Entrar com google</button>
-                        
-                        <button type="button" class="botao__vincular___twitter"></button>
-                        
-                        <button type="button" class="botao__vincular___facebook"></button>
-
-                    </div>
-
-                    <span class="titulo__ou">Ou</span>
-
+                    <p class="subtitulo__recupera-senha">Insira seu e-mail para recumerar a sua conta.</p>
                 </section>
 
-                <form class="secao__input___login">
+                <form class="secao__input___recupera-senha">
 
-                    <div class="container__input___login">
+                    <div class="container__input___recupera-senha">
 
                         <label for="E-mail" class="label__input-email">E-mail</label>
-                        <input type="email" name="E-mail" class="input__email___login" required>
+                        <input type="email" name="E-mail" class="input__email___recupera-senha" required>
 
                     </div>
 
-                    <div class="container__input___login">
-
-                        <label for="Senha" class="label__input-senha">Senha</label>
-                        <input type="password" name="Senha" class="input__senha___login" id="senha" required>
-
-                        <button type="button" class="botao__visualizar-senha" id="olho"></button>
-
-                    </div>
-
-                    <a href="./esqueceu-senha.html" class="link__esqueceu-senha">Esqueceu a senha?</a>
-
-                    <a href="#" class="botao__logar-detalhei">Entrar na sua conta</a>
+                    <a href="./verifique-email.html" class="botao__recupera-senha">Continuar</a>
 
                 </form>
-
-                <p class="texto__rodape___login">Este site é protegido pelo <span class="recaptcha-rodape">reCAPTCHA</span> e pelo google <a href="#" class="link__politica-rodape">Política de Privacidade</a> e os <a href="#" class="link__termos-rodape">Termos de Serviço</a> se aplicam</p>
-
             </section>
 
         </main>

@@ -1,0 +1,173 @@
+@media (min-width:0px){
+
+    .conteudo{
+        display: flex;
+        flex-direction: row;
+    }
+    /*-----------------SECAO-BACKGROUND-COLOR-----------------*/
+    .secao__background-color{
+        height: 100vh;
+        width: 33vw;
+        
+        padding-top: 6rem;
+        padding-left: 2.5rem;
+        padding-right: 3.313rem;
+
+        background-color: var(--green-primary);
+
+    }
+    @keyframes mudaBackground {
+        0%{
+            background-color: var(--blue-primary);
+        }
+        50%{
+            background-color: var(--orange-primary);
+        }
+        100%{
+            background-color: var(--green-primary);
+        }
+    }
+    .descricao__background-color{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 30px;
+
+        color: #FFFFFF;
+
+        margin: 0%;
+        margin-top: 2rem;
+    }
+    /*-----------------SECAO-BACKGROUND-COLOR-----------------*/
+    .secao__recupera-senha___detalhei{
+        width: 67vw;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.438rem;
+    }
+    .container__link___inscrever{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+
+        width: 50vw;
+
+        justify-content: flex-end;
+    }
+    .titulo__inscrever{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-regular);
+        font-size: 14px;
+
+        color: #000000;
+
+        margin: 0%;
+    }
+    .link__inscrever{
+        color: var(--blue-primary);
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-regular);
+        font-size: 14px;
+
+        margin: 0%;
+    }
+    .secao__titulo___recupera-senha{
+        width: 34rem;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 0.563rem;
+    }
+    .botao__volta___tela-login{
+        width: 1.25rem;
+        height: 0.875rem;
+
+        background-image: url("../../Assets/Login/seta-voltar-tela-login.svg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+    }
+    .titulo__recupera-senha{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 24px;
+
+        color: #000000;
+
+        margin: 0%;
+    }
+    .subtitulo__recupera-senha{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-regular);
+        font-size: 12px;
+
+        letter-spacing: .05rem;
+
+        color: #000000;
+
+        margin: 0%;
+        margin-top: 0.188rem;
+    }
+    .secao__input___recupera-senha{
+        display: flex;
+        flex-direction: column;
+        gap: 4.063rem;
+
+        width: 34rem;
+    }
+    .container__input___recupera-senha{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap:.5rem;
+    }
+    .label__input-email{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        color: #000000;
+    }
+    .input__email___recupera-senha{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-regular);
+        font-size: 14px;
+
+        color: #878888;
+
+        width: 27rem;
+
+        background: #E8E8E8;
+        border-radius: 5px;
+        border: none;
+
+        padding-top: 0.938rem;
+        padding-left: 0.625rem;
+        padding-bottom: 0.938rem;
+    }
+    .input__email___recupera-senha:focus{
+        outline: 1px solid #878888;
+    }
+    .botao__recupera-senha{
+        background-color: #2FBF90;
+
+        width: 27.063rem;
+
+        text-align: center;
+        padding: 0.938rem 0;
+
+        border-radius: 5px;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        color: #FFFFFF;
+
+        opacity: .4;
+    }
+}

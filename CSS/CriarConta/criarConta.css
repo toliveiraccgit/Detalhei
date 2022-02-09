@@ -407,6 +407,8 @@
         border: 2px solid #E8E8E8;
 
         display: inline-block;
+
+        cursor: pointer;
     }
 
     .input__aceitar-termos:checked{
