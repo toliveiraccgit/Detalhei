@@ -327,6 +327,9 @@
         color: #FFFFFF;
 
         opacity: .4;
+
+        position: relative;
+        top: -1.5rem;
     }
     .secao__validacao-cadastro{
         display: flex;
@@ -373,7 +376,8 @@
         top: -1.5rem;
     }
     #confirma-olho{
-        height: 1rem;
+        height: 1.5rem;
+        background-position-y: 0rem;
     }
     .container__input___check{
         display: flex;
@@ -437,6 +441,9 @@
 
         margin: 0%;
         margin-top: .5rem;
+
+        position: relative;
+        top: -2rem;
     }
     .recaptcha-rodape{
         font-weight: 700;
