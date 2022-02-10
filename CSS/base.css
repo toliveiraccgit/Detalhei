@@ -356,3 +356,6 @@ html{
     border-radius: 6.7451px;
 
 }
+.active{
+    opacity: 1;
+}
