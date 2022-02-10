@@ -13,7 +13,7 @@
         padding-left: 2.5rem;
         padding-right: 3.313rem;
 
-        background-color: var(--green-primary);
+        background-color: var(--low-pure);
 
     }
     @keyframes mudaBackground {

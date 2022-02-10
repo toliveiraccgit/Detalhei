@@ -41,9 +41,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        gap: 2.063rem;
         
-        padding-left: 3.375rem;
-        padding-right: 2.375rem;
+        padding-left: 2.063rem;
+        padding-right: 2.063rem;
         padding-top: 7.125rem;
 
         
@@ -52,7 +53,7 @@
         display: flex;
         flex-direction: column;
 
-        width: 55.688rem;
+        width: 62vw;
     }
         /*------------------TOPICOS-------------------*/
         .secao___topicos{
@@ -102,15 +103,19 @@
         .secao__marcas___feed{
             display: flex;
             flex-direction: row;
-            justify-content: center;
             align-items: center;
             gap: 6.551rem;
 
             padding-top: 1.875rem;
             padding-bottom: 2.919rem;
+            padding-left: 4.8rem;
+            padding-right: 6.109rem;
 
             background: #FFFFFF;
             border-radius: 12px;
+            overflow-x: scroll;
+
+            scrollbar-width: none;
         }
         .container__marcas{
             display: flex;
@@ -182,6 +187,8 @@
             display: flex;
             flex-direction: column;
             gap: 2.5rem;
+
+            transition: all .3s ease-in-out;
         }
         /*-----------------CARDS-PRODUTOS-------------------*/
         .container__card-produto{
@@ -244,6 +251,8 @@
             font-size: 20px;
 
             margin-bottom: 1.063rem;
+
+            color: #07070E;
         }
         .descricao__info___produto{
             font-family: var(--paragraph-SF-Medium);
@@ -308,8 +317,14 @@
 
             color: #9B9999;
 
-            list-style: disc;
-            margin-left: 1rem;
+            padding-left: .8rem;
+
+            background-image: url("../../Assets/Feed/Imagem-produtos-feed/icone-tempo-feed.PNG");
+            background-repeat: no-repeat;
+            background-position-x: left;
+            background-position-y: center;
+
+            background-size: .6rem .6rem;
         }
         .item__botao-lista{
             display: flex;
