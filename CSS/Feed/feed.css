@@ -119,6 +119,9 @@
 
             cursor: grab;
         }
+        .secao__marcas___feed:active{
+            cursor: grabbing;
+        }
         .container__marcas{
             display: flex;
             flex-direction: column;
