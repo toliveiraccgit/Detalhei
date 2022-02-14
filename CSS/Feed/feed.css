@@ -202,7 +202,10 @@
 
             transition: all .1s ease-in-out;
         }
-        
+        .container__card-produto:hover{
+            background-color: #F7F9FF;
+            transition: all .1s ease-in-out;
+        }
         .container__perfil___produto{
             display: flex;
             flex-direction: row;
@@ -326,12 +329,12 @@
 
             padding-left: .8rem;
 
-            background-image: url("../../Assets/Feed/Imagem-produtos-feed/icone-tempo-feed.PNG");
+            background-image: url("../../Assets/Feed/Imagem-produtos-feed/icone-tempo-feed.svg");
             background-repeat: no-repeat;
             background-position-x: left;
             background-position-y: center;
 
-            background-size: .6rem .6rem;
+            background-size: .35rem .35rem;
         }
         .item__botao-lista{
             display: flex;
@@ -443,7 +446,7 @@
 
                 height: 15.6rem;
 
-                transition: all .7s ease-in;
+                transition: all .5s ease-in;
             }
             .item__lista___engajados{
                 display: flex;
@@ -594,7 +597,7 @@
 
                 overflow-y: hidden;
 
-                transition: all .7s ease-in;
+                transition: all .5s ease-in;
             }
             .perfil__seguidor{
                 display: flex;
@@ -717,7 +720,7 @@
 
                 overflow-y: hidden;
 
-                transition: all .7s ease-in;
+                transition: all .5s ease-in;
             }
             .perfil__ultimas-postagens{
                 display: flex;
