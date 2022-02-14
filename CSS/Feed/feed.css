@@ -46,7 +46,7 @@
         padding-left: 2.063rem;
         padding-right: 2.063rem;
         padding-top: 7.125rem;
-
+        padding-bottom: 22.25rem;
         
     }
     .secao__produtos___feed{
@@ -116,6 +116,8 @@
             overflow-x: scroll;
 
             scrollbar-width: none;
+
+            cursor: grab;
         }
         .container__marcas{
             display: flex;
@@ -195,7 +197,12 @@
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
+
+            border-radius: 10.0081px;
+
+            transition: all .1s ease-in-out;
         }
+        
         .container__perfil___produto{
             display: flex;
             flex-direction: row;
@@ -405,6 +412,8 @@
                 padding-bottom: 0.813rem;
                 padding-right: 2rem;
                 padding-left: 2.125rem;
+
+                overflow-y: hidden;
             }   
             .titulo__secao___engajados{
                 font-family: var(--paragraph-SF-Medium);
@@ -428,11 +437,13 @@
                 flex-direction: column;
                 gap: 1.5rem;
 
-                overflow-y: hidden;
+                overflow-y:hidden;
 
                 padding-left: 1rem;
 
                 height: 15.6rem;
+
+                transition: all .7s ease-in;
             }
             .item__lista___engajados{
                 display: flex;
@@ -458,7 +469,7 @@
                 width: 13.563rem;
             }
             .botao__ver-mais___engajados{
-                background-color: transparent;
+                background-color: #FFFFFF;
 
                 margin-top: 1.625rem;
                 
@@ -470,4 +481,324 @@
 
                 color: #979797;
             }
+            .botao__ver-menos___engajados{
+                background-color: #FFFFFF;
+
+                margin-top: 1.625rem;
+                
+                border: none;
+
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+
+                color: #979797;
+
+                display: none;
+            }
+            /*------------------TOPICOS-------------------*/
+            .secao__topicos___sidebar{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.938rem;
+
+               width: 23rem;
+
+               margin-top: 2.5rem;
+               margin-bottom: 2.813rem;
+            }
+            .titulo__topicos-sidebar{
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+                color: #080808;
+
+                padding-left: .4rem;
+            }
+            .container__botoes___topicos-sidebar{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 0.563rem;
+                
+            }
+            .botoes__topicos-sidebar{
+                padding-top: 0.625rem;
+                padding-bottom: 0.625rem;
+                padding-left: 0.938rem;
+                padding-right: 0.938rem;
+
+                background: #F7F9FF;
+                border-radius: 6px;
+                border: none;
+
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 14px;
+                letter-spacing: .03rem;
+
+                color: #080808;
+                transition: all .1s ease-in-out;
+            }
+            .botoes__topicos-sidebar:hover{
+                background-color: #FFFFFF;
+
+                transition: all .1s ease-in-out;
+            }
+            /*-----------SEGUIDORES---------------*/
+            .secao__seguidores{
+                display: flex;
+                flex-direction: column;
+
+
+                background: #FFFFFF;
+
+                border-radius: 12px;
+
+                padding-top: 1.875rem;
+                padding-bottom: 0.813rem;
+                padding-right: 2rem;
+                padding-left: 2.125rem;
+
+                overflow-y: hidden;
+                overflow-x: hidden;
+
+                width: 25.063rem;
+            }
+            .titulo__seguidores{
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+
+                color: #080808;
+
+                margin: 0%;
+                margin-bottom: 1.875rem;
+            }
+            .container__seguidor{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                width: 20rem;
+            }
+            .lista__seguidores{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                height: 25rem;
+
+                overflow-y: hidden;
+
+                transition: all .7s ease-in;
+            }
+            .perfil__seguidor{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0.563rem;
+            }
+            .imagem__perfil___seguidor{
+                width: 1.875rem;
+                height: 1.875rem;
+
+                border-radius: 50%;
+            }
+            .container__info__perfil-seguidor{
+                display: flex;
+                flex-direction: column;
+            }
+            .nome__seguidor{
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+
+                color: #080808;
+            }
+            .arroba__seguidor{
+                font-family: var(--paragraph-SF-Light);
+                font-weight: var(--paragraph-bold);
+                font-size: 14px;
+
+                letter-spacing: .03rem;
+
+                color: #979797;
+            }
+            .botao__seguindo___perfil{
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+
+                letter-spacing: .03rem;
+
+                color: #080808;
+
+                border: none;
+                background-color: transparent;
+            }
+            .botao__ver-mais___seguidores{
+                background-color: #FFFFFF;
+
+                margin-top: 1.625rem;
+                
+                border: none;
+
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+
+                color: #979797;
+            }
+            .botao__ver-menos___seguidores{
+                background-color: #FFFFFF;
+
+                margin-top: 1.625rem;
+                
+                border: none;
+
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+
+                color: #979797;
+
+                display: none;
+            }
+            /*-----------ULTIMAS-POSTAGENS---------------*/
+            .secao__ultimas-postagens{
+                display: flex;
+                flex-direction: column;
+
+
+                background: #FFFFFF;
+
+                border-radius: 12px;
+
+                padding-top: 1.875rem;
+                padding-bottom: 0.813rem;
+                padding-right: 2rem;
+                padding-left: 2.125rem;
+
+                overflow-y: hidden;
+                overflow-x: hidden;
+
+                width: 25.063rem;
+
+                margin-top: 1.938rem;
+            }
+            .titulo__ultimas-postagens{
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+
+                color: #080808;
+
+                margin: 0%;
+                margin-bottom: 1.875rem;
+            }
+            .container__perfil-ultimas-postagens{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+
+                width: 20rem;
+            }
+            .lista__ultimas-postagens{
+                display: flex;
+                flex-direction: column;
+                gap: 1.5rem;
+
+                height: 17rem;
+
+                overflow-y: hidden;
+
+                transition: all .7s ease-in;
+            }
+            .perfil__ultimas-postagens{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0.563rem;
+            }
+            .imagem__perfil___ultimas-postagens{
+                width: 1.875rem;
+                height: 1.875rem;
+
+                border-radius: 50%;
+            }
+            .container__info__perfil-ultimas-postagens{
+                display: flex;
+                flex-direction: column;
+            }
+            .nome__ultimas-postagens{
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+
+                color: #080808;
+            }
+            .seguindo__ultimas-postagens{
+                font-family: var(--paragraph-SF-Light);
+                font-weight: var(--paragraph-bold);
+                font-size: 14px;
+
+                letter-spacing: .03rem;
+
+                color: #979797;
+            }
+            .botao__seguindo___perfil{
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+
+                letter-spacing: .03rem;
+
+                color: #080808;
+
+                border: none;
+                background-color: transparent;
+            }
+            .botao__ver-mais___ultimas-postagens{
+                background-color: #FFFFFF;
+
+                margin-top: 1.625rem;
+                
+                border: none;
+
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+
+                color: #979797;
+            }
+            .botao__ver-menos___ultimas-postagens{
+                background-color: #FFFFFF;
+
+                margin-top: 1.625rem;
+                
+                border: none;
+
+                font-family: var(--paragraph-SF-Medium);
+                font-weight: var(--paragraph-bold);
+                font-size: 16px;
+
+                color: #979797;
+
+                display: none;
+            }
+            .imagem__ultima-postagens{
+                width: 1.875rem;
+                height: 1.875rem;
+
+                border-radius: 3px;
+            }
+
+    #rodape__feed{
+        border-top: none;
+    }
 }       

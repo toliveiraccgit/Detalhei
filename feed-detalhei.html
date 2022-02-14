@@ -246,7 +246,7 @@
 
                 </section>
 
-                <section class="secao__produtos">
+                <section class="secao__produtos" ondragstart='return false'>
 
                     <div class="cabecalho__secao__produtos">
                         <button class="tablinks tab-recomendado" id="defaultOpen" onclick="openTab(event, 'recomendado')">Recomendado para você</button>
@@ -254,7 +254,7 @@
                         <button class="tablinks tab-lancamentos" onclick="openTab(event, 'lancamentos')">Lançamentos</button>   
                     </div>
 
-                    <ul class="secao__produtos-feed tabcontent" id="recomendado">
+                    <ul class="secao__produtos-feed tabcontent" id="recomendado" onselectstart="return false">
                         
                             <li class="container__card-produto">
                                 <a href="#" class="container__card-produto">
@@ -495,7 +495,7 @@
 
                     </ul>
 
-                    <ul class="secao__produtos-feed tabcontent" id="seguindo">
+                    <ul class="secao__produtos-feed tabcontent" id="seguindo" onselectstart="return false">
 
                         <li class="container__card-produto">
                             <a href="#" class="container__card-produto">
@@ -639,7 +639,7 @@
 
                     </ul>
 
-                    <ul class="secao__produtos-feed tabcontent" id="lancamentos">
+                    <ul class="secao__produtos-feed tabcontent" id="lancamentos" onselectstart="return false">
                         <li class="container__card-produto">
                             <a href="#" class="container__card-produto">
                                 <div class="container__perfil___produto">
@@ -798,7 +798,7 @@
                         <img src="./Assets/Feed/Imagem-engajados/imagem-mais-engajados-1.png" alt="Imagem Principal Engajados" class="imagem__principal___engajados">
                     </a>  
                       
-                    <ul class="lista__engajados___semana">
+                    <ul class="lista__engajados___semana" id="secao__lista-engajados">
 
                        <a href="#" class="item__lista___engajados">
                             <img src="./Assets/Feed/Imagem-engajados/imagem-mais-engajados-2.png" alt="" class="imagem__perfil___engajado">
@@ -820,19 +820,500 @@
                             <p class="info__perfil___engajado">Lorem ipsum dolor sit amet sit amet</p>
                        </a>
 
+                        <a href="#" class="item__lista___engajados">
+                            <img src="./Assets/Feed/Imagem-engajados/imagem-mais-engajados-2.png" alt="" class="imagem__perfil___engajado">
+                            <p class="info__perfil___engajado">Lorem ipsum dolor sit amet sit amet</p>
+                        </a>
+
+                        <a href="#" class="item__lista___engajados">
+                            <img src="./Assets/Feed/Imagem-engajados/imagem-mais-engajados-3.png" alt="" class="imagem__perfil___engajado">
+                            <p class="info__perfil___engajado">Lorem ipsum dolor sit amet sit amet</p>
+                        </a>
+
+                        <a href="#" class="item__lista___engajados">
+                                <img src="./Assets/Feed/Imagem-engajados/imagem-mais-engajados-4.png" alt="" class="imagem__perfil___engajado">
+                                <p class="info__perfil___engajado">Lorem ipsum dolor sit amet sit amet</p>
+                        </a>
+
+                        <a href="#" class="item__lista___engajados">
+                                <img src="./Assets/Feed/Imagem-engajados/imagem-mais-engajados-5.png" alt="" class="imagem__perfil___engajado">
+                                <p class="info__perfil___engajado">Lorem ipsum dolor sit amet sit amet</p>
+                        </a>
+
                     </ul>
 
-                    <button type="button" class="botao__ver-mais___engajados">Ver Mais</button>
+                    <button type="button" class="botao__ver-mais___engajados" id="botao__ver-mais-engajados">Ver Mais</button>
+
+                    <button type="button" class="botao__ver-menos___engajados" id="botao__ver-menos-engajados">Ver Menos</button>
                 </section>
+
+                <section class="secao__topicos___sidebar">
+
+                    <h5 class="titulo__topicos-sidebar">Tópicos recomendados</h5>
+
+                    <div class="container__botoes___topicos-sidebar">
+
+                        <button class="botoes__topicos-sidebar">Purificador</button>
+
+                        <button class="botoes__topicos-sidebar">Colormaq Premium</button>
+
+                        <button class="botoes__topicos-sidebar">Colormaq Premium</button>
+
+                        <button class="botoes__topicos-sidebar">Colormaq Premium</button>
+
+                        <button class="botoes__topicos-sidebar">Colormaq Premium</button>
+
+                    </div>
+
+                </section>
+
+                <section class="secao__seguidores">
+
+                    <h6 class="titulo__seguidores">Seus seguidores</h6>
+
+                    <ul class="lista__seguidores" id="secao__lista-seguidores">
+                    
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-floyd.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Jerome Bell</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-diane.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Diane Russel</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-guy.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Guy Hawkins</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-courtney.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Courtney Henry</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-jacob.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Jacob Jones</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-darrel.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Darrell Steward</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-marvin-2.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Marvin McKinney</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-floyd.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Jerome Bell</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-diane.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Diane Russel</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-guy.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Guy Hawkins</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-courtney.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Courtney Henry</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="perfil__seguidor">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-jacob.png" alt="Imagem Perfil Seguidor" class="imagem__perfil___seguidor">
+                                <div class="container__info__perfil-seguidor">
+
+                                    <span class="nome__seguidor">Jacob Jones</span>
+                                    <span class="arroba__seguidor">@Name</span>
+
+                                </div>
+
+                            </a>
+
+                            <button class="botao__seguindo___perfil">Seguindo</button>
+                        </div>
+
+                    </ul>
+
+                    <button type="button" class="botao__ver-mais___seguidores" id="botao__ver-mais-seguidores">Ver Mais</button>
+
+                    <button type="button" class="botao__ver-menos___seguidores" id="botao__ver-menos-seguidores">Ver Menos</button>
+
+                </section>
+
+                <section class="secao__ultimas-postagens">
+
+                    <h6 class="titulo__ultimas-postagens">Seus ultimas-postagens</h6>
+
+                    <ul class="lista__ultimas-postagens" id="secao__lista-ultimas-postagens">
+                    
+                        <a href="#"  class="container__perfil-ultimas-postagens">
+
+                            <div class="perfil__ultimas-postagens">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-leslie.png" alt="Imagem Perfil ultimas-postagens" class="imagem__perfil___ultimas-postagens">
+                                <div class="container__info__perfil-ultimas-postagens">
+
+                                    <span class="nome__ultimas-postagens">Leslie Alexander</span>
+                                    <span class="seguindo__ultimas-postagens">Seguindo você</span>
+
+                                </div>
+
+                            </div>
+
+                            <img src="./Assets/Feed/Imagem-ultima-postagem/imagem-ultima-postagem-1.png" alt="" class="imagem__ultima-postagens">
+                        </a>
+
+                        <a href="#"  class="container__perfil-ultimas-postagens">
+
+                            <div class="perfil__ultimas-postagens">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-cody.png" alt="Imagem Perfil ultimas-postagens" class="imagem__perfil___ultimas-postagens">
+                                <div class="container__info__perfil-ultimas-postagens">
+
+                                    <span class="nome__ultimas-postagens">Cody Fisher</span>
+                                    <span class="seguindo__ultimas-postagens">Seguindo você</span>
+
+                                </div>
+
+                            </div>
+
+                            <img src="./Assets/Feed/Imagem-ultima-postagem/imagem-ultima-postagem-2.png" alt="" class="imagem__ultima-postagens">
+                        </a>
+
+                        <a href="#"  class="container__perfil-ultimas-postagens">
+
+                            <div class="perfil__ultimas-postagens">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-leslie-2.png" alt="Imagem Perfil ultimas-postagens" class="imagem__perfil___ultimas-postagens">
+                                <div class="container__info__perfil-ultimas-postagens">
+
+                                    <span class="nome__ultimas-postagens">Leslie Alexander</span>
+                                    <span class="seguindo__ultimas-postagens">Seguindo você</span>
+
+                                </div>
+
+                            </div>
+
+                            <img src="./Assets/Feed/Imagem-ultima-postagem/imagem-ultima-postagem-3.png" alt="" class="imagem__ultima-postagens">
+                        </a>
+
+                        <a href="#"  class="container__perfil-ultimas-postagens">
+
+                            <div class="perfil__ultimas-postagens">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-kathryn.png" alt="Imagem Perfil ultimas-postagens" class="imagem__perfil___ultimas-postagens">
+                                <div class="container__info__perfil-ultimas-postagens">
+
+                                    <span class="nome__ultimas-postagens">Kathryn Murphy</span>
+                                    <span class="seguindo__ultimas-postagens">Seguindo você</span>
+
+                                </div>
+
+                            </div>
+
+                            <img src="./Assets/Feed/Imagem-ultima-postagem/imagem-ultima-postagem-4.png" alt="" class="imagem__ultima-postagens">
+                        </a>
+
+                        <a href="#"  class="container__perfil-ultimas-postagens">
+
+                            <div class="perfil__ultimas-postagens">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-guy.png" alt="Imagem Perfil ultimas-postagens" class="imagem__perfil___ultimas-postagens">
+                                <div class="container__info__perfil-ultimas-postagens">
+
+                                    <span class="nome__ultimas-postagens">Jerome Bell</span>
+                                    <span class="seguindo__ultimas-postagens">Seguindo você</span>
+
+                                </div>
+
+                            </div>
+
+                            <img src="./Assets/Feed/Imagem-ultima-postagem/imagem-ultima-postagem-5.png" alt="" class="imagem__ultima-postagens">
+                        </a>
+
+                        <a href="#"  class="container__perfil-ultimas-postagens">
+
+                            <div class="perfil__ultimas-postagens">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-leslie-2.png" alt="Imagem Perfil ultimas-postagens" class="imagem__perfil___ultimas-postagens">
+                                <div class="container__info__perfil-ultimas-postagens">
+
+                                    <span class="nome__ultimas-postagens">Leslie Alexander</span>
+                                    <span class="seguindo__ultimas-postagens">Seguindo você</span>
+
+                                </div>
+
+                            </div>
+
+                            <img src="./Assets/Feed/Imagem-ultima-postagem/imagem-ultima-postagem-3.png" alt="" class="imagem__ultima-postagens">
+                        </a>
+
+                        <a href="#"  class="container__perfil-ultimas-postagens">
+
+                            <div class="perfil__ultimas-postagens">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-kathryn.png" alt="Imagem Perfil ultimas-postagens" class="imagem__perfil___ultimas-postagens">
+                                <div class="container__info__perfil-ultimas-postagens">
+
+                                    <span class="nome__ultimas-postagens">Kathryn Murphy</span>
+                                    <span class="seguindo__ultimas-postagens">Seguindo você</span>
+
+                                </div>
+
+                            </div>
+
+                            <img src="./Assets/Feed/Imagem-ultima-postagem/imagem-ultima-postagem-4.png" alt="" class="imagem__ultima-postagens">
+                        </a>
+
+                        <a href="#"  class="container__perfil-ultimas-postagens">
+
+                            <div class="perfil__ultimas-postagens">
+
+                                <img src="./Assets/Feed/Icone-perfil-feed/icone-perfil-guy.png" alt="Imagem Perfil ultimas-postagens" class="imagem__perfil___ultimas-postagens">
+                                <div class="container__info__perfil-ultimas-postagens">
+
+                                    <span class="nome__ultimas-postagens">Jerome Bell</span>
+                                    <span class="seguindo__ultimas-postagens">Seguindo você</span>
+
+                                </div>
+
+                            </div>
+
+                            <img src="./Assets/Feed/Imagem-ultima-postagem/imagem-ultima-postagem-5.png" alt="" class="imagem__ultima-postagens">
+                        </a>
+                    </ul>
+
+                    <button type="button" class="botao__ver-mais___ultimas-postagens" id="botao__ver-mais-ultimas-postagens">Ver Mais</button>
+
+                    <button type="button" class="botao__ver-menos___ultimas-postagens" id="botao__ver-menos-ultimas-postagens">Ver Menos</button>
+
+                </section>
+
+
+
             </section>
 
         </main>
 
-        <footer class="rodape">
+        <footer class="rodape" id="rodape__feed">
+
+            <address class="secao__marca">
+
+                <img src="./Assets/Vetores/logo-detalhei-footer.svg" alt="Logo Detalhei" class="logo___detalhei-footer">
+
+                <p class="texto__copyright">Copyright © 2001-2021 ,Detalhei Todos os direitos reservados.</p>
+
+                <div class="container__redes-sociais">
+
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-FACEBOOK.svg" alt="Facebook Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-TWITTER.svg" alt="Twitter Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-INSTAGRAM.svg" alt="Instagram Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-YOUTUBE.svg" alt="Youtube Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-LINKEDIN.svg" alt="Linkedin Detalhei" class="logo__redes-sociais"></a>
+
+                </div>
+            </address>
+
+            <section class="secao__lista" id="secao__lista-footer-margin">
+
+                <h8 class="titulo__lista-footer">Detalhei</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Consultoria</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Contato</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Privacidade</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Ofertas</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Minha Garantia</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Empresarial</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Top 5</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Air Flayer</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Batedeiras</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Eletricos</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Liquidificadores</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fornos</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Produtos</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fogões</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Desidratador</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Churrasqueira</a></li>
+    
+                </ul>
+            
+            </section>
 
         </footer>
         <script src="./Componentes/Feed/tab.js" type="text/javascript"></script>
         <script src="./Componentes/mouseGrab.js" type="text/javascript"></script>
+        <script src="./Componentes/Feed/moduleFeed.js" type="module"></script>
     </body>
 
 </html>
