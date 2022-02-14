@@ -2,40 +2,6 @@
     #body{
         background-color: #E7EAF2;
     }
-    /*----------------CABECALHO------------------*/
-    .container__perfil-logado{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.5rem;
-    }
-    .icone__perfil-logado{
-        width: 1.875rem;
-        height: 1.875rem;
-
-        border-radius: 50%;
-    }
-    .nome__perfil-logado{
-        font-family: var(--paragraph-SF-Light);
-        font-weight: var(--heading-medium);
-        font-size: 14px;
-        color: #FFFFFF;
-
-        letter-spacing: .05rem;
-    }
-    .botao__abre-info___perfil{
-        background-color: transparent;
-        border: none;
-
-        background-image: url("../../Assets/Vetores/vetor-seta-baixo-perfil.svg");
-        background-repeat: no-repeat;
-        background-position: center center;
-
-        width: 0.875rem;
-        height: 0.5rem;
-
-        margin-left: .2rem;
-    }
     /*-----------------FEED--------------------*/
     .conteudo{
         display: flex;

@@ -20,7 +20,7 @@
         padding-right: 7.25rem;
     }
     .input__busca-navegacao{
-        width: 45.7vw;
+        width: 40.313rem;
 
         font-family: var(--heading-poppins);
         font-weight: var(--heading-regular);
@@ -60,6 +60,42 @@
 
         border-radius: 8px;
         border: 2px solid #FFFFFF;
+    }
+
+    .container__perfil-logado{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+
+        width: 14rem;
+    }
+    .icone__perfil-logado{
+        width: 1.875rem;
+        height: 1.875rem;
+
+        border-radius: 50%;
+    }
+    .nome__perfil-logado{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--heading-medium);
+        font-size: 14px;
+        color: #FFFFFF;
+
+        letter-spacing: .05rem;
+    }
+    .botao__abre-info___perfil{
+        background-color: transparent;
+        border: none;
+
+        background-image: url("../../Assets/Vetores/vetor-seta-baixo-perfil.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        width: 0.875rem;
+        height: 0.5rem;
+
+        margin-left: .2rem;
     }
     /*---------------------CABECALHO-NAVEGACAO----------------------*/
     .container__navegacao___cabecalho{
@@ -101,5 +137,73 @@
 
         padding-right: 1.2rem;
 
+    }
+    /*--------------------DROPDOWN------------------*/
+    .secao__perfil-logado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.563rem;
+
+        position: relative;
+        top: 36%;
+        width: 18rem;
+        height: 4rem;
+    }
+    #container__cabecalho___logado{
+        height: 8.875rem;
+    }
+    .secao__perfil-logado:hover .secao__dropdown-perfil{
+        visibility: visible;
+
+        opacity: 1;
+
+        transition: all .3s ease-in-out;
+
+        top: 0;
+    }
+    .secao__dropdown-perfil{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        background-color: #FFFFFF;
+
+        width: 10.938rem;
+
+        border-radius: 4px;
+
+        font-family: var(--paragraph-SF-Medium);
+
+        padding-top: 1.313rem;
+        padding-left: 1.688rem;
+        padding-right: 1.938rem;
+        padding-bottom: 1.563rem;
+
+        visibility: hidden;
+
+        opacity: 0;
+
+        transition: all .3s ease-in-out;
+
+        position: relative;
+        top: -20px;
+    }
+    .link__dropdown-perfil{
+        font-size: 14px;
+        font-weight: var(--paragraph-bold);
+
+        letter-spacing: .03rem;
+
+        color: #000000;
+    }
+    .link__dropdown-sair{
+        font-size: 14px;
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-regular);
+
+        letter-spacing: .03rem;
+
+        color: #000000;
     }
 }
