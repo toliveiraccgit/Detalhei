@@ -114,7 +114,8 @@ html{
     font-weight: var(--heading-bold);
     font-size: 56px;
 
-    animation: animaDestaqueBlue 8s  alternate infinite;
+    animation: animaDestaqueBlue 10s  alternate infinite;
+    animation-delay: .8s;
 }
 .destaque__green-banner{
     color: var(--green-primary);
@@ -122,7 +123,8 @@ html{
     font-weight: var(--heading-bold);
     font-size: 56px;
 
-    animation: animaDestaqueGreen 8s alternate infinite;
+    animation: animaDestaqueGreen 10s alternate infinite;
+    animation-delay: .8s;
     
     position: relative;
     top: -4rem;
@@ -133,7 +135,8 @@ html{
     font-weight: var(--heading-bold);
     font-size: 56px;
 
-    animation: animaDestaqueYellow 8s  alternate infinite;
+    animation: animaDestaqueYellow 10s  alternate infinite;
+    animation-delay: .8s;
     
     position: relative;
     top: -8rem;
@@ -145,7 +148,8 @@ html{
     font-weight: var(--heading-bold);
     font-size: 56px;
 
-    animation: animaDestaqueRed 8s  alternate infinite;
+    animation: animaDestaqueRed 10s  alternate infinite;
+    animation-delay: .8s;
     
     position: relative;
     top: -12rem;
