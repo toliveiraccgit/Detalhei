@@ -1,4 +1,4 @@
-const slider = document.querySelector('.secao__marcas___feed');
+const slider = document.querySelector('.container__marcas-drag');
 let isDown = false;
 let startX;
 let scrollLeft;

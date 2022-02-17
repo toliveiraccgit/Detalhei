@@ -43,6 +43,7 @@
             align-items: center;
         }
         .botoes__topicos{
+
             padding-top: 0.625rem;
             padding-bottom: 0.625rem;
             padding-left: 0.938rem;
@@ -66,7 +67,25 @@
             transition: all .1s ease-in-out;
         }
         /*------------------MARCAS-------------------*/
-        .secao__marcas___feed{
+        .container__titulo___marcas{
+            padding-top: 1.875rem;
+            padding-left: 3.2rem;
+            padding-right: 6.109rem;
+
+            background: #FFFFFF;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+
+
+            
+        }
+        .titulo__marcas___feed{
+            font-family: var(--paragraph-SF-Medium);
+            font-weight: var(--paragraph-bold);
+            font-size: 16px;
+            color: #080808;
+        }
+        .container__marcas-drag{
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -77,16 +96,21 @@
             padding-left: 4.8rem;
             padding-right: 6.109rem;
 
-            background: #FFFFFF;
-            border-radius: 12px;
-            overflow-x: scroll;
-
             scrollbar-width: none;
 
             cursor: grab;
+
+            overflow-x: scroll;
+
+            background: #FFFFFF;
+            border-bottom-left-radius: 12px;
+            border-bottom-right-radius: 12px;
         }
-        .secao__marcas___feed:active{
+        .container__marcas-drag:active{
             cursor: grabbing;
+        }
+        .container__marcas-drag::-webkit-scrollbar{
+            display: none;
         }
         .container__marcas{
             display: flex;
@@ -366,19 +390,20 @@
 
             background-color: var(--orange-primary);
 
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            padding-right: 1.5rem;
-            padding-left: 1.5rem;
+            padding-top: .8rem;
+            padding-bottom: .8rem;
+            padding-right: 4.5rem;
+            padding-left: 4.5rem;
 
-            margin-bottom: 1.563rem;
+            margin-bottom: 1.2rem;
 
             border-radius: 7px;
 
             font-family: var(--paragraph-SF-Light);
             font-weight: var(--paragraph-bold);
             letter-spacing: .03rem;
-            font-size: 12px;
+            font-size: 14px;
+
         }
             /*------------------ENGAJADOS-------------------*/
             .secao__engajados___semana{
