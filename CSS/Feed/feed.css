@@ -125,9 +125,9 @@
             margin-top: 2.063rem;
 
             padding-top: 1.75rem;
-            padding-left: 3rem;
-            padding-right: 3rem;
-            padding-bottom: 5.563rem;
+            padding-left: 2.5rem;
+            padding-right: 2.5rem;
+            padding-bottom: 5.063rem;
 
             background: #FFFFFF;
             border-radius: 12px;
@@ -139,7 +139,10 @@
 
             gap: 2.5rem;
 
-            margin-bottom: 3.125rem;
+            margin-bottom: 2.625rem;
+
+            padding-left: .5rem;
+            padding-right: .5rem;
         }
         .tablinks{
             background-color: transparent;
@@ -157,7 +160,7 @@
         .secao__produtos-feed{
             display: flex;
             flex-direction: column;
-            gap: 2.5rem;
+            gap: 2rem;
 
             transition: all .3s ease-in-out;
         }
@@ -169,11 +172,16 @@
 
             border-radius: 10.0081px;
 
-            transition: all .1s ease-in-out;
+            transition: all .2s ease-in-out;
+
+            padding-left: .5rem;
+            padding-right: .5rem;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
         }
         .container__card-produto:hover{
             background-color: #F7F9FF;
-            transition: all .1s ease-in-out;
+            transition: all .2s ease-in-out;
         }
         .container__perfil___produto{
             display: flex;

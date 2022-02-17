@@ -115,7 +115,7 @@ html{
     font-size: 56px;
 
     animation: animaDestaqueBlue 10s  alternate infinite;
-    animation-delay: .8s;
+    
 }
 .destaque__green-banner{
     color: var(--green-primary);
@@ -124,7 +124,7 @@ html{
     font-size: 56px;
 
     animation: animaDestaqueGreen 10s alternate infinite;
-    animation-delay: .8s;
+    
     
     position: relative;
     top: -4rem;
@@ -136,7 +136,7 @@ html{
     font-size: 56px;
 
     animation: animaDestaqueYellow 10s  alternate infinite;
-    animation-delay: .8s;
+    
     
     position: relative;
     top: -8rem;
@@ -149,7 +149,7 @@ html{
     font-size: 56px;
 
     animation: animaDestaqueRed 10s  alternate infinite;
-    animation-delay: .8s;
+    
     
     position: relative;
     top: -12rem;
