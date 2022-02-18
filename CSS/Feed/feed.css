@@ -76,7 +76,7 @@
             border-top-left-radius: 12px;
             border-top-right-radius: 12px;
 
-
+            display: none;
             
         }
         .titulo__marcas___feed{
@@ -86,7 +86,7 @@
             color: #080808;
         }
         .container__marcas-drag{
-            display: flex;
+            display: none;
             flex-direction: row;
             align-items: center;
             gap: 6.551rem;
@@ -95,6 +95,8 @@
             padding-bottom: 2.919rem;
             padding-left: 4.8rem;
             padding-right: 6.109rem;
+
+            margin-bottom: 2.063rem;
 
             scrollbar-width: none;
 
@@ -146,7 +148,7 @@
             display: flex;
             flex-direction: column;
 
-            margin-top: 2.063rem;
+            
 
             padding-top: 1.75rem;
             padding-left: 2.5rem;
