@@ -101,7 +101,7 @@
     .card-descrito__banner-info{
         width: 22.255rem;
  
-        border-bottom: 2px solid var(--blue-primary);
+        border-bottom: 2px solid var(--red-primary);
         border-radius: 2px;
     }
     .titulo__card___banner-info{
