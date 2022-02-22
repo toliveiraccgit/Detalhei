@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <style type="text/css" media="screen, print">
+            @font-face {
+            font-family: 'SF UI Display Ultralight';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Ultralight'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-ultralight-58646b19bf205.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Light';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Light'), url("./Fonts/SF-UI-DISPLAY/sf-ui-display-light-58646b33e0551.woff") format('woff');
+            }
+
+            @font-face {
+            font-family: 'SF UI Display Medium';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Medium'), url("./Fonts/SF-UI-DISPLAY/sf-ui-display-medium-58646be638f96.woff") format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Thin';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Thin'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Semibold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Semibold'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Bold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Bold'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Heavy';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Heavy'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Black';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Black'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+            }
+        </style>
+        <link rel="stylesheet" href="./CSS/Avaliacao/avaliacao.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/slideShow.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalho.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/rodape.css">
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <title>Feed | Detalhei</title>
+        <link rel="shortcut icon" href="./Assets/Vetores/Logo-Detalhei.svg" type="image/x-icon"/>
+    </head>
+
+    <body id="body">
+        
+        <header class="cabecalho">
+
+            <section class="container___cabecalho" id="container__cabecalho___logado">
+                <a href="./index.html">
+                    <img src="./Assets/Vetores/LOGO-DETALHIE-NOME.svg" alt="Logo Detalhei" class="logo__detalhei">
+                </a>
+
+                <input type="text" class="input__busca-navegacao" placeholder="Faça aqui sua pesquisa">
+                <section class="secao__perfil-logado">
+                    <div class="container__perfil">
+                        <a class="container__perfil-logado" id="container__perfil-logado">
+
+                            <img src="./Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
+            
+                            <span class="nome__perfil-logado">Cameron Williamson</span>
+            
+                            <button type="button" class="botao__abre-info___perfil"></button>
+
+                        </a>
+                    </div>
+                    <section class="secao__dropdown-perfil" id="dropdown">
+
+                        <a href="#" class="link__dropdown-perfil">Perfil</a>
+                        <a href="./feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
+                        <a href="#" class="link__dropdown-perfil">Minhas opiniões</a>
+                        <a href="./login.html" class="link__dropdown-sair">SAIR</a>
+    
+                    </section>
+                </section>
+                            
+            </section>
+
+            <nav class="container__navegacao___cabecalho">
+                
+                <div class="container__botao___navegacao">
+
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+
+                </div>
+
+                <ul class="lista__navegacao">
+
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Detalhei</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link dropdown-top-5">Top 5</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Comparativo</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Blog</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </header>
+
+        <main class="conteudo">
+
+
+            <section class="cabecalho__avaliacao">
+
+                <h1 class="titulo__cabecalho___avaliacao">Avaliação</h1>
+
+                <div class="container__paginacao___avaliacao">
+
+                    <a href="#" class="item__paginacao___avaliacao">Cozinha</a>
+
+                    <span class="seta__paginacao">></span>
+
+                    <a href="#" class="item__paginacao___avaliacao">Eletroportáteis</a>
+
+                    <span class="seta__paginacao">></span>
+
+                    <a href="#" class="item__paginacao___avaliacao">Panelas</a>
+
+                </div>
+
+            </section>
+
+            <section class="info__produto___avaliado">
+
+                <h2 class="titulo__info___produto">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V</h2>
+
+                <div class="container__data-tempo___produto">
+
+                    <p class="data__produto___avaliado">08/10/2021 às 13:13</p>
+                    <span class="tempo__leitura___avaliado">5 min de leitura</span>
+
+                </div>
+
+            </section>
+
+            <section class="imagens__produtos___avaliados">
+
+                <section class="container container__imagens___produto-avaliado">
+
+                   <section class="imagens___produtos">
+                        <div class="slide__produto___avaliado mySlides">
+                            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/amoM7AcAbKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="100%" height="100%" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-1.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="100%" height="100%" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-2.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="100%" height="100%" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-3.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="100%" height="100%" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-4.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="100%" height="100%" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-5.jpg">
+                        </div>
+
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="100%" height="100%" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-6.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="100%" height="100%" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-7.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="100%" height="100%" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-8.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="100%" height="100%" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-9.jpg">
+                        </div>
+
+                    </section>
+                    
+                    
+                    <section class="secao__thumbnails___produto row">
+                      <div class="thumbnail__slide___produto column">
+                        <img width="100%" height="100%" class="demo cursor" src="./Assets/Avaliacao/ImagemSlideshow/imagem-video-youtube.png" onclick="currentSlide(1)" alt="The Woods">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="100%" height="100%" class="demo cursor" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-1.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="100%" height="100%" class="demo cursor" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-2.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="100%" height="100%" class="demo cursor" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-3.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="100%" height="100%" class="demo cursor" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-4.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="100%" height="100%" class="demo cursor" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-5.jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="100%" height="100%" class="demo cursor" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-6.jpg" onclick="currentSlide(7)" alt="Mountains and fjords">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="100%" height="100%" class="demo cursor" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-7.jpg" onclick="currentSlide(8)" alt="Northern Lights">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="100%" height="100%" class="demo cursor" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-8.jpg" onclick="currentSlide(9)" alt="Nature and sunrise">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="100%" height="100%" class="demo cursor" src="./Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-9.jpg" onclick="currentSlide(10)" alt="Snowy Mountains">
+                      </div>
+
+                    </section>
+
+                </section>
+
+
+            </section>
+
+            <section class="secao__perfil___avaliador">
+
+                <section class="perfil__avaliador">
+
+                    <a href="#" class="container__perfil___avaliador">
+
+                        <img src="./Assets/Icones-Perfis/icone-perfil-logado.png" alt="Imagem Perfil" class="imagem__perfil___avaliador">
+
+                        <div class="container__nome___avaliador">
+
+                            <h3 class="nome__perfil___avaliador">Cameron Williamson</h3>
+
+                            <div class="container__info___perfil-avaliador">
+
+                                <span class="arroba__perfil-avaliador">@Cameron</span>
+                                <span class="numeros__inscritos___perfil-avaliador">123,mil inscrito</span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <button class="botao__seguir___perfil-avaliador">Seguir</button>
+
+                </section>
+
+                <section class="container__botoes___avaliador">
+
+                    <button class="botao__compartilhar">Compartilhar</button>
+                    <button class="botao__favoritos">Favoritos</button>
+                    <button class="botao__comentarios">4 Comentários</button>
+
+                </section>
+
+            </section>
+
+        </main>
+
+        <footer class="rodape" id="rodape__feed">
+
+            <address class="secao__marca">
+
+                <img src="./Assets/Vetores/logo-detalhei-footer.svg" alt="Logo Detalhei" class="logo___detalhei-footer">
+
+                <p class="texto__copyright">Copyright © 2001-2021 ,Detalhei Todos os direitos reservados.</p>
+
+                <div class="container__redes-sociais">
+
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-FACEBOOK.svg" alt="Facebook Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-TWITTER.svg" alt="Twitter Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-INSTAGRAM.svg" alt="Instagram Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-YOUTUBE.svg" alt="Youtube Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-LINKEDIN.svg" alt="Linkedin Detalhei" class="logo__redes-sociais"></a>
+
+                </div>
+            </address>
+
+            <section class="secao__lista" id="secao__lista-footer-margin">
+
+                <h8 class="titulo__lista-footer">Detalhei</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Consultoria</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Contato</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Privacidade</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Ofertas</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Minha Garantia</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Empresarial</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Top 5</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Air Flayer</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Batedeiras</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Eletricos</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Liquidificadores</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fornos</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Produtos</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fogões</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Desidratador</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Churrasqueira</a></li>
+    
+                </ul>
+            
+            </section>
+
+        </footer>
+        <script src="./Componentes/mouseGrab.js" type="text/javascript"></script>
+        <script src="./Componentes/slideShow.js" type="text/javascript"></script>
+    </body>
+
+</html>
