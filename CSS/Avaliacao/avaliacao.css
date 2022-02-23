@@ -290,6 +290,656 @@
         background-repeat: no-repeat;
         background-position: left center;
     }
+    /*-------------------------PONTOS-PRODUTO----------------------*/
+    .secao__pontos___produto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
 
+        padding-top: 2.5rem;
+        padding-bottom: 3.125rem;
 
+        width: 70.125rem;
+
+    }
+        /*-------------------------PONTOS-POSITIVOS----------------------*/
+        .secao__pontos-positivos{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            width: 25.375rem;
+        }
+        .titulo__ponto-positivo{
+            font-family: var(--heading-poppins);
+            font-weight: var(--heading-medium);
+            font-size: 18px;
+
+            color: var(--green-primary);
+
+            margin: 0%;
+            margin-bottom: 1.563rem;
+
+            padding-left: 2rem;
+            background-image: url("../../Assets/Avaliacao/Vetores/vetor-like.svg");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 1.5rem 1.5rem;
+        }
+        .produto__ponto-positivo{
+            font-family: var(--paragraph-SF-Medium);
+            font-weight: var(--paragraph-bold);
+            font-size: 16px;
+
+            margin: 0%;
+
+            color: #07070E;
+
+            padding-left: 2rem;
+            background-image: url("../../Assets/Avaliacao/Vetores/vetor-ponto-positivo.svg");
+            background-repeat: no-repeat;
+            background-position: .5rem center;
+        }
+        /*-------------------------PONTOS-NEGATIVOS----------------------*/
+        .secao__pontos-negativos{
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+
+            width: 25.375rem;
+        }
+        .titulo__ponto-negativo{
+            font-family: var(--heading-poppins);
+            font-weight: var(--heading-medium);
+            font-size: 18px;
+
+            color: #BF2F2F;
+
+            margin: 0%;
+            margin-bottom: 1.563rem;
+
+            padding-left: 2rem;
+            background-image: url("../../Assets/Avaliacao/Vetores/vetor-dislike.svg");
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 1.5rem 1.5rem;
+        }
+        .produto__ponto-negativo{
+            font-family: var(--paragraph-SF-Medium);
+            font-weight: var(--paragraph-bold);
+            font-size: 16px;
+
+            margin: 0%;
+
+            color: #07070E;
+
+            padding-left: 2rem;
+            background-image: url("../../Assets/Avaliacao/Vetores/vetor-ponto-negativo.svg");
+            background-repeat: no-repeat;
+            background-position: .5rem center;
+        }
+    /*-------------------------NOTAS-PRODUTOS----------------------*/
+    .secao__notas___produto{
+        display: flex;
+        flex-direction: column;
+        gap: 2.063rem;
+
+        padding-top: 2.438rem;
+        padding-left: 4.25rem;
+        padding-right: 4.25rem;
+        padding-bottom: 6.063rem;
+
+        background: #FFFFFF;
+
+        border: 1px solid #EFEFEF;
+        border-radius: 4px;
+
+        width: 70.125rem;
+    }
+    .titulo__notas___produto{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 22px;
+
+        color: #07070E;
+
+        margin: 0%;
+        margin-bottom: 1.625rem;
+
+        padding-left: 4.125rem;
+    }
+    .container__nota___produto{
+        display: flex;
+        flex-direction: column;
+        gap: 0.875rem;
+    }
+    .titulo__nota{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 18px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        color: #5B5B5B;
+    }
+    .container__barra___nota{
+        display: flex;
+        align-items: center;
+        text-align: end;
+        width: 57.198rem;
+        height: 1.563rem;
+
+        background: #F3F3F3;
+        border-radius: 37px;
+    }
+    .nota__desempenho{
+        width: 90%;
+        height: 1.563rem;
+
+        background: #329FC0;
+        border-radius: 12px;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 18px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        color: #FFFFFF;
+
+        padding-left: 1.313rem;
+        padding-right: 1.313rem;
+        padding-top: .15rem;
+    }
+    .nota__praticidade{
+        width: 60%;
+        height: 1.563rem;
+
+        background: #329FC0;
+        border-radius: 12px;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 18px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        color: #FFFFFF;
+
+        padding-left: 1.313rem;
+        padding-right: 1.313rem;
+        padding-top: .15rem;
+    }
+    .nota__conforto{
+        width: 70%;
+        height: 1.563rem;
+
+        background: #329FC0;
+        border-radius: 12px;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 18px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        color: #FFFFFF;
+
+        padding-left: 1.313rem;
+        padding-right: 1.313rem;
+        padding-top: .15rem;
+    }
+    .nota__design{
+        width: 80%;
+        height: 1.563rem;
+
+        background: #329FC0;
+        border-radius: 12px;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 18px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        color: #FFFFFF;
+
+        padding-left: 1.313rem;
+        padding-right: 1.313rem;
+        padding-top: .15rem;
+    }
+    .nota__limpeza{
+        width: 90%;
+        height: 1.563rem;
+
+        background: #329FC0;
+        border-radius: 12px;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 18px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        color: #FFFFFF;
+
+        padding-left: 1.313rem;
+        padding-right: 1.313rem;
+        padding-top: .15rem;
+    }
+    /*-------------------------NOTA-FINAL----------------------*/
+    .secao__nota-final{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.063rem;
+
+        background: #FFFFFF;
+
+        border: 1px solid #EFEFEF;
+        border-radius: 4px;
+
+        width: 70.125rem;
+
+        margin-top: 2.5rem;
+
+        padding-bottom: 1.938rem;
+        padding-top: 1.063rem;
+    }
+    .container__nota-final{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.563rem;
+    }
+    .titulo__nota-final{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 30px;
+
+        color: #07070E;
+
+        margin: 0%;
+    }
+    .nota-final{
+        padding-top: 0.438rem;
+        padding-bottom: 0.438rem;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+
+        background: #05EE00;
+        border-radius: 5px;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 20px;
+
+        color: #FFFFFF;
+    }
+    .container__custo-beneficio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.438rem;
+    }
+    .titulo__custo-beneficio{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 30px;
+
+        color: #07070E;
+
+        margin: 0%;
+    }
+    .container__nota___custo-beneficio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.25rem;
+    }
+    .nota__custo-beneficio{
+        width: 1.5rem;
+        height: 1.5rem;
+
+        border-radius: 50%;
+        background-color: #B9B9B9;
+
+        border: none;
+    }
+    .nota__custo-beneficio:nth-child(1){
+        background-color: #329FC0;
+    }
+    .nota__custo-beneficio:nth-child(2){
+        background-color: #329FC0;
+    }
+    .nota__custo-beneficio:nth-child(3){
+        background-color: #329FC0;
+    }
+    .nota__custo-beneficio:nth-child(4){
+        background-color: #329FC0;
+    }
+    /*-------------------ADS-------------------*/
+    .secao__anuncio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        width: 70.125rem;
+
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .titulo__anuncio{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 100px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        color: #000000;
+    }
+    /*-------------------INFORMACAO-PRODUTO-------------------*/
+    .secao__informacao__produto{
+        display: flex;
+        flex-direction: column;
+        width: 70.125rem;
+        height: auto;
+
+        background: #FFFFFF;
+
+        border: 1px solid #EFEFEF;
+        border-radius: 4px;
+    }
+    .cabecalho__informacao___produto{
+        display: flex;
+        flex-direction: row;
+
+    }
+    .tablinks{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 22px;
+
+        color: #07070E;
+
+        background: #FFFFFF;
+        border: 1px solid #EFEFEF;
+
+        padding-top: 2.438rem;
+        padding-bottom: 2.438rem;
+        padding-left: 4.125rem;
+        padding-right: 4.125rem;
+    }
+    .active-tablink{
+        background: #F8F8F8;
+    }
+    .secao__informacao___ofertas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background: #F8F8F8;
+        padding-top: 2.25rem;
+        padding-bottom: 5.59rem;
+
+        width: 70.125rem;
+        height: auto;
+    }
+    .cabecalho__informacao___ofertas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+
+        margin-bottom: 3.75rem;
+    }
+    .titulo__informacoes___ofertas{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-bold);
+        font-size: 30px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        padding-left: 2.7rem;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-carrinho-compras.svg");
+        background-position: left center;
+        background-repeat: no-repeat;
+    }
+    .subtitulo__informacoes___ofertas{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-regular);
+        font-size: 16px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        color: #6B6B6B;
+    }
+    .container__info___ofertas{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2.503rem;
+    }
+    .secao__imagem___produto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0rem;
+    }
+    .imagem__produto-avaliacoes{
+        width: 23rem;
+    }
+    .container__sombra{
+        background-image: url("../../Assets/Vetores/imagem-sombra.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+
+        width: 20.688rem;
+        height: 6.813rem;
+    }
+    .secao__descricao___ofertas{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 31.938rem;
+    }
+    .titulo__descricao___ofertas{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 24px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+        margin-bottom: 2.625rem;
+    }
+    .container__preco___oferta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.253rem;
+
+        margin-bottom: 2.291rem;
+    }
+    .preco__oferta___produto{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-bold);
+        font-size: 24px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+        color: var(--blue-primary);
+    }
+    .link__loja___oferta{
+        background: var(--blue-primary);
+        border-radius: 8px;
+
+        padding-top: .9rem;
+        padding-bottom: .9rem;
+        padding-left: 3.313rem;
+        padding-right: 3.313rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 14px;
+
+        letter-spacing: 0.05rem;
+
+        color: #FFFFFF;
+    }
+    /*-------------------CARACTERISTICAS-PRODUTO-------------------*/
+    .secao__informacao___caracteristicas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        padding-bottom: 2.5rem;
+
+        background-color: #F6F6F6;
+    }
+    .lista__informacao___caracteristicas{
+        display: flex;
+        flex-direction: column;
+
+        width: 70.125rem;
+    }
+    .item__lista___caracteristicas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding-left: 3.75rem;
+        padding-right: 5.875rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.75rem;
+    }
+    .item__lista___caracteristicas:nth-child(odd){
+        background-color: #EDEDED;
+    }
+    .item__lista___caracteristicas:nth-child(even){
+        background-color: #F6F6F6;
+    }
+    .titulo__item___lista{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        letter-spacing: 0.05rem;
+
+        color: #07070E;
+    }
+    .descricao__item___lista{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        letter-spacing: 0.05rem;
+
+        color: #07070E;
+    }
+    .botao__ver-mais___caracteristicas{
+        background-color: transparent;
+
+        margin-top: 1.625rem;
+
+        border: none;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        color: #979797;
+    }
+    .container__caracteristicas___expandido{
+        opacity: 0;
+
+        position: fixed;
+    
+        animation: animaCaracteristicas .3s ease-in-out forwards;
+    
+        background: rgba(0, 0, 0, 0.35);
+    
+        height: 100vh;
+        width: 100vw;
+    
+        top: 0%;
+        left: 0%;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .secao__caracteristicas___expandido{
+        display: flex;
+        flex-direction: column;
+
+        background: #F6F6F6;
+        border-radius: 4px;
+    }
+    .container__botao___fecha{
+        width: 70.125rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-bottom: 1.5rem;
+        padding-top: 1.813rem;
+        padding-right: 1.813rem;
+    }
+    .botao__fecha___caracteristicas{
+        border: none;
+        width: 0.938rem;
+        height: 0.938rem;
+
+        background-color: transparent;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-fehca-modal.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    @keyframes animaCaracteristicas {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    @keyframes animaFechaCaracteristicas {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
 }
