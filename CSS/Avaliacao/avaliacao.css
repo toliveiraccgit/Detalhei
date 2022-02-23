@@ -800,6 +800,7 @@
     .link__loja___oferta{
         background: var(--blue-primary);
         border-radius: 8px;
+        border: none;
 
         padding-top: .9rem;
         padding-bottom: .9rem;
@@ -941,5 +942,261 @@
         to{
             opacity: 0;
         }
+    }
+    /*-------------------CARACTERISTICAS-PRODUTO-------------------*/
+    .secao__precos___produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        margin-top: 2.188rem;
+
+        width: 70.125rem;
+    }
+    .container__botao___preco{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-bottom: 1.875rem;
+    }
+    .botao__ver-todos___precos{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-medium);
+        font-size: 18px;
+
+        letter-spacing: 0.05rem;
+
+        color: #6B6B6B;
+
+        background: transparent;
+        border: none;
+    }
+    .numero__ofertas___produto{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+
+        letter-spacing: 0.05rem;
+
+        color: #6B6B6B;
+    }
+    .lista__precos___ofertas{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        width: 70.125rem;
+    }
+    .link__item___lista-oferta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: #F4F4F4;
+
+        border-radius: 15px;
+        border: 1px solid #EFEFEF;
+
+        padding-left: 4.063rem;
+        padding-right: 4.063rem;
+        padding-top: 2.188rem;
+        padding-bottom: 2.188rem;
+    }
+    .container__loja___oferta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.813rem;
+    }
+    .imagem__loja-oferta{
+        width: 10.313rem;
+        height: 3.75rem;
+
+        border-radius: 6px;
+    }
+    .titulo__loja___oferta{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 24px;
+    
+        color: #07070E;  
+    }
+    .preco__loja___oferta{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-bold);
+        font-size: 22px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        color: var(--blue-primary);
+    }
+
+
+    .container__ofertas___expandido{
+        opacity: 0;
+
+        position: fixed;
+    
+    
+        background: rgba(0, 0, 0, 0.35);
+    
+        height: 100vh;
+        width: 100vw;
+    
+        top: 0%;
+        left: 0%;
+
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        overflow-y: hidden;
+    }
+    .secao__ofertas___expandido{
+        display: flex;
+        flex-direction: column;
+
+        background: #FFFFFF;
+        border-radius: 4px;
+
+        width: auto;
+        height: auto;
+    }
+    .container__botao___fecha{
+        width: 70.125rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-bottom: 1.5rem;
+        padding-top: 1.813rem;
+        padding-right: 1.813rem;
+    }
+    .botao__fecha___ofertas{
+        border: none;
+        width: 0.938rem;
+        height: 0.938rem;
+
+        background-color: transparent;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-fehca-modal.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    @keyframes animaOfertas {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    @keyframes animaFechaOfertas {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+    .lista__precos___ofertas-expandido{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        width: 70.125rem;
+
+        height: 38.3rem;
+
+        overflow-y: scroll;
+        overscroll-behavior: contain;
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+    .link__item___lista-oferta-expandido{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: #F4F4F4;
+
+        border-radius: 15px;
+        border: 1px solid #EFEFEF;
+
+        padding-left: 4.063rem;
+        padding-right: 4.063rem;
+        padding-top: 2.188rem;
+        padding-bottom: 2.188rem;
+
+        width: 66.125rem;
+    }
+    /*-------------------AVALIACAO-PRODUTO-------------------*/
+    .secao__texto___avaliacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 62.688rem;
+
+        margin-top: 10.188rem;
+        margin-bottom: 7.5rem;
+    }
+    .imagem__banner___texto-avaliacao{
+        width: 62.688rem;
+
+        border-radius: 10px;
+
+        margin-bottom: 5rem;
+    }
+    .container__texto___avaliacao{
+        display: flex;
+        flex-direction: column;
+    }
+    .titulo__texto___avaliacao{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 20px;
+    
+        color: #000000;  
+
+        margin: 0%;
+        margin-bottom: 2rem;
+    }
+    .paragrafo__texto___avaliacao{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-medium);
+        font-size: 20px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+        margin-bottom: 4rem;
+
+        color: #07070E;
+    }
+    .botao__continuar___lendo{
+        background: var(--blue-primary);
+
+        border-radius: 8px;
+        border: none;
+
+        padding-top: .9rem;
+        padding-bottom: .9rem;
+        padding-left: 3.313rem;
+        padding-right: 3.313rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 14px;
+
+        letter-spacing: 0.05rem;
+
+        color: #FFFFFF;
     }
 }
