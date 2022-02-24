@@ -367,19 +367,18 @@
         .tipo__produto___revisao{
             background-color: var(--green-primary);
 
-            background-position-x: .8rem;
-            background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-VIDEO.svg");
-
-            background-size: 0.75rem 0.75rem;
+            background-position-x: .3rem;
+            background-image: url("../../Assets/Avaliacao/Vetores/vetor-revisao.svg");
+            background-size: 2rem 2rem;
         }
 
         .tipo__produto___avaliacao{
             background-color: var(--blue-primary);
 
-            background-position-x: 1rem;
-            background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-AVALIACOES.svg");
+            background-position-x: .3rem;
+            background-image: url("../../Assets/Avaliacao/Vetores/vetor-avaliacao.svg");
 
-            background-size: 0.75rem 0.75rem;
+            background-size: 2rem 2rem;
         }
     /*------------------SIDE-BAR-------------------*/
         .secao__sidebar___feed{
