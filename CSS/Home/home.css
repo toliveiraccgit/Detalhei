@@ -99,7 +99,7 @@
     }
 
     .card-descrito__banner-info{
-        width: 22.255rem;
+        width: 22.5rem;
  
         border-bottom: 2px solid var(--red-primary);
         border-radius: 2px;
@@ -123,40 +123,20 @@
     .imagem__avaliações___card-banner-info{
         background-color: var(--blue-primary);
 
-        padding-right: 1.001rem;
-        padding-left: 1.062rem;
-        padding-top: 0.949rem;
-        padding-bottom: 0.949rem;
-
         border-radius: 6.00126px;
     }
     .imagem__teste___card-banner-info{
         background-color: var(--green-primary);
-
-        padding-right: 0.966rem;
-        padding-left: 0.937rem;
-        padding-top: 1.012rem;
-        padding-bottom: 0.729rem;
 
         border-radius: 6.00126px;
     }
     .imagem__opiniao___card-banner-info{
         background-color: var(--orange-primary);
 
-        padding-right: 0.91rem;
-        padding-left: 1.062rem;
-        padding-top: 1.075rem;
-        padding-bottom: 0.792rem;
-
         border-radius: 6.00126px;
     }
     .imagem__descrito___card-banner-info{
         background-color: var(--red-primary);
-
-        padding-right: 0.966rem;
-        padding-left: 1.124rem;
-        padding-top: 0.886rem;
-        padding-bottom: 0.792rem;
 
         border-radius: 6.00126px;
     }
@@ -1140,7 +1120,7 @@
 
         background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-DESCRICOES.svg");
         background-repeat: no-repeat;
-        background-position-y: center;
+        background-position-y: 1.5rem;
         background-position-x: left;
 
         margin: 0%;
@@ -1373,12 +1353,7 @@
         
         color: #939393;
 
-        padding-left: 2.9rem;
-
-        background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-BLOG.svg");
-        background-repeat: no-repeat;
-        background-position-y: center;
-        background-position-x: left;
+        padding-left: 0rem;
 
         margin: 0%;
     }

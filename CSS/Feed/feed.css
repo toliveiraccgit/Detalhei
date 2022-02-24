@@ -368,7 +368,7 @@
             background-color: var(--green-primary);
 
             background-position-x: .8rem;
-            background-image: url("../../Assets/Vector\(2\).svg");
+            background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-VIDEO.svg");
 
             background-size: 0.75rem 0.75rem;
         }
@@ -377,7 +377,7 @@
             background-color: var(--blue-primary);
 
             background-position-x: 1rem;
-            background-image: url("../../Assets/Vector\(1\).svg");
+            background-image: url("../../Assets/Icones-Secoes/ICO-SECAO-AVALIACOES.svg");
 
             background-size: 0.75rem 0.75rem;
         }
