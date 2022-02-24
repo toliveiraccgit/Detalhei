@@ -1024,12 +1024,12 @@
         font-weight: var(--heading-bold);
         font-size: 24px;
 
-        background-image: url("/Assets/Vetores/ICO-TOP-PARTICIPANTES.svg");
+        background-image: url("/Assets/Icones-Secoes/ICO-SECAO-OPINIOES.svg");
         background-repeat: no-repeat;
         background-position-x: right;
         background-position-y: center;
 
-        padding-right: 3.5rem;
+        padding-right: 2.5rem;
     }
     .lista__top-participantes{
         display: flex;
