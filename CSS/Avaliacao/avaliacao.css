@@ -1183,6 +1183,7 @@
         align-items: center;
 
         width: 62.688rem;
+        height: auto;
 
         margin-top: 10.188rem;
         margin-bottom: 7.5rem;
@@ -1193,6 +1194,12 @@
         border-radius: 10px;
 
         margin-bottom: 5rem;
+    }
+    .container-overflow__texto___avaliacao{
+        height: 40rem;
+        overflow-y: hidden;
+
+        transition: all .2s ease-in-out;
     }
     .container__texto___avaliacao{
         display: flex;
@@ -1220,7 +1227,22 @@
 
         color: #07070E;
     }
+    @keyframes animaTexto {
+        0%{
+            height: 40rem;
+        }
+        100%{
+            height: auto;
+            overflow-y: visible;
+        }
+    }
+    @keyframes animaBotao {
+        to{
+            visibility: hidden;
+        }
+    }
     .botao__continuar___lendo{
+        
         background: var(--blue-primary);
 
         border-radius: 8px;
@@ -2089,6 +2111,153 @@
         font-weight: var(--paragraph-bold);
         font-size: 17px;
         color:  #9B9999;
+    }
+    /*----------------------MODAL---------------------*/
+    .container__modal___comentario{
+        opacity: 0;
+
+        position: fixed;
+        z-index: 2000000;
+    
+        background: rgba(0, 0, 0, 0.35);
+    
+        height: 100vh;
+        width: 100vw;
+    
+        top: 0%;
+        left: 0%;
+
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        overflow-y: hidden;
+    }
+    .secao__modal___comentario{
+        display: flex;
+        flex-direction: column;
+
+        background: #FFFFFF;
+        border-radius: 4px;
+
+        width: auto;
+        height: auto;
+
+        padding-left: 3.375rem;
+        padding-right: 3.313rem;
+        padding-bottom: 7.813rem;
+    }
+    .container__botao___fecha-comentario{
+        width: 60.313rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-top: 1.813rem;
+        padding-right: 0rem;
+
+        margin-bottom: 5.125rem;
+    }
+    .escreva__comentario{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .container__info___comentario{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.813rem;
+
+        margin-bottom: 1.5rem;
+    }
+    .nome__perfil___comentario{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 22px;
+        
+        color: #243141;
+    }
+    .container__input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.875rem;
+    }
+    .container__input___checkamrck{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .input__check___comentario{
+        all: unset;
+
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-color: transparent;
+        border-radius: 5px;
+
+        border: 2px solid #E8E8E8;
+
+        display: inline-block;
+
+        cursor: pointer;
+    }
+    .input__check___comentario:checked{
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-color: var(--blue-primary);
+        color: var(--blue-primary);
+
+        border: 2px solid var(--blue-primary);
+
+        background-image: url("../../Assets/Login/vetor-botao-check.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .label__input___check-comentario{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        line-height: 140%;
+
+        letter-spacing: 0.02em;
+
+        color:  #303030;
+    }
+    .textarea__comentario{
+        background: #F0F0F0;
+
+        border-radius: 7px;
+        border: none;
+
+        width: 59.625rem;
+        height: 20.125rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        line-height: 140%;
+
+        letter-spacing: 0.02em;
+
+        color:  #303030;
+
+        padding-top: 1.688rem;
+        padding-left: 1.813rem;
+        padding-right: 16.313rem;
+        padding-bottom: 1.688rem;
+
+        overscroll-behavior: contain;
+
+        resize: none;
+    }
+    .textarea__comentario:focus{
+        outline: 2px solid #878888;
     }
     /*--------------------TABS------FIXAS------------------*/
     .secao__tab___avaliacao{
