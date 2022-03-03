@@ -30,12 +30,12 @@ function tabAvaliacao(){
 
 
 function tabRevisao(){
-    window.scrollTo(window.innerWidth , `${posicaoRevisao + 200}`)
+    window.scrollTo(window.innerWidth , `${posicaoRevisao}`)
 }
 
 
 function tabOpiniao(){
-    window.scrollTo(window.innerWidth , `${posicaoOpiniao + 200 }`)
+    window.scrollTo(window.innerWidth , `${posicaoOpiniao}`)
 }
 
 console.log(posicaoAvaliacao , posicaoOpiniao, posicaoRevisao)
