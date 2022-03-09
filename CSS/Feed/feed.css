@@ -380,6 +380,22 @@
 
             background-size: 2rem 2rem;
         }
+        .tipo__produto___opiniao{
+            background-color: var(--orange-primary);
+
+            background-position-x: .3rem;
+            background-image: url("../../Assets/Avaliacao/Vetores/vetor-opiniao.svg");
+
+            background-size: 2rem 2rem;
+        }
+        .tipo__produto___descricao{
+            background-color: var(--red-primary);
+
+            background-position-x: .3rem;
+            background-image: url("../../Assets/Avaliacao/Vetores/vetor-descricao.svg");
+
+            background-size: 2rem 2rem;
+        }
     /*------------------SIDE-BAR-------------------*/
         .secao__sidebar___feed{
             display: flex;

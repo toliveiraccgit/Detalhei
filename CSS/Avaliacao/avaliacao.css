@@ -2283,6 +2283,202 @@
 
         color: #FFFFFF;
     }
+    .container__botao___responde{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.625rem;
+    }
+    .botao__responder___comentario{
+        background: var(--blue-primary);
+
+        border-radius: 8px;
+        border: none;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 1.156rem;
+        padding-right: 1.156rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 12px;
+
+        letter-spacing: 0.05rem;
+
+        color: #FFFFFF;
+    }
+    /*----------------------MODAL-RESPONDE-COMENTARIO--------------------*/
+    .container__modal___responde-comentario{
+        opacity: 0;
+
+        position: fixed;
+        z-index: 2000000;
+    
+        background: rgba(0, 0, 0, 0.35);
+    
+        height: 100vh;
+        width: 100vw;
+    
+        top: 0%;
+        left: 0%;
+
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        overflow-y: hidden;
+    }
+    .secao__modal___responde-comentario{
+        display: flex;
+        flex-direction: column;
+
+        background: #FFFFFF;
+        border-radius: 4px;
+
+        width: auto;
+        height: auto;
+
+        padding-left: 3.375rem;
+        padding-right: 3.313rem;
+        padding-bottom: 7.813rem;
+    }
+    .container__botao___fecha-responde-comentario{
+        width: 60.313rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-top: 1.813rem;
+        padding-right: 0rem;
+
+        margin-bottom: 5.125rem;
+    }
+    .escreva__responde-comentario{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .container__info___responde-comentario{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.813rem;
+
+        margin-bottom: 1.5rem;
+    }
+    .nome__perfil___responde-comentario{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 22px;
+        
+        color: #243141;
+    }
+    .container__input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.875rem;
+    }
+    .container__input___checkamrck{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .input__check___responde-comentario{
+        all: unset;
+
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-color: transparent;
+        border-radius: 5px;
+
+        border: 2px solid #E8E8E8;
+
+        display: inline-block;
+
+        cursor: pointer;
+    }
+    .input__check___responde-comentario:checked{
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-color: var(--blue-primary);
+        color: var(--blue-primary);
+
+        border: 2px solid var(--blue-primary);
+
+        background-image: url("../../Assets/Login/vetor-botao-check.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .label__input___check-responde-comentario{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        line-height: 140%;
+
+        letter-spacing: 0.02em;
+
+        color:  #303030;
+    }
+    .textarea__responde-comentario{
+        background: #F0F0F0;
+
+        border-radius: 7px;
+        border: none;
+
+        width: 59.625rem;
+        height: 20.125rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        line-height: 140%;
+
+        letter-spacing: 0.02em;
+
+        color:  #303030;
+
+        padding-top: 1.688rem;
+        padding-left: 1.813rem;
+        padding-right: 16.313rem;
+        padding-bottom: 1.688rem;
+
+        overscroll-behavior: contain;
+
+        resize: none;
+    }
+    .textarea__responde-comentario:focus{
+        outline: 2px solid #878888;
+    }
+    .container__botao___envia-responde-comentario{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-right: .8rem;
+        padding-top: 1.875rem;
+    }
+    .botao__envia-responde-comentario{
+        background-color: var(--blue-primary);
+
+        padding: 1rem 3.969rem;
+
+        border: none;
+        border-radius: 8px;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+    }
     /*--------------------TABS------FIXAS------------------*/
     .secao__tab___avaliacao{
         display: flex;
