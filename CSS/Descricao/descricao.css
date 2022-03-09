@@ -7,7 +7,7 @@
         padding-top: 5.438rem;
     }
     /*---------------------------CABECALHO----------------------------*/
-    .cabecalho__opiniao{
+    .cabecalho__descricao{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -15,23 +15,23 @@
 
         margin-bottom: 1.25rem;
     }
-    .titulo__cabecalho___opiniao{
+    .titulo__cabecalho___descricao{
         font-family: var(--heading-poppins);
         font-weight: var(--heading-bold);
         font-size: 40px;
 
         margin: 0%;
 
-        color: var(--orange-primary);
+        color: var(--red-primary);
 
         padding-left: 5rem;
 
-        background-image: url("../../Assets/Avaliacao/Vetores/vetor-opiniao.svg");
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-descricao.svg");
         background-position: left center;
         background-repeat: no-repeat;
     }
     /*---------------------------PAGINAÇÃO----------------------------*/
-    .container__paginacao___opiniao{
+    .container__paginacao___descricao{
         display:flex;
         flex-direction: row;
         align-items: center;
@@ -39,7 +39,7 @@
 
         width: 70.125rem;
     }
-    .item__paginacao___opiniao{
+    .item__paginacao___descricao{
         font-family: var(--heading-poppins);
         font-weight: var(--paragraph-medium);
         font-size: 16px;
@@ -58,7 +58,7 @@
         color: #9B9999;
     }
     /*--------------------------INFO-PRODUTO----------------------------*/
-    .info__produto___opiniao{
+    .info__produto___descricao{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -83,7 +83,7 @@
 
         margin-bottom: 1.875rem;
     }
-    .data__produto___opiniao{
+    .data__produto___descricao{
         font-family: var(--paragraph-SF-Medium);
         font-weight: var(--paragraph-bold);
         font-size: 18px;
@@ -92,7 +92,7 @@
 
         color: #9B9999;
     }
-    .tempo__leitura___opiniao{
+    .tempo__leitura___descricao{
         font-family: var(--paragraph-SF-Medium);
         font-weight: var(--paragraph-bold);
         font-size: 18px;
@@ -110,7 +110,7 @@
         width: 70.125rem;
     }
 
-    .slide__produto___opiniao{
+    .slide__produto___descricao{
         width: 70.125rem;
         height: auto;
 
@@ -144,7 +144,7 @@
 
         scale: 1.5;
     }
-    .container__imagens___produto-opiniao{
+    .container__imagens___produto-descricao{
         display: flex;
         flex-direction: column;
         gap: 1.938rem;
@@ -605,7 +605,7 @@
         margin: 0%;
 
         padding-left: 2.7rem;
-        background-image: url("../../Assets/Opiniao/Vetores/vetor-carrinho-opiniao.svg");
+        background-image: url("../../Assets/Descricao/Vetores/vetor-carrinho-descricao.svg");
         background-position: left center;
         background-repeat: no-repeat;
     }
@@ -678,10 +678,10 @@
         letter-spacing: 0.02rem;
 
         margin: 0%;
-        color: var(--orange-primary);
+        color: var(--red-primary);
     }
     .link__loja___oferta{
-        background: var(--orange-primary);
+        background: var(--red-primary);
         border-radius: 8px;
         border: none;
 
@@ -915,7 +915,7 @@
 
         margin: 0%;
 
-        color: var(--orange-primary);
+        color: var(--red-primary);
     }
 
 
@@ -1030,7 +1030,7 @@
         width: 66.125rem;
     }
     /*-------------------AVALIACAO-PRODUTO-------------------*/
-    .secao__texto___opiniao{
+    .secao__texto___descricao{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1040,24 +1040,24 @@
 
         margin-bottom: 7.5rem;
     }
-    .imagem__banner___texto-opiniao{
+    .imagem__banner___texto-descricao{
         width: 62.688rem;
 
         border-radius: 10px;
 
         margin-bottom: 5rem;
     }
-    .container-overflow__texto___opiniao{
+    .container-overflow__texto___descricao{
         height: 36rem;
         overflow-y: hidden;
 
         transition: all .2s ease-in-out;
     }
-    .container__texto___opiniao{
+    .container__texto___descricao{
         display: flex;
         flex-direction: column;
     }
-    .titulo__texto___opiniao{
+    .titulo__texto___descricao{
         font-family: var(--heading-poppins);
         font-weight: var(--heading-medium);
         font-size: 20px;
@@ -1067,7 +1067,7 @@
         margin: 0%;
         margin-bottom: 2rem;
     }
-    .paragrafo__texto___opiniao{
+    .paragrafo__texto___descricao{
         font-family: var(--paragraph-SF-Light);
         font-weight: var(--paragraph-medium);
         font-size: 20px;
@@ -1095,7 +1095,7 @@
     }
     .botao__continuar___lendo{
         
-        background: var(--orange-primary);
+        background: var(--red-primary);
 
         border-radius: 8px;
         border: none;
@@ -1137,7 +1137,7 @@
         background-position-y: center;
         background-position-x: .5rem;
 
-        background-color: var(--orange-primary);
+        background-color: var(--red-primary);
         border-radius: 8px;
 
         margin: 0%;
@@ -1334,7 +1334,7 @@
         
         color: #FFFFFF;
 
-        background-color: var(--orange-primary);
+        background-color: var(--red-primary);
 
         padding: 0.875rem 1.625rem;
         
@@ -1348,7 +1348,7 @@
         width: 20.813rem;
         height: 10.438rem;
 
-        background-color: var(--orange-primary);
+        background-color: var(--red-primary);
 
         border-radius: 9px;
 
@@ -1440,7 +1440,7 @@
         background-position-y: 0rem;
         background-position-x: .5rem;
 
-        background-color: var(--orange-primary);
+        background-color: var(--red-primary);
         border-radius: 8px;
 
         margin: 0%;
@@ -1855,7 +1855,7 @@
         font-weight: var(--heading-medium);
         font-size: 14px;
 
-        color: var(--orange-primary);
+        color: var(--red-primary);
 
         text-decoration: underline;
     }
@@ -2062,10 +2062,10 @@
         width: 1.5rem;
         height: 1.5rem;
 
-        background-color: var(--orange-primary);
-        color: var(--orange-primary);
+        background-color: var(--red-primary);
+        color: var(--red-primary);
 
-        border: 2px solid var(--orange-primary);
+        border: 2px solid var(--red-primary);
 
         background-image: url("../../Assets/Login/vetor-botao-check.svg");
         background-repeat: no-repeat;
@@ -2122,7 +2122,7 @@
         padding-top: 1.875rem;
     }
     .botao__envia-comentario{
-        background-color: var(--orange-primary);
+        background-color: var(--red-primary);
 
         padding: 1rem 3.969rem;
 
@@ -2144,7 +2144,7 @@
         gap: 0.625rem;
     }
     .botao__responder___comentario{
-        background: var(--orange-primary);
+        background: var(--red-primary);
 
         border-radius: 8px;
         border: none;
@@ -2390,7 +2390,7 @@
         background-position-y: center;
         background-position-x: .5rem;
 
-        background-color: var(--orange-primary);
+        background-color: var(--red-primary);
 
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
@@ -2418,7 +2418,35 @@
         background-position-y: center;
         background-position-x: .5rem;
 
-        background-color: var(--orange-primary);
+        background-color: var(--red-primary);
+
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        border-top-right-radius: none;
+        border-bottom-right-radius: none;
+        border: none;
+
+        margin: 0%;
+    }
+    .botao__tab___descricao{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 16px;
+
+        color: #FFFFFF;
+
+        padding-left: 4.75rem;
+        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
+        padding-right: 1.188rem;
+
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-descricao.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: .5rem;
+
+        background-color: var(--red-primary);
 
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
@@ -2445,7 +2473,7 @@
         border: none;
 
         background-color: transparent;
-        background-image: url("../../Assets/Opiniao/Vetores/vetor-botao-scroll-opiniao.svg");
+        background-image: url("../../Assets/Descricao/Vetores/vetor-botao-scroll-descricao.svg");
         background-position: center center;
         background-repeat: no-repeat;
     }
