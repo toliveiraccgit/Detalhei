@@ -1966,6 +1966,20 @@
         font-size: 17px;
         color:  #9B9999;
     }
+    .secao__comentario___respondido{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 35.5rem;
+
+        padding-left: 1.625rem;
+        padding-top: 1.625rem;
+
+        background-image: url("../../Assets/Vetores/vetor-comentario-respondido.svg");
+        background-repeat: no-repeat;
+        background-position: left 2.438rem;
+    }
     /*----------------------MODAL---------------------*/
     .container__modal___comentario{
         opacity: 0;
