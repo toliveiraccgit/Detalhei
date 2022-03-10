@@ -2274,10 +2274,10 @@
         width: 1.5rem;
         height: 1.5rem;
 
-        background-color: var(--blue-primary);
-        color: var(--blue-primary);
+        background-color: var(--orange-primary);
+        color: var(--orange-primary);
 
-        border: 2px solid var(--blue-primary);
+        border: 2px solid var(--orange-primary);
 
         background-image: url("../../Assets/Login/vetor-botao-check.svg");
         background-repeat: no-repeat;

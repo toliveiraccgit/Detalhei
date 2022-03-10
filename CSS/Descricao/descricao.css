@@ -551,6 +551,8 @@
 
         border: 1px solid #EFEFEF;
         border-radius: 4px;
+
+        margin-bottom: 6.688rem;
     }
     .cabecalho__informacao___produto{
         display: flex;
@@ -2274,10 +2276,10 @@
         width: 1.5rem;
         height: 1.5rem;
 
-        background-color: var(--blue-primary);
-        color: var(--blue-primary);
+        background-color: var(--red-primary);
+        color: var(--red-primary);
 
-        border: 2px solid var(--blue-primary);
+        border: 2px solid var(--red-primary);
 
         background-image: url("../../Assets/Login/vetor-botao-check.svg");
         background-repeat: no-repeat;
