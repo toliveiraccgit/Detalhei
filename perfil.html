@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <style type="text/css" media="screen, print">
+            @font-face {
+            font-family: 'SF UI Display Ultralight';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Ultralight'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-ultralight-58646b19bf205.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Light';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Light'), url("./Fonts/SF-UI-DISPLAY/sf-ui-display-light-58646b33e0551.woff") format('woff');
+            }
+
+            @font-face {
+            font-family: 'SF UI Display Medium';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Medium'), url("./Fonts/SF-UI-DISPLAY/sf-ui-display-medium-58646be638f96.woff") format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Thin';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Thin'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Semibold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Semibold'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Bold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Bold'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Heavy';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Heavy'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Black';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Black'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+            }
+        </style>
+        <link rel="stylesheet" href="./CSS/Perfil/perfil.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/slideShow.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalho.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/rodape.css">
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <title>Perfil | Detalhei</title>
+        <link rel="shortcut icon" href="./Assets/Vetores/Logo-Detalhei.svg" type="image/x-icon"/>
+    </head>
+
+    <body id="body">
+        
+        <header class="cabecalho">
+
+            <section class="container___cabecalho" id="container__cabecalho___logado">
+                <a href="./index.html">
+                    <img src="./Assets/Vetores/LOGO-DETALHIE-NOME.svg" alt="Logo Detalhei" class="logo__detalhei">
+                </a>
+
+                <input type="text" class="input__busca-navegacao" placeholder="Faça aqui sua pesquisa">
+                <section class="secao__perfil-logado">
+                    <div class="container__perfil">
+                        <a class="container__perfil-logado" id="container__perfil-logado">
+
+                            <img src="./Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
+            
+                            <span class="nome__perfil-logado">Cameron Williamson</span>
+            
+                            <button type="button" class="botao__abre-info___perfil"></button>
+
+                        </a>
+                    </div>
+                    <section class="secao__dropdown-perfil" id="dropdown">
+
+                        <a href="#" class="link__dropdown-perfil">Perfil</a>
+                        <a href="./feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
+                        <a href="#" class="link__dropdown-perfil">Minhas opiniões</a>
+                        <a href="./login.html" class="link__dropdown-sair">SAIR</a>
+    
+                    </section>
+                </section>
+                            
+            </section>
+
+            <nav class="container__navegacao___cabecalho">
+                
+                <div class="container__botao___navegacao">
+
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+
+                </div>
+
+                <ul class="lista__navegacao">
+
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Detalhei</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link dropdown-top-5">Top 5</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Comparativo</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Blog</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </header>
+
+
+        <main class="conteudo">
+
+            <section class="secao__banner___perfil">
+
+                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-perfil.png" alt="Imagem Banner" class="imagem__banner___perfil">
+
+
+                <section class="secao__info___banner-perfil">
+
+                    <div class="container__imagem-info___perfil">
+                        <img src="./Assets/Perfil/Icones-Perfil/icone-perfil-1.png" alt="Perfil" class="imagem__perfil">
+
+                        <div class="info-imagem__perfil">
+
+                            <h1 class="titulo__info-perfil">Cameron Williamson</h1>
+                            <span class="numeros-seguidores-info">1.524,00 seguidores</span>
+
+                        </div>
+
+                    </div>
+
+                    <p class="descricao__info-perfil">Jenny Wilson é um chef de cozinha francês, naturalizado brasileiro.</p>
+
+                    <section class="secao__redes-info___perfil">
+
+                        <a href="#" class="link__rede-info___perfil">
+
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_2098_48064)"/>
+                                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_2098_48064)"/>
+                                <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_2098_48064)"/>
+                                <path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" fill="white"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z" fill="white"/>
+                                <defs>
+                                <radialGradient id="paint0_radial_2098_48064" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)">
+                                <stop stop-color="#B13589"/>
+                                <stop offset="0.79309" stop-color="#C62F94"/>
+                                <stop offset="1" stop-color="#8A3AC8"/>
+                                </radialGradient>
+                                <radialGradient id="paint1_radial_2098_48064" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)">
+                                <stop stop-color="#E0E8B7"/>
+                                <stop offset="0.444662" stop-color="#FB8A2E"/>
+                                <stop offset="0.71474" stop-color="#E2425C"/>
+                                <stop offset="1" stop-color="#E2425C" stop-opacity="0"/>
+                                </radialGradient>
+                                <radialGradient id="paint2_radial_2098_48064" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)">
+                                <stop offset="0.156701" stop-color="#406ADC"/>
+                                <stop offset="0.467799" stop-color="#6A45BE"/>
+                                <stop offset="1" stop-color="#6A45BE" stop-opacity="0"/>
+                                </radialGradient>
+                                </defs>
+                            </svg>
+
+                        </a>
+
+                        <a href="#" class="link__rede-info___perfil">
+
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.24451 9.94111C2.37304 7.96233 3.96395 6.41157 5.94447 6.31345C8.81239 6.17136 12.9115 6 16 6C19.0885 6 23.1876 6.17136 26.0555 6.31345C28.0361 6.41157 29.627 7.96233 29.7555 9.94111C29.8786 11.8369 30 14.1697 30 16C30 17.8303 29.8786 20.1631 29.7555 22.0589C29.627 24.0377 28.0361 25.5884 26.0555 25.6866C23.1876 25.8286 19.0885 26 16 26C12.9115 26 8.81239 25.8286 5.94447 25.6866C3.96395 25.5884 2.37304 24.0377 2.24451 22.0589C2.12136 20.1631 2 17.8303 2 16C2 14.1697 2.12136 11.8369 2.24451 9.94111Z" fill="#FC0D1B"/>
+                                <path d="M13 12V20L21 16L13 12Z" fill="white"/>
+                            </svg>
+
+                        </a>
+
+                        <a href="#" class="link__rede-info___perfil">
+
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.7887 28C8.55374 28 5.53817 27.0591 3 25.4356C5.15499 25.5751 8.95807 25.2411 11.3236 22.9848C7.76508 22.8215 6.16026 20.0923 5.95094 18.926C6.25329 19.0426 7.6953 19.1826 8.50934 18.856C4.4159 17.8296 3.78793 14.2373 3.92748 13.141C4.695 13.6775 5.99745 13.8641 6.50913 13.8174C2.69479 11.0882 4.06703 6.98276 4.74151 6.09635C7.47882 9.88867 11.5812 12.0186 16.6564 12.137C16.5607 11.7174 16.5102 11.2804 16.5102 10.8316C16.5102 7.61092 19.1134 5 22.3247 5C24.0025 5 25.5144 5.71275 26.5757 6.85284C27.6969 6.59011 29.3843 5.97507 30.2092 5.4432C29.7934 6.93611 28.4989 8.18149 27.7159 8.64308C27.7224 8.65878 27.7095 8.62731 27.7159 8.64308C28.4037 8.53904 30.2648 8.18137 31 7.68256C30.6364 8.52125 29.264 9.91573 28.1377 10.6964C28.3473 19.9381 21.2765 28 11.7887 28Z" fill="#47ACDF"/>
+                            </svg>
+
+                        </a>
+
+                    </section>
+
+                    <section class="secao__botoes___info-perfil">
+
+                        <button class="botao__seguir-info___perfil">Seguir</button>
+
+                        <a class="botao__compartilha-info___perfil" href="javascript:void(0)" onclick="share()">Compartilhar</a>
+
+                    </section>
+
+                </section>
+
+            </section>
+
+            <section class="secao__seguidores-perfil">
+
+                <section class="secao__cabecalho___seguidores">
+
+                    <div class="container__primeiro-cabecalho">
+
+                        <div class="container__numero-seguidores">
+
+                            <span class="nome-perfil__seguidores">Jenny Wilson está seguindo</span>
+                            <span class="numero-seguidores__cabecalho"> 967 </span>
+
+                        </div>
+
+                        <div class="tabs-cabecalho__seguidores">
+                            <button class="tablinks tab-pessoas" id="defaultOpen" onclick="openTab(event, 'pessoas')">Pessoas</button>
+                            <button class="tablinks tab-marcas" onclick="openTab(event, 'marcas')">Marca</button>
+                            <button class="tablinks tab-categorias" onclick="openTab(event, 'categorias')">Categorias</button>
+                            <button class="tablinks tab-comunidade" onclick="openTab(event, 'comunidade')">Comunidade</button>
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="secao__card___seguidores tabcontent" id="pessoas">
+                    <button class="botao__ver-todos-seguidores">Ver todos</button>
+
+                    <ul class="lista__seguidores">
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-2.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Darlene Robertson</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Darlene_Robertson</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-3.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Leslie Alexander</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Leslie_Alexander</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-4.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Kathryn Murphy</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Kathryn_Murphy</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-5.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Jerome Bell</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Jerome_Bell</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+                    </ul>
+                </section>
+
+                <section class="secao__card___seguidores tabcontent" id="marcas">
+
+                    <button class="botao__ver-todos-seguidores">Ver todos</button>
+
+                    <ul class="lista__seguidores">
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Opiniao/Imagem/imagem-marcas-philco.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Philco</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Philco</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Opiniao/Imagem/imagem-marcas-philco.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Philco</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Philco</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Opiniao/Imagem/imagem-marcas-philco.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Philco</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Philco</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Opiniao/Imagem/imagem-marcas-philco.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Philco</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Philco</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+                    </ul>
+                </section>
+
+                <section class="secao__card___seguidores tabcontent" id="categorias">
+
+                    <button class="botao__ver-todos-seguidores">Ver todos</button>
+
+                    <ul class="lista__seguidores">
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-2.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Darlene Robertson</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Darlene_Robertson</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-3.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Leslie Alexander</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Leslie_Alexander</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-4.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Kathryn Murphy</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Kathryn_Murphy</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-5.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Jerome Bell</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Jerome_Bell</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+                    </ul>
+                </section>
+
+                <section class="secao__card___seguidores tabcontent" id="comunidade">
+
+                    <button class="botao__ver-todos-seguidores">Ver todos</button>
+
+                    <ul class="lista__seguidores">
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-2.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Darlene Robertson</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Darlene_Robertson</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-3.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Leslie Alexander</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Leslie_Alexander</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-4.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Kathryn Murphy</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Kathryn_Murphy</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+
+                        <div class="container__seguidor">
+
+                            <a href="#" class="link__seguidor">
+                                <img draggable="false" src="./Assets/Perfil/Icones-Perfil/icone-perfil-5.png" alt="Icone Perfil" class="imagem__seguidor">
+
+                                <div class="container__nome___seguidor">
+                                    <span class="nome__seguidor">Jerome Bell</span>
+                                    <img draggable="false" src="./Assets/Feed/Imagem-feed/icone-brasil-topicos.png" alt="Imagem Origem Marca" class="imagem__origem-seguidor">
+                                </div>
+                            </a>
+
+                            <span class="arroba__seguidor">@Jerome_Bell</span>
+
+                            <button class="botao__seguir___seguidor">Seguir</button>
+                        </div>
+                    </ul>
+                </section>
+
+            </section>
+
+            <section class="secao__artigos">
+
+                <div class="tabs-cabecalho__artigos">
+                    <button class="tablinks-artigos tab-inicio" id="defaultOpen-artigos" onclick="openTabArtigo(event, 'inicio')">Inicio</button>
+                    <button class="tablinks-artigos tab-opinioes" onclick="openTabArtigo(event, 'opinioes')">Opiniões</button>
+                    <button class="tablinks-artigos tab-descricoes" onclick="openTabArtigo(event, 'descricoes')">Descrições</button>
+                    <button class="tablinks-artigos tab-avaliacoes" onclick="openTabArtigo(event, 'avaliacoes')">Avaliações</button>
+                    <button class="tablinks-artigos tab-revisoes" onclick="openTabArtigo(event, 'revisoes')">Revisões</button>
+                </div>
+
+                <section class="secao__cards___artigos tabcontent-artigos" id="inicio">
+
+                    <ul class="lista__cards___artigos">
+
+                        <a href="./revisao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-1.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___revisao">Revisão</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./avaliacao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-2.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___avaliacao">Avaliação</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./opiniao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-3.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___opiniao">Opinião</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./descricao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-4.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___descricao">Descrição</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./avaliacao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-5.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___avaliacao">Avaliação</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./opiniao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-6.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___opiniao">Opinião</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+                        
+                        <a href="./revisao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-7.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___revisao">Revisão</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./avaliacao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-8.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___avaliacao">Avaliação</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./opiniao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-9.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___opiniao">Opinião</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./descricao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-10.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___descricao">Descrição</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./avaliacao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-11.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___avaliacao">Avaliação</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./opiniao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-12.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___opiniao">Opinião</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                    </ul>
+
+
+
+                </section>
+
+                <section class="secao__cards___artigos tabcontent-artigos" id="opinioes">
+
+                    <ul class="lista__cards___artigos">
+
+                        <a href="./opiniao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-3.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___opiniao">Opinião</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./opiniao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-7.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___opiniao">Opinião</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./opiniao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-10.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___opiniao">Opinião</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+                        
+                    </ul>
+
+
+
+                </section>
+
+                <section class="secao__cards___artigos tabcontent-artigos" id="descricoes">
+
+                    <ul class="lista__cards___artigos">
+
+                        <a href="./descricao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-4.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___descricao">Descrição</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./descricao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-8.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___descricao">Descrição</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./descricao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-11.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___descricao">Descrição</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+                        
+                    </ul>
+
+                </section>
+
+                <section class="secao__cards___artigos tabcontent-artigos" id="avaliacoes">
+
+                    <ul class="lista__cards___artigos">    
+
+                        <a href="./avaliacao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-2.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___avaliacao">Avaliação</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>        
+
+                        <a href="./avaliacao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-5.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___avaliacao">Avaliação</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./avaliacao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-9.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___avaliacao">Avaliação</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./avaliacao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-12.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___avaliacao">Avaliação</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+                        
+                    </ul>
+
+                </section>
+
+                <section class="secao__cards___artigos tabcontent-artigos" id="revisoes">
+
+                    <ul class="lista__cards___artigos">
+
+                        <a href="./revisao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-1.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___revisao">Revisão</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                        <a href="./revisao.html" class="item__card___artigo">
+
+                            <div class="container__imagem___artigo">
+
+                                <img src="./Assets/Perfil/Imagens-Banner/imagem-banner-6.png" alt="Imagem Artigo" class="imagem__artigo">
+
+                                <div class="container__info___artigo">
+                                    <button class="botao__tipo___artigo tipo__artigo___revisao">Revisão</button>
+
+                                    <span class="tempo__info___artigo">12:30</span>
+                                </div>
+                            </div>
+
+                            <h3 class="titulo__info___artigo">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V.</h3>
+
+                            <div class="container__rodape___artigo">
+
+                                <span class="horario___rodape___artigo">08/10/2021 às 13:13</span>
+
+                                <span class="tempo__leitura___artigo">5 min de leitura</span>
+                                
+                            </div>
+
+                        </a>
+
+                    </ul>
+
+                </section>
+
+            </section>
+
+        </main>
+
+
+        <footer class="rodape" id="rodape__feed">
+
+            <address class="secao__marca">
+
+                <img src="./Assets/Vetores/logo-detalhei-footer.svg" alt="Logo Detalhei" class="logo___detalhei-footer">
+
+                <p class="texto__copyright">Copyright © 2001-2021 ,Detalhei Todos os direitos reservados.</p>
+
+                <div class="container__redes-sociais">
+
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-FACEBOOK.svg" alt="Facebook Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-TWITTER.svg" alt="Twitter Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-INSTAGRAM.svg" alt="Instagram Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-YOUTUBE.svg" alt="Youtube Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-LINKEDIN.svg" alt="Linkedin Detalhei" class="logo__redes-sociais"></a>
+
+                </div>
+            </address>
+
+            <section class="secao__lista" id="secao__lista-footer-margin">
+
+                <h8 class="titulo__lista-footer">Detalhei</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Consultoria</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Contato</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Privacidade</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Ofertas</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Minha Garantia</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Empresarial</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Top 5</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Air Flayer</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Batedeiras</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Eletricos</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Liquidificadores</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fornos</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Produtos</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fogões</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Desidratador</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Churrasqueira</a></li>
+    
+                </ul>
+            
+            </section>
+
+        </footer>
+
+        <script src="./Componentes/compartilha.js" type="text/javascript"></script>
+        <script src="./Componentes/Perfil/tabSeguidores.js" type="text/javascript"></script>
+        <script src="./Componentes/Perfil/tab.js" type="text/javascript"></script>
+    </body>
+
+</html>
