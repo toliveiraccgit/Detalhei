@@ -363,21 +363,23 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 1.875rem;
     }
     .container__cria-artigos{
         padding-top: 1.313rem;
         padding-left: 1.938rem;
+        padding-bottom: 1.063rem;
 
         border: none;
         border-radius: 7px;
 
-        width: 16.141rem;
-        height: 12.563rem;
+        width: 16.125rem;
 
         display: flex;
         flex-direction: row;
         align-items: flex-start;
+
+        opacity: .7;
     }
     .titulo__cria-artigo{
         font-family: var(--heading-poppins);
@@ -386,7 +388,7 @@
 
         line-height: 150%;
 
-        width: 12.063rem;
+        width: 11.5rem;
 
         text-align:left;
 
@@ -394,31 +396,15 @@
     }
     .cria-artigo-revisao{
         background-color: var(--green-primary);
-
-        background-image: url("../../Assets/SeuPerfil/Vetor/vetor-cria-revisao.svg");
-        background-repeat: no-repeat;
-        background-position: center 8rem;
     }
     .cria-artigo-avaliacao{
         background-color: var(--blue-primary);
-
-        background-image: url("../../Assets/SeuPerfil/Vetor/vetor-cria-avaliacao.svg");
-        background-repeat: no-repeat;
-        background-position: center 8rem;
     }
     .cria-artigo-opiniao{
         background-color: var(--orange-primary);
-
-        background-image: url("../../Assets/SeuPerfil/Vetor/vetor-cria-opiniao.svg");
-        background-repeat: no-repeat;
-        background-position: center 8rem;
     }
     .cria-artigo-descricao{
         background-color: var(--red-primary);
-
-        background-image: url("../../Assets/SeuPerfil/Vetor/vetor-cria-descricao.svg");
-        background-repeat: no-repeat;
-        background-position: center 8rem;
     }
     /*------------------------SEGUIDORES-------------------------*/
     .secao__seguidores-perfil{

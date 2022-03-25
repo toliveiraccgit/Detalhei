@@ -574,6 +574,9 @@
         padding-left: 4.125rem;
         padding-right: 4.125rem;
     }
+    .tablink-oferta-descricao{
+        background: #F8F8F8;
+    }
     .active-tablink{
         background: #F8F8F8;
     }

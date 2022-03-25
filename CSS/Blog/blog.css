@@ -1,0 +1,474 @@
+@media (min-width:0px){
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 7.375rem;
+        padding-bottom: 5.813rem;
+    }
+    /*---------------------BANNER------------------*/
+    .secao__banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .secao__info___banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.813rem;
+
+        width: 17.625rem;
+
+        margin-bottom: 8.438rem;
+    }
+    .titulo__banner{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        
+        font-size: 40px;
+
+        margin: 0%;
+
+        color: #243141;
+    }
+    .subtitulo__banner{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        margin: 0%;
+
+        color: #9B9999;
+    }
+    /*-----------------DESTAQUE-BANNER------------------*/
+    .secao__destaque___blog-banner{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+
+        width: 75.5rem;
+
+        
+        margin-bottom: 7.688rem;
+    }
+    .imagem__destaque___blog{
+        width: 33.688rem;
+    }
+    .secao__info___destaque{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.875rem;
+
+        width: 36.313rem;
+
+    }
+    .titulo__novo{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        margin: 0%;
+
+        color: #9B9999;
+    }
+    .titulo__info___destaque{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        
+        font-size: 40px;
+
+        margin: 0%;
+
+        color: #243141;
+    }
+    .descricao__info___destaque{
+        font-family: var(--paragraph-SF-Light);
+
+        letter-spacing: .03rem;
+        line-height: 160%;
+
+        color: #718096;
+
+        margin: 0%;
+        margin-bottom: 1.875rem;
+
+        width: 41.25rem;
+    }
+    .container__rodape___blog{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.25rem;
+    }
+    .horario___rodape___blog{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+
+        line-height: 150%;
+
+        color: #9B9999;
+    }
+    .tempo__leitura___blog{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+
+        line-height: 150%;
+
+        color: #9B9999;
+
+        padding-left: .8rem;
+
+        background-image: url("../../Assets/Feed/Imagem-produtos-feed/icone-tempo-feed.svg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+
+        background-size: .35rem .35rem;
+    }
+    /*-------------lISTA---DESTAQUE-BANNER--------------*/
+    .secao__lista___destaque-blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 75.5rem;
+
+    }
+    .lista__destaque-blog{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3.688rem;
+
+        width: 75.5rem;
+    }
+    .item__lista___destaque-blog{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+    .imagem__item___lista-destaque{
+        width: 22rem;
+    }
+    .titulo__item___lista-destaque{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 24px;
+
+        letter-spacing: 0.02em;
+        line-height: 120%;
+
+        margin: 0%;
+
+        color: #243141;
+
+        width: 22rem;
+    }
+    .descricao__item___lista-destaque{
+        font-family: var(--paragraph-SF-Light);
+        font-size: 14px;
+
+        letter-spacing: .03rem;
+        line-height: 160%;
+
+        color: #718096;
+
+        margin: 0%;
+
+        width: 22rem;
+    }
+    /*---------------DICAS-CURIOSIDADES---------------*/
+    .secao__dicas-curiosidades{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.125rem;
+
+        width: 69.688rem;
+
+        margin-top: 6rem;
+    }
+    .titulo__dicas-curiosidades{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 24px;
+
+        letter-spacing: 0.02em;
+        line-height: 120%;
+
+        margin: 0%;
+
+        color: #243141;
+    }
+    .lista__dica-curiosidades{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2.625rem;
+    }
+    .item__lista___dica-curiosidades{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.75rem;
+    }
+    .imagem__item___dica-curiosidades{
+        width: 15.375rem;
+    }
+    .titulo__item___dica-curiosidades{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+
+        letter-spacing: 0.02em;
+        line-height: 150%;
+
+        margin: 0%;
+
+        color: #243141;
+
+        text-align: center;
+
+        width: 14.375rem;
+    }
+    /*-----------------CATEGORIAS-----------------*/
+    .secao__categorias{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.625rem;
+
+        width: 69.688rem;
+
+        margin-top: 7.75rem;
+        margin-bottom: 31.563rem;
+    }
+    .titulo__categorias{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 24px;
+
+        letter-spacing: 0.02em;
+        line-height: 120%;
+
+        margin: 0%;
+
+        color: #243141;
+    }
+    .lista__categorias{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.875rem;
+        flex-wrap: wrap;
+
+        width: 68.688rem;
+    }
+    .item__lista___categorias{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+
+        letter-spacing: 0.04em;
+
+        color: #FFFFFF;
+
+
+        background: #232323;
+
+        border-radius: 12px;
+        border: none;
+
+        padding-top: 0.938rem;
+        padding-bottom: 0.938rem;
+        padding-left: 2.063rem;
+        padding-right: 2.063rem;
+    }
+    /*------------------NEWSLETTER------------------*/
+    .secao__newsletter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3.25rem;
+
+        width: 100vw;
+
+        background-image: url("../../Assets/Blog/Imagens/imagem-newsletter-blog.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+
+        padding-top: 7.313rem;
+        padding-bottom: 7.313rem;
+    }
+    .titulo__newsletter{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 40px;
+
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+    }
+    .botao__neswletter{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        letter-spacing: .02rem;
+
+        color: #000000;
+
+        
+        background: #FFFFFF;
+
+        border-radius: 8px;
+        border: none;
+
+        padding-top: 0.938rem;
+        padding-bottom: 0.938rem;
+        padding-left: 4.438rem;
+        padding-right: 4.438rem;
+    }
+
+    .container__modal___newsletter{
+        position: fixed;
+        z-index: 2000000;
+
+        animation: animaExpansao .3s ease-in-out forwards;
+
+        background: rgba(0, 0, 0, 0.35);
+
+        height: 100vh;
+        width: 100vw;
+
+        top: 0%;
+        left: 0%;
+
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal__newsletter{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background: #F2F2F2;
+
+        border-radius: 4px;
+
+        width: 56.375rem;
+
+        padding-bottom: 8rem;
+        padding-top: 2.292rem;
+        padding-bottom: 8.125rem;
+    }
+    .container__botao___fecha{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 52.125rem;
+    }
+    .botao__fecha___newsletter-expandido{
+        border: none;
+
+        width: 1.2rem;
+        height: 1.2rem;
+
+        background-color: transparent;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-fehca-modal.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .secao__form___newsletter{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1.875rem;
+
+        margin-top: 4.667rem;
+
+        width: 31.375rem;
+    }
+    .container__input{
+        width: 31.375rem;
+
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .label__newsletter{
+        font-family: var(--paragraph-SF-Medium);
+        font-size: 14px;
+
+        letter-spacing: .02rem;
+
+        color: #000000;
+    }
+    .input__newsletter{
+        font-family: var(--paragraph-SF-Medium);
+        font-size: 16px;
+
+        letter-spacing: 0.03em;
+
+        background: #E8E8E8;
+
+        border-radius: 5px;
+        border: none;
+
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
+        padding-left: 1.313rem;
+
+        background: #E8E8E8;
+        border-radius: 5px; 
+    }
+    .botao__form___newsletter{
+        margin-top: 0.875rem;
+
+        font-family: var(--paragraph-SF-Bold);
+        font-size: 14px;
+
+        color: #FFFFFF;
+
+        letter-spacing: 0.03em;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 5.063rem;
+        padding-right: 5.063rem;
+
+        background: #2FBF90;
+
+        border-radius: 8px;
+        border: none;
+    }
+    @keyframes animaExpansao {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    @keyframes animaFechaExpansao {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+}
+    

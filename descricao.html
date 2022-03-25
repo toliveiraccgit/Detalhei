@@ -332,12 +332,113 @@
             <section class="secao__informacao__produto">
 
                 <div class="cabecalho__informacao___produto">
-                    <button class="tablinks tab-ofertas" id="defaultOpen" onclick="openTab(event, 'ofertas')">Ofertas</button>
-                    <button class="tablinks tab-caracteristicas" onclick="openTab(event, 'caracteristicas')">Características</button>   
+                    <button class="tablinks tab-caracteristicas" id="defaultOpen" onclick="openTab(event, 'caracteristicas')">Características</button>   
                     <button class="tablinks tab-historico" onclick="openTab(event, 'historico')">Historico de preços</button>   
                 </div>
 
-                <section class="secao__informacao___ofertas tabcontent" id="ofertas">
+                <section class="secao__informacao___caracteristicas tabcontent" id="caracteristicas">
+
+
+                    <ul class="lista__informacao___caracteristicas">
+
+                        <li class="item__lista___caracteristicas">
+
+                            <h9 class="titulo__item___lista">Modelo</h9>
+
+                            <span class="descricao__item___lista" id="modelo__produto">Multicooker 5L Inox EPP50MI</span>
+
+                        </li>
+
+                        <li class="item__lista___caracteristicas">
+
+                            <h9 class="titulo__item___lista">Garantia</h9>
+
+                            <span class="descricao__item___lista" id="garantia__produto">12 Meses</span>
+
+                        </li>
+
+                        <li class="item__lista___caracteristicas">
+
+                            <h9 class="titulo__item___lista">Consumo KW/H</h9>
+
+                            <span class="descricao__item___lista" id="consumo__produto">-</span>
+
+                        </li>
+
+                        <li class="item__lista___caracteristicas">
+
+                            <h9 class="titulo__item___lista">Capacidade</h9>
+
+                            <span class="descricao__item___lista" id="capacidade__produto">5 Litros</span>
+
+                        </li>
+
+                        <li class="item__lista___caracteristicas">
+
+                            <h9 class="titulo__item___lista">Voltagem</h9>
+
+                            <span class="descricao__item___lista" id="voltagem__produto">110v</span>
+
+                        </li>
+
+                        <li class="item__lista___caracteristicas">
+
+                            <h9 class="titulo__item___lista">Display</h9>
+
+                            <span class="descricao__item___lista" id="display__produto">Led</span>
+
+                        </li>
+
+                    </ul>
+
+                    <button class="botao__ver-mais___caracteristicas" onclick="abrirCaracteristicasExpandido()">Ver Mais</button>
+                </section>
+
+                <section class="secao__informacao___historico tabcontent" id="historico">
+
+                    <img src="./Assets/Avaliacao/Imagens/imagem-tabela.png" alt="" class="imagem__grafico___historico">
+
+                </section>
+
+            </section>
+
+            <section class="secao__texto___descricao secao__descricao___aba">
+
+                <img src="./Assets/Avaliacao/Imagens/unsplash_9R6NwFop9fs.png" alt="Imagem Banner Avaliação" class="imagem__banner___texto-descricao">
+
+                <div class="container-overflow__texto___descricao">
+                    <section class="container__texto___descricao">
+
+                    <h10 class="titulo__texto___descricao">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V</h10>
+
+                    <p class="paragrafo__texto___descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam lacus, quisque nam ultricies diam ut convallis gravida venenatis. Dictum non quis ac cursus aenean. Orci id eget augue risus. Non sed congue sit duis et augue odio. Pharetra mi condimentum volutpat, pulvinar. Auctor odio montes, quam nunc, morbi in feugiat interdum lorem. Aenean orci gravida tempor tincidunt justo malesuada. Vitae, elit quam facilisi eu risus et ultrices. Posuere purus ultrices odio sapien.
+                    Dis eu, porta sed egestas mi neque cras. Sit nibh penatibus quis habitant. At eu dui orci vel nibh. Magna nisl augue viverra volutpat sed est diam laoreet. Non morbi cursus vitae nunc. Proin fames vestibulum, tellus ut dui quam lacus. Nulla adipiscing massa risus cursus eu viverra est massa. Sed convallis odio id euismod ornare. Volutpat lorem risus massa viverra venenatis diam morbi. Id augue volutpat nascetur facilisi enim, purus egestas felis. Bibendum sed massa euismod leo tellus. Habitant massa, egestas urna morbi dis odio amet.</p>
+
+                    <p class="paragrafo__texto___descricao">Pulvinar nec pellentesque fermentum sed tincidunt sollicitudin id. Amet, sit quis ut posuere elit feugiat mi lobortis. Eget hendrerit et, aliquet sodales. Scelerisque vitae id duis auctor venenatis, dolor lacus. Magna ultrices eget metus, enim lectus. Netus ut id elit dapibus. Integer neque, consequat, vel lectus turpis ultricies sem. Arcu pretium senectus nec ac nibh sit consectetur orci. Neque iaculis consequat lacus, feugiat id id vulputate rutrum. Nunc magna sem dignissim risus. Vestibulum, integer mi, cras commodo et.
+                    Scelerisque aliquam mollis odio nulla turpis laoreet gravida neque. Euismod ornare faucibus ipsum aliquet neque tellus ultrices tortor. Nec in donec vel sapien gravida in. Aliquet at ac amet posuere. Vitae pulvinar at odio eget ac penatibus tincidunt pellentesque. Quam dolor convallis vulputate nulla ac. Tincidunt neque nunc nulla id libero posuere at elementum. Tristique elementum cras leo nec. Suspendisse mi, fames felis nunc. Sed varius semper purus congue. Eros nibh blandit mattis sed ipsum, sed. Ut maecenas diam gravida sapien purus gravida faucibus quis aliquet. Fames mi odio nunc nullam risus. Scelerisque sagittis pellentesque tortor quisque quis aliquam. Elementum quis eu, justo, pretium dictumst.
+                    Tempus mollis tincidunt quis et, dui commodo quis sed adipiscing. Vitae consequat nisi tempor mi nisi purus vitae.</p>
+
+                    <p class="paragrafo__texto___descricao">Pulvinar nec pellentesque fermentum sed tincidunt sollicitudin id. Amet, sit quis ut posuere elit feugiat mi lobortis. Eget hendrerit et, aliquet sodales. Scelerisque vitae id duis auctor venenatis, dolor lacus. Magna ultrices eget metus, enim lectus. Netus ut id elit dapibus. Integer neque, consequat, vel lectus turpis ultricies sem. Arcu pretium senectus nec ac nibh sit consectetur orci. Neque iaculis consequat lacus, feugiat id id vulputate rutrum. Nunc magna sem dignissim risus. Vestibulum, integer mi, cras commodo et.
+                    Scelerisque aliquam mollis odio nulla turpis laoreet gravida neque. Euismod ornare faucibus ipsum aliquet neque tellus ultrices tortor. Nec in donec vel sapien gravida in. Aliquet at ac amet posuere. Vitae pulvinar at odio eget ac penatibus tincidunt pellentesque. Quam dolor convallis vulputate nulla ac. Tincidunt neque nunc nulla id libero posuere at elementum. Tristique elementum cras leo nec. Suspendisse mi, fames felis nunc. Sed varius semper purus congue. Eros nibh blandit mattis sed ipsum, sed. Ut maecenas diam gravida sapien purus gravida faucibus quis aliquet. Fames mi odio nunc nullam risus. Scelerisque sagittis pellentesque tortor quisque quis aliquam. Elementum quis eu, justo, pretium dictumst.
+                    Tempus mollis tincidunt quis et, dui commodo quis sed adipiscing. Vitae consequat nisi tempor mi nisi purus vitae.</p>
+
+                    <p class="paragrafo__texto___descricao">Pulvinar nec pellentesque fermentum sed tincidunt sollicitudin id. Amet, sit quis ut posuere elit feugiat mi lobortis. Eget hendrerit et, aliquet sodales. Scelerisque vitae id duis auctor venenatis, dolor lacus. Magna ultrices eget metus, enim lectus. Netus ut id elit dapibus. Integer neque, consequat, vel lectus turpis ultricies sem. Arcu pretium senectus nec ac nibh sit consectetur orci. Neque iaculis consequat lacus, feugiat id id vulputate rutrum. Nunc magna sem dignissim risus. Vestibulum, integer mi, cras commodo et.
+                    Scelerisque aliquam mollis odio nulla turpis laoreet gravida neque. Euismod ornare faucibus ipsum aliquet neque tellus ultrices tortor. Nec in donec vel sapien gravida in. Aliquet at ac amet posuere. Vitae pulvinar at odio eget ac penatibus tincidunt pellentesque. Quam dolor convallis vulputate nulla ac. Tincidunt neque nunc nulla id libero posuere at elementum. Tristique elementum cras leo nec. Suspendisse mi, fames felis nunc. Sed varius semper purus congue. Eros nibh blandit mattis sed ipsum, sed. Ut maecenas diam gravida sapien purus gravida faucibus quis aliquet. Fames mi odio nunc nullam risus. Scelerisque sagittis pellentesque tortor quisque quis aliquam. Elementum quis eu, justo, pretium dictumst.
+                    Tempus mollis tincidunt quis et, dui commodo quis sed adipiscing. Vitae consequat nisi tempor mi nisi purus vitae.</p>
+
+                    </section>
+                </div>
+
+                <button class="botao__continuar___lendo" onclick="abrirTextoDescricao()">Continuar lendo</button>
+            </section>
+
+            <section class="secao__informacao__produto">
+
+                <div class="cabecalho__informacao___produto">
+                    <button class="tablinks tablink-oferta-descricao">Ofertas</button>   
+                </div>
+
+                <section class="secao__informacao___ofertas">
 
                     <section class="cabecalho__informacao___ofertas">
 
@@ -439,38 +540,6 @@
                 </section>
 
             </section>
-
-            <section class="secao__texto___descricao secao__descricao___aba">
-
-                <img src="./Assets/Avaliacao/Imagens/unsplash_9R6NwFop9fs.png" alt="Imagem Banner Avaliação" class="imagem__banner___texto-descricao">
-
-                <div class="container-overflow__texto___descricao">
-                    <section class="container__texto___descricao">
-
-                    <h10 class="titulo__texto___descricao">Panela de Pressão Elétrica eos Multicooker 5L Inox EPP50MI 110V 110V</h10>
-
-                    <p class="paragrafo__texto___descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quam lacus, quisque nam ultricies diam ut convallis gravida venenatis. Dictum non quis ac cursus aenean. Orci id eget augue risus. Non sed congue sit duis et augue odio. Pharetra mi condimentum volutpat, pulvinar. Auctor odio montes, quam nunc, morbi in feugiat interdum lorem. Aenean orci gravida tempor tincidunt justo malesuada. Vitae, elit quam facilisi eu risus et ultrices. Posuere purus ultrices odio sapien.
-                    Dis eu, porta sed egestas mi neque cras. Sit nibh penatibus quis habitant. At eu dui orci vel nibh. Magna nisl augue viverra volutpat sed est diam laoreet. Non morbi cursus vitae nunc. Proin fames vestibulum, tellus ut dui quam lacus. Nulla adipiscing massa risus cursus eu viverra est massa. Sed convallis odio id euismod ornare. Volutpat lorem risus massa viverra venenatis diam morbi. Id augue volutpat nascetur facilisi enim, purus egestas felis. Bibendum sed massa euismod leo tellus. Habitant massa, egestas urna morbi dis odio amet.</p>
-
-                    <p class="paragrafo__texto___descricao">Pulvinar nec pellentesque fermentum sed tincidunt sollicitudin id. Amet, sit quis ut posuere elit feugiat mi lobortis. Eget hendrerit et, aliquet sodales. Scelerisque vitae id duis auctor venenatis, dolor lacus. Magna ultrices eget metus, enim lectus. Netus ut id elit dapibus. Integer neque, consequat, vel lectus turpis ultricies sem. Arcu pretium senectus nec ac nibh sit consectetur orci. Neque iaculis consequat lacus, feugiat id id vulputate rutrum. Nunc magna sem dignissim risus. Vestibulum, integer mi, cras commodo et.
-                    Scelerisque aliquam mollis odio nulla turpis laoreet gravida neque. Euismod ornare faucibus ipsum aliquet neque tellus ultrices tortor. Nec in donec vel sapien gravida in. Aliquet at ac amet posuere. Vitae pulvinar at odio eget ac penatibus tincidunt pellentesque. Quam dolor convallis vulputate nulla ac. Tincidunt neque nunc nulla id libero posuere at elementum. Tristique elementum cras leo nec. Suspendisse mi, fames felis nunc. Sed varius semper purus congue. Eros nibh blandit mattis sed ipsum, sed. Ut maecenas diam gravida sapien purus gravida faucibus quis aliquet. Fames mi odio nunc nullam risus. Scelerisque sagittis pellentesque tortor quisque quis aliquam. Elementum quis eu, justo, pretium dictumst.
-                    Tempus mollis tincidunt quis et, dui commodo quis sed adipiscing. Vitae consequat nisi tempor mi nisi purus vitae.</p>
-
-                    <p class="paragrafo__texto___descricao">Pulvinar nec pellentesque fermentum sed tincidunt sollicitudin id. Amet, sit quis ut posuere elit feugiat mi lobortis. Eget hendrerit et, aliquet sodales. Scelerisque vitae id duis auctor venenatis, dolor lacus. Magna ultrices eget metus, enim lectus. Netus ut id elit dapibus. Integer neque, consequat, vel lectus turpis ultricies sem. Arcu pretium senectus nec ac nibh sit consectetur orci. Neque iaculis consequat lacus, feugiat id id vulputate rutrum. Nunc magna sem dignissim risus. Vestibulum, integer mi, cras commodo et.
-                    Scelerisque aliquam mollis odio nulla turpis laoreet gravida neque. Euismod ornare faucibus ipsum aliquet neque tellus ultrices tortor. Nec in donec vel sapien gravida in. Aliquet at ac amet posuere. Vitae pulvinar at odio eget ac penatibus tincidunt pellentesque. Quam dolor convallis vulputate nulla ac. Tincidunt neque nunc nulla id libero posuere at elementum. Tristique elementum cras leo nec. Suspendisse mi, fames felis nunc. Sed varius semper purus congue. Eros nibh blandit mattis sed ipsum, sed. Ut maecenas diam gravida sapien purus gravida faucibus quis aliquet. Fames mi odio nunc nullam risus. Scelerisque sagittis pellentesque tortor quisque quis aliquam. Elementum quis eu, justo, pretium dictumst.
-                    Tempus mollis tincidunt quis et, dui commodo quis sed adipiscing. Vitae consequat nisi tempor mi nisi purus vitae.</p>
-
-                    <p class="paragrafo__texto___descricao">Pulvinar nec pellentesque fermentum sed tincidunt sollicitudin id. Amet, sit quis ut posuere elit feugiat mi lobortis. Eget hendrerit et, aliquet sodales. Scelerisque vitae id duis auctor venenatis, dolor lacus. Magna ultrices eget metus, enim lectus. Netus ut id elit dapibus. Integer neque, consequat, vel lectus turpis ultricies sem. Arcu pretium senectus nec ac nibh sit consectetur orci. Neque iaculis consequat lacus, feugiat id id vulputate rutrum. Nunc magna sem dignissim risus. Vestibulum, integer mi, cras commodo et.
-                    Scelerisque aliquam mollis odio nulla turpis laoreet gravida neque. Euismod ornare faucibus ipsum aliquet neque tellus ultrices tortor. Nec in donec vel sapien gravida in. Aliquet at ac amet posuere. Vitae pulvinar at odio eget ac penatibus tincidunt pellentesque. Quam dolor convallis vulputate nulla ac. Tincidunt neque nunc nulla id libero posuere at elementum. Tristique elementum cras leo nec. Suspendisse mi, fames felis nunc. Sed varius semper purus congue. Eros nibh blandit mattis sed ipsum, sed. Ut maecenas diam gravida sapien purus gravida faucibus quis aliquet. Fames mi odio nunc nullam risus. Scelerisque sagittis pellentesque tortor quisque quis aliquam. Elementum quis eu, justo, pretium dictumst.
-                    Tempus mollis tincidunt quis et, dui commodo quis sed adipiscing. Vitae consequat nisi tempor mi nisi purus vitae.</p>
-
-                    </section>
-                </div>
-
-                <button class="botao__continuar___lendo" onclick="abrirTextoDescricao()">Continuar lendo</button>
-            </section>
-
-            
 
             <div class="container__caracteristicas___expandido" id="caracteristicas__expandido">
                 <section class="secao__caracteristicas___expandido">

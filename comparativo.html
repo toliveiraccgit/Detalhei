@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <style type="text/css" media="screen, print">
+            @font-face {
+            font-family: 'SF UI Display Ultralight';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Ultralight'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-ultralight-58646b19bf205.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Light';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Light'), url("./Fonts/SF-UI-DISPLAY/sf-ui-display-light-58646b33e0551.woff") format('woff');
+            }
+
+            @font-face {
+            font-family: 'SF UI Display Medium';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Medium'), url("./Fonts/SF-UI-DISPLAY/sf-ui-display-medium-58646be638f96.woff") format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Thin';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Thin'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Semibold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Semibold'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Bold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Bold'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Heavy';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Heavy'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Black';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Black'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+            }
+        </style>
+        <link rel="stylesheet" href="./CSS/Comparativos/comparativos.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalho.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/rodape.css">
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <title>Comparativos | Detalhei</title>
+        <link rel="shortcut icon" href="./Assets/Vetores/Logo-Detalhei.svg" type="image/x-icon"/>
+    </head>
+
+    <body id="body" onload="atualizaPreco(), atualizaNota()">
+        
+        <header class="cabecalho">
+
+            <section class="container___cabecalho" id="container__cabecalho___logado">
+                <a href="./index.html">
+                    <img src="./Assets/Vetores/LOGO-DETALHIE-NOME.svg" alt="Logo Detalhei" class="logo__detalhei">
+                </a>
+
+                <input type="text" class="input__busca-navegacao" placeholder="Faça aqui sua pesquisa">
+                <section class="secao__perfil-logado">
+                    <div class="container__perfil">
+                        <a class="container__perfil-logado" id="container__perfil-logado">
+
+                            <img src="./Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
+            
+                            <span class="nome__perfil-logado">Cameron Williamson</span>
+            
+                            <button type="button" class="botao__abre-info___perfil"></button>
+
+                        </a>
+                    </div>
+                    <section class="secao__dropdown-perfil" id="dropdown">
+
+                        <a href="./seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
+                        <a href="./feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
+                        <a href="#" class="link__dropdown-perfil">Minhas opiniões</a>
+                        <a href="./login.html" class="link__dropdown-sair">SAIR</a>
+    
+                    </section>
+                </section>
+                            
+            </section>
+
+            <nav class="container__navegacao___cabecalho">
+                
+                <div class="container__botao___navegacao">
+
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+
+                </div>
+
+                <ul class="lista__navegacao">
+
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Detalhei</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link dropdown-top-5">Top 5</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Comparativo</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Blog</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </header>
+
+
+        <main class="conteudo">
+
+            <section class="secao__paginacao___produtos">
+
+                <div class="container__paginacao___revisao">
+
+                    <a href="#" class="item__paginacao___revisao">Home</a>
+
+                    <span class="seta__paginacao">&gt;</span>
+
+                    <a href="#" class="item__paginacao___revisao">Casa</a>
+
+                    <span class="seta__paginacao">&gt;</span>
+
+                    <a href="#" class="item__paginacao___revisao">Panela de Pressão</a>
+
+                </div>
+
+            </section>
+
+            <section class="secao__cabecalho___produto">
+
+                <h1 class="titulo__cabecalho___produto">Selecione a categoria</h1>
+
+                <section class="secao__conteudo___cabecalho">
+
+                    <div class="container__filtros___cabecalho">
+
+                        <select name="Categoria" id="Categoria" class="input__filtro___cabecalho">
+                            <option class="option__filtro" value="0">Panela de Pressão</option>
+                            <option class="option__filtro" value="1">Churrasqueiras elétricas</option>
+                        </select>
+
+
+                        <button class="container__botao___filtro" onclick="abrirFiltroProduto()">
+
+                            <span class="titulo__filtros">Filtros</span>
+
+                            <span class="numeros__filtros">7</span>
+
+                        </button>
+
+                    </div>
+
+
+                    <div class="container__botoes___cabecalho">
+
+                        <button class="botao__cabecalho-redefinir">
+
+                            Redefinir
+
+                        </button>
+
+                        <button class="botao__cabecalho-removidos" onclick="abrirRemovidosProduto()"> 
+
+                            Produtos removidos
+
+                            <span class="numeros__removidos">5</span>
+
+                        </button>
+
+                    </div>
+
+                </section>
+
+
+            </section>
+
+            <div class="container__menu___filtros">
+                <section class="secao__filtros___produtos">
+
+                    <button class="botao__fecha___filtros" onclick="fechaFiltroProduto()">
+
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.295 7.115C18.6844 6.72564 18.6844 6.09436 18.295 5.705C17.9056 5.31564 17.2744 5.31564 16.885 5.705L12.7071 9.88289C12.3166 10.2734 11.6834 10.2734 11.2929 9.88289L7.115 5.705C6.72564 5.31564 6.09436 5.31564 5.705 5.705C5.31564 6.09436 5.31564 6.72564 5.705 7.115L9.88289 11.2929C10.2734 11.6834 10.2734 12.3166 9.88289 12.7071L5.705 16.885C5.31564 17.2744 5.31564 17.9056 5.705 18.295C6.09436 18.6844 6.72564 18.6844 7.115 18.295L11.2929 14.1171C11.6834 13.7266 12.3166 13.7266 12.7071 14.1171L16.885 18.295C17.2744 18.6844 17.9056 18.6844 18.295 18.295C18.6844 17.9056 18.6844 17.2744 18.295 16.885L14.1171 12.7071C13.7266 12.3166 13.7266 11.6834 14.1171 11.2929L18.295 7.115Z" fill="black"/>
+                        </svg>
+
+                    </button>
+
+                    <section class="secao__links___menu">
+
+                        <h6 class="titulo__links___menu">Casa</h6>
+
+                        <ul class="lista__links___menu">
+
+                            <a href="#" class="link__lista___menu" id="destaque__link___menu">Ar e Ventilação</a>
+
+                            <a href="#" class="link__lista___menu">Banho</a>
+
+                            <a href="#" class="link__lista___menu">Cama, Mesa e Banho</a>
+
+                            <a href="#" class="link__lista___menu">Decoração para Casa</a>
+
+                            <a href="#" class="link__lista___menu">Iluminação</a>
+
+                        </ul>
+
+                    </section>
+
+                    <section class="secao__filtros___checkbox">
+
+                        <h7 class="titulo__filtros___checkbox">Marcas</h7>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">Air Fryers (5)</label>
+
+                        </div>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">Philips Walita (2)</label>
+
+                        </div>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">Mondial (3)</label>
+
+                        </div>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">Osterizer (6)</label>
+
+                        </div>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">Philco (1)</label>
+
+                        </div>
+
+                    </section>
+
+                    <section class="secao__filtros___precos">
+
+                        <h8 class="titulo__filtros___precos">Preços</h8>
+
+                        <div class="container__filtro___preco">
+
+                            <div class="container__exibir">
+
+                                <span class="valor__range-preco"></span>
+
+                            </div>
+
+                            <input class="input__range-preco" type="range" min="500" step="10" max="10000" onclick="movePreco()">
+
+                            <div class="container__legenda___range">
+
+                                <span class="nome__range">R$ 500,00</span>
+
+                                <span class="nome__range">R$ 10.000,00</span>
+                            </div>
+
+                        </div>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">Buscar todos os preços</label>
+
+                        </div>
+
+                        <h8 class="titulo__filtros___precos">Nota</h8>
+
+                        <div class="container__filtro___preco">
+
+                            <div class="container__exibir">
+
+                                <span class="valor__range-nota"></span>
+
+                            </div>
+
+                            <input class="input__range-nota" type="range" min="0"  max="10">
+
+                            <div class="container__legenda___range">
+
+                                <span class="nome__range">0</span>
+
+                                <span class="nome__range">10</span>
+                            </div>
+
+                        </div>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">Mostrar produtos fora de linha</label>
+
+                        </div>
+
+
+                    </section>
+
+                    <section class="secao__filtros___menu">
+
+                        <h9 class="titulo__filtros___opcoes">Caracteristicas</h9>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">Livro de receitas?</label>
+
+                        </div>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">Porta fio?</label>
+
+                        </div>
+
+                    </section>
+
+                    <section class="secao__filtros___menu">
+
+                        <h9 class="titulo__filtros___opcoes">Volume</h9>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">De 1.6 até 5.1</label>
+
+                        </div>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">De 1.6 até 6.0</label>
+
+                        </div>
+
+                    </section>
+
+                    <section class="secao__filtros___menu">
+
+                        <h9 class="titulo__filtros___opcoes">Potência (W)</h9>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">De 1000 até 1400</label>
+
+                        </div>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">De 1400 até 1700</label>
+
+                        </div>
+
+                        <div class="container__input___check">
+
+                            <div class="container__input___checkmarck">
+                                <input name="Comparativo" id="Comparativo" type="checkbox" class="input__aceitar-termos">
+                            </div>
+
+                            <label for="Comparativo" class="label__check___comparativo">De 1700 até 2100</label>
+
+                        </div>
+
+                    </section>
+
+                </section>
+            </div>
+
+            <section class="secao__comparativos">
+
+                <h3 class="numeros__comparativos">3 Panela de pressão eletrica</h3>
+
+                <section class="secao__lista___comparativos">
+                    
+                    <section class="secao__legendas___comparativos">
+
+                        <ul class="lista__legendas___comparativos">
+
+                            <li class="item__legendas___comparativos">
+
+                                <span class="legenda__comparativos">POTÊNCIA (W)</span>
+
+                            </li>
+
+                            <li class="item__legendas___comparativos">
+
+                                <span class="legenda__comparativos">LARGURA (CM) é ALTURA (CM)</span>
+
+                            </li>
+
+                            <li class="item__legendas___comparativos">
+
+                                <span class="legenda__comparativos">MATERIAL DA GRELHA</span>
+
+                            </li>
+
+                            <li class="item__legendas___comparativos">
+
+                                <span class="legenda__comparativos">TEMPERATURA MÍNIMA (C°)</span>
+
+                            </li>
+
+                            <li class="item__legendas___comparativos">
+
+                                <span class="legenda__comparativos">PREÇOS</span>
+
+                            </li>
+
+                        </ul>
+                        
+                    </section>
+
+                
+                    <div class="container__carrousel___comprativos">
+
+                        <button class="botao__carrousel" data-anterior-comparativo>
+
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3Z" fill="#737373"/>
+                                <path d="M19.8905 11.5798C20.1755 11.5798 20.4605 11.6848 20.6855 11.9098C21.1205 12.3448 21.1205 13.0648 20.6855 13.4998L16.1855 17.9998L20.6855 22.4998C21.1205 22.9348 21.1205 23.6548 20.6855 24.0898C20.2505 24.5248 19.5305 24.5248 19.0955 24.0898L13.8005 18.7948C13.3655 18.3598 13.3655 17.6398 13.8005 17.2048L19.0955 11.9098C19.3205 11.6848 19.6055 11.5798 19.8905 11.5798Z" fill="#737373"/>
+                            </svg>
+
+                        </button>
+
+                        <div class="container__lista___comparativos">
+
+                            <ul class="lista__item___comparativos" data-lista-comparativo>
+
+                                <li class="item__lista___comparativos">
+
+                                    <section class="secao__info___comparativos">
+
+                                        <button class="botao__deleta___item">
+
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.295 7.115C18.6844 6.72564 18.6844 6.09436 18.295 5.705C17.9056 5.31564 17.2744 5.31564 16.885 5.705L12.7071 9.88289C12.3166 10.2734 11.6834 10.2734 11.2929 9.88289L7.115 5.705C6.72564 5.31564 6.09436 5.31564 5.705 5.705C5.31564 6.09436 5.31564 6.72564 5.705 7.115L9.88289 11.2929C10.2734 11.6834 10.2734 12.3166 9.88289 12.7071L5.705 16.885C5.31564 17.2744 5.31564 17.9056 5.705 18.295C6.09436 18.6844 6.72564 18.6844 7.115 18.295L11.2929 14.1171C11.6834 13.7266 12.3166 13.7266 12.7071 14.1171L16.885 18.295C17.2744 18.6844 17.9056 18.6844 18.295 18.295C18.6844 17.9056 18.6844 17.2744 18.295 16.885L14.1171 12.7071C13.7266 12.3166 13.7266 11.6834 14.1171 11.2929L18.295 7.115Z" fill="black"></path>
+                                            </svg>
+
+                                        </button>
+
+                                        <img src="./Assets/Produtos/Imagens/imagem-produto.png" alt="Imagem Comparativo" class="imagem__info___comparativos">
+
+                                        <h4 class="titulo__info___comparativos">Panela de pressão eletrica</h4>
+
+                                        <div class="container__melhor___preco">
+
+                                            <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Loja Melhor Preço" class="imagem__loja___preco">
+
+                                            <span class="valor__melhor___preco">R$252,00</span>
+
+                                        </div>
+
+                                        <div class="container__nota-geral">
+
+                                            <span class="titulo__nota-geral">Nota Geral</span>
+
+                                            <span class="nota-geral">10.0</span>
+
+                                        </div>
+
+                                        <div class="container__custo-beneficio">
+
+                                            <span class="titulo__custo-beneficio">Custo-Benefício:</span>
+
+                                            <div class="container__nota___custo-beneficio">
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio"></span>
+
+                                            </div>
+
+                                        </div>
+
+                                        <ul class="lista__pontos___comparativos" id="lista__pontos___comparativos">
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Desempenho e funções</span>
+                                                    <span class="nota__ponto___comparativos">10</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-100"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Praticidade</span>
+                                                    <span class="nota__ponto___comparativos">9.5</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-95"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Acessórios</span>
+                                                    <span class="nota__ponto___comparativos">9</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-90"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Design e Acabamento</span>
+                                                    <span class="nota__ponto___comparativos">10</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-100"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Limpeza</span>
+                                                    <span class="nota__ponto___comparativos">9.5</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-95"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                        </ul>
+
+                                        <button class="botao__ver-mais___pontos" id="botao__ver-mais-comparativo">Ver Mais</button>
+                                        <button class="botao__ver-menos___pontos" id="botao__ver-menos-comparativo">Ver Menos</button>
+
+                                    </section>  
+
+                                    <section class="secao__caracteristicas___comparativos">
+
+                                        <ul class="lista__caracteristicas___comparativos">
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">1500W</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">55cm x  7.8cm</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">Aluminio com antiaderente</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">137 C°</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <div class="container__caracteristicas___comparativos">
+
+                                                    <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Imagem Comparativos" class="imagem__caracteristicas___comparativos">
+
+                                                    <span class="valor__melhor___preco">R$252,00</span>
+
+                                                </div>
+
+                                                <div class="container__caracteristicas___comparativos">
+
+                                                    <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Imagem Comparativos" class="imagem__caracteristicas___comparativos">
+
+                                                    <span class="valor__melhor___preco">R$252,00</span>
+
+                                                </div>
+
+                                                <div class="container__caracteristicas___comparativos">
+
+                                                    <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Imagem Comparativos" class="imagem__caracteristicas___comparativos">
+
+                                                    <span class="valor__melhor___preco">R$252,00</span>
+
+                                                </div>
+
+                                            </li>
+
+                                        </ul>
+
+                                    </section>
+
+                                </li>
+
+                                <li class="item__lista___comparativos">
+
+                                    <section class="secao__info___comparativos">
+
+                                        <button class="botao__deleta___item">
+
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.295 7.115C18.6844 6.72564 18.6844 6.09436 18.295 5.705C17.9056 5.31564 17.2744 5.31564 16.885 5.705L12.7071 9.88289C12.3166 10.2734 11.6834 10.2734 11.2929 9.88289L7.115 5.705C6.72564 5.31564 6.09436 5.31564 5.705 5.705C5.31564 6.09436 5.31564 6.72564 5.705 7.115L9.88289 11.2929C10.2734 11.6834 10.2734 12.3166 9.88289 12.7071L5.705 16.885C5.31564 17.2744 5.31564 17.9056 5.705 18.295C6.09436 18.6844 6.72564 18.6844 7.115 18.295L11.2929 14.1171C11.6834 13.7266 12.3166 13.7266 12.7071 14.1171L16.885 18.295C17.2744 18.6844 17.9056 18.6844 18.295 18.295C18.6844 17.9056 18.6844 17.2744 18.295 16.885L14.1171 12.7071C13.7266 12.3166 13.7266 11.6834 14.1171 11.2929L18.295 7.115Z" fill="black"></path>
+                                            </svg>
+
+                                        </button>
+
+                                        <img src="./Assets/Produtos/Imagens/imagem-produto.png" alt="Imagem Comparativo" class="imagem__info___comparativos">
+
+                                        <h4 class="titulo__info___comparativos">Panela de pressão eletrica</h4>
+
+                                        <div class="container__melhor___preco">
+
+                                            <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Loja Melhor Preço" class="imagem__loja___preco">
+
+                                            <span class="valor__melhor___preco">R$252,00</span>
+
+                                        </div>
+
+                                        <div class="container__nota-geral">
+
+                                            <span class="titulo__nota-geral">Nota Geral</span>
+
+                                            <span class="nota-geral">10.0</span>
+
+                                        </div>
+
+                                        <div class="container__custo-beneficio">
+
+                                            <span class="titulo__custo-beneficio">Custo-Benefício:</span>
+
+                                            <div class="container__nota___custo-beneficio">
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio"></span>
+
+                                            </div>
+
+                                        </div>
+
+                                        <ul class="lista__pontos___comparativos" id="lista__pontos___comparativos">
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Desempenho e funções</span>
+                                                    <span class="nota__ponto___comparativos">10</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-100"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Praticidade</span>
+                                                    <span class="nota__ponto___comparativos">9.5</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-95"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Acessórios</span>
+                                                    <span class="nota__ponto___comparativos">9</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-90"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Design e Acabamento</span>
+                                                    <span class="nota__ponto___comparativos">10</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-100"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Limpeza</span>
+                                                    <span class="nota__ponto___comparativos">9.5</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-95"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                        </ul>
+
+                                        <button class="botao__ver-mais___pontos" id="botao__ver-mais-comparativo">Ver Mais</button>
+                                        <button class="botao__ver-menos___pontos" id="botao__ver-menos-comparativo">Ver Menos</button>
+
+                                    </section>  
+
+                                    <section class="secao__caracteristicas___comparativos">
+
+                                        <ul class="lista__caracteristicas___comparativos">
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">1500W</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">55cm x  7.8cm</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">Aluminio com antiaderente</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">137 C°</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <div class="container__caracteristicas___comparativos">
+
+                                                    <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Imagem Comparativos" class="imagem__caracteristicas___comparativos">
+
+                                                    <span class="valor__melhor___preco">R$252,00</span>
+
+                                                </div>
+
+                                                <div class="container__caracteristicas___comparativos">
+
+                                                    <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Imagem Comparativos" class="imagem__caracteristicas___comparativos">
+
+                                                    <span class="valor__melhor___preco">R$252,00</span>
+
+                                                </div>
+
+                                                <div class="container__caracteristicas___comparativos">
+
+                                                    <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Imagem Comparativos" class="imagem__caracteristicas___comparativos">
+
+                                                    <span class="valor__melhor___preco">R$252,00</span>
+
+                                                </div>
+
+                                            </li>
+
+                                        </ul>
+
+                                    </section>
+
+                                </li>
+
+                                <li class="item__lista___comparativos">
+
+                                    <section class="secao__info___comparativos">
+
+                                        <button class="botao__deleta___item">
+
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M18.295 7.115C18.6844 6.72564 18.6844 6.09436 18.295 5.705C17.9056 5.31564 17.2744 5.31564 16.885 5.705L12.7071 9.88289C12.3166 10.2734 11.6834 10.2734 11.2929 9.88289L7.115 5.705C6.72564 5.31564 6.09436 5.31564 5.705 5.705C5.31564 6.09436 5.31564 6.72564 5.705 7.115L9.88289 11.2929C10.2734 11.6834 10.2734 12.3166 9.88289 12.7071L5.705 16.885C5.31564 17.2744 5.31564 17.9056 5.705 18.295C6.09436 18.6844 6.72564 18.6844 7.115 18.295L11.2929 14.1171C11.6834 13.7266 12.3166 13.7266 12.7071 14.1171L16.885 18.295C17.2744 18.6844 17.9056 18.6844 18.295 18.295C18.6844 17.9056 18.6844 17.2744 18.295 16.885L14.1171 12.7071C13.7266 12.3166 13.7266 11.6834 14.1171 11.2929L18.295 7.115Z" fill="black"></path>
+                                            </svg>
+
+                                        </button>
+
+                                        <img src="./Assets/Produtos/Imagens/imagem-produto.png" alt="Imagem Comparativo" class="imagem__info___comparativos">
+
+                                        <h4 class="titulo__info___comparativos">Panela de pressão eletrica</h4>
+
+                                        <div class="container__melhor___preco">
+
+                                            <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Loja Melhor Preço" class="imagem__loja___preco">
+
+                                            <span class="valor__melhor___preco">R$252,00</span>
+
+                                        </div>
+
+                                        <div class="container__nota-geral">
+
+                                            <span class="titulo__nota-geral">Nota Geral</span>
+
+                                            <span class="nota-geral">10.0</span>
+
+                                        </div>
+
+                                        <div class="container__custo-beneficio">
+
+                                            <span class="titulo__custo-beneficio">Custo-Benefício:</span>
+
+                                            <div class="container__nota___custo-beneficio">
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio" id="nota-final-preenchido"></span>
+
+                                                <span class="nota__custo-beneficio"></span>
+
+                                            </div>
+
+                                        </div>
+
+                                        <ul class="lista__pontos___comparativos" id="lista__pontos___comparativos">
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Desempenho e funções</span>
+                                                    <span class="nota__ponto___comparativos">10</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-100"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Praticidade</span>
+                                                    <span class="nota__ponto___comparativos">9.5</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-95"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Acessórios</span>
+                                                    <span class="nota__ponto___comparativos">9</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-90"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Design e Acabamento</span>
+                                                    <span class="nota__ponto___comparativos">10</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-100"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                            <li class="item__ponto___comparativos">
+
+                                                <div class="container__nome___ponto">
+
+                                                    <span class="nome__ponto___comparativos">Limpeza</span>
+                                                    <span class="nota__ponto___comparativos">9.5</span>
+
+                                                </div>
+
+                                                <span class="barra__progresso___ponto">
+
+                                                    <span class="barra__progressiva___ponto" id="barra-95"></span>
+
+                                                </span>
+
+                                            </li>
+
+                                        </ul>
+
+                                        <button class="botao__ver-mais___pontos" id="botao__ver-mais-comparativo">Ver Mais</button>
+                                        <button class="botao__ver-menos___pontos" id="botao__ver-menos-comparativo">Ver Menos</button>
+
+                                    </section>  
+
+                                    <section class="secao__caracteristicas___comparativos">
+
+                                        <ul class="lista__caracteristicas___comparativos">
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">1500W</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">55cm x  7.8cm</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">Aluminio com antiaderente</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <span class="info__caracteristicas___comparativos">137 C°</span>
+
+                                            </li>
+
+                                            <li class="item__caracteristicas___comparativos">
+
+                                                <div class="container__caracteristicas___comparativos">
+
+                                                    <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Imagem Comparativos" class="imagem__caracteristicas___comparativos">
+
+                                                    <span class="valor__melhor___preco">R$252,00</span>
+
+                                                </div>
+
+                                                <div class="container__caracteristicas___comparativos">
+
+                                                    <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Imagem Comparativos" class="imagem__caracteristicas___comparativos">
+
+                                                    <span class="valor__melhor___preco">R$252,00</span>
+
+                                                </div>
+
+                                                <div class="container__caracteristicas___comparativos">
+
+                                                    <img src="./Assets/Comparativos/Imagens/imagem-magalu.png" alt="Imagem Comparativos" class="imagem__caracteristicas___comparativos">
+
+                                                    <span class="valor__melhor___preco">R$252,00</span>
+
+                                                </div>
+
+                                            </li>
+
+                                        </ul>
+
+                                    </section>
+
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+
+                        <button class="botao__carrousel" data-proximo-comparativo>
+
+                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path opacity="0.4" d="M18 33C26.2843 33 33 26.2843 33 18C33 9.71573 26.2843 3 18 3C9.71573 3 3 9.71573 3 18C3 26.2843 9.71573 33 18 33Z" fill="#737373"/>
+                                <path d="M16.1095 24.4202C15.8245 24.4202 15.5395 24.3152 15.3145 24.0902C14.8795 23.6552 14.8795 22.9352 15.3145 22.5002L19.8145 18.0002L15.3145 13.5002C14.8795 13.0652 14.8795 12.3452 15.3145 11.9102C15.7495 11.4752 16.4695 11.4752 16.9045 11.9102L22.1995 17.2052C22.6345 17.6402 22.6345 18.3602 22.1995 18.7952L16.9045 24.0902C16.6795 24.3152 16.3945 24.4202 16.1095 24.4202Z" fill="#737373"/>
+                            </svg>
+
+                        </button>
+
+                    </div>
+
+
+                </section>
+
+            </section>
+
+            <section class="secao__aba___removidos" style="display: none;">
+
+                <section class="secao__cabecalho___removidos">
+                    <div class="container__titulo___comentarios">
+
+                        <h8 class="titulo__cabecalho___removidos">Produtos removidos<span class="numeros__itens___removidos">(3)</span></h8>
+
+                        <p class="numero__maximo___removidos">Máximo 5 produtos</p>
+
+                    </div>
+
+                    <div class="container__botoes___removidos">
+
+                        <button class="botao__remover___removidos" onclick="fechaRemovidosProduto()">Desfazer</button>
+
+                    </div>
+
+                </section>
+
+                <ul class="lista__removidos">
+
+                    <li class="item__removidos">
+
+                        <button class="botao__remove___item-removidos">
+
+                            <svg class="svg__botao-remove" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.295 7.115C18.6844 6.72564 18.6844 6.09436 18.295 5.705C17.9056 5.31564 17.2744 5.31564 16.885 5.705L12.7071 9.88289C12.3166 10.2734 11.6834 10.2734 11.2929 9.88289L7.115 5.705C6.72564 5.31564 6.09436 5.31564 5.705 5.705C5.31564 6.09436 5.31564 6.72564 5.705 7.115L9.88289 11.2929C10.2734 11.6834 10.2734 12.3166 9.88289 12.7071L5.705 16.885C5.31564 17.2744 5.31564 17.9056 5.705 18.295C6.09436 18.6844 6.72564 18.6844 7.115 18.295L11.2929 14.1171C11.6834 13.7266 12.3166 13.7266 12.7071 14.1171L16.885 18.295C17.2744 18.6844 17.9056 18.6844 18.295 18.295C18.6844 17.9056 18.6844 17.2744 18.295 16.885L14.1171 12.7071C13.7266 12.3166 13.7266 11.6834 14.1171 11.2929L18.295 7.115Z" fill="black"/>
+                            </svg>
+    
+
+                        </button>
+
+                        <img src="./Assets/Produtos/Imagens/imagem-produto.png" alt="Item removidos" class="imagem__item___removidos">
+
+                        <h9 class="nome__item___removidos">Panela de pressão eletrica</h9>
+
+                    </li>
+
+                    <li class="item__removidos">
+
+                        <button class="botao__remove___item-removidos">
+
+                            <svg class="svg__botao-remove" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.295 7.115C18.6844 6.72564 18.6844 6.09436 18.295 5.705C17.9056 5.31564 17.2744 5.31564 16.885 5.705L12.7071 9.88289C12.3166 10.2734 11.6834 10.2734 11.2929 9.88289L7.115 5.705C6.72564 5.31564 6.09436 5.31564 5.705 5.705C5.31564 6.09436 5.31564 6.72564 5.705 7.115L9.88289 11.2929C10.2734 11.6834 10.2734 12.3166 9.88289 12.7071L5.705 16.885C5.31564 17.2744 5.31564 17.9056 5.705 18.295C6.09436 18.6844 6.72564 18.6844 7.115 18.295L11.2929 14.1171C11.6834 13.7266 12.3166 13.7266 12.7071 14.1171L16.885 18.295C17.2744 18.6844 17.9056 18.6844 18.295 18.295C18.6844 17.9056 18.6844 17.2744 18.295 16.885L14.1171 12.7071C13.7266 12.3166 13.7266 11.6834 14.1171 11.2929L18.295 7.115Z" fill="black"/>
+                            </svg>
+    
+
+                        </button>
+
+                        <img src="./Assets/Produtos/Imagens/imagem-produto.png" alt="Item removidos" class="imagem__item___removidos">
+
+                        <h9 class="nome__item___removidos">Panela de pressão eletrica</h9>
+
+                    </li>
+
+                    <li class="item__removidos">
+
+                        <button class="botao__remove___item-removidos">
+
+                            <svg class="svg__botao-remove" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18.295 7.115C18.6844 6.72564 18.6844 6.09436 18.295 5.705C17.9056 5.31564 17.2744 5.31564 16.885 5.705L12.7071 9.88289C12.3166 10.2734 11.6834 10.2734 11.2929 9.88289L7.115 5.705C6.72564 5.31564 6.09436 5.31564 5.705 5.705C5.31564 6.09436 5.31564 6.72564 5.705 7.115L9.88289 11.2929C10.2734 11.6834 10.2734 12.3166 9.88289 12.7071L5.705 16.885C5.31564 17.2744 5.31564 17.9056 5.705 18.295C6.09436 18.6844 6.72564 18.6844 7.115 18.295L11.2929 14.1171C11.6834 13.7266 12.3166 13.7266 12.7071 14.1171L16.885 18.295C17.2744 18.6844 17.9056 18.6844 18.295 18.295C18.6844 17.9056 18.6844 17.2744 18.295 16.885L14.1171 12.7071C13.7266 12.3166 13.7266 11.6834 14.1171 11.2929L18.295 7.115Z" fill="black"/>
+                            </svg>
+    
+
+                        </button>
+
+                        <img src="./Assets/Produtos/Imagens/imagem-produto.png" alt="Item removidos" class="imagem__item___removidos">
+
+                        <h9 class="nome__item___removidos">Panela de pressão eletrica</h9>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </main>
+
+
+        <footer class="rodape" id="rodape__feed">
+
+            <address class="secao__marca">
+
+                <img src="./Assets/Vetores/logo-detalhei-footer.svg" alt="Logo Detalhei" class="logo___detalhei-footer">
+
+                <p class="texto__copyright">Copyright © 2001-2021 ,Detalhei Todos os direitos reservados.</p>
+
+                <div class="container__redes-sociais">
+
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-FACEBOOK.svg" alt="Facebook Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-TWITTER.svg" alt="Twitter Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-INSTAGRAM.svg" alt="Instagram Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-YOUTUBE.svg" alt="Youtube Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-LINKEDIN.svg" alt="Linkedin Detalhei" class="logo__redes-sociais"></a>
+
+                </div>
+            </address>
+
+            <section class="secao__lista" id="secao__lista-footer-margin">
+
+                <h8 class="titulo__lista-footer">Detalhei</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Consultoria</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Contato</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Privacidade</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Ofertas</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Minha Garantia</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Empresarial</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Top 5</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Air Flayer</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Batedeiras</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Eletricos</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Liquidificadores</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fornos</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Produtos</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fogões</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Desidratador</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Churrasqueira</a></li>
+    
+                </ul>
+            
+            </section>
+
+        </footer>
+
+        <script src="./Componentes/Comparativo/abreFiltro.js" type="text/javascript" ></script>
+        <script src="./Componentes/Comparativo/positionRange.js" type="text/javascript" ></script>
+        <script src="./Componentes/Comparativo/abreRemovidos.js" type="text/javascript"></script>
+        <script src="./Componentes/Comparativo/mudaCardProdutos.js" type="text/javascript"></script>
+        <script src="./Componentes/Comparativo/indexComparativo.js" type="module"></script>
+
+        <script>
+
+        var $range = document.querySelector('.input__range-preco'),
+            $value = document.querySelector('.valor__range-preco');
+
+        $range.addEventListener('input', function() {
+        $value.textContent = `R$ ` + this.value;
+        
+
+        });
+
+        </script>
+        <script>
+
+            
+        function atualizaPreco() {
+        let valorPreco = document.querySelector('.input__range-preco').value;
+        document.querySelector('.valor__range-preco').textContent = `R$ ` + valorPreco;
+
+        }
+
+        </script>
+
+
+        <script>
+        var $range = document.querySelector('.input__range-nota'),
+            $valuenota = document.querySelector('.valor__range-nota');
+
+        $range.addEventListener('input', function() {
+        $valuenota.textContent = this.value;
+        });
+        </script>
+        <script>
+                    
+            function atualizaNota() {
+            let valorNota = document.querySelector('.input__range-nota').value;
+            document.querySelector('.valor__range-nota').textContent = valorNota;
+
+            }
+
+        </script>        
+
+    </body>
+
+</html>

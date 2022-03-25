@@ -447,16 +447,21 @@
 
             <section class="secao__nota___opiniao">
 
-                <div class="container__nota___opiniao">
+                <img src="./Assets/Opiniao/Imagem/imagem-perfil-nota.png" alt="Imagem Perfil" class="imagem__perfil___nota">
 
-                    <span class="nota__opiniao">Opinião de <span class="destaque__blue">Cameron Williamson</span> que deu Nota 4.5 é não recomenda o produto</span>
+                <h3 class="titulo__nota___opiniao"><span class="destaque__blue-nota">Cameron Williamson</span> Deu nota <span class="nota__opiniao" id="nota__negativa">2.3</span> para o produto.</h3>
+
+                <h3 class="titulo__nota___opiniao">Em não sua opinião, <span id="destaque__nota-negativa">não vale a compra</span></h3>
+
+                <div class="container__redes-sociais-nota">
+
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-FACEBOOK.svg" alt="Facebook Detalhei" class="logo__redes-sociais-nota"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-INSTAGRAM.svg" alt="Instagram Detalhei" class="logo__redes-sociais-nota"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-YOUTUBE.svg" alt="Youtube Detalhei" class="logo__redes-sociais-nota"></a>
 
                 </div>
-
-                <span class="nota__negativa">NÃO RECOMENDO</span>
-
-                <span class="nota__positiva">RECOMENDO</span>
-
             </section>
 
             <section class="secao__anuncio">
@@ -499,8 +504,6 @@
 
                 <div class="cabecalho__informacao___produto">
                     <button class="tablinks tab-ofertas" id="defaultOpen" onclick="openTab(event, 'ofertas')">Ofertas</button>
-                    <button class="tablinks tab-caracteristicas" onclick="openTab(event, 'caracteristicas')">Características</button>   
-                    <button class="tablinks tab-historico" onclick="openTab(event, 'historico')">Historico de preços</button>   
                 </div>
 
                 <section class="secao__informacao___ofertas tabcontent" id="ofertas">
@@ -538,70 +541,6 @@
 
                         </section>
                     </section>
-                </section>
-
-                <section class="secao__informacao___caracteristicas tabcontent" id="caracteristicas">
-
-
-                    <ul class="lista__informacao___caracteristicas">
-
-                        <li class="item__lista___caracteristicas">
-
-                            <h9 class="titulo__item___lista">Modelo</h9>
-
-                            <span class="descricao__item___lista" id="modelo__produto">Multicooker 5L Inox EPP50MI</span>
-
-                        </li>
-
-                        <li class="item__lista___caracteristicas">
-
-                            <h9 class="titulo__item___lista">Garantia</h9>
-
-                            <span class="descricao__item___lista" id="garantia__produto">12 Meses</span>
-
-                        </li>
-
-                        <li class="item__lista___caracteristicas">
-
-                            <h9 class="titulo__item___lista">Consumo KW/H</h9>
-
-                            <span class="descricao__item___lista" id="consumo__produto">-</span>
-
-                        </li>
-
-                        <li class="item__lista___caracteristicas">
-
-                            <h9 class="titulo__item___lista">Capacidade</h9>
-
-                            <span class="descricao__item___lista" id="capacidade__produto">5 Litros</span>
-
-                        </li>
-
-                        <li class="item__lista___caracteristicas">
-
-                            <h9 class="titulo__item___lista">Voltagem</h9>
-
-                            <span class="descricao__item___lista" id="voltagem__produto">110v</span>
-
-                        </li>
-
-                        <li class="item__lista___caracteristicas">
-
-                            <h9 class="titulo__item___lista">Display</h9>
-
-                            <span class="descricao__item___lista" id="display__produto">Led</span>
-
-                        </li>
-
-                    </ul>
-
-                    <button class="botao__ver-mais___caracteristicas" onclick="abrirCaracteristicasExpandido()">Ver Mais</button>
-                </section>
-
-                <section class="secao__informacao___historico tabcontent" id="historico">
-
-                    <img src="./Assets/Avaliacao/Imagens/imagem-tabela.png" alt="" class="imagem__grafico___historico">
-
                 </section>
 
             </section>
@@ -764,6 +703,34 @@
                     </li>
 
                 </ul>
+            </section>
+
+            <section class="secao__gostei-gostaria">
+
+                <div class="container__gostei-gostaria">
+
+                    <h10 class="titulo__gostei">O que eu gostei:</h10>
+
+                    <ul class="lista__gostei">
+
+                        <li class="item__lista-gostei">Boa temperatura para refogar</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="container__gostei-gostaria">
+
+                    <h10 class="titulo__gostaria">O que eu gostaria:</h10>
+
+                    <ul class="lista__gostaria">
+
+                        <li class="item__lista-gostaria">Boa temperatura para refogar</li>
+
+                    </ul>
+
+                </div>
+
             </section>
 
             <div class="container__ofertas___expandido" id="ofertas__expandido">

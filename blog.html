@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <style type="text/css" media="screen, print">
+            @font-face {
+            font-family: 'SF UI Display Ultralight';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Ultralight'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-ultralight-58646b19bf205.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Light';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Light'), url("./Fonts/SF-UI-DISPLAY/sf-ui-display-light-58646b33e0551.woff") format('woff');
+            }
+
+            @font-face {
+            font-family: 'SF UI Display Medium';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Medium'), url("./Fonts/SF-UI-DISPLAY/sf-ui-display-medium-58646be638f96.woff") format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Thin';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Thin'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Semibold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Semibold'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Bold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Bold'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Heavy';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Heavy'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Black';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Black'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+            }
+        </style>
+        <link rel="stylesheet" href="./CSS/Blog/blog.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalho.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/rodape.css">
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <title>Blog | Detalhei</title>
+        <link rel="shortcut icon" href="./Assets/Vetores/Logo-Detalhei.svg" type="image/x-icon"/>
+    </head>
+
+    <body id="body">
+        
+        <header class="cabecalho">
+
+            <section class="container___cabecalho" id="container__cabecalho___logado">
+                <a href="./index.html">
+                    <img src="./Assets/Vetores/LOGO-DETALHIE-NOME.svg" alt="Logo Detalhei" class="logo__detalhei">
+                </a>
+
+                <input type="text" class="input__busca-navegacao" placeholder="Faça aqui sua pesquisa">
+                <section class="secao__perfil-logado">
+                    <div class="container__perfil">
+                        <a class="container__perfil-logado" id="container__perfil-logado">
+
+                            <img src="./Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
+            
+                            <span class="nome__perfil-logado">Cameron Williamson</span>
+            
+                            <button type="button" class="botao__abre-info___perfil"></button>
+
+                        </a>
+                    </div>
+                    <section class="secao__dropdown-perfil" id="dropdown">
+
+                        <a href="./seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
+                        <a href="./feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
+                        <a href="#" class="link__dropdown-perfil">Minhas opiniões</a>
+                        <a href="./login.html" class="link__dropdown-sair">SAIR</a>
+    
+                    </section>
+                </section>
+                            
+            </section>
+
+            <nav class="container__navegacao___cabecalho">
+                
+                <div class="container__botao___navegacao">
+
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+
+                </div>
+
+                <ul class="lista__navegacao">
+
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Detalhei</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link dropdown-top-5">Top 5</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Comparativo</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Blog</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </header>
+
+
+        <main class="conteudo">
+
+            <section class="secao__banner">
+
+                <section class="secao__info___banner">
+
+                    <h1 class="titulo__banner">Blog Detalhei</h1>
+
+                    <p class="subtitulo__banner">Além da Casca</p>
+
+                </section>
+
+                <a href="./Blog/blog-detalhe.html" class="secao__destaque___blog-banner">
+
+                    <img src="./Assets/Blog/Imagens/imagem-banner-blog.png" alt="Imagem Destaque" class="imagem__destaque___blog">
+
+                    <section class="secao__info___destaque">
+
+                        <span class="titulo__novo">Novo</span>
+
+                        <h2 class="titulo__info___destaque">Funcionamento do Aquecedor Cerâmico versus o Termoventilador</h2>
+
+                        <p class="descricao__info___destaque">Air Fryer ou fritadeira sem óleo permite fritar, grelhar e assar alimentos utilizando ar quente em alta velocidade, sendo muito mais rápido e prático nos preparos do dia a dia. Além dessas vantagens, a air fryer é mais saudável pois não utiliza a imersão em gorduras.</p>
+
+                        <div class="container__rodape___blog">
+
+                            <span class="horario___rodape___blog">08/10/2021 às 13:13</span>
+
+                            <span class="tempo__leitura___blog">5 min de leitura</span>
+
+                        </div>
+
+                    </section>
+
+                </a>
+
+            </section>
+
+            <section class="secao__lista___destaque-blog">
+
+                <ul class="lista__destaque-blog">
+
+                    <a href="./Blog/blog-detalhe.html" class="item__lista___destaque-blog">
+
+                        <img src="./Assets/Blog/Imagens/imagem-blog-4.png" alt="Imagem Blog" class="imagem__item___lista-destaque">
+
+                        <h3 class="titulo__item___lista-destaque">Consumo de Aquecedor Elétrico versus Ar Condicionado Reverso</h3>
+
+                        <p class="descricao__item___lista-destaque">Air Fryer ou fritadeira sem óleo permite fritar, grelhar e assar alimentos utilizando ar quente em alta velocidade, sendo muito mais rápido e prático nos...</p>
+
+                    </a>
+
+                    <a href="./Blog/blog-detalhe.html" class="item__lista___destaque-blog">
+
+                        <img src="./Assets/Blog/Imagens/imagem-blog-5.png" alt="Imagem Blog" class="imagem__item___lista-destaque">
+
+                        <h3 class="titulo__item___lista-destaque">Consumo de Aquecedor Elétrico versus Ar Condicionado Reverso</h3>
+
+                        <p class="descricao__item___lista-destaque">Air Fryer ou fritadeira sem óleo permite fritar, grelhar e assar alimentos utilizando ar quente em alta velocidade, sendo muito mais rápido e prático nos...</p>
+
+                    </a>
+
+                    <a href="./Blog/blog-detalhe.html" class="item__lista___destaque-blog">
+
+                        <img src="./Assets/Blog/Imagens/imagem-blog-7.png" alt="Imagem Blog" class="imagem__item___lista-destaque">
+
+                        <h3 class="titulo__item___lista-destaque">Consumo de Aquecedor Elétrico versus Ar Condicionado Reverso</h3>
+
+                        <p class="descricao__item___lista-destaque">Air Fryer ou fritadeira sem óleo permite fritar, grelhar e assar alimentos utilizando ar quente em alta velocidade, sendo muito mais rápido e prático nos...</p>
+
+                    </a>
+
+                </ul>
+
+            </section>
+
+            <section class="secao__dicas-curiosidades">
+
+                <h4 class="titulo__dicas-curiosidades">Dicas e curiosidades</h4>
+
+                <ul class="lista__dica-curiosidades">
+
+                    <a href="./Blog/blog-detalhe.html" class="item__lista___dica-curiosidades">
+
+                        <img src="./Assets/Blog/Imagens/imagem-blog-1.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___dica-curiosidades">
+
+                        <h5 class="titulo__item___dica-curiosidades">Ar Condicionado Philco Eco Inverter 9000Btus PAC9000ITFM9W</h5>
+
+                    </a>
+
+                    <a href="./Blog/blog-detalhe.html" class="item__lista___dica-curiosidades">
+
+                        <img src="./Assets/Blog/Imagens/imagem-blog-2.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___dica-curiosidades">
+
+                        <h5 class="titulo__item___dica-curiosidades">Ar Condicionado Philco Eco Inverter 9000Btus PAC9000ITFM9W</h5>
+
+                    </a>
+
+                    <a href="./Blog/blog-detalhe.html" class="item__lista___dica-curiosidades">
+
+                        <img src="./Assets/Blog/Imagens/imagem-blog-3.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___dica-curiosidades">
+
+                        <h5 class="titulo__item___dica-curiosidades">Ar Condicionado Philco Eco Inverter 9000Btus PAC9000ITFM9W</h5>
+
+                    </a>
+
+                    <a href="./Blog/blog-detalhe.html" class="item__lista___dica-curiosidades">
+
+                        <img src="./Assets/Blog/Imagens/imagem-blog-6.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___dica-curiosidades">
+
+                        <h5 class="titulo__item___dica-curiosidades">Ar Condicionado Philco Eco Inverter 9000Btus PAC9000ITFM9W</h5>
+
+                    </a>
+
+                </ul>
+
+            </section>
+
+            <section class="secao__dicas-curiosidades">
+
+                <h4 class="titulo__dicas-curiosidades">Dicas e curiosidades</h4>
+
+                <ul class="lista__dica-curiosidades">
+
+                    <a href="./Blog/blog-detalhe.html" class="item__lista___dica-curiosidades">
+
+                        <img src="./Assets/Blog/Imagens/imagem-blog-3.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___dica-curiosidades">
+
+                        <h5 class="titulo__item___dica-curiosidades">Climatizador ou Ventilador, qual devo usar?</h5>
+
+                    </a>
+
+                    <a href="./Blog/blog-detalhe.html" class="item__lista___dica-curiosidades">
+
+                        <img src="./Assets/Blog/Imagens/imagem-blog-1.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___dica-curiosidades">
+
+                        <h5 class="titulo__item___dica-curiosidades">Por que ter um desidratador de alimentos?</h5>
+
+                    </a>
+
+                    <a href="./Blog/blog-detalhe.html" class="item__lista___dica-curiosidades">
+
+                        <img src="./Assets/Blog/Imagens/imagem-blog-2.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___dica-curiosidades">
+
+                        <h5 class="titulo__item___dica-curiosidades">Funcionamento do Aquecedor Cerâmico versus o Termoventilador</h5>
+
+                    </a>
+
+                    <a href="./Blog/blog-detalhe.html" class="item__lista___dica-curiosidades">
+
+                        <img src="./Assets/Blog/Imagens/imagem-blog-6.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___dica-curiosidades">
+
+                        <h5 class="titulo__item___dica-curiosidades">Consumo de Aquecedor Elétrico versus Ar Condicionado Reverso</h5>
+
+                    </a>
+
+                </ul>
+
+            </section>
+
+            <section class="secao__categorias">
+
+                <h6 class="titulo__categorias">Categorias</h6>
+
+                <ul class="lista__categorias">
+
+                    <button class="item__lista___categorias">
+
+                        Dicas e Curiosidades
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        Gastronomia
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        Lavanderia
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        Mundo dos Produtos
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        Notícias
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        O Melhor para Mim
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        Sustentabilidade
+
+                    </button>
+
+                </ul>
+
+            </section>
+
+            <section class="secao__newsletter">
+
+                <h7 class="titulo__newsletter">Quer receber nossa newsletter?</h7>
+
+                <button class="botao__neswletter" onclick="abrirNewsletter ()">Quero</button>
+
+            </section>
+
+            <div class="container__modal___newsletter" id="container-modal-newsletter">
+
+                <section class="modal__newsletter">
+
+                    <div class="container__botao___fecha">
+                        <button class="botao__fecha___newsletter-expandido" onclick="fechaNewsletter()"></button>
+                    </div>
+
+                    <form class="secao__form___newsletter">
+
+                        <div class="container__input">
+
+                            <label for="Nome" class="label__newsletter">Nome</label>
+                            <input type="text" id="Nome" class="input__newsletter" placeholder="Seu nome" required>
+
+                        </div>
+
+                        <div class="container__input">
+
+                            <label for="Email" class="label__newsletter">E-mail</label>
+                            <input type="email" id="Email" class="input__newsletter" placeholder="Seu email" required>
+
+                        </div>
+
+                        <button class="botao__form___newsletter">Enviar</button>
+
+                    </form>
+
+                </section>
+
+            </div>
+
+        </main>
+
+
+        <footer class="rodape" id="rodape__feed">
+
+            <address class="secao__marca">
+
+                <img src="./Assets/Vetores/logo-detalhei-footer.svg" alt="Logo Detalhei" class="logo___detalhei-footer">
+
+                <p class="texto__copyright">Copyright © 2001-2021 ,Detalhei Todos os direitos reservados.</p>
+
+                <div class="container__redes-sociais">
+
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-FACEBOOK.svg" alt="Facebook Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-TWITTER.svg" alt="Twitter Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-INSTAGRAM.svg" alt="Instagram Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-YOUTUBE.svg" alt="Youtube Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-LINKEDIN.svg" alt="Linkedin Detalhei" class="logo__redes-sociais"></a>
+
+                </div>
+            </address>
+
+            <section class="secao__lista" id="secao__lista-footer-margin">
+
+                <h8 class="titulo__lista-footer">Detalhei</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Consultoria</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Contato</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Privacidade</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Ofertas</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Minha Garantia</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Empresarial</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Top 5</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Air Flayer</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Batedeiras</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Eletricos</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Liquidificadores</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fornos</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Produtos</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fogões</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Desidratador</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Churrasqueira</a></li>
+    
+                </ul>
+            
+            </section>
+
+        </footer>
+      
+        <script src="./Componentes/Blog/abrirNewsletter.js" type="text/javascript"></script>
+    </body>
+
+</html>

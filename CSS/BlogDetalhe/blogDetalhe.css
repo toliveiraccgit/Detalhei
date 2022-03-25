@@ -1,0 +1,1524 @@
+@media (min-width:0px){
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 5.438rem;
+    }
+    /*---------------------------CABECALHO----------------------------*/
+    .secao__info___banner{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.813rem;
+
+        width: 70.125rem;
+
+        margin-bottom: 5rem;
+    }
+    .titulo__banner{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        
+        font-size: 40px;
+
+        margin: 0%;
+
+        color: #243141;
+    }
+    .subtitulo__banner{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        margin: 0%;
+
+        color: #9B9999;
+    }
+    .titulo__novo{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        margin: 0%;
+
+        color: #9B9999;
+
+    }
+    .container__data-tempo___produto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+
+        margin-bottom: 1.25rem;
+        margin-top: 1.25rem;
+    }
+    .data__produto___blog{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+
+        margin: 0%;
+
+        color: #9B9999;
+    }
+    .tempo__leitura___blog{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+        line-height: 150%;
+        color: #9B9999;
+        padding-left: 1rem;
+        background-image: url("../../Assets/Feed/Imagem-produtos-feed/icone-tempo-feed.svg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+        background-size: .4rem .4rem;
+    }
+    /*--------------------------INFO-PRODUTO----------------------------*/
+    .info__produto___blog{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+
+        width: 70.125rem;
+
+        margin-bottom: 3.813rem;
+    }
+    .titulo__info___produto{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 40px;
+
+        margin: 0%;
+
+        color: #243141;
+    }
+    /*---------------------IMAGENS-PRODUTO----------------------------*/
+    .imagens__produtos___avaliados{
+        width: 70.125rem;
+    }
+
+    .slide__produto___avaliado{
+        width: 70.125rem;
+        height: auto;
+
+        background-color: var(--low-pure);
+        border-radius: 8px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .video__slidShow{
+        width: 70.125rem;
+        height: 32.765rem;
+    }
+    .thumbnail__slide___produto{
+        width: 6.25rem;
+        height: 7.5rem;
+
+        border-radius: 9px;
+
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .thumbnail__slide___produto > img {
+        border-radius: 9px;
+
+        scale: 1.5;
+    }
+    .container__imagens___produto-avaliado{
+        display: flex;
+        flex-direction: column;
+        gap: 1.938rem;
+    }
+    .secao__thumbnails___produto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+
+        padding-left: .5rem;
+
+        width: 70.125rem;
+
+        overflow-x: scroll;
+
+        scrollbar-width: none;
+    }
+    .secao__thumbnails___produto::-webkit-scrollbar{
+        display: none;
+    }
+    /*---------------------SECAO-PERFIL-AVALIADOR-------------------------*/
+    .secao__perfil___avaliador{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-bottom: 1.25rem;
+
+        border-bottom: 1px solid #E4E4E4;
+
+        width: 70.125rem;
+
+        padding-left: 1rem;
+
+        margin-top: 2.5rem;
+    }
+    .perfil__avaliador{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.625rem;
+    }
+    .container__perfil___avaliador{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .imagem__perfil___avaliador{
+        width: 2.5rem;
+        height: 2.5rem;
+
+        border-radius: 50% ;
+    }
+    .container__nome___avaliador{
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+    }
+    .nome__perfil___avaliador{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        margin: 0%;
+
+        color: #07070E;
+    }
+    .container__info___perfil-avaliador{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+    }
+    .arroba__perfil-avaliador{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-regular);
+        font-size: 14px;
+
+        margin: 0%;
+
+        color: #237DFF;
+    }
+    .numeros__inscritos___perfil-avaliador{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 12px;
+
+        margin: 0%;
+
+        color: #A6A6A6;
+    }
+    .botao__seguir___perfil-avaliador{
+        padding: .25rem 1.225rem;
+
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        letter-spacing: .05rem;
+
+        margin: 0%;
+
+        color: #FFFFFF;
+
+        background-color: var(--blue-primary);
+        border-radius: 6px;
+        border: none;
+    }
+    /*-------------------------BOTOES-COMPARTILHA----------------------*/
+    .container__botoes___avaliador{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.875rem;
+    }
+    .botao__compartilhar{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        margin: 0%;
+
+        color: #07070E;
+
+        background-color: transparent;
+        border: none;
+
+        padding-left: 2rem;
+        padding-top: .2rem;
+
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-compartilhe.svg");
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    .botao__favoritos{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        margin: 0%;
+
+        color: #07070E;
+
+        background-color: transparent;
+        border: none;
+
+        padding-left: 2rem;
+        padding-top: .2rem;
+
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-curte.svg");
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    .botao__comentarios{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        margin: 0%;
+
+        color: #07070E;
+
+        background-color: transparent;
+        border: none;
+
+        padding-left: 2rem;
+        padding-top: .2rem;
+
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-comentarios.svg");
+        background-repeat: no-repeat;
+        background-position: left center;
+    }
+    /*-----------------CONTEUDO-BLOG-----------------*/
+    .secao__conteudo___blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70.125rem;
+
+        margin-top: 5.625rem;
+    }
+    .secao__cabecalho___conteudo-blog{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+
+        width: 70.125rem;
+    }
+    .titulo__cabecalho___conteudo-blog{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        
+        font-size: 30px;
+
+        margin: 0%;
+
+        color: #243141;
+
+        width: 70.125rem;
+    }
+    .descricao__cabecalho___conteudo-blog{
+        font-family: var(--paragraph-SF-Light);
+
+        letter-spacing: .03rem;
+        line-height: 160%;
+
+        color: #718096;
+
+        margin: 0%;
+        margin-bottom: 1.875rem;
+
+        width: 70.125rem;
+    }
+    .imagem__conteudo___blog{
+        width: 70.125rem;
+
+        border-radius: 12px;
+
+        margin-bottom: 2.5rem;
+    }
+    .secao__bloco___texto-conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+
+        margin-bottom: 2.5rem;
+    }
+    .titulo__bloco___texto-conteudo{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        
+        font-size: 30px;
+
+        margin: 0%;
+
+        color: #243141;
+
+        width: 70.125rem;
+    }
+    .descricao__bloco___texto-conteudo{
+        font-family: var(--paragraph-SF-Light);
+
+        letter-spacing: .03rem;
+        line-height: 160%;
+
+        color: #718096;
+
+        margin: 0%;
+
+        width: 70.125rem;
+    }
+    .descricao__bloco___lista-conteudo{
+        font-family: var(--paragraph-SF-Light);
+
+        letter-spacing: .03rem;
+        line-height: 160%;
+
+        color: #718096;
+
+        margin: 0%;
+
+        background-image: url("../../Assets/Blog-Detalhe/Vetores/vetor-lista-texto.svg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: .8rem;
+        background-size: .45rem .35rem;
+
+        padding-left: 1rem;
+        margin-top: 1.875rem;
+
+        width: 41.875rem;
+    }
+    .descricao__bloco___lista-conteudo:last-child{
+        margin-bottom: 4.75rem;
+    }
+    .secao__sobre___autor{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+
+        width: 41.875rem;
+    }
+    .titulo__sobre___autor{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 14px;
+
+        color: #000000;
+    }
+    .container__autor{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0.875rem;
+    }
+    .imagem__autor{
+        width: 3.75rem;
+        border-radius: 50%;
+    }
+    .container__info___autor{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.375rem;
+    }
+    .nome__info___autor{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        color: #000000;
+    }
+    .sobre__info___autor{
+        font-family: var(--paragraph-SF-Light);
+
+        letter-spacing: .03rem;
+        line-height: 160%;
+
+        color: #718096;
+
+        margin: 0%;
+    }
+    /*-----------------AVALIACAO-BLOG----------------*/
+    .secao__avaliacao___blog{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.417rem;
+
+        margin-top: 3.75rem;
+    }
+    .titulo__avaliacao___blog{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 20px;
+
+        color: #000000;
+    }
+    .container__avaliacao___blog{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.833rem;
+    }
+    .estrela__blog{
+        width: 1.667rem;
+        height: 1.583rem;
+        background-image: url("../../Assets/Top5/Vetores/vetor-estrela-vazia.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        background-color: transparent;
+        border: none;
+    }
+    #estrela__preenchida{
+        background-image: url("../../Assets/Top5/Vetores/vetor-estrela-preenchida.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    /*---------------ULTIMAS-POSTAGENS---------------*/
+    .secao__ultimas-postagens{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.125rem;
+
+        width: 75.5rem;
+
+        margin-top: 14.688rem;
+    }
+    .titulo__ultimas-postagens{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 24px;
+
+        letter-spacing: 0.02em;
+        line-height: 120%;
+
+        margin: 0%;
+
+        color: #243141;
+    }
+    .lista__ultimas-postagens{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 4.875rem;
+    }
+    .item__lista___ultimas-postagens{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.75rem;
+    }
+    .imagem__item___ultimas-postagens{
+        width: 15.375rem;
+    }
+    .titulo__item___ultimas-postagens{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+
+        letter-spacing: 0.02em;
+        line-height: 150%;
+
+        margin: 0%;
+
+        color: #243141;
+
+        text-align: center;
+
+        width: 14.375rem;
+    }
+    /*-----------------CATEGORIAS-----------------*/
+    .secao__categorias{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.625rem;
+
+        width: 69.688rem;
+
+        margin-top: 10.375rem;
+        margin-bottom: 10.375rem;
+    }
+    .titulo__categorias{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 24px;
+
+        letter-spacing: 0.02em;
+        line-height: 120%;
+
+        margin: 0%;
+
+        color: #243141;
+    }
+    .lista__categorias{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.875rem;
+        flex-wrap: wrap;
+
+        width: 68.688rem;
+    }
+    .item__lista___categorias{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+
+        letter-spacing: 0.04em;
+
+        color: #FFFFFF;
+
+
+        background: #232323;
+
+        border-radius: 12px;
+        border: none;
+
+        padding-top: 0.938rem;
+        padding-bottom: 0.938rem;
+        padding-left: 2.063rem;
+        padding-right: 2.063rem;
+    }
+    /*-------------------ADS-------------------*/
+    .secao__anuncio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
+        width: 70.125rem;
+
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+    }
+    .titulo__anuncio{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 100px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        color: #000000;
+    }
+    /*-------------------OFERTAS-PRODUTO-------------------*/
+    @keyframes animaCaracteristicas {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    @keyframes animaFechaCaracteristicas {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+    .secao__precos___produtos{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        margin-top: 2.188rem;
+        margin-bottom: 10.375rem;
+
+        width: 70.125rem;
+    }
+    .container__botao___preco{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-bottom: 1.875rem;
+    }
+    .botao__ver-todos___precos{
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-medium);
+        font-size: 18px;
+
+        letter-spacing: 0.05rem;
+
+        color: #6B6B6B;
+
+        background: transparent;
+        border: none;
+    }
+    .numero__ofertas___produto{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 18px;
+
+        letter-spacing: 0.05rem;
+
+        color: #6B6B6B;
+    }
+    .lista__precos___ofertas{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        width: 70.125rem;
+    }
+    .link__item___lista-oferta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: #F4F4F4;
+
+        border-radius: 15px;
+        border: 1px solid #EFEFEF;
+
+        padding-left: 4.063rem;
+        padding-right: 4.063rem;
+        padding-top: 2.188rem;
+        padding-bottom: 2.188rem;
+    }
+    .container__loja___oferta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.813rem;
+    }
+    .imagem__loja-oferta{
+        width: 10.313rem;
+        height: 3.75rem;
+
+        border-radius: 6px;
+    }
+    .titulo__loja___oferta{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 24px;
+    
+        color: #07070E;  
+    }
+    .preco__loja___oferta{
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--heading-bold);
+        font-size: 22px;
+
+        letter-spacing: 0.02rem;
+
+        margin: 0%;
+
+        color: var(--blue-primary);
+    }
+
+
+    .container__ofertas___expandido{
+        opacity: 0;
+
+        position: fixed;
+        z-index: 2000000;
+    
+        background: rgba(0, 0, 0, 0.35);
+    
+        height: 100vh;
+        width: 100vw;
+    
+        top: 0%;
+        left: 0%;
+
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        overflow-y: hidden;
+    }
+    .secao__ofertas___expandido{
+        display: flex;
+        flex-direction: column;
+
+        background: #FFFFFF;
+        border-radius: 4px;
+
+        width: auto;
+        height: auto;
+    }
+    .container__botao___fecha{
+        width: 70.125rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-bottom: 1.5rem;
+        padding-top: 1.813rem;
+        padding-right: 1.813rem;
+    }
+    .lista__informacao___caracteristicas-expandida{
+        display: flex;
+        flex-direction: column;
+        width: 70.125rem;
+        height: 38.3rem;
+
+        overflow-y: scroll;
+        overscroll-behavior: contain;
+    }
+    .botao__fecha___ofertas{
+        border: none;
+        width: 0.938rem;
+        height: 0.938rem;
+
+        background-color: transparent;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-fehca-modal.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    @keyframes animaOfertas {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
+
+    @keyframes animaFechaOfertas {
+        from{
+            opacity: 1;
+        }
+        to{
+            opacity: 0;
+        }
+    }
+    .lista__precos___ofertas-expandido{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        width: 70.125rem;
+
+        height: 38.3rem;
+
+        overflow-y: scroll;
+        overscroll-behavior: contain;
+
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+    .link__item___lista-oferta-expandido{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: #F4F4F4;
+
+        border-radius: 15px;
+        border: 1px solid #EFEFEF;
+
+        padding-left: 4.063rem;
+        padding-right: 4.063rem;
+        padding-top: 2.188rem;
+        padding-bottom: 2.188rem;
+
+        width: 66.125rem;
+    }
+    /*-------------------------SECAO-COMENTARIOS----------------------*/
+    .secao__comentarios{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 70.125rem;
+
+        margin-bottom: 3.813rem;
+    }
+    .titulo__comentarios{
+        width: 70.125rem;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 22px;
+        
+        color: #243141;
+
+        padding-bottom: 2.5rem;
+        margin-bottom: 5.25rem;
+
+        border-bottom: 1px solid #CFCFCF;
+    }
+    .container__numeros___comentarios{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+
+        margin-bottom: 5rem;
+    }
+    .titulo__numeros___comentarios{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 18px;
+        
+        color: #243141;
+    }
+    .botao__criar___comentario{
+        background-color: transparent;
+        border: none;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 14px;
+
+        color: var(--blue-primary);
+
+        text-decoration: underline;
+    }
+    .lista__comentarios{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5.25rem;
+    }
+    .item__lista___comentario{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 35.5rem;
+    }
+    .cabecalho__comentario{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.688rem;
+
+        margin-bottom: 0.875rem;
+    }
+    .nome__comentarista{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 22px;
+        
+        color: #243141;
+    }
+    .botao__tenho___produto{
+        background-color: #F8F8F8;
+
+        border: 1px solid #F7F7F7;
+        border-radius: 5px;
+
+        padding: .25rem 0.875rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+        color:  #07070E;
+    }
+    .comentario__produto{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        line-height: 140%;
+
+        letter-spacing: 0.02em;
+
+        color:  #5B5B5B;
+
+        margin: 0%;
+        margin-bottom: 0.813rem;
+    }
+    .rodape__comentario{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 35.5rem;
+    }
+    .container__botoes___comentario{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2.125rem;
+    }
+    .botao__salva___comentario{
+        background-color: transparent;
+        border: none;
+
+        padding-left: 1.5rem;
+
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-salva-comentario.svg");
+        background-position: left center;
+        background-repeat: no-repeat;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+        
+        color: #243141;
+    }
+    .botao__curte___comentario{
+        background-color: transparent;
+        border: none;
+
+        padding-left: 1.6rem;
+
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-curte-comentario.svg");
+        background-position: left center;
+        background-repeat: no-repeat;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+        
+        color: #243141;
+    }
+    .tempo__publicacao___comentario{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-bold);
+        font-size: 17px;
+        color:  #9B9999;
+    }
+    .secao__comentario___respondido{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 35.5rem;
+
+        padding-left: 1.625rem;
+        padding-top: 1.625rem;
+
+        background-image: url("../../Assets/Vetores/vetor-comentario-respondido.svg");
+        background-repeat: no-repeat;
+        background-position: left 2.438rem;
+    }
+    /*----------------------MODAL---------------------*/
+    .container__modal___comentario{
+        opacity: 0;
+
+        position: fixed;
+        z-index: 2000000;
+    
+        background: rgba(0, 0, 0, 0.35);
+    
+        height: 100vh;
+        width: 100vw;
+    
+        top: 0%;
+        left: 0%;
+
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        overflow-y: hidden;
+    }
+    .secao__modal___comentario{
+        display: flex;
+        flex-direction: column;
+
+        background: #FFFFFF;
+        border-radius: 4px;
+
+        width: auto;
+        height: auto;
+
+        padding-left: 3.375rem;
+        padding-right: 3.313rem;
+        padding-bottom: 7.813rem;
+    }
+    .container__botao___fecha-comentario{
+        width: 60.313rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-top: 1.813rem;
+        padding-right: 0rem;
+
+        margin-bottom: 5.125rem;
+    }
+    .escreva__comentario{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .container__info___comentario{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.813rem;
+
+        margin-bottom: 1.5rem;
+    }
+    .nome__perfil___comentario{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 22px;
+        
+        color: #243141;
+    }
+    .container__input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.875rem;
+    }
+    .container__input___checkamrck{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .input__check___comentario{
+        all: unset;
+
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-color: transparent;
+        border-radius: 5px;
+
+        border: 2px solid #E8E8E8;
+
+        display: inline-block;
+
+        cursor: pointer;
+    }
+    .input__check___comentario:checked{
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-color: var(--blue-primary);
+        color: var(--blue-primary);
+
+        border: 2px solid var(--blue-primary);
+
+        background-image: url("../../Assets/Login/vetor-botao-check.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .label__input___check-comentario{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        line-height: 140%;
+
+        letter-spacing: 0.02em;
+
+        color:  #303030;
+    }
+    .textarea__comentario{
+        background: #F0F0F0;
+
+        border-radius: 7px;
+        border: none;
+
+        width: 59.625rem;
+        height: 20.125rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        line-height: 140%;
+
+        letter-spacing: 0.02em;
+
+        color:  #303030;
+
+        padding-top: 1.688rem;
+        padding-left: 1.813rem;
+        padding-right: 16.313rem;
+        padding-bottom: 1.688rem;
+
+        overscroll-behavior: contain;
+
+        resize: none;
+    }
+    .textarea__comentario:focus{
+        outline: 2px solid #878888;
+    }
+    .container__botao___envia-comentario{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-right: .8rem;
+        padding-top: 1.875rem;
+    }
+    .botao__envia-comentario{
+        background-color: var(--blue-primary);
+
+        padding: 1rem 3.969rem;
+
+        border: none;
+        border-radius: 8px;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+    }
+    .container__botao___responde{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.625rem;
+    }
+    .botao__responder___comentario{
+        background: var(--blue-primary);
+
+        border-radius: 8px;
+        border: none;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+        padding-left: 1.156rem;
+        padding-right: 1.156rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 12px;
+
+        letter-spacing: 0.05rem;
+
+        color: #FFFFFF;
+    }
+    /*----------------------MODAL-RESPONDE-COMENTARIO--------------------*/
+    .container__modal___responde-comentario{
+        opacity: 0;
+
+        position: fixed;
+        z-index: 2000000;
+    
+        background: rgba(0, 0, 0, 0.35);
+    
+        height: 100vh;
+        width: 100vw;
+    
+        top: 0%;
+        left: 0%;
+
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        overflow-y: hidden;
+    }
+    .secao__modal___responde-comentario{
+        display: flex;
+        flex-direction: column;
+
+        background: #FFFFFF;
+        border-radius: 4px;
+
+        width: auto;
+        height: auto;
+
+        padding-left: 3.375rem;
+        padding-right: 3.313rem;
+        padding-bottom: 7.813rem;
+    }
+    .container__botao___fecha-responde-comentario{
+        width: 60.313rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-top: 1.813rem;
+        padding-right: 0rem;
+
+        margin-bottom: 5.125rem;
+    }
+    .botao__fecha___caracteristicas {
+        border: none;
+        width: 0.938rem;
+        height: 0.938rem;
+        background-color: transparent;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-fehca-modal.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .escreva__responde-comentario{
+        display: flex;
+        flex-direction: column;
+    }
+    .container__info___responde-comentario{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3.813rem;
+
+        margin-bottom: 1.5rem;
+    }
+    .nome__perfil___responde-comentario{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 22px;
+        
+        color: #243141;
+    }
+    .container__input{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.875rem;
+    }
+    .container__input___checkamrck{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .input__check___responde-comentario{
+        all: unset;
+
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-color: transparent;
+        border-radius: 5px;
+
+        border: 2px solid #E8E8E8;
+
+        display: inline-block;
+
+        cursor: pointer;
+    }
+    .input__check___responde-comentario:checked{
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-color: var(--blue-primary);
+        color: var(--blue-primary);
+
+        border: 2px solid var(--blue-primary);
+
+        background-image: url("../../Assets/Login/vetor-botao-check.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    .label__input___check-responde-comentario{
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        line-height: 140%;
+
+        letter-spacing: 0.02em;
+
+        color:  #303030;
+    }
+    .textarea__responde-comentario{
+        background: #F0F0F0;
+
+        border-radius: 7px;
+        border: none;
+
+        width: 59.625rem;
+        height: 20.125rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        line-height: 140%;
+
+        letter-spacing: 0.02em;
+
+        color:  #303030;
+
+        padding-top: 1.688rem;
+        padding-left: 1.813rem;
+        padding-right: 16.313rem;
+        padding-bottom: 1.688rem;
+
+        overscroll-behavior: contain;
+
+        resize: none;
+    }
+    .textarea__responde-comentario:focus{
+        outline: 2px solid #878888;
+    }
+    .container__botao___envia-responde-comentario{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-right: .8rem;
+        padding-top: 1.875rem;
+    }
+    .botao__envia-responde-comentario{
+        background-color: var(--blue-primary);
+
+        padding: 1rem 3.969rem;
+
+        border: none;
+        border-radius: 8px;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        letter-spacing: 0.02em;
+
+        color: #FFFFFF;
+    }
+    /*--------------------TABS------FIXAS------------------*/
+    .secao__tab___avaliacao{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+
+        position: fixed;
+        right: 0%;
+        top: 76%;
+
+        z-index: 10000;
+    }
+    .botao__tab___avaliacao{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 16px;
+
+        color: #FFFFFF;
+
+        padding-left: 4.75rem;
+        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
+        padding-right: 1.188rem;
+
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-avaliacao.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: .5rem;
+
+        background-color: var(--blue-primary);
+
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        border-top-right-radius: none;
+        border-bottom-right-radius: none;
+        border: none;
+
+        margin: 0%;
+    }
+    .botao__tab___opiniao{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 16px;
+
+        color: #FFFFFF;
+
+        padding-left: 4.75rem;
+        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
+        padding-right: 1.188rem;
+
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-opiniao.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: .5rem;
+
+        background-color: var(--orange-primary);
+
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        border-top-right-radius: none;
+        border-bottom-right-radius: none;
+        border: none;
+
+        margin: 0%;
+    }
+    .botao__tab___revisao{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 16px;
+
+        color: #FFFFFF;
+
+        padding-left: 4.75rem;
+        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
+        padding-right: 1.188rem;
+
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-revisao.svg");
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position-x: .5rem;
+
+        background-color: var(--green-primary);
+
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+
+        border-top-right-radius: none;
+        border-bottom-right-radius: none;
+        border: none;
+
+        margin: 0%;
+    }
+    /*--------------------BOTAO-SCROLL------------------*/
+    .secao__botao___scroll{
+        position: fixed;
+        left: 4.761rem;
+        bottom: 15%;
+    }
+    .botao__scroll-top{
+        width: 2.604rem;
+        height: 2.604rem;
+
+        display: none;
+
+        border-radius: 50%;
+
+
+        border: none;
+
+        background-color: transparent;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-botao-scroll-blue.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+}

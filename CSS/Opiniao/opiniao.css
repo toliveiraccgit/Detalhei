@@ -440,80 +440,93 @@
         width: 1.188rem;
         height: 0.858rem;
     }
-    /*-------------------ADS-------------------*/
+    /*-------------------NOTA-OPINIAO-------------------*/
     .secao__nota___opiniao{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 3.063rem;
+        gap: 1.25rem;
 
         width: 70.125rem;
     }
-    .container__nota___opiniao{
-        padding-top: 4.313rem;
-        padding-bottom: 4.313rem;
-        padding-left: 7.875rem;
-        padding-right: 7.875rem;
+    .imagem__perfil___nota{
+        width: 5rem;
 
-        background: #F5F5F5;
-        border-radius: 4px;
+        border-radius: 50%;
 
-        text-align: center;
-
-        width: 45.75rem;
+        margin-bottom: 0.625rem;
     }
-    .nota__opiniao{
-        font-family: var(--heading-poppins);
-        font-weight: var(--heading-medium);
-        font-size: 18px;
+    .titulo__nota___opiniao{
+        font-family: var(--paragraph-SF-Light);
+        font-size: 28px;
 
         color: #000000;
 
         margin: 0%;
     }
-    .nota__negativa{
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
-        padding-left: 4rem;
-        padding-right: 1.5rem;
+    .destaque__blue-nota{
+        color:  #237DFF;
 
-        background: #FF0000;
-        border-radius: 4px; 
+        font-family: var(--paragraph-SF-Bold);
 
+        letter-spacing: .04rem;
+    }
+    .nota__opiniao{
         font-family: var(--heading-poppins);
         font-weight: var(--heading-medium);
-        font-size: 18px;
+        font-size: 24px;
 
         color: #FFFFFF;
 
+        margin: 0%;
 
-        background-image: url("../../Assets/Opiniao/Vetores/vetor-não-recomendo.svg");
-        background-repeat: no-repeat;
+        border-radius: 5px;
 
-        background-position: 1.8rem center;
+        padding-top: 0.138rem;
+        padding-bottom: 0.138rem;
+        padding-left: 0.969rem;
+        padding-right: 0.969rem;
+
     }
-    .nota__positiva{
-        display: none;
-        padding-top: 0.75rem;
-        padding-bottom: 0.75rem;
-        padding-left: 4rem;
-        padding-right: 1.5rem;
-
+    #nota__negativa{
+        background: #BF2F2F;
+    }
+    #nota__positiva{
         background: #2FBF90;
-        border-radius: 4px; 
-
-        font-family: var(--heading-poppins);
-        font-weight: var(--heading-medium);
-        font-size: 18px;
-
-        color: #FFFFFF;
-
-
-        background-image: url("../../Assets/Opiniao/Vetores/vetor-recomendo.svg");
-        background-repeat: no-repeat;
-
-        background-position: 1.8rem center;
     }
+    #destaque__nota-negativa{
+        color: #BF2F2F;
+
+        padding-right: 2rem;
+
+        background-image: url("../../Assets/Opiniao/Vetores/vetor-negativo.svg");
+        background-repeat: no-repeat;
+        background-position: right .5rem;
+        background-size: 1.5rem 1.5rem;
+    }
+    #destaque__nota-positiva{
+        color: #2FBF90;
+
+        padding-right: 2rem;
+
+        background-image: url("../../Assets/Opiniao/Vetores/vetor-positivo.svg");
+        background-repeat: no-repeat;
+        background-position: right .4rem;
+        background-size: 1.5rem 1.5rem;
+    }
+    .container__redes-sociais-nota{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.521rem;
+
+        margin-top: 2.125rem;
+    }
+    .logo__redes-sociais-nota{
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+    
     /*-------------------ADS-------------------*/
     .secao__anuncio{
         display: flex;
@@ -697,6 +710,59 @@
         letter-spacing: 0.05rem;
 
         color: #FFFFFF;
+    }
+    /*------------------------GOSTEI-GOSTARIA------------------------*/
+    .secao__gostei-gostaria{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4rem;
+
+        width: 70.125rem;
+
+        margin-top: 5.938rem;
+    }
+    .container__gostei-gostaria{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+    .titulo__gostei{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 32px;
+
+        color: #2FBF90;
+    }
+    .lista__gostei{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+    .item__lista-gostei{
+        font-family: var(--paragraph-SF-Semibold);
+        font-size: 24px;
+        color: #9F9F9F;
+    }
+    .titulo__gostaria{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 32px;
+
+        color: #BF2F2F;
+    }
+    .lista__gostaria{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: .5rem;
+    }
+    .item__lista-gostaria{
+        font-family: var(--paragraph-SF-Semibold);
+        font-size: 24px;
+        color: #9F9F9F;
     }
     /*-------------------CARACTERISTICAS-PRODUTO-------------------*/
     .secao__informacao___caracteristicas{
@@ -1818,7 +1884,7 @@
 
         margin-bottom: 3.813rem;
 
-        margin-top: 12.813rem;
+        margin-top: 6.563rem;
     }
     .titulo__comentarios{
         width: 70.125rem;

@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <style type="text/css" media="screen, print">
+            @font-face {
+            font-family: 'SF UI Display Ultralight';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Ultralight'), url('../Fonts/SF-UI-DISPLAY/sf-ui-display-ultralight-58646b19bf205.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Light';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Light'), url("../Fonts/SF-UI-DISPLAY/sf-ui-display-light-58646b33e0551.woff") format('woff');
+            }
+
+            @font-face {
+            font-family: 'SF UI Display Medium';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Medium'), url("../Fonts/SF-UI-DISPLAY/sf-ui-display-medium-58646be638f96.woff") format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Thin';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Thin'), url('../Fonts/SF-UI-DISPLAY/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Semibold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Semibold'), url('../Fonts/SF-UI-DISPLAY/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Bold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Bold'), url('../Fonts/SF-UI-DISPLAY/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Heavy';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Heavy'), url('../Fonts/SF-UI-DISPLAY/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Black';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Black'), url('../Fonts/SF-UI-DISPLAY/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+            }
+        </style>
+        <link rel="stylesheet" href="../CSS/BlogDetalhe/blogDetalhe.css">
+        <link rel="stylesheet" href="../CSS/ComponentesCSS/slideShow.css">
+        <link rel="stylesheet" href="../CSS/ComponentesCSS/cabecalho.css">
+        <link rel="stylesheet" href="../CSS/ComponentesCSS/rodape.css">
+        <link href="../CSS/base.css" rel="stylesheet">
+        <link href="../CSS/reset.css" rel="stylesheet">
+        <link href="../CSS/normalize.css" rel="stylesheet">
+        <title>Blog Detalhe | Detalhei</title>
+        <link rel="shortcut icon" href="../Assets/Vetores/Logo-Detalhei.svg" type="image/x-icon"/>
+    </head>
+
+    <body id="body">
+        
+        <header class="cabecalho">
+
+            <section class="container___cabecalho" id="container__cabecalho___logado">
+                <a href="../feed-detalhei.html">
+                    <img src="../Assets/Vetores/LOGO-DETALHIE-NOME.svg" alt="Logo Detalhei" class="logo__detalhei">
+                </a>
+
+                <input type="text" class="input__busca-navegacao" placeholder="Faça aqui sua pesquisa">
+                <section class="secao__perfil-logado">
+                    <div class="container__perfil">
+                        <a class="container__perfil-logado" id="container__perfil-logado">
+
+                            <img src="../Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
+            
+                            <span class="nome__perfil-logado">Cameron Williamson</span>
+            
+                            <button type="button" class="botao__abre-info___perfil"></button>
+
+                        </a>
+                    </div>
+                    <section class="secao__dropdown-perfil" id="dropdown">
+
+                        <a href="../seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
+                        <a href="../feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
+                        <a href="#" class="link__dropdown-perfil">Minhas opiniões</a>
+                        <a href="../login.html" class="link__dropdown-sair">SAIR</a>
+    
+                    </section>
+                </section>
+                            
+            </section>
+
+            <nav class="container__navegacao___cabecalho">
+                
+                <div class="container__botao___navegacao">
+
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+                    <button class="botao__menu-hamburguer" ></button>
+
+                </div>
+
+                <ul class="lista__navegacao">
+
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Detalhei</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link dropdown-top-5">Top 5</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Comparativo</a>
+                    </li>
+                    
+                    <li class="item__lista___navegacao" >
+                        <a href="#" class="item__lista___navegacao-link">Blog</a>
+                    </li>
+
+                </ul>
+
+            </nav>
+        </header>
+
+        <main class="conteudo">
+
+            <section class="cabecalho__avaliacao">
+
+                <section class="secao__info___banner">
+
+                    <h1 class="titulo__banner">Blog Detalhei</h1>
+
+                    <p class="subtitulo__banner">Além da Casca</p>
+
+                </section>
+
+                <span class="titulo__novo">Novo</span>
+
+                <div class="container__data-tempo___produto">
+
+                    <p class="data__produto___blog">08/10/2021 às 13:13</p>
+                    <span class="tempo__leitura___blog">5 min de leitura</span>
+
+                </div>
+
+
+            </section>
+
+            <section class="info__produto___blog">
+
+                <h2 class="titulo__info___produto">Funcionamento do Aquecedor Cerâmico versus o Termoventilador</h2>
+
+            </section>
+
+            <section class="imagens__produtos___avaliados">
+
+                <section class="container container__imagens___produto-avaliado">
+
+                   <section class="imagens___produtos">
+                        <div class="slide__produto___avaliado mySlides">
+                            <iframe class="video__slidShow" width="100%" height="auto" src="https://www.youtube.com/embed/amoM7AcAbKM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="auto" height="auto" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-1.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="auto" height="auto" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-2.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="auto" height="auto" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-3.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="auto" height="auto" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-4.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="auto" height="auto" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-5.jpg">
+                        </div>
+
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="auto" height="auto" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-6.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="auto" height="auto" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-7.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="auto" height="auto" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-8.jpg">
+                        </div>
+                    
+                        <div class="slide__produto___avaliado mySlides">
+                            <img width="auto" height="auto" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-9.jpg">
+                        </div>
+
+                    </section>
+                    
+                    
+                    <section class="secao__thumbnails___produto row">
+                      <div class="thumbnail__slide___produto column">
+                        <img width="auto" height="80%" class="demo imagem__thumbnail cursor" src="../Assets/Avaliacao/ImagemSlideshow/imagem-video-youtube.png" onclick="currentSlide(1)" alt="The Woods">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="auto" height="80%" class="demo imagem__thumbnail cursor" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-1.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="auto" height="80%" class="demo imagem__thumbnail cursor" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-2.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="auto" height="80%" class="demo imagem__thumbnail cursor" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-3.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="auto" height="80%" class="demo imagem__thumbnail cursor" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-4.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="auto" height="80%" class="demo imagem__thumbnail cursor" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-5.jpg" onclick="currentSlide(6)" alt="Snowy Mountains">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="auto" height="80%" class="demo imagem__thumbnail cursor" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-6.jpg" onclick="currentSlide(7)" alt="Mountains and fjords">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="auto" height="80%" class="demo imagem__thumbnail cursor" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-7.jpg" onclick="currentSlide(8)" alt="Northern Lights">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="auto" height="80%" class="demo imagem__thumbnail cursor" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-8.jpg" onclick="currentSlide(9)" alt="Nature and sunrise">
+                      </div>
+
+                      <div class="thumbnail__slide___produto column">
+                        <img width="auto" height="80%" class="demo imagem__thumbnail cursor" src="../Assets/Avaliacao/ImagemSlideshow/imagem-slideshow-9.jpg" onclick="currentSlide(10)" alt="Snowy Mountains">
+                      </div>
+
+                    </section>
+
+                </section>
+
+
+            </section>
+
+            <section class="secao__perfil___avaliador">
+
+                <section class="perfil__avaliador">
+
+                    <a href="../perfil.html" class="container__perfil___avaliador">
+
+                        <img src="../Assets/Icones-Perfis/icone-perfil-logado.png" alt="Imagem Perfil" class="imagem__perfil___avaliador">
+
+                        <div class="container__nome___avaliador">
+
+                            <h3 class="nome__perfil___avaliador">Cameron Williamson</h3>
+
+                            <div class="container__info___perfil-avaliador">
+
+                                <span class="arroba__perfil-avaliador">@Cameron</span>
+                                <span class="numeros__inscritos___perfil-avaliador">123,mil inscrito</span>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <button class="botao__seguir___perfil-avaliador">Seguir</button>
+
+                </section>
+
+                <section class="container__botoes___avaliador">
+
+                    <button class="botao__compartilhar">Compartilhar</button>
+                    <button class="botao__favoritos">Favoritos</button>
+                    <button class="botao__comentarios" onclick="tabComentario()">4 Comentários</button>
+
+                </section>
+
+            </section>
+            
+            <section class="secao__conteudo___blog">
+
+                <section class="secao__cabecalho___conteudo-blog">
+
+                    <h2 class="titulo__cabecalho___conteudo-blog">Além da Casca - Chaleira Elétrica</h2>
+
+                    <p class="descricao__cabecalho___conteudo-blog">Eu sou da época do bule e das chaleiras que apitavam quando a água estava fervida. Ainda há muitas chaleiras que vivem sobre uma boca de fogão, mas com o tempo isso está se reduzindo. Hoje com as chaleiras elétricas é possível ferver um litro de água em menos de 2 minutos sem sequer precisar de um fogão ou de um microondas.</p>
+
+                </section>
+
+                <img src="../Assets/Blog-Detalhe/imagem-blog-detalhe.png" alt="Imagem Blog" class="imagem__conteudo___blog">
+
+                <section class="secao__bloco___texto-conteudo">
+
+                    <h3 class="titulo__bloco___texto-conteudo">Componentes</h3>
+
+                    <p class="descricao__bloco___texto-conteudo">É um produto simples, com poucos componentes. O conjunto é composto por duas peças: uma base onde fica o cabo de alimentação e uma chaleira metálica. A base contém somente um conector que liga a chaleira direto na tomada.</p>
+
+                    <p class="descricao__bloco___texto-conteudo">Abrindo o fundo da chaleira há uma resistência elétrica. Esse elemento aquece toda a base metálica, transferindo calor para o líquido interno. A resistência está conectada a um fio, que conecta ao switch (interruptor, botão liga/desliga), permitindo ao usuário ligar ou desligar a chaleira. Nesse circuito elétrico também é ligada uma luz em paralelo com a resistência, para que o usuário saiba quando o produto está ligado.</p>
+
+
+                </section>
+
+                <section class="secao__bloco___texto-conteudo">
+
+                    <h3 class="titulo__bloco___texto-conteudo">Como Funciona?</h3>
+
+                    <p class="descricao__bloco___texto-conteudo">Como o circuito sabe quando a água já ferveu? Inicialmente pode-se pensar que o produto possui um termostato para desligar a resistência depois de atingir uma certa temperatura. Mas é importante lembrar que a temperatura de ebulição de um líquido varia de acordo com sua altitude. No nível do mar a água ferve a 100°C , mas se estivermos a 3000 metros de altitude por exemplo, a água estaria fervendo abaixo de 90°C .</p>
+
+                    <p class="descricao__bloco___lista-conteudo">Como o circuito sabe quando a água já ferveu? Inicialmente pode-se pensar que o produto possui um termostato para desligar a resistência depois de atingir uma certa temperatura. Mas é importante lembrar que a temperatura de ebulição de um líquido varia de acordo com sua altitude. No nível do mar a água ferve a 100°C , mas se estivermos a 3000 metros de altitude por exemplo, a água estaria fervendo abaixo de 90°C .
+                    </p>
+
+                    <p class="descricao__bloco___lista-conteudo">Como o circuito sabe quando a água já ferveu? Inicialmente pode-se pensar que o produto possui um termostato para desligar a resistência depois de atingir uma certa temperatura. Mas é importante lembrar que a temperatura de ebulição de um líquido varia de acordo com sua altitude. No nível do mar a água ferve a 100°C , mas se estivermos a 3000 metros de altitude por exemplo, a água estaria fervendo abaixo de 90°C .
+                    </p>
+
+                    
+                </section>
+
+                <section class="secao__bloco___texto-conteudo">
+
+                    <h3 class="titulo__bloco___texto-conteudo">Como Funciona?</h3>
+
+                    <p class="descricao__bloco___texto-conteudo">Como o circuito sabe quando a água já ferveu? Inicialmente pode-se pensar que o produto possui um termostato para desligar a resistência depois de atingir uma certa temperatura. Mas é importante lembrar que a temperatura de ebulição de um líquido varia de acordo com sua altitude. No nível do mar a água ferve a 100°C , mas se estivermos a 3000 metros de altitude por exemplo, a água estaria fervendo abaixo de 90°C .</p>
+
+                    <p class="descricao__bloco___lista-conteudo">Como o circuito sabe quando a água já ferveu? Inicialmente pode-se pensar que o produto possui um termostato para desligar a resistência depois de atingir uma certa temperatura. Mas é importante lembrar que a temperatura de ebulição de um líquido varia de acordo com sua altitude. No nível do mar a água ferve a 100°C , mas se estivermos a 3000 metros de altitude por exemplo, a água estaria fervendo abaixo de 90°C .
+                    </p>
+
+                    <p class="descricao__bloco___lista-conteudo">Como o circuito sabe quando a água já ferveu? Inicialmente pode-se pensar que o produto possui um termostato para desligar a resistência depois de atingir uma certa temperatura. Mas é importante lembrar que a temperatura de ebulição de um líquido varia de acordo com sua altitude. No nível do mar a água ferve a 100°C , mas se estivermos a 3000 metros de altitude por exemplo, a água estaria fervendo abaixo de 90°C .
+                    </p>
+
+                    
+                </section>
+
+                <section class="secao__sobre___autor">
+
+                    <h5 class="titulo__sobre___autor">Sobre o autor</h5>
+
+                    <div class="container__autor">
+
+                        <img src="../Assets/Blog-Detalhe/Imagem-Autor/icone-autor.png" alt="Autor" class="imagem__autor">
+
+                        <div class="container__info___autor">
+
+                            <h6 class="nome__info___autor">Wade Warren</h6>
+                            <p class="sobre__info___autor">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque at ut orci a, feugiat eu, mattis sed. Diam lacus, eleifend auctor et sem. Amet aliquam commodo orci sit semper. Pretium tortor tempus tempor, cursus dictumst nulla nunc volutpat</p>
+
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="secao__avaliacao___blog">
+
+                    <h8 class="titulo__avaliacao___blog">Gostou do conteúdo?</h8>
+
+                    <div class="container__avaliacao___blog">
+                        <button class="estrela__blog" id="estrela__preenchida"></button>
+
+                        <button class="estrela__blog" id="estrela__preenchida"></button>
+
+                        <button class="estrela__blog" id="estrela__preenchida"></button>
+
+                        <button class="estrela__blog" id="estrela__preenchida"></button>
+
+                        <button class="estrela__blog" id="estrela__preenchida"></button>
+                    </div>
+
+                </section>
+
+            </section>
+  
+            <section class="secao__ultimas-postagens">
+
+                <h4 class="titulo__ultimas-postagens">Últimos Testes</h4>
+
+                <ul class="lista__ultimas-postagens">
+
+                    <a href="#" class="item__lista___ultimas-postagens">
+
+                        <img src="../Assets/Blog/Imagens/imagem-blog-1.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___ultimas-postagens">
+
+                        <h5 class="titulo__item___ultimas-postagens">Ar Condicionado Philco Eco Inverter 9000Btus PAC9000ITFM9W</h5>
+
+                    </a>
+
+                    <a href="#" class="item__lista___ultimas-postagens">
+
+                        <img src="../Assets/Blog/Imagens/imagem-blog-2.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___ultimas-postagens">
+
+                        <h5 class="titulo__item___ultimas-postagens">Ar Condicionado Philco Eco Inverter 9000Btus PAC9000ITFM9W</h5>
+
+                    </a>
+
+                    <a href="#" class="item__lista___ultimas-postagens">
+
+                        <img src="../Assets/Blog/Imagens/imagem-blog-3.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___ultimas-postagens">
+
+                        <h5 class="titulo__item___ultimas-postagens">Ar Condicionado Philco Eco Inverter 9000Btus PAC9000ITFM9W</h5>
+
+                    </a>
+
+                    <a href="#" class="item__lista___ultimas-postagens">
+
+                        <img src="../Assets/Blog/Imagens/imagem-blog-6.png" alt="Imagem Dicas e Curiosidades" class="imagem__item___ultimas-postagens">
+
+                        <h5 class="titulo__item___ultimas-postagens">Ar Condicionado Philco Eco Inverter 9000Btus PAC9000ITFM9W</h5>
+
+                    </a>
+
+                </ul>
+
+            </section>
+
+            <section class="secao__categorias">
+
+                <h6 class="titulo__categorias">Categorias</h6>
+
+                <ul class="lista__categorias">
+
+                    <button class="item__lista___categorias">
+
+                        Dicas e Curiosidades
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        Gastronomia
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        Lavanderia
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        Mundo dos Produtos
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        Notícias
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        O Melhor para Mim
+
+                    </button>
+
+                    <button class="item__lista___categorias">
+
+                        Sustentabilidade
+
+                    </button>
+
+                </ul>
+
+            </section>
+
+            <section class="secao__anuncio">
+
+                <h7 class="titulo__anuncio">ADS</h7>
+
+            </section>
+
+            <section class="secao__precos___produtos">
+                <div class="container__botao___preco">
+                    <button class="botao__ver-todos___precos" onclick="abrirOfertasExpandido ()">Ver todas as ofertas</button>
+                    <span class="numero__ofertas___produto">(6)</span>
+                </div>
+
+                <ul class="lista__precos___ofertas">
+
+                    <li class="item__lista___oferta">
+                        <a href="#" class="link__item___lista-oferta">
+
+                            <div class="container__loja___oferta">
+
+                                <img src="../Assets/Avaliacao/Imagens/imagem-magalu.png" alt="Imagem Loja Oferta" class="imagem__loja-oferta">
+
+                                <h9 class="titulo__loja___oferta">Magalu</h9>
+
+                            </div>
+
+                            <span class="preco__loja___oferta">R$ 2.400,00</span>
+
+                        </a>
+                    </li>
+
+                    <li class="item__lista___oferta">
+                        <a href="#" class="link__item___lista-oferta">
+
+                            <div class="container__loja___oferta">
+
+                                <img src="../Assets/Avaliacao/Imagens/imagem-extra.png" alt="Imagem Loja Oferta" class="imagem__loja-oferta">
+
+                                <h9 class="titulo__loja___oferta">Extra</h9>
+
+                            </div>
+
+                            <span class="preco__loja___oferta">R$ 1.900,00</span>
+
+                        </a>
+                    </li>
+
+                    <li class="item__lista___oferta">
+                        <a href="#" class="link__item___lista-oferta">
+
+                            <div class="container__loja___oferta">
+
+                                <img src="../Assets/Avaliacao/Imagens/imagem-casas-bahia.png" alt="Imagem Loja Oferta" class="imagem__loja-oferta">
+
+                                <h9 class="titulo__loja___oferta">Casas Bahia</h9>
+
+                            </div>
+
+                            <span class="preco__loja___oferta">R$ 1.300,00</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+            </section>
+
+            <div class="container__ofertas___expandido" id="ofertas__expandido">
+                <section class="secao__ofertas___expandido">
+
+                <div class="container__botao___fecha">
+                    <button class="botao__fecha___ofertas" onclick="fechaOfertasExpandido()"></button>
+                </div>
+                <ul class="lista__precos___ofertas-expandido">
+
+                    <li class="item__lista___oferta-expandido">
+                        <a href="#" class="link__item___lista-oferta-expandido">
+
+                            <div class="container__loja___oferta">
+
+                                <img src="../Assets/Avaliacao/Imagens/imagem-magalu.png" alt="Imagem Loja Oferta" class="imagem__loja-oferta">
+
+                                <h9 class="titulo__loja___oferta">Magalu</h9>
+
+                            </div>
+
+                            <span class="preco__loja___oferta">R$ 2.400,00</span>
+
+                        </a>
+                    </li>
+
+                    <li class="item__lista___oferta-expandido">
+                        <a href="#" class="link__item___lista-oferta-expandido">
+
+                            <div class="container__loja___oferta">
+
+                                <img src="../Assets/Avaliacao/Imagens/imagem-extra.png" alt="Imagem Loja Oferta" class="imagem__loja-oferta">
+
+                                <h9 class="titulo__loja___oferta">Extra</h9>
+
+                            </div>
+
+                            <span class="preco__loja___oferta">R$ 1.900,00</span>
+
+                        </a>
+                    </li>
+
+                    <li class="item__lista___oferta-expandido">
+                        <a href="#" class="link__item___lista-oferta-expandido">
+
+                            <div class="container__loja___oferta">
+
+                                <img src="../Assets/Avaliacao/Imagens/imagem-casas-bahia.png" alt="Imagem Loja Oferta" class="imagem__loja-oferta">
+
+                                <h9 class="titulo__loja___oferta">Casas Bahia</h9>
+
+                            </div>
+
+                            <span class="preco__loja___oferta">R$ 1.300,00</span>
+
+                        </a>
+                    </li>
+
+                    <li class="item__lista___oferta-expandido">
+                        <a href="#" class="link__item___lista-oferta-expandido">
+
+                            <div class="container__loja___oferta">
+
+                                <img src="../Assets/Avaliacao/Imagens/imagem-magalu.png" alt="Imagem Loja Oferta" class="imagem__loja-oferta">
+
+                                <h9 class="titulo__loja___oferta">Magalu</h9>
+
+                            </div>
+
+                            <span class="preco__loja___oferta">R$ 2.400,00</span>
+
+                        </a>
+                    </li>
+
+                    <li class="item__lista___oferta-expandido">
+                        <a href="#" class="link__item___lista-oferta-expandido">
+
+                            <div class="container__loja___oferta">
+
+                                <img src="../Assets/Avaliacao/Imagens/imagem-extra.png" alt="Imagem Loja Oferta" class="imagem__loja-oferta">
+
+                                <h9 class="titulo__loja___oferta">Extra</h9>
+
+                            </div>
+
+                            <span class="preco__loja___oferta">R$ 1.900,00</span>
+
+                        </a>
+                    </li>
+
+                    <li class="item__lista___oferta-expandido">
+                        <a href="#" class="link__item___lista-oferta-expandido">
+
+                            <div class="container__loja___oferta">
+
+                                <img src="../Assets/Avaliacao/Imagens/imagem-casas-bahia.png" alt="Imagem Loja Oferta" class="imagem__loja-oferta">
+
+                                <h9 class="titulo__loja___oferta">Casas Bahia</h9>
+
+                            </div>
+
+                            <span class="preco__loja___oferta">R$ 1.300,00</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+
+                </section>
+            </div>
+
+            <div class="container__modal___comentario" id="modal__comentario___expandido">
+                <section class="secao__modal___comentario">
+
+                    <div class="container__botao___fecha-comentario">
+                        <button class="botao__fecha___caracteristicas" onclick="fechaCriaComentario()"></button>
+                    </div>
+                    
+                    <section class="escreva__comentario">
+
+                        <div class="container__info___comentario">
+
+                            <h12 class="nome__perfil___comentario">Leslie Alexander</h12>
+
+                            <div class="container__input">
+                                <div class="container__input___checkamrck">
+                                    <input class="input__check___comentario" name="Tenho Produto" type="checkbox">
+                                </div>
+                                <label class="label__input___check-comentario" for="Tenho Produto">Eu tenho esse produto</label>
+                            </div>
+                        </div>
+
+                        <textarea class="textarea__comentario" name="Comentario" id="Comentario" cols="auto" rows="auto" placeholder="Escreva seu comentário..."></textarea>
+
+                    </section>
+
+                    <div class="container__botao___envia-comentario">
+
+                        <button class="botao__envia-comentario">Enviar</button>
+
+                    </div>
+
+                </section>
+            </div>
+
+            <div class="container__modal___responde-comentario" id="modal__responde-comentario___expandido">
+                <section class="secao__modal___responde-comentario">
+
+                    <div class="container__botao___fecha-responde-comentario">
+                        <button class="botao__fecha___caracteristicas" onclick="fechaCriaRespondeComentario()"></button>
+                    </div>
+                    
+                    <section class="escreva__responde-comentario">
+
+                        <div class="container__info___responde-comentario">
+
+                            <h12 class="nome__perfil___responde-comentario">Leslie Alexander</h12>
+
+                            <div class="container__input">
+                                <div class="container__input___checkamrck">
+                                    <input class="input__check___responde-comentario" name="Tenho Produto" type="checkbox">
+                                </div>
+                                <label class="label__input___check-responde-comentario" for="Tenho Produto">Eu tenho esse produto</label>
+                            </div>
+                        </div>
+
+                        <textarea class="textarea__responde-comentario" name="responde-comentario" id="responde-comentario" cols="auto" rows="auto" placeholder="Escreva seu comentário..."></textarea>
+
+                    </section>
+
+                    <div class="container__botao___envia-responde-comentario">
+
+                        <button class="botao__envia-responde-comentario">Enviar</button>
+
+                    </div>
+
+                </section>
+            </div>
+
+            <section class="secao__comentarios">
+
+                <h11 class="titulo__comentarios">Comentários</h11>
+
+                <div class="container__numeros___comentarios">
+
+                    <h12 class="titulo__numeros___comentarios">Comentários <span class="numero__comentarios">(4)</span></h12>
+
+                    <button class="botao__criar___comentario" onclick="abrirCriaComentario()">Faça um comentário</button>
+                </div>
+
+                <ul class="lista__comentarios">
+
+                    <li class="item__lista___comentario">
+
+                        <div class="cabecalho__comentario">
+
+                            <h12 class="nome__comentarista">Leslie Alexander</h12>
+                            <button class="botao__tenho___produto">Eu tenho esse produto</button>
+
+                        </div>
+
+                        <p class="comentario__produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere morbi phasellus pretium pretium ut cursus porta lorem ultrices. Quisque tincidunt neque integer egestas. Ut diam, ut cras fringilla nec. Porta maecenas ultrices non eleifend amet cras. Aliquet amet commodo eget egestas nisl sodales.</p>
+
+                        <div class="rodape__comentario">
+
+                            <div class="container__botoes___comentario">
+
+                                <button class="botao__salva___comentario">2</button>
+                                <button class="botao__curte___comentario">2</button>
+
+                            </div>
+
+                            <div class="container__botao___responde">
+                                <span class="tempo__publicacao___comentario">uma semana atrás</span>
+
+                                <button class="botao__responder___comentario" onclick="abrirCriaRespondeComentario ()">Responder</button>
+                            </div>
+                        </div>
+
+                        <section class="secao__comentario___respondido">
+
+                            <div class="cabecalho__comentario">
+
+                                <h12 class="nome__comentarista">Leslie Alexander</h12>
+                                <button class="botao__tenho___produto">Eu tenho esse produto</button>
+    
+                            </div>
+    
+                            <p class="comentario__produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere morbi phasellus pretium pretium ut cursus porta lorem ultrices. Quisque tincidunt neque integer egestas. Ut diam, ut cras fringilla nec. Porta maecenas ultrices non eleifend amet cras. Aliquet amet commodo eget egestas nisl sodales.</p>
+    
+                            <div class="rodape__comentario">
+    
+                                <div class="container__botoes___comentario">
+    
+                                    <button class="botao__salva___comentario">2</button>
+                                    <button class="botao__curte___comentario">2</button>
+    
+                                </div>
+    
+                                <div class="container__botao___responde">
+                                    <span class="tempo__publicacao___comentario">uma semana atrás</span>
+    
+                                    <button class="botao__responder___comentario" onclick="abrirCriaRespondeComentario ()">Responder</button>
+                                </div>
+                            </div>
+
+                        </section>
+
+                    </li>
+
+                    <li class="item__lista___comentario">
+
+                        <div class="cabecalho__comentario">
+
+                            <h12 class="nome__comentarista">Leslie Alexander</h12>
+                            <button class="botao__tenho___produto">Eu tenho esse produto</button>
+
+                        </div>
+
+                        <p class="comentario__produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere morbi phasellus pretium pretium ut cursus porta lorem ultrices. Quisque tincidunt neque integer egestas. Ut diam, ut cras fringilla nec. Porta maecenas ultrices non eleifend amet cras. Aliquet amet commodo eget egestas nisl sodales.</p>
+
+                        <div class="rodape__comentario">
+
+                            <div class="container__botoes___comentario">
+
+                                <button class="botao__salva___comentario">2</button>
+                                <button class="botao__curte___comentario">2</button>
+
+                            </div>
+
+                            <div class="container__botao___responde">
+                                <span class="tempo__publicacao___comentario">uma semana atrás</span>
+
+                                <button class="botao__responder___comentario" onclick="abrirCriaRespondeComentario ()">Responder</button>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="item__lista___comentario">
+
+                        <div class="cabecalho__comentario">
+
+                            <h12 class="nome__comentarista">Leslie Alexander</h12>
+                            <button class="botao__tenho___produto">Eu tenho esse produto</button>
+
+                        </div>
+
+                        <p class="comentario__produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere morbi phasellus pretium pretium ut cursus porta lorem ultrices. Quisque tincidunt neque integer egestas. Ut diam, ut cras fringilla nec. Porta maecenas ultrices non eleifend amet cras. Aliquet amet commodo eget egestas nisl sodales.</p>
+
+                        <div class="rodape__comentario">
+
+                            <div class="container__botoes___comentario">
+
+                                <button class="botao__salva___comentario">2</button>
+                                <button class="botao__curte___comentario">2</button>
+
+                            </div>
+
+                            <div class="container__botao___responde">
+                                <span class="tempo__publicacao___comentario">uma semana atrás</span>
+
+                                <button class="botao__responder___comentario" onclick="abrirCriaRespondeComentario ()">Responder</button>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="item__lista___comentario">
+
+                        <div class="cabecalho__comentario">
+
+                            <h12 class="nome__comentarista">Leslie Alexander</h12>
+                            <button class="botao__tenho___produto">Eu tenho esse produto</button>
+
+                        </div>
+
+                        <p class="comentario__produto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Posuere morbi phasellus pretium pretium ut cursus porta lorem ultrices. Quisque tincidunt neque integer egestas. Ut diam, ut cras fringilla nec. Porta maecenas ultrices non eleifend amet cras. Aliquet amet commodo eget egestas nisl sodales.</p>
+
+                        <div class="rodape__comentario">
+
+                            <div class="container__botoes___comentario">
+
+                                <button class="botao__salva___comentario">2</button>
+                                <button class="botao__curte___comentario">2</button>
+
+                            </div>
+
+                            <div class="container__botao___responde">
+                                <span class="tempo__publicacao___comentario">uma semana atrás</span>
+
+                                <button class="botao__responder___comentario" onclick="abrirCriaRespondeComentario ()">Responder</button>
+                            </div>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </main>
+
+        <footer class="rodape" id="rodape__feed">
+
+            <address class="secao__marca">
+
+                <img src="../Assets/Vetores/logo-detalhei-footer.svg" alt="Logo Detalhei" class="logo___detalhei-footer">
+
+                <p class="texto__copyright">Copyright © 2001-2021 ,Detalhei Todos os direitos reservados.</p>
+
+                <div class="container__redes-sociais">
+
+                    <a href="#"><img src="../Assets/Icones-Redes-Sociais/ICO-FACEBOOK.svg" alt="Facebook Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="../Assets/Icones-Redes-Sociais/ICO-TWITTER.svg" alt="Twitter Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="../Assets/Icones-Redes-Sociais/ICO-INSTAGRAM.svg" alt="Instagram Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="../Assets/Icones-Redes-Sociais/ICO-YOUTUBE.svg" alt="Youtube Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="../Assets/Icones-Redes-Sociais/ICO-LINKEDIN.svg" alt="Linkedin Detalhei" class="logo__redes-sociais"></a>
+
+                </div>
+            </address>
+
+            <section class="secao__lista" id="secao__lista-footer-margin">
+
+                <h8 class="titulo__lista-footer">Detalhei</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Consultoria</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Contato</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Privacidade</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Ofertas</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Minha Garantia</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Empresarial</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Top 5</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Air Flayer</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Batedeiras</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Eletricos</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Liquidificadores</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fornos</a></li>
+    
+                </ul>
+            
+            </section>
+
+            <section class="secao__lista">
+
+                <h8 class="titulo__lista-footer">Produtos</h8>
+                
+                <ul class="lista__detalhei">
+
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fogões</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Desidratador</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Churrasqueira</a></li>
+    
+                </ul>
+            
+            </section>
+
+        </footer>
+
+        <script src="../Componentes/slideShow.js" type="text/javascript"></script>
+        <script src="../Componentes/BlogDetalhe/abreComentario.js" type="text/javascript"></script>
+        <script src="../Componentes/BlogDetalhe/abreOfertas.js" type="text/javascript"></script>
+        <script src="../Componentes/BlogDetalhe/abreRespondeComentario.js" type="text/javascript"></script>
+        <script src="../Componentes/BlogDetalhe/scrollComentario.js" type="text/javascript"></script>
+    </body>
+
+</html>
