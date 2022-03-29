@@ -17,6 +17,10 @@ const topicosProdutos = document.querySelector('.container__topicos-produto')
 const custoBeneficio = document.querySelector('.container__custo___beneficio')
 
 const texto = document.querySelector('.titulo__texto___produto')
+
+const checkboxAvaliacao = document.querySelector('.container__comparativo___produto')
+
+const dataAvaliacao = document.querySelector('.data__produto')
     
 function mudaCard(){
     listaCards.style.flexDirection = ` row `
@@ -62,4 +66,11 @@ function mudaCard(){
 
     /*-----------------TEXTO-----------------*/
     texto.style.width = ` 17.4rem `
+
+    /*----------------CHECKBOX---------------*/
+    checkboxAvaliacao.style.width = ` 17.4rem `
+    checkboxAvaliacao.style.marginBottom = ` 2.656rem `
+
+    /*-----------------DATA------------------*/
+    dataAvaliacao.style.display = ` none `
 }

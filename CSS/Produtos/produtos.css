@@ -173,6 +173,12 @@
 
         color: #000000;
     }
+    .botao-cards-desativa{
+        display: none;
+    }
+    .botao-cards-ativa{
+        display: flex;
+    }
     /*----------------------SECAO-CARDS--------------------*/
     .secao__cards___produtos{
         display: flex;
@@ -586,6 +592,9 @@
         color: #000000;
     }
     /*---------------------GOSTEI-GOSTARIA------------------*/
+    .secao__gostei___opiniao-mobile{
+        display: none;
+    }
     .secao__gostei___opiniao{
         display: flex;
         flex-direction: row;
@@ -627,6 +636,9 @@
         padding-left: 3rem;
     }
     /*---------------------NAO-AVALIADO-----------------*/
+    .secao__botao___nao-avaliado-mobile{
+        display: none;
+    }
     .secao__botao___nao-avaliado{
         display: flex;
         flex-direction: column;
@@ -652,7 +664,7 @@
         padding-left: 2.688rem;
         padding-right: 2.688rem;
         
-        background: #2FBF90;
+        background: var(--blue-primary);
 
         border-radius: 8px;
         border: none;
@@ -1195,6 +1207,4 @@
 
         margin: 0%;
     }
-
-
 }

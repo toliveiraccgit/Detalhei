@@ -1,0 +1,74 @@
+.secao__cards___produtos{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item__lista___card-produtos{
+    width: 20.938rem; 
+
+    padding-left:  0.75rem;
+    padding-right: 0.75rem;
+    padding-bottom: 1.938rem;
+}
+.secao__info___card-produto{
+    flex-direction: column;
+}
+.container__info___card-produto{
+    flex-direction: column;
+}
+.secao__pontos___produto{
+    display: none;
+}
+.container__texto___card-produto{
+    align-items: center;
+}
+.container__topicos-produto{
+    display: none;
+}
+.container__custo___beneficio{
+    width: 17.4rem;
+}
+.titulo__texto___produto{
+    width: 17.4rem;
+}
+.container__comparativo___produto{
+    width: 17.4rem;
+    
+    margin-bottom: 1.656rem;
+}
+.data__produto{
+    display: none;
+}
+.secao__gostei___opiniao-mobile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-bottom: 1.688rem;
+    padding-right: .5rem;
+}
+.titulo__lista___gostei{
+    padding-left: 1.2rem;
+
+    font-size: 14px;
+}
+.produto__lista___gostei {
+    font-size: 14px;
+
+    padding-left: 1.2rem;
+}  
+.secao__gostei___opiniao{
+    display: none;
+}
+.secao__botao___nao-avaliado-mobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 1.063rem;
+}
+.secao__botao___nao-avaliado{
+    display: none;
+}
