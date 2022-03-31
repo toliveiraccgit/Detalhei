@@ -18,6 +18,8 @@
         padding-bottom: 2.5rem;
         padding-left: 11.25rem;
         padding-right: 7.25rem;
+        
+        height: 8.063rem;
     }
     .input__busca-navegacao{
         width: 40.313rem;
@@ -110,14 +112,13 @@
     }
     .container__botao___navegacao{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         gap: 4px;
-    }
-    .botao__menu-hamburguer{
+
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
         border: none;
-        width: 1.396rem;
-        background-image: url("../../Assets/Vetores/Vetor-Menu-Line.svg");
-        background-repeat: no-repeat;
     }
     .lista__navegacao{
         display: flex;
@@ -137,6 +138,9 @@
 
     }
     /*--------------------DROPDOWN------------------*/
+    #nome__perfil-logado___menu-aberto{
+        color: #07070E;
+    }
     .secao__perfil-logado{
         display: flex;
         flex-direction: column;
@@ -335,9 +339,675 @@
     /*-----------------PESQUISA-CABECALHO--------------*/
     .secao__pesquisa___cabecalho{
         width: 40.313rem;
-        height: 3.063rem;
+        height: 4.063rem;
+
+        z-index: 2000000000;
+
+        position: relative;
+        top: .5rem;
     }
     .secao__resultado___pesquisa-cabecalho{
-    display: none;
+        display: flex;
+
+        background: #FFFFFF;
+        border-radius: 3px;
+
+        z-index: 2000000000;
+
+        position: relative;
+
+        top: 0.625rem;
+
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
+        padding-right: 1.875rem;
+        padding-left: 0.948rem;
+
+    }
+    .secao__resultado___pesquisa-cabecalho{
+        display: none;
+        flex-direction: column;
+        gap: 0.875rem;
+
+        animation: animaResultadoPesquisa .3s ease-in-out forwards;
+    }
+    @keyframes animaResultadoPesquisa {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .nome__resultado___pesquisa-cabecalho{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        color: #8A94A6;
+
+        padding-left: 2.2rem;
+
+        margin: 0%;
+
+        background-image: url("../../Assets/Vetores/ICO-BUSCA.svg");
+        background-repeat: no-repeat;
+        background-position-x: left;
+        background-position-y: center;
+    }
+    .lista__resultado___pesquisa-cabecalho{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.438rem;
+    }
+    .titulo__lista___pesquisa-cabecalho{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        color: #8A94A6;
+
+        margin: 0%;
+    }
+    .lista__pesquisa___cabecalho{
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+
+        height: 21.813rem;
+
+        overflow-y: scroll;
+
+        scrollbar-width: none;
+
+        overscroll-behavior: contain;
+    }
+    .lista__pesquisa___cabecalho::-webkit-scrollbar{
+        display: none;
+    }
+    .lista__pesquisa___cabecalho::-webkit-scrollbar-thumb{
+        display: none;
+    }
+    .lista__pesquisa___cabecalho::-webkit-scrollbar-track {
+        display: none;
+    }
+    .lista__pesquisa___cabecalho::-webkit-scrollbar-thumb {
+        display: none;
+    }
+    .item__pesquisa___cabecalho{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    .imagem__produto___pesquisa-cabecalho{
+        width: 4.313rem;
+    }
+    .secao__info___produto-pesquisa{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        width: 32.525rem;
+    }
+    .container__info___produto-pesquisa{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: .5rem;
+    }
+    .nome__info___produto-pesquisa{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        line-height: 24px;
+
+        color: #1A1A1A;
+
+        margin: 0%;
+
+        width: 10.438rem;
+    }
+    .preco__info___produto-pesquisa{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+
+        color: #1A1A1A;
+
+        margin: 0%;
+
+        line-height: 24px;
+    }
+    .container__custo-beneficio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .titulo__custo-beneficio{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        font-size: 14px;
+
+        color: #07070E;
+
+        margin: 0%;
+
+        line-height: 24px;
+    }
+    .container__nota___custo-beneficio{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.375rem;
+    }
+    .nota__custo-beneficio{
+        width: 0.875rem;
+        height: 0.875rem;
+
+        border-radius: 50%;
+        background-color: #B9B9B9;
+
+        border: none;
+    }
+    .nota__custo-beneficio:nth-child(1){
+        background-color: #329FC0;
+    }
+    .nota__custo-beneficio:nth-child(2){
+        background-color: #329FC0;
+    }
+    .nota__custo-beneficio:nth-child(3){
+        background-color: #329FC0;
+    }
+    .nota__custo-beneficio:nth-child(4){
+        background-color: #329FC0;
+    }
+
+    .botao__tipo___produto{
+        border: none;
+        border-radius: 7px;
+
+        padding-top: 0.625rem;
+        padding-bottom: 0.625rem;
+        padding-left: 2.188rem;
+        padding-right: 1.313rem;
+
+        font-family: var(--paragraph-SF-Semibold);
+        font-weight: var(--paragraph-bold);
+        font-size: 12px;
+
+        color: #FFFFFF;
+
+        
+        background-position-y: center;
+        background-repeat: no-repeat;
+    }
+    .tipo__produto___revisao{
+        background-color: var(--green-primary);
+
+        background-position-x: .3rem;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-revisao.svg");
+        background-size: 2rem 2rem;
+    }
+
+    .tipo__produto___avaliacao{
+        background-color: var(--blue-primary);
+
+        background-position-x: .3rem;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-avaliacao.svg");
+
+        background-size: 2rem 2rem;
+    }
+    .tipo__produto___opiniao{
+        background-color: var(--orange-primary);
+
+        background-position-x: .3rem;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-opiniao.svg");
+
+        background-size: 2rem 2rem;
+    }
+    .tipo__produto___descricao{
+        background-color: var(--red-primary);
+
+        background-position-x: .3rem;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-descricao.svg");
+
+        background-size: 2rem 2rem;
+    }
+    /*------------------MENU-ABERTO----------------*/
+    .container__menu-aberto{
+        position: fixed;
+        top: 0%;
+        left: 0%;
+
+        background: rgba(0, 0, 0, 0.32);
+
+        width: 100vw;
+        height: 100vh;
+
+        display: none;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        z-index: 50000000000000;
+
+        animation: animaContainerMenuAberto .3s ease-in-out forwards;
+    }
+    .secao__menu-aberto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        background: #FFFFFF;
+
+        padding-top: 3.375rem;
+        padding-bottom: 6.306rem;
+
+        height: 100vh;
+
+        overflow-y: scroll;
+
+        scrollbar-width: none;
+
+        position: relative;
+
+        animation: animaMenuAberto .3s ease-in-out forwards;
+    }
+    @keyframes animaContainerMenuAberto {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    @keyframes animaMenuAberto {
+        0%{
+            left: -25%;
+        }
+        100%{
+            left: 0%;
+        }
+    }
+    .secao__menu-aberto::-webkit-scrollbar{
+        display: none;
+    }
+    .container__perfil___menu-aberto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0rem;
+
+        padding-left: 0.813rem;
+        padding-right: 3.313rem;
+        padding-bottom: 3.438rem;
+
+    }
+    .botao__acessa-conta___menu-aberto{
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-medium);
+        font-size: 14px;
+
+        color: #07070E;
+
+        padding: 0.75rem 2.188rem 0.75rem 2.188rem;
+
+        background-color: transparent;
+
+        border-radius: 8px;
+        border: 2px solid var(--low-pure);
+    }
+    .botao__fecha___menu-aberto{
+        border: none;
+
+        width: 1.5rem;
+        height: 1.5rem;
+
+        background-color: transparent;
+        background-image: url("../../Assets/Avaliacao/Vetores/vetor-fehca-modal.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    .logo__detalhei___menu-aberto{
+        padding-left: 2.813rem;
+        padding-right: 3.313rem;
+        padding-bottom: 1.877rem;
+    }
+    .secao__link___menu-aberto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-top: 1px solid #F0F0F0;
+
+        padding-top: 1rem;
+
+        width: auto;
+    }
+    .titulo__link___menu-aberto{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-medium);
+        font-size: 16px;
+
+        line-height: 24px;
+
+        margin: 0%;
+        margin-bottom: 1.5rem;
+
+        color: #07070E;
+
+        width: 18rem;
+    }
+    .lista__link___menu-aberto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+
+        width: 18.438rem;
+
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    .item__link___menu-aberto{
+        display: flex;
+        flex-direction: column;
+        height: 1.563rem;
+        width: 16.938rem;
+
+        overflow-x: visible;
+    }
+    .item__link___menu-aberto:hover .botao__link___menu-aberto{
+        opacity: 1;
+
+        transition: all .15s ease-in-out;
+    }
+    .botao__link___menu-aberto{
+        width: 16.938rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        background-color: transparent;
+        border: none;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        line-height: 24px;
+
+        padding: 0%;
+
+        opacity: .4;
+        transition: all .15s ease-in-out;
+
+        color: #07070E;
+    }
+    .container__botao___ver-mais{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 23.438rem;
+
+        border-bottom: 1px solid #F0F0F0;
+
+        margin-bottom: 2.201rem;
+        margin-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .botao__ver-todos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+
+        background-color: transparent;
+        border: none;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        line-height: 24px;
+
+        color: var(--blue-primary);
+
+        opacity: .5;
+
+        transition: all .15s ease-in-out;
+    }
+    .botao__ver-todos:hover{
+        opacity: 1;
+
+        transition: all .15s ease-in-out;
+    }
+    #botao-ver-menos-menu-aberto{
+        display: none;
+    }
+    #vetor-ver-menos-menu{
+        transform: rotate(180deg);
+    }
+    #lista__link___menu-aberto-produtos{
+        height: 18.326rem;
+
+        overflow-y: hidden;
+
+        overscroll-behavior: contain;
+
+        transition: all .3s ease-in-out;
+    }
+    .secao__lista___top-5-menu-aberto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        padding-left: 1.5rem;
+    }
+    .link__top-5___menu-aberto{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        line-height: 24px;
+
+        opacity: .7;
+
+        padding: 0%;
+
+        color: #07070E;
+
+        transition: all .15s ease-in-out;
+    }
+    .link__top-5___menu-aberto:hover{
+        opacity: 1;
+        transition: all .15s ease-in-out;
+    }
+    #link__menu-aberto___top-5{
+        overflow-y: hidden;
+
+        transition: all .3s ease-in-out;
+    }
+    #botao__link___fecha-top5{
+        display: none;
+
+        opacity: 1;
+    }
+    .secao__lista___blog-menu-aberto{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 2rem;
+
+        padding-left: 1.5rem;
+    }
+    .link__blog___menu-aberto{
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        line-height: 24px;
+
+        opacity: .7;
+
+        padding: 0%;
+
+        color: #07070E;
+
+        transition: all .15s ease-in-out;
+    }
+    .link__blog___menu-aberto:hover{
+        opacity: 1;
+        transition: all .15s ease-in-out;
+    }
+    #link__menu-aberto___blog{
+        overflow-y: hidden;
+
+        transition: all .3s ease-in-out;
+    }
+    #botao__link___fecha-blog{
+        display: none;
+
+        opacity: 1;
+    }
+    /*----------------CONTEUDO-LINK-MENU--------------*/
+    .secao__conteudo___link-menu{
+        visibility: hidden;
+        opacity: 0;
+
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+
+        background: #FFFFFF;
+
+        padding-top: 3.375rem;
+        padding-bottom: 6.306rem;
+
+        height: 100vh;
+
+        overflow-y: scroll;
+        scrollbar-width: none;
+
+        position: relative;
+        right: 14;
+    
+        width: 23.438rem;
+
+        transition: all .6s ease-in-out;
+
+        animation: animaAbaLinksMenuAberto .6s ease-in-out forwards;
+    }
+    @keyframes animaAbaLinksMenuAberto{
+        0%{
+            opacity: 0;
+            right: 14rem;
+        }
+        100%{
+            opacity: 1;
+            right: 23.438rem;
+        }
+    }
+    .secao__links___conteudo___menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 23.438rem;
+    }
+    .botao__volta___menu-aberto{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.125rem;
+
+        
+        margin-left: 2.313rem;
+
+        background-color: transparent;
+        border: none;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        line-height: 24px;
+
+        padding: 0%;
+
+        transition: all .15s ease-in-out;
+
+        color: #07070E;
+    }
+    #vetor-volta-menu-aberto{
+        transform: rotate(180deg);
+    }
+    .lista__links___conteudo-menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        margin-top: .5rem;
+        padding-top: 2.688rem;
+
+        border-top: 1px solid #F0F0F0;
+
+        width: 23.438rem;
+    }
+    .titulo__links___conteudo-menu{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-bold);
+        font-size: 16px;
+
+        line-height: 24px;
+
+        margin: 0%;
+        margin-bottom: 0%;
+        margin-left: 2.188rem;
+
+        color: #07070E;
+    }
+    .item__lista___link-conteudo-menu{
+        margin-left: 2.188rem;
+
+        padding-top: 1.507rem;
+        padding-left: 2.188rem;
+
+        background-image: url("../../Assets/Cabecalho/Vetores/vetor-background-lista-link.svg");
+        background-position: left -.2rem;
+        background-repeat: no-repeat;
+        
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        line-height: 24px;
+
+
+        color: #07070E;
+
+        opacity: .7;
+
+        transition: all .15s ease-in-out;
+    }
+    .item__lista___link-conteudo-menu:hover{
+        opacity: 1;
+
+        transition: all .15s ease-in-out;
     }
 }
