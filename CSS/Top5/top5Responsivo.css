@@ -29,9 +29,25 @@
     .item__lista___top-5{
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
+    }
+    .container-_numeracao___top-5-mobile{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-end;
+
+        position: relative;
+        right: -45%;
+        top: 3rem;
     }
     .imagem__item___lista{
         width: 8.75rem;
+
+        margin-top: 0%;
+    }
+    .posicao__item___lista{
+        font-size: 18px;
     }
     .container__cabecalho___lista{
         width: 73.4vw;

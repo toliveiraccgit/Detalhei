@@ -7,6 +7,9 @@
         padding-top: 7.375rem;
         padding-bottom: 5.813rem;
     }
+    .container-_numeracao___top-5-mobile{
+        display: none;
+    }
     /*---------------BANNER-------------*/
     .secao__banner{
         display: flex;
