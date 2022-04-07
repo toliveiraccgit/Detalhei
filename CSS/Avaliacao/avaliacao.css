@@ -637,8 +637,6 @@
         padding-bottom: 0.438rem;
         padding-left: 1.875rem;
         padding-right: 1.875rem;
-
-        background: #05EE00;
         border-radius: 5px;
 
         font-family: var(--heading-poppins);
@@ -646,6 +644,12 @@
         font-size: 20px;
 
         color: #FFFFFF;
+    }
+    #nota__negativa{
+        background: #BF2F2F;
+    }
+    #nota__positiva{
+        background: #2FBF90;
     }
     .container__custo-beneficio{
         display: flex;

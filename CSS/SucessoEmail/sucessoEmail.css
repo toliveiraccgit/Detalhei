@@ -1,0 +1,30 @@
+@media (min-width:0px){
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 100vw;
+        height: 100vh;
+    }
+    .vetor-sucesso{
+        width: 9.375rem;
+        height: 9.375rem;
+    }
+    .titulo__email___sucesso{
+        font-family: var(--heading-poppins);
+        font-size: 40px;
+        
+        margin-top: 3.75rem;
+        margin-bottom: 2.5rem;
+    }
+    .boas__vindas___email-sucesso{
+        font-family: var(--paragraph-SF-Light);
+        font-size: 14px;
+
+        color: #878888;
+
+        margin: 0%;
+    }
+}

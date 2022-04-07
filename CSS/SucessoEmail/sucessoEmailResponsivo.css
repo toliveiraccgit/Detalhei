@@ -1,0 +1,15 @@
+@media (max-width:1279px){
+    .vetor-sucesso{
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+    .titulo__email___sucesso{
+        font-size: 18px;
+        
+        margin-top: 0.75rem;
+        margin-bottom: 0.875rem;
+    }
+    .boas__vindas___email-sucesso{
+        font-size: 14px;
+    }
+}

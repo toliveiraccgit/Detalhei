@@ -1,0 +1,10 @@
+	/-----------REGRAS-CUSTO-BENEFICIO-----------/
+		*ADICIONAR ID #nota__custo-beneficio-ativada PARA MUDAR BACKGROUND DO CIRCULO PARA AZUL
+			EXEMPLO:
+				
+				<span class="nota__custo-beneficio" id="nota__custo-beneficio-ativada"></span>
+
+		*ADICIONAR ID #nota__custo-beneficio-desativada PARA MUDAR BACKGROUND DO CIRCULO PARA CINZA
+			EXEMPLO:
+				
+				<span class="nota__custo-beneficio" id="nota__custo-beneficio-desativada"></span>

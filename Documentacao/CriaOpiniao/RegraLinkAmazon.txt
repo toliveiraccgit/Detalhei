@@ -1,0 +1,7 @@
+	/---------------LINK-AMAZON-CRIA-OPINIAO--------------/
+
+	*ADICIONAR A CLASSE .input__link___amazon-ativo QUANDO VALIDAR O LINK QUE O USUÁRIO ADICIONOU
+
+		EXEMPLO:
+
+			<input required type="text" id="Link-Amazon" class="input__form___cria-opiniao 						input__link___amazon input__link___amazon-ativo">

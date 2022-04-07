@@ -1,0 +1,34 @@
+	/*------------NOTA-OPINIAO-----------*/
+
+	*ADICIONAR O ID #nota__negativa CASO A NOTA SEJA MENOR QUE 5
+
+		EXEMPLOS:
+
+			<h3 class="titulo__nota___opiniao"><span class="destaque__blue-nota">Cameron Williamson</span> 			Deu nota <span class="nota__opiniao" id="nota__negativa">2.3</span> para o produto.</h3>
+
+	*ADICIONAR O ID #nota__positiva CASO A NOTA SEJA MAIOR QUE 5
+
+		EXEMPLOS:
+
+			<h3 class="titulo__nota___opiniao"><span class="destaque__blue-nota">Cameron Williamson</span> 			Deu nota <span class="nota__opiniao" id="nota__positiva">9</span> para o produto.</h3>
+
+
+
+
+
+
+	*ADICIONAR O ID #destaque__nota-negativa CASO A NOTA SEJA MENOR QUE 5
+
+		EXEMPLOS:
+
+			<h3 class="titulo__nota___opiniao">Em não sua opinião, <span id="destaque__nota-					negativa">não vale a compra</span></h3>
+
+	*ADICIONAR O ID #destaque__nota-positiva CASO A NOTA SEJA MAIOR QUE 5
+
+		EXEMPLOS:
+
+			<h3 class="titulo__nota___opiniao">Em sua opinião, <span id="destaque__nota-					positiva">vale a compra</span></h3>
+
+
+
+

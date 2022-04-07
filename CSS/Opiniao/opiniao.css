@@ -6,6 +6,9 @@
 
         padding-top: 5.438rem;
     }
+    .secao__ofertas___mobile{
+        display: none;
+    }
     /*---------------------------CABECALHO----------------------------*/
     .cabecalho__opiniao{
         display: flex;

@@ -1,0 +1,25 @@
+	/-----------REGRA-NOTA-----------/
+	*Alterar o width de acordo com a nota:
+
+		EXEMPLOS:
+
+		.nota__desempenho{
+        		width: 90%; -NOTA 9
+
+    		}
+    		.nota__praticidade{
+        		width: 60%; -NOTA 6
+
+    		}
+    		.nota__conforto{
+        		width: 70%; -NOTA 7
+
+    		}
+    		.nota__design{
+        		width: 80%; -NOTA 8
+
+    		}
+    		.nota__limpeza{
+        		width: 90%; -NOTA 9
+
+    		}
