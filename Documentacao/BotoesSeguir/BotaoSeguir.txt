@@ -1,0 +1,50 @@
+	/----------------BOTOES-SEGUIR-GRANDE----------------/
+		ADICIONAR CLASSE .botao__seguir-ativo NO DEVIDO BOTÃO
+
+		EXEMPLOS:
+			-SE NÃO SEGUE:
+				<button class="botao__seguir-info___perfil botao__seguir-ativo">Seguir</button>
+
+                		<button class="botao__seguindo-info___perfil">Seguindo</button>
+
+
+			-SE SEGUE:
+				<button class="botao__seguir-info___perfil">Seguir</button>
+
+                		<button class="botao__seguindo-info___perfil botao__seguir-ativo">Seguindo</button>
+
+
+	/----------------BOTOES-SEGUINDO-PEQUENO---------------/
+		ADICIONAR CLASSE .botao__seguir-ativo NO DEVIDO BOTÃO
+
+		EXEMPLOS:
+			-SE NÃO SEGUE:
+				<button class="botao__seguir___seguidor botao__seguir-ativo">Seguir</button>
+
+                            	<button class="botao__seguindo___seguidor">Seguindo</button>
+			
+			-SE SEGUE:
+				
+				<button class="botao__seguir___seguidor">Seguir</button>
+
+                            	<button class="botao__seguindo___seguidor botao__seguir-ativo">Seguindo</button>
+
+		
+
+
+	/----------------BOTOES-SEGUINDO-EXTRA-PEQUENO---------------/
+		ADICIONAR CLASSE .botao__seguir-ativo NO DEVIDO BOTÃO
+
+		EXEMPLOS:
+			-SE NÃO SEGUE:
+				<button class="botao__seguir___perfil-avaliador botao__seguir-ativo">Seguir</button>
+
+                    		<button class="botao__seguindo___perfil-avaliador">Seguindo</button>
+			
+			-SE SEGUE:
+				
+				<button class="botao__seguir___perfil-avaliador">Seguir</button>
+
+                    		<button class="botao__seguindo___perfil-avaliador botao__seguir-ativo">Seguindo</button>
+
+			

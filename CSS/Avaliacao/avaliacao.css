@@ -156,6 +156,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        flex-wrap: wrap;
         gap: 0.75rem;
 
         padding-left: .5rem;
@@ -258,6 +259,30 @@
         background-color: var(--blue-primary);
         border-radius: 6px;
         border: none;
+
+        display: none;
+    }
+    .botao__seguindo___perfil-avaliador{
+        padding: .30rem 0.938rem;
+
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        letter-spacing: .05rem;
+
+        margin: 0%;
+
+        color: #7A7A7A;
+
+        background-color: #F1F1F1;
+        border-radius: 6px;
+        border: none;
+
+        display: none;
+    }
+    .botao__seguir-ativo{
+        display: block;
     }
     /*-------------------------BOTOES-COMPARTILHA----------------------*/
     .container__botoes___avaliador{

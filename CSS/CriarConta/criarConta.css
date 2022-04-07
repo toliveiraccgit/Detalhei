@@ -4,6 +4,9 @@
         display: flex;
         flex-direction: row;
     }
+    .container__vincular___contas-mobile{
+        display: none;
+    }
     /*-----------------SECAO-BACKGROUND-COLOR-----------------*/
     .secao__background-color{
         height: 75.875rem;
@@ -279,7 +282,7 @@
         position: relative;
 
         top: -2.4rem;
-        left: 88%;
+        left: 72%;
 
         width: 1.375rem;
         height: 0.938rem;

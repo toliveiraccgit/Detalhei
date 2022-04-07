@@ -1,0 +1,57 @@
+/*-----------------------VALIDACAO--------------------*/
+
+        /*------------LABEL-ERRADO----------*/
+        .span__erro-ativo
+		*ADICIONAR CLASSE NO LABEL INCORRETO*
+	
+	EXEMPLO:
+		<label for="E-mail" class="label__input-email label__erro-ativo">E-mail</label>
+
+
+		<label for="Senha" class="label__input-senha label__erro-ativo">Senha</label>	
+
+
+		<label for="Código" class="label__input-codigo label__erro-ativo">Código</label>	
+
+
+		<label for="Username" class="label__input-nome label__erro-ativo">Username</label>
+
+
+
+        /*------------SPAN-ERRADA----------*/
+        .span__erro-ativo
+		*ADICIONAR CLASSE NO SPAN DE SENHA OU EMAIL INCORRETO*
+	
+	EXEMPLO:
+        	<span class="span__erro___email span__erro-ativo">Digite um e-mail válido.</span>
+
+
+		<span class="span__erro___senha span__erro-ativo">Senha incorreta. tente novamente ou clique em esqueceu a senha para 				redefini-la.</span>
+		
+
+		<span class="span__erro___email span__erro-ativo">Código invalido por favor tente novamente.</span>
+
+		
+		<span class="span__erro___valida-username span__erro-ativo">Este nome de usuário já está em uso. </span>
+
+
+
+
+        /*------------INPUT-VALIDACAO----------*/
+        .input__erro-ativo
+		*ADICIONAR CLASSE NO INPUT DE EMAIL OU SENHA INCORRETA*
+
+	EXEMPLO:
+
+        	<input type="email" name="E-mail" class="input__email___login input__erro-ativo" required>
+
+
+		<input type="password" name="Senha" class="input__senha___login input__erro-ativo" id="senha" required>
+
+	
+		<input type="text" name="Código" class="input__codigo___verifica-codigo input__erro-ativo" required>
+	
+		
+		<input type="text" name="Username" class="input__nome___cadastro-login input__erro-ativo" required>
+
+        

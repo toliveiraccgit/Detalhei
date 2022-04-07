@@ -68,6 +68,7 @@
         </style>
         <link rel="stylesheet" href="./CSS/Login/login.css">
         <link rel="stylesheet" href="./CSS/Login/loginResponsivo.css">
+        <link rel="stylesheet" href="./CSS/validacaoInput.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
@@ -128,6 +129,8 @@
                         <label for="E-mail" class="label__input-email">E-mail</label>
                         <input type="email" name="E-mail" class="input__email___login" required>
 
+                        <span class="span__erro___email">Digite um e-mail válido.</span>
+
                     </div>
 
                     <div class="container__input___login">
@@ -135,9 +138,12 @@
                         <label for="Senha" class="label__input-senha">Senha</label>
                         <input type="password" name="Senha" class="input__senha___login" id="senha" required>
 
+                        
                         <button type="button" class="botao__visualizar-senha" id="olho"></button>
 
                     </div>
+
+                    <span class="span__erro___senha">Senha incorreta. tente novamente ou clique em esqueceu a senha para redefini-la.</span>
 
                     <a href="./esqueceu-senha.html" class="link__esqueceu-senha">Esqueceu a senha?</a>
 

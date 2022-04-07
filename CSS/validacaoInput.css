@@ -1,0 +1,60 @@
+    /*-------------VALIDACAO-MENSAGEM-ERRO-------------*/
+    .span__erro___email{
+        color: #EE0004;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-medium);
+
+        font-size: 12px;
+
+        display: none;
+    }
+    .span__erro___senha{
+        color: #EE0004;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-medium);
+
+        font-size: 12px;
+
+        display: none;
+
+        position: relative;
+        top: -2rem;
+    }
+    .span__erro___valida-codigo{
+        color: #EE0004;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-medium);
+
+        font-size: 12px;
+
+        display: none;
+    }
+    .span__erro___valida-username{
+        color: #EE0004;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--paragraph-medium);
+
+        font-size: 12px;
+
+        display: none;
+
+        width: 13.125rem;
+    }
+    .span__erro-ativo{
+        display: block;
+    }
+    /*-------------VALIDACAO-LABEL-ERRO-------------*/
+    .label__erro-ativo{
+        color: #EE0004;
+    }
+    /*-------------VALIDACAO-INPUT-ERRO-------------*/
+    .input__erro-ativo{
+        border: 1px solid #EE0004;
+    }
+    .input__erro-ativo:focus{
+        outline: 1px solid #EE0004;
+    }

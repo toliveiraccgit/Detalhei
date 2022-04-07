@@ -96,6 +96,9 @@
 
         padding-right: 0%;
     }
+    .botao__visualizar-senha{
+        left: 88%;
+    }
     /*-----------------VERIFICA-EMAIL-------------*/
     .titulo__verifica-email{
         font-size: 18px;

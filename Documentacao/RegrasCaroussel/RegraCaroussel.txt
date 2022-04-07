@@ -1,0 +1,63 @@
+		/-------------------------REGRA----------------------/
+	*Para cada item em um Caroussel deve-se criar um indicador
+		-Cada indicador deve ter um "aria-label=SlideDescricao 1" com seu devido número
+
+	EXEMPLO:
+
+	<section class="container__carousel-descricao">
+		<ul class="lista__descricao" data-lista-produtos-descricao>
+
+                        	<li class="item__lista___descricoes">
+                                
+                            		<section class="secao__produto-descricao">
+
+                                		<img src="./Assets/Imagens-Cards/imagem-card-1.png" alt="Imagem Produto 									descricao" class="imagem__produto-descricoes">
+
+                            		</section>
+
+                            		<section class="secao__descricao___produto">
+
+                                		<p class="descricao__produto">Opiniões do desidratador Meloni M042-D | Harpyja</p>
+
+                                		<a href="./login.html" class="botao__ver-detalhes">Detalhes</a>
+
+                            		</section>
+                            
+                        	</li>
+
+				<li class="item__lista___descricoes">
+                                
+                            		<section class="secao__produto-descricao">
+
+                                		<img src="./Assets/Imagens-Cards/imagem-card-1.png" alt="Imagem Produto 									descricao" class="imagem__produto-descricoes">
+
+                            		</section>
+
+                            		<section class="secao__descricao___produto">
+
+                                		<p class="descricao__produto">Opiniões do desidratador Meloni M042-D | Harpyja</p>
+
+                                		<a href="./login.html" class="botao__ver-detalhes">Detalhes</a>
+
+                            		</section>
+                            
+                        	</li>
+
+		</ul>
+	</section>
+
+
+	<div class="container__botao___caroussel-descricao">
+                    
+                    <button class="botao__carrousel-descricao botao__anterior___caroussel-descricao" data-anterior-descricao></button>
+
+                    <div class="carousel__indicadores-descricao" data-navegacao-descricoes>
+                                
+                        <button class="carousel__indicador-descricao carousel__indicador--ativo-descricao" aria-label="SlideDescricao 					1"></button>
+
+			<button class="carousel__indicador-descricao carousel__indicador--ativo-descricao" aria-label="SlideDescricao 					2"></button>
+                    </div>
+
+                    <button class="botao__carrousel-descricao botao__proximo___caroussel-descricao" data-proximo-descricao></button>
+                
+         </div>

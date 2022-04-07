@@ -68,6 +68,7 @@
         </style>
         <link rel="stylesheet" href="./CSS/CriarConta/criarConta.css">
         <link rel="stylesheet" href="./CSS/CriarConta/criaContaResponsivo.css">
+        <link rel="stylesheet" href="./CSS/validacaoInput.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
@@ -136,7 +137,8 @@
 
                             <label for="Username" class="label__input-nome">Username</label>
                             <input type="text" name="Username" class="input__nome___cadastro-login" required>
-    
+                            
+                            <span class="span__erro___valida-username">Este nome de usuário já está em uso. </span>
                         </div>
 
                     </section>
@@ -145,6 +147,8 @@
 
                         <label for="E-mail" class="label__input-email">E-mail</label>
                         <input type="email" name="E-mail" class="input__email___cadastro" required>
+
+                        <span class="span__erro___email">Digite um e-mail válido.</span>
 
                     </div>
 
