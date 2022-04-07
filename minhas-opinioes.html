@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+        <style type="text/css" media="screen, print">
+            @font-face {
+            font-family: 'SF UI Display Ultralight';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Ultralight'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-ultralight-58646b19bf205.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Light';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Light'), url("./Fonts/SF-UI-DISPLAY/sf-ui-display-light-58646b33e0551.woff") format('woff');
+            }
+
+            @font-face {
+            font-family: 'SF UI Display Medium';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Medium'), url("./Fonts/SF-UI-DISPLAY/sf-ui-display-medium-58646be638f96.woff") format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Thin';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Thin'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+            }
+            @font-face {
+            font-family: 'SF UI Display Semibold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Semibold'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Bold';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Bold'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Heavy';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Heavy'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+            }
+            
+
+            @font-face {
+            font-family: 'SF UI Display Black';
+            font-style: normal;
+            font-weight: normal;
+            src: local('SF UI Display Black'), url('./Fonts/SF-UI-DISPLAY/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+            }
+        </style>
+        <link rel="stylesheet" href="./CSS/MinhaOpiniao/minhaOpiniao.css">
+        <link rel="stylesheet" href="./CSS/MinhaOpiniao/minhaOpiniaoResponsivo.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalho.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalhoResponsivo.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/rodape.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/rodapeResponsivo.css">
+        <link href="./CSS/base.css" rel="stylesheet">
+        <link href="./CSS/reset.css" rel="stylesheet">
+        <link href="./CSS/normalize.css" rel="stylesheet">
+        <title>Minhas Opiniões | Detalhei</title>
+        <link rel="shortcut icon" href="./Assets/Vetores/Logo-Detalhei.svg" type="image/x-icon"/>
+    </head>
+
+    <body class="body">
+        
+        <main class="conteudo">
+
+            <section class="secao__cabecalho___cria-opiniao">
+
+                <a href="./feed-detalhei.html" class="botao__volta___pagina">
+
+                    <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 14L8.41 12.59L3.83 8H20V6H3.83L8.42 1.41L7 0L0 7L7 14Z" fill="black"/>
+                    </svg>
+
+                </a>
+
+                <input type="search" class="input__pesquisa-opiniao" placeholder="Faça aqui sua pesquisa">
+
+                <a href="./criaOpiniao.html" class="link__cria___opiniao">Nova opinião</a>
+
+            </section>
+
+            <section class="secao__lista___opinioes">
+
+                <ul class="lista__opinioes">
+
+                    <li class="item__lista___opinioes">
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Nome:</h1>
+
+                            <span class="info__item___lista-opinioes">Purificador de água Colormaq Premium</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Data:</h1>
+
+                            <span class="info__item___lista-opinioes">21 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Ultima edição:</h1>
+
+                            <span class="info__item___lista-opinioes">22 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Status:</h1>
+
+                            <section class="secao__botoes___status">
+
+                                <button class="botao__status botao-aprovado" id="status-ativado">Aprovado</button>                                
+
+                                <button class="botao__status botao-reprovado" id="status-desativado">Reprovado</button>
+
+                                <button class="botao__status botao-analise" id="status-desativado">Em análise</button>
+
+                                <button class="botao__editar___status">Editar</button>
+
+                            </section>
+
+                        </div>
+
+                    </li>
+
+                    <li class="item__lista___opinioes">
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Nome:</h1>
+
+                            <span class="info__item___lista-opinioes">Purificador de água Colormaq Premium</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Data:</h1>
+
+                            <span class="info__item___lista-opinioes">21 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Ultima edição:</h1>
+
+                            <span class="info__item___lista-opinioes">22 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Status:</h1>
+
+                            <section class="secao__botoes___status">
+
+                                <button class="botao__status botao-aprovado" id="status-desativado">Aprovado</button>                                
+
+                                <button class="botao__status botao-reprovado" id="status-ativado">Reprovado</button>
+
+                                <button class="botao__status botao-analise" id="status-desativado">Em análise</button>
+
+                                <button class="botao__editar___status">Editar</button>
+
+                            </section>
+
+                        </div>
+
+                    </li>
+
+                    <li class="item__lista___opinioes">
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Nome:</h1>
+
+                            <span class="info__item___lista-opinioes">Purificador de água Colormaq Premium</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Data:</h1>
+
+                            <span class="info__item___lista-opinioes">21 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Ultima edição:</h1>
+
+                            <span class="info__item___lista-opinioes">22 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Status:</h1>
+
+                            <section class="secao__botoes___status">
+
+                                <button class="botao__status botao-aprovado" id="status-desativado">Aprovado</button>                                
+
+                                <button class="botao__status botao-reprovado" id="status-desativado">Reprovado</button>
+
+                                <button class="botao__status botao-analise" id="status-ativado">Em análise</button>
+
+                                <button class="botao__editar___status">Editar</button>
+
+                            </section>
+
+                        </div>
+
+                    </li>
+
+                    <li class="item__lista___opinioes">
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Nome:</h1>
+
+                            <span class="info__item___lista-opinioes">Purificador de água Colormaq Premium</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Data:</h1>
+
+                            <span class="info__item___lista-opinioes">21 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Ultima edição:</h1>
+
+                            <span class="info__item___lista-opinioes">22 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Status:</h1>
+
+                            <section class="secao__botoes___status">
+
+                                <button class="botao__status botao-aprovado" id="status-desativado">Aprovado</button>                                
+
+                                <button class="botao__status botao-reprovado" id="status-desativado">Reprovado</button>
+
+                                <button class="botao__status botao-analise" id="status-ativado">Em análise</button>
+
+                                <button class="botao__editar___status">Editar</button>
+
+                            </section>
+
+                        </div>
+
+                    </li>
+
+                    <li class="item__lista___opinioes">
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Nome:</h1>
+
+                            <span class="info__item___lista-opinioes">Purificador de água Colormaq Premium</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Data:</h1>
+
+                            <span class="info__item___lista-opinioes">21 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Ultima edição:</h1>
+
+                            <span class="info__item___lista-opinioes">22 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Status:</h1>
+
+                            <section class="secao__botoes___status">
+
+                                <button class="botao__status botao-aprovado" id="status-desativado">Aprovado</button>                                
+
+                                <button class="botao__status botao-reprovado" id="status-desativado">Reprovado</button>
+
+                                <button class="botao__status botao-analise" id="status-ativado">Em análise</button>
+
+                                <button class="botao__editar___status">Editar</button>
+
+                            </section>
+
+                        </div>
+
+                    </li>
+
+                    <li class="item__lista___opinioes">
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Nome:</h1>
+
+                            <span class="info__item___lista-opinioes">Purificador de água Colormaq Premium</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Data:</h1>
+
+                            <span class="info__item___lista-opinioes">21 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Ultima edição:</h1>
+
+                            <span class="info__item___lista-opinioes">22 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Status:</h1>
+
+                            <section class="secao__botoes___status">
+
+                                <button class="botao__status botao-aprovado" id="status-desativado">Aprovado</button>                                
+
+                                <button class="botao__status botao-reprovado" id="status-desativado">Reprovado</button>
+
+                                <button class="botao__status botao-analise" id="status-ativado">Em análise</button>
+
+                                <button class="botao__editar___status">Editar</button>
+
+                            </section>
+
+                        </div>
+
+                    </li>
+
+                    <li class="item__lista___opinioes">
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Nome:</h1>
+
+                            <span class="info__item___lista-opinioes">Purificador de água Colormaq Premium</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Data:</h1>
+
+                            <span class="info__item___lista-opinioes">21 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Ultima edição:</h1>
+
+                            <span class="info__item___lista-opinioes">22 de dezembro de 2021</span>
+
+                        </div>
+
+                        <div class="container__item___lista-opinioes">
+
+                            <h1 class="titulo__item___lista-opinioes">Status:</h1>
+
+                            <section class="secao__botoes___status">
+
+                                <button class="botao__status botao-aprovado" id="status-desativado">Aprovado</button>                                
+
+                                <button class="botao__status botao-reprovado" id="status-desativado">Reprovado</button>
+
+                                <button class="botao__status botao-analise" id="status-ativado">Em análise</button>
+
+                                <button class="botao__editar___status">Editar</button>
+
+                            </section>
+
+                        </div>
+
+                    </li>
+
+                </ul>
+
+            </section>
+
+            <section class="secao__muda___visualizacao">
+
+                <div class="container__muda___visualizacao">
+
+                    <span class="titulo__muda___visualizacao">Mostrar</span>
+
+                    <input type="number" class="input__muda___visualizacao" value="20" placeholder="20">
+
+                    <span class="titulo__muda___visualizacao">entradas</span>
+
+                </div>
+
+                <span class="info__muda___visualizacao">Mostrando 1 até 1 de 1 entradas</span>
+
+            </section>
+
+            <section class="secao__paginas___produtos">
+
+                <button class="botao__lista___paginas" id="botao__desativado">
+
+                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.16003 1.41L3.58003 6L8.16003 10.59L6.75003 12L0.750034 6L6.75003 0L8.16003 1.41Z" fill="#C4CDD5"></path>
+                    </svg>
+                        
+
+                </button>
+
+
+                <ul class="lista__paginas___produtos">
+
+                    <li class="item__lista___paginas">
+
+                        <a class="botao__paginas" id="pagina__atual">1</a>
+
+                    </li>
+
+                    <li class="item__lista___paginas">
+
+                        <a class="botao__paginas">2</a>
+                        
+                    </li>
+
+                    <li class="item__lista___paginas">
+
+                        <button class="botao__paginas">
+                            <svg width="10" height="4" viewBox="0 0 10 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.10352 3.08203C1.71875 3.08203 2.2041 2.58984 2.2041 1.98145C2.2041 1.36621 1.71875 0.880859 1.10352 0.880859C0.488281 0.880859 0.00292969 1.36621 0.00292969 1.98145C0.00292969 2.58984 0.488281 3.08203 1.10352 3.08203ZM5 3.08203C5.61523 3.08203 6.10059 2.58984 6.10059 1.98145C6.10059 1.36621 5.61523 0.880859 5 0.880859C4.38477 0.880859 3.89941 1.36621 3.89941 1.98145C3.89941 2.58984 4.38477 3.08203 5 3.08203ZM8.89648 3.08203C9.51172 3.08203 9.99707 2.58984 9.99707 1.98145C9.99707 1.36621 9.51172 0.880859 8.89648 0.880859C8.28125 0.880859 7.7959 1.36621 7.7959 1.98145C7.7959 2.58984 8.28125 3.08203 8.89648 3.08203Z" fill="#212B36"></path>
+                            </svg>
+                        </button>
+                    </li>
+
+                    <li class="item__lista___paginas">
+
+                        <a class="botao__paginas">9</a>
+                        
+                    </li>
+
+                    <li class="item__lista___paginas">
+
+                        <a class="botao__paginas">10</a>
+                        
+                    </li>
+
+                </ul>
+
+
+                <button class="botao__lista___paginas">
+
+                    <svg width="9" height="12" viewBox="0 0 9 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.839966 1.41L5.41997 6L0.839966 10.59L2.24997 12L8.24997 6L2.24997 0L0.839966 1.41Z" fill="#C4CDD5"></path>
+                    </svg>
+                        
+
+                </button>
+
+            </section>
+
+        </main>
+
+    </body>
+
+
+</html>

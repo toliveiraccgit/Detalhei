@@ -37,7 +37,7 @@
         margin: 0%;
         margin-top: 2rem;
     }
-    /*-----------------SECAO-BACKGROUND-COLOR-----------------*/
+    /*-----------------LOGIN-----------------*/
     .secao__login___detalhei{
         width: 67vw;
 
@@ -309,5 +309,14 @@
     }
     .link__termos-rodape{
         color: var(--blue-primary);
+    }
+    .container__vincular___contas-mobile{
+        display: none;
+    }
+    #botao__vincular___twitter-mobile{
+        display: block;
+    }
+    #botao__vincular___facebook-mobile{
+        display: block;
     }
 }

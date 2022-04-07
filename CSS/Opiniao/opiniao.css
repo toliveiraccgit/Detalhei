@@ -112,7 +112,7 @@
 
     .slide__produto___opiniao{
         width: 70.125rem;
-        height: auto;
+        height: 39.438rem;
 
         background-color: var(--low-pure);
         border-radius: 8px;
@@ -327,6 +327,11 @@
         width: 70.125rem;
 
         margin-top: 3.438rem;
+        margin-bottom: 3.813rem;
+
+        padding-bottom: 1.938rem;
+
+        border-bottom: 1px solid #E4E4E4;
     }
     .titulo__seguir-marcas{
         font-family: var(--heading-poppins);
@@ -336,7 +341,7 @@
         color: #000000;
 
         margin: 0%;
-        margin-bottom: 4.688rem;
+        margin-bottom: 1.25rem;
     }
     .container__titulo___marcas{
         padding-top: 1.875rem;

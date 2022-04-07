@@ -823,4 +823,7 @@
     #rodape__feed{
         border-top: none;
     }
+    .secao__info___mobile-sidebar{
+        display: none;
+    }
 }       

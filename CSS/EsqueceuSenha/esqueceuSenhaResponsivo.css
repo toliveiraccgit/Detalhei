@@ -1,0 +1,88 @@
+@media (max-width:1279px){
+
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+    }
+    .secao__background-color{
+        width: 100vw;
+        height: auto;
+
+        padding-top: 4.563rem;
+        padding-bottom: 4.563rem;
+    }
+    .descricao__background-color{
+        font-size: 20px;
+
+        line-height: 143.5%;
+
+        margin-top: 1.25rem;
+    }
+    /*-------------------ESQUECE-SENHA------------------*/
+    .secao__recupera-senha___detalhei{
+        width: 100vw;
+
+        padding-top: 5rem;
+        padding-bottom: 15.5rem;
+    }
+    .secao__titulo___recupera-senha{
+        width: 88vw;
+    }
+    .secao__input___recupera-senha{
+        width: 88vw;
+    }
+    .input__email___recupera-senha{
+        width: 88vw;
+    }
+    .botao__recupera-senha{
+        width: 88vw;
+    }
+    /*-----------------VERIFICA-CODIGO--------------*/
+    .secao__verifica-codigo___detalhei{
+        width: 100vw;
+
+        padding-top: 5rem;
+        padding-bottom: 15.5rem;
+    }
+    .secao__titulo___verifica-codigo{
+        width: 88vw;
+    }
+    .secao__input___verifica-codigo{
+        width: 88vw;
+    }
+    .input__codigo___verifica-codigo{
+        width: 88vw;
+    }
+    .botao__verifica-codigo{
+        width: 88vw;
+    }
+    /*---------------------TROCA-SENHA----------------*/
+    .secao__troca-senha___detalhei{
+        width: 100vw;
+
+        padding-top: 5rem;
+        padding-bottom: 15.5rem;
+    }
+    .secao__titulo___troca-senha{
+        width: 88vw;
+    }
+    .secao__input___troca-senha{
+        width: 88vw;
+    }
+    .input__troca-senha{
+        width: 88vw;
+    }
+    .secao__validacao__nova-senha{
+        width: 88vw;
+        gap: 1rem;
+    }
+    .confirma-senha{
+        top: 1rem;
+    }
+    .input__confirma___troca-senha{
+        width: 88vw;
+    }
+    .botao__troca-senha-detalhei{
+        width: 88vw;
+    }
+}

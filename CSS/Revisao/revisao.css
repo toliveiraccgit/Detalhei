@@ -6,6 +6,9 @@
 
         padding-top: 5.438rem;
     }
+    .secao__ofertas___mobile{
+        display: none;
+    }
     /*---------------------------CABECALHO----------------------------*/
     .cabecalho__revisao{
         display: flex;
@@ -112,7 +115,7 @@
 
     .slide__produto___revisao{
         width: 70.125rem;
-        height: auto;
+        height: 39.438rem;
 
         background-color: var(--low-pure);
         border-radius: 8px;

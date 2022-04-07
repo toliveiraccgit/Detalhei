@@ -1,0 +1,55 @@
+@media (max-width:1279px){
+    /*------------CABECALHO-----------*/
+    .secao__cabecalho___cria-opiniao{
+        width: 88vw;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .botao__volta___pagina{
+        margin-bottom: 2.179rem;
+    }
+    .input__pesquisa-opiniao{
+        margin-bottom: 4.563rem;
+    }
+    /*-------------LISTAS------------*/
+    .secao__lista___opinioes{
+        width: 100vw;
+        height: 39.938rem;
+
+        overflow-x: hidden;
+        overflow-y: scroll;
+
+        overscroll-behavior: auto;
+    }
+    .item__lista___opinioes{
+        width: 100vw;
+
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.031rem;
+    }
+    .container__item___lista-opinioes{
+        flex-direction: row;
+        align-items: center;
+
+        justify-content: space-between;
+
+        width: 86vw;
+    }
+    .info__item___lista-opinioes{
+        font-size: 14px;
+
+        width: 11.953rem;
+    }
+    .secao__botoes___status{
+        flex-direction: row;
+        align-items: center;
+    }
+    .secao__muda___visualizacao{
+        width: 88vw;
+    }
+    .secao__paginas___produtos{
+        width: 88vw;
+    }
+}

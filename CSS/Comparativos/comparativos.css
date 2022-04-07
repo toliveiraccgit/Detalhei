@@ -9,6 +9,18 @@
         padding-top: 6.188rem;
         padding-bottom: 14.25rem;
     }
+    .secao__comparativo___mobile{
+        display: none;
+    }
+    .container__titulos___comparativos-mobile{
+        display: none;
+    }
+    #botoes__cabecalho___mobile{
+        display: none;
+    }
+    .titulo__banner___conteudo-mobile{
+        display: none;
+    }
     /*-----------------------PAGINACAO--------------------*/
     .secao__paginacao___produtos{
         display: flex;

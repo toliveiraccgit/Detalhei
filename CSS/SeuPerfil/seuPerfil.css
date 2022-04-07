@@ -173,6 +173,21 @@
         border-radius: 12px;
     }
     /*-----------------------PERFIL-EXPANDIDO--------------------*/
+    .link__codigo___amazon{
+        font-family: var(--paragraph-SF-Medium);
+        font-size: 14px;
+        letter-spacing: .03rem;
+
+        color: var(--blue-primary);
+
+        width: 27rem;
+    }
+    .label__input___perfil-redes-amazon{
+        padding: .1rem .25rem .1rem .25rem;
+        background: #F8F8F8;
+        border: 1px solid #F0F0F0;
+        border-radius: 12px;
+    }
     .container__perfil-expandido{
         opacity: 0;
 
@@ -356,7 +371,53 @@
 
         margin-top: 3.188rem;
     }
+    .secao__botoes___perfil{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 1rem;
 
+        width: 70.125rem;
+
+        padding-right: 1.813rem;
+
+        margin-top: 2rem;
+    }
+    .botao__salva___perfil{
+        background: var(--blue-primary);
+
+        border-radius: 8px;
+        border: none;
+
+        padding: .938rem 5.313rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-weight: var(--heading-bold);
+        font-size: 14px;
+
+        letter-spacing: 0.05rem;
+
+        color: #FFFFFF;
+    }
+    .botao__cancela___perfil{
+        padding: .938rem 3.313rem;
+
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-bold);
+        font-size: 16px;
+
+        letter-spacing: .05rem;
+
+        margin: 0%;
+
+        color: #000000;
+
+        background-color: transparent;
+
+        border: none;
+        border-radius: 12px;
+    }
     /*-----------------------CRIA-ARTIGOS------------------------*/
     .secao__cria-artigos{
         display: flex;

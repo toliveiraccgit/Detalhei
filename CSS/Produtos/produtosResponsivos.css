@@ -1,0 +1,164 @@
+@media (max-width:1279px){
+    .conteudo{
+        padding-top: 13.188rem;
+    }
+    /*--------------------PAGINACAO-------------------*/
+    .secao__cabecalho___produto{
+        width: 88vw;
+
+        margin-top: 4.5rem;
+    }
+    .secao__paginacao___produtos{
+        display: none;
+    }
+    .titulo__cabecalho___produto{
+        display: none;
+    }
+    .input__filtro___cabecalho{
+        display: none;
+    }
+    .secao__conteudo___cabecalho{
+        width: 88vw;
+    }
+    .container__botao___filtro{
+        height: 2rem;
+    }
+    .titulo__filtros{
+        display: none;
+    }
+    .numeros__filtros{
+        display: none;
+    }
+    .botao-cards-ativa{
+        display: none;
+    }
+    .texto__cabecalho___mais-recente{
+        display: none;
+    }
+    /*----------------------CARDS---------------------*/
+    .secao__cards___produtos{
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        padding-top: 1.75rem;
+
+        width: 88vw;
+    }
+    .item__lista___card-produtos{
+        width: 20.938rem; 
+    
+        padding-left:  0.75rem;
+        padding-right: 0.75rem;
+        padding-bottom: 1.938rem;
+    }
+    .secao__info___card-produto{
+        flex-direction: column;
+    }
+    .container__info___card-produto{
+        flex-direction: column;
+    }
+    .secao__pontos___produto{
+        display: none;
+    }
+    .container__texto___card-produto{
+        align-items: center;
+    }
+    .container__topicos-produto{
+        display: none;
+    }
+    .container__custo___beneficio{
+        width: 17.4rem;
+    }
+    .titulo__texto___produto{
+        width: 17.4rem;
+    }
+    .container__comparativo___produto{
+        width: 17.4rem;
+        
+        margin-bottom: 1.656rem;
+    }
+    .data__produto{
+        display: none;
+    }
+    .secao__gostei___opiniao-mobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    
+        padding-bottom: 1.688rem;
+        padding-right: .5rem;
+    }
+    .titulo__lista___gostei{
+        padding-left: 1.2rem;
+    
+        font-size: 14px;
+    }
+    .produto__lista___gostei {
+        font-size: 14px;
+    
+        padding-left: 1.2rem;
+    }  
+    .secao__gostei___opiniao{
+        display: none;
+    }
+    .secao__botao___nao-avaliado-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+        padding-left: 0rem;
+        padding-top: 0rem;
+        padding-bottom: 1.063rem;
+    }
+    .secao__botao___nao-avaliado{
+        display: none;
+    }
+    .secao__paginas___produtos{
+        width: 100vw;
+
+        justify-content: center;
+    }
+    /*----------------COMPARATIVOS----------------*/
+    .secao__aba___comparativos{
+        flex-direction: column-reverse;
+
+        z-index: 50000;
+    }
+    .secao__cabecalho___comparativos{
+        width: 88vw;
+
+        margin-top: 4.375rem;
+    }
+    .titulo__cabecalho___comparativos{
+        font-size: 16px;
+    }
+    .botao__remover___comparativos-desktop{
+        display: none;
+    }
+    .botao__comparar___itens{
+        padding-left: 0.604rem;
+        padding-right: 0.604rem;
+
+        font-size: 14px;
+    }
+    .lista__comparativos{
+        flex-direction: row;
+        gap: 7rem;
+        justify-content: flex-start;
+
+        width: 90vw;
+        height: 15rem;
+
+        overflow-x: scroll;
+        overflow-y: visible;
+        overscroll-behavior: contain;
+
+        scrollbar-width: none;
+
+        margin-bottom: 2.375rem;
+    }
+    .lista__comparativos::-webkit-scrollbar{
+        display: none;
+    }
+}

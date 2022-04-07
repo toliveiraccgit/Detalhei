@@ -104,7 +104,7 @@
 
     .slide__produto___avaliado{
         width: 70.125rem;
-        height: auto;
+        height: 39.438rem;
 
         background-color: var(--low-pure);
         border-radius: 8px;
@@ -420,7 +420,7 @@
     .secao__sobre___autor{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 1.25rem;
 
         width: 41.875rem;
@@ -428,14 +428,14 @@
     .titulo__sobre___autor{
         font-family: var(--heading-poppins);
         font-weight: var(--heading-medium);
-        font-size: 14px;
+        font-size: 16px;
 
         color: #000000;
     }
     .container__autor{
         display: flex;
-        flex-direction: row;
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: center;
         gap: 0.875rem;
     }
     .imagem__autor{
@@ -445,13 +445,14 @@
     .container__info___autor{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        text-align: center;
         gap: 0.375rem;
     }
     .nome__info___autor{
         font-family: var(--heading-poppins);
         font-weight: var(--paragraph-bold);
-        font-size: 14px;
+        font-size: 16px;
 
         color: #000000;
     }
@@ -638,6 +639,9 @@
         color: #000000;
     }
     /*-------------------OFERTAS-PRODUTO-------------------*/
+    #secao__precos-produtos-desktop{
+        display: none
+    }
     @keyframes animaCaracteristicas {
         from{
             opacity: 0;
@@ -660,8 +664,7 @@
         flex-direction: column;
         align-items: flex-end;
 
-        margin-top: 2.188rem;
-        margin-bottom: 10.375rem;
+        margin-top: 7.188rem;
 
         width: 70.125rem;
     }

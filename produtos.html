@@ -67,8 +67,11 @@
             }
         </style>
         <link rel="stylesheet" href="./CSS/Produtos/produtos.css">
+        <link rel="stylesheet" href="./CSS/Produtos/produtosResponsivos.css">
         <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalho.css">
         <link rel="stylesheet" href="./CSS/ComponentesCSS/rodape.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/cabecalhoResponsivo.css">
+        <link rel="stylesheet" href="./CSS/ComponentesCSS/rodapeResponsivo.css">
         <link href="./CSS/base.css" rel="stylesheet">
         <link href="./CSS/reset.css" rel="stylesheet">
         <link href="./CSS/normalize.css" rel="stylesheet">
@@ -82,8 +85,10 @@
 
             <section class="container___cabecalho" id="container__cabecalho___logado">
                 
-                <img src="./Assets/Vetores/LOGO-DETALHIE-NOME.svg" alt="Logo Detalhei" class="logo__detalhei">
-                <section class="secao__pesquisa___cabecalho" onmouseleave="fechaResultadoPesquisa()">
+                <a href="../feed-detalhei.html">
+                   <img src="../Assets/Vetores/LOGO-DETALHIE-NOME.svg" alt="Logo Detalhei" class="logo__detalhei">
+                </a>
+                <section id="secao__pesquisa___cabecalho-desktop" class="secao__pesquisa___cabecalho" onmouseleave="fechaResultadoPesquisa()">
                     <input type="text" class="input__busca-navegacao" placeholder="Faça aqui sua pesquisa" onfocus="abreResultadoPesquisa()">
 
                     <section class="secao__resultado___pesquisa-cabecalho" onmouseover="abreResultadoPesquisa()" onmouseleave="fechaResultadoPesquisa()">
@@ -96,9 +101,9 @@
 
                             <ul class="lista__pesquisa___cabecalho">
 
-                                <a href="./login.html" class="item__pesquisa___cabecalho">
+                                <a href="../revisao.html" class="item__pesquisa___cabecalho">
 
-                                    <img src="./Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
+                                    <img src="../Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
 
                                     <section class="secao__info___produto-pesquisa">
 
@@ -132,9 +137,9 @@
 
                                 </a>
 
-                                <a href="./login.html" class="item__pesquisa___cabecalho">
+                                <a href="../avaliacao.html" class="item__pesquisa___cabecalho">
 
-                                    <img src="./Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
+                                    <img src="../Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
 
                                     <section class="secao__info___produto-pesquisa">
 
@@ -168,9 +173,9 @@
 
                                 </a>
 
-                                <a href="./login.html" class="item__pesquisa___cabecalho">
+                                <a href="../descricao.html" class="item__pesquisa___cabecalho">
 
-                                    <img src="./Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
+                                    <img src="../Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
 
                                     <section class="secao__info___produto-pesquisa">
 
@@ -204,9 +209,9 @@
 
                                 </a>
 
-                                <a href="./login.html" class="item__pesquisa___cabecalho">
+                                <a href="../opiniao.html" class="item__pesquisa___cabecalho">
 
-                                    <img src="./Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
+                                    <img src="../Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
 
                                     <section class="secao__info___produto-pesquisa">
 
@@ -249,11 +254,11 @@
 
                 </section>
                 
-                <section class="secao__perfil-logado">
+                <section class="secao__perfil-logado" onclick="abrePerfilDropdown()">
                     <div class="container__perfil">
                         <a class="container__perfil-logado" id="container__perfil-logado">
 
-                            <img src="./Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
+                            <img src="../Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
             
                             <span class="nome__perfil-logado">Cameron Williamson</span>
             
@@ -261,19 +266,19 @@
 
                         </a>
                     </div>
-                    <section class="secao__dropdown-perfil" id="dropdown">
+                    <section class="secao__dropdown-perfil dropdown-cabecalho" id="dropdown">
 
-                        <a href="./seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
-                        <a href="./feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
+                        <a href="../seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
+                        <a href="../feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
                         <a href="#" class="link__dropdown-perfil">Minhas opiniões</a>
-                        <a href="./login.html" class="link__dropdown-sair">SAIR</a>
+                        <a href="../login.html" class="link__dropdown-sair">SAIR</a>
     
                     </section>
                 </section>
             
             </section>
 
-            <nav class="container__navegacao___cabecalho">
+            <nav class="container__navegacao___cabecalho" id="container__navegacao___cabecalho-desktop">
                 
                 <button class="container__botao___navegacao" onclick="abrirMenuAberto()">
 
@@ -288,25 +293,25 @@
                 <ul class="lista__navegacao">
 
                     <li class="item__lista___navegacao" >
-                        <a href="./login.html" class="item__lista___navegacao-link">Detalhei</a>
+                        <a href="../feed-detalhei.html" class="item__lista___navegacao-link">Detalhei</a>
                     </li>
                     
                     <li class="item__lista___navegacao link-dropdown__top-5">
-                        <a href="./login.html" class="item__lista___navegacao-link dropdown-top-5">Top 5</a>
+                        <a href="../top-5.html" class="item__lista___navegacao-link dropdown-top-5">Top 5</a>
 
                         <section class="secao__dropdown-top-5">
 
                             <ul class="lista__dropdown-top-5">
 
-                                <a href="./login.html" class="link__dropdown-top-5">Air Fryers</a>
+                                <a href="../top-5.html" class="link__dropdown-top-5">Air Fryers</a>
 
-                                <a href="./login.html" class="link__dropdown-top-5">Batedeiras Planetárias</a>
+                                <a href="../top-5.html" class="link__dropdown-top-5">Batedeiras Planetárias</a>
 
-                                <a href="./login.html" class="link__dropdown-top-5">Batedeiras Simples</a>
+                                <a href="../top-5.html" class="link__dropdown-top-5">Batedeiras Simples</a>
 
-                                <a href="./login.html" class="link__dropdown-top-5">Fornos elétricos</a>
+                                <a href="../top-5.html" class="link__dropdown-top-5">Fornos elétricos</a>
 
-                                <a href="./login.html" class="link__dropdown-top-5">Liquidificadores</a>
+                                <a href="../top-5.html" class="link__dropdown-top-5">Liquidificadores</a>
 
                             </ul>
 
@@ -314,31 +319,31 @@
                     </li>
                     
                     <li class="item__lista___navegacao" >
-                        <a href="./login.html" class="item__lista___navegacao-link">Comparativo</a>
+                        <a href="../comparativo.html" class="item__lista___navegacao-link">Comparativo</a>
                     </li>
                     
                     <li class="item__lista___navegacao link-dropdown__blog">
-                        <a href="./login.html" class="item__lista___navegacao-link dropdown-blog">Blog</a>
+                        <a href="../blog.html" class="item__lista___navegacao-link dropdown-blog">Blog</a>
 
                         <section class="secao__dropdown-blog">
 
                             <ul class="lista__dropdown-blog">
 
-                                <a href="login.html" class="link__dropdown-blog">Alé da casca</a>
+                                <a href="../blog.html" class="link__dropdown-blog">Alé da casca</a>
 
-                                <a href="login.html" class="link__dropdown-blog">Dicas e curiosidades</a>
+                                <a href="../blog.html" class="link__dropdown-blog">Dicas e curiosidades</a>
 
-                                <a href="login.html" class="link__dropdown-blog">Gastronomia</a>
+                                <a href="../blog.html" class="link__dropdown-blog">Gastronomia</a>
 
-                                <a href="login.html" class="link__dropdown-blog">Lavandeira</a>
+                                <a href="../blog.html" class="link__dropdown-blog">Lavandeira</a>
 
-                                <a href="login.html" class="link__dropdown-blog">Mundo dos produtos</a>
+                                <a href="../blog.html" class="link__dropdown-blog">Mundo dos produtos</a>
 
-                                <a href="login.html" class="link__dropdown-blog">Notícias</a>
+                                <a href="../blog.html" class="link__dropdown-blog">Notícias</a>
 
-                                <a href="login.html" class="link__dropdown-blog">O Melhor para mim</a>
+                                <a href="../blog.html" class="link__dropdown-blog">O Melhor para mim</a>
 
-                                <a href="login.html" class="link__dropdown-blog">Sustentabilidade</a>
+                                <a href="../blog.html" class="link__dropdown-blog">Sustentabilidade</a>
 
                             </ul>
 
@@ -349,29 +354,209 @@
 
             </nav>
 
+            <nav class="container__navegacao___cabecalho" id="container__navegacao___cabecalho-mobile">
+                
+                <button class="container__botao___navegacao" onclick="abrirMenuAberto()">
+
+                    <svg class="botao__svg___menu" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.72266 8.75H26.0615" stroke="white" stroke-width="2.57017" stroke-linecap="round"/>
+                        <path d="M3.72266 15H26.0615" stroke="white" stroke-width="2.57017" stroke-linecap="round"/>
+                        <path d="M3.72266 21.25H26.0615" stroke="white" stroke-width="2.57017" stroke-linecap="round"/>
+                    </svg>
+
+                </button>
+
+                <section id="secao__pesquisa___cabecalho-mobile" class="secao__pesquisa___cabecalho">
+                    <input type="text" class="input__busca-navegacao-mobile" placeholder="Faça aqui sua pesquisa" onfocus="abreResultadoPesquisaMobile()" onclick="abreResultadoPesquisaMobile()">
+
+                    <section class="secao__resultado___pesquisa-cabecalho-mobile" onmouseover="abreResultadoPesquisaMobile()" onmouseleave="fechaResultadoPesquisaMobile()">
+
+                        <h1 class="nome__resultado___pesquisa-cabecalho">Buscando por: Panela de pressão eletrica (10 resultados)</h1>
+
+                        <section class="lista__resultado___pesquisa-cabecalho">
+
+                            <h2 class="titulo__lista___pesquisa-cabecalho">Produtos</h2>
+
+                            <ul class="lista__pesquisa___cabecalho">
+
+                                <a href="../revisao.html" class="item__pesquisa___cabecalho">
+
+                                    <img src="../Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
+
+                                    <section class="secao__info___produto-pesquisa">
+
+                                        <div class="container__info___produto-pesquisa">
+                                            <h3 class="nome__info___produto-pesquisa">Panela de pressão eletrica</h3>
+                                            <span class="preco__info___produto-pesquisa">R$252,00</span>
+                                            <section class="container__custo-beneficio">
+
+                                                <h6 class="titulo__custo-beneficio">Custo-Benefício:</h6>
+                            
+                                                <div class="container__nota___custo-beneficio">
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                </div>
+                            
+                                            </section>
+                                        </div>
+
+                                        <button class="botao__tipo___produto tipo__produto___revisao">Revisão</button>
+
+                                    </section>
+
+                                </a>
+
+                                <a href="../avaliacao.html" class="item__pesquisa___cabecalho">
+
+                                    <img src="../Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
+
+                                    <section class="secao__info___produto-pesquisa">
+
+                                        <div class="container__info___produto-pesquisa">
+                                            <h3 class="nome__info___produto-pesquisa">Panela de pressão eletrica</h3>
+                                            <span class="preco__info___produto-pesquisa">R$252,00</span>
+                                            <section class="container__custo-beneficio">
+
+                                                <h6 class="titulo__custo-beneficio">Custo-Benefício:</h6>
+                            
+                                                <div class="container__nota___custo-beneficio">
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                </div>
+                            
+                                            </section>
+                                        </div>
+
+                                        <button class="botao__tipo___produto tipo__produto___avaliacao">Avaliação</button>
+
+                                    </section>
+
+                                </a>
+
+                                <a href="../descricao.html" class="item__pesquisa___cabecalho">
+
+                                    <img src="../Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
+
+                                    <section class="secao__info___produto-pesquisa">
+
+                                        <div class="container__info___produto-pesquisa">
+                                            <h3 class="nome__info___produto-pesquisa">Panela de pressão eletrica</h3>
+                                            <span class="preco__info___produto-pesquisa">R$252,00</span>
+                                            <section class="container__custo-beneficio">
+
+                                                <h6 class="titulo__custo-beneficio">Custo-Benefício:</h6>
+                            
+                                                <div class="container__nota___custo-beneficio">
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                </div>
+                            
+                                            </section>
+                                        </div>
+
+                                        <button class="botao__tipo___produto tipo__produto___descricao">Descrição</button>
+
+                                    </section>
+
+                                </a>
+
+                                <a href="../opiniao.html" class="item__pesquisa___cabecalho">
+
+                                    <img src="../Assets/Produtos/Imagens/imagem-produto.png" alt="Image Produto" class="imagem__produto___pesquisa-cabecalho">
+
+                                    <section class="secao__info___produto-pesquisa">
+
+                                        <div class="container__info___produto-pesquisa">
+                                            <h3 class="nome__info___produto-pesquisa">Panela de pressão eletrica</h3>
+                                            <span class="preco__info___produto-pesquisa">R$252,00</span>
+                                            <section class="container__custo-beneficio">
+
+                                                <h6 class="titulo__custo-beneficio">Custo-Benefício:</h6>
+                            
+                                                <div class="container__nota___custo-beneficio">
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                    <span class="nota__custo-beneficio"></span>
+                            
+                                                </div>
+                            
+                                            </section>
+                                        </div>
+
+                                        <button class="botao__tipo___produto tipo__produto___opiniao">Opinião</button>
+
+                                    </section>
+
+                                </a>
+
+
+                            </ul>
+
+                        </section>
+
+                    </section>
+
+                </section>
+                
+            </nav>
+
             <div class="container__menu-aberto">
                 <section class="secao__menu-aberto">
 
-                    <div class="container__perfil___menu-aberto">
+                    <div class="container__perfil___menu-aberto container__perfil___menu-aberto-logado">
 
-                        <section class="secao__perfil-logado">
+                        <section class="secao__perfil-logado" onclick="abrePerfilDropdownMenu()">
                             <div class="container__perfil">
                                 <a class="container__perfil-logado" id="container__perfil-logado">
         
-                                    <img src="./Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
+                                    <img src="../Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
                     
                                     <span class="nome__perfil-logado" id="nome__perfil-logado___menu-aberto">Cameron Williamson</span>
                     
-                                    <button type="button" class="botao__abre-info___perfil"></button>
+                                    <button type="button" class="botao__abre-info___perfil" id="botao__abre-info___perfil-menu-aberto"></button>
         
                                 </a>
                             </div>
-                            <section class="secao__dropdown-perfil" id="dropdown">
+                            <section class="secao__dropdown-perfil dropdown-perfil-menu" id="dropdown">
         
-                                <a href="./seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
-                                <a href="./feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
+                                <a href="../seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
+                                <a href="../feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
                                 <a href="#" class="link__dropdown-perfil">Minhas opiniões</a>
-                                <a href="./login.html" class="link__dropdown-sair">SAIR</a>
+                                <a href="../login.html" class="link__dropdown-sair">SAIR</a>
             
                             </section>
                         </section>
@@ -380,9 +565,9 @@
 
                     </div>
 
-                    <img src="./Assets/Vetores/logo-detalhei-menu-aberto.svg" alt="Logo Detalhei" class="logo__detalhei___menu-aberto">
+                    <img src="../Assets/Vetores/logo-detalhei-menu-aberto.svg" alt="Logo Detalhei" class="logo__detalhei___menu-aberto">
 
-                    <section class="secao__link___menu-aberto">
+                    <section class="secao__link___menu-aberto" onclick="fechaPerfilDropdownMenu()">
                         <h1 class="titulo__link___menu-aberto">Produtos</h1>
 
                         <ul class="lista__link___menu-aberto" id="lista__link___menu-aberto-produtos">
@@ -608,7 +793,7 @@
 
                             <li class="item__link___menu-aberto">
 
-                                <a href="./comparativo.html" class="botao__link___menu-aberto">Comparativo</a>
+                                <a href="../comparativo.html" class="botao__link___menu-aberto">Comparativo</a>
 
                             </li>
 
@@ -634,15 +819,15 @@
 
                                 <section class="secao__lista___top-5-menu-aberto">
 
-                                    <a href="./top-5.html" class="link__top-5___menu-aberto">Air Fryers</a>
+                                    <a href="../top-5.html" class="link__top-5___menu-aberto">Air Fryers</a>
 
-                                    <a href="./top-5.html" class="link__top-5___menu-aberto">Batedeiras Planetárias</a>
+                                    <a href="../top-5.html" class="link__top-5___menu-aberto">Batedeiras Planetárias</a>
 
-                                    <a href="./top-5.html" class="link__top-5___menu-aberto">Batedeiras Simples</a>
+                                    <a href="../top-5.html" class="link__top-5___menu-aberto">Batedeiras Simples</a>
 
-                                    <a href="./top-5.html" class="link__top-5___menu-aberto">Fornos elétricos</a>
+                                    <a href="../top-5.html" class="link__top-5___menu-aberto">Fornos elétricos</a>
 
-                                    <a href="./top-5.html" class="link__top-5___menu-aberto">Liquidificadores</a>
+                                    <a href="../top-5.html" class="link__top-5___menu-aberto">Liquidificadores</a>
 
                                 </section>
 
@@ -670,21 +855,21 @@
 
                                 <section class="secao__lista___blog-menu-aberto">
 
-                                    <a href="./blog.html" class="link__blog___menu-aberto">Alé da casca</a>
+                                    <a href="../blog.html" class="link__blog___menu-aberto">Alé da casca</a>
 
-                                    <a href="./blog.html" class="link__blog___menu-aberto">Dicas e curiosidades</a>
+                                    <a href="../blog.html" class="link__blog___menu-aberto">Dicas e curiosidades</a>
 
-                                    <a href="./blog.html" class="link__blog___menu-aberto">Gastronomia</a>
+                                    <a href="../blog.html" class="link__blog___menu-aberto">Gastronomia</a>
 
-                                    <a href="./blog.html" class="link__blog___menu-aberto">Lavandeira</a>
+                                    <a href="../blog.html" class="link__blog___menu-aberto">Lavandeira</a>
 
-                                    <a href="./blog.html" class="link__blog___menu-aberto">Mundo dos produtos</a>
+                                    <a href="../blog.html" class="link__blog___menu-aberto">Mundo dos produtos</a>
 
-                                    <a href="./blog.html" class="link__blog___menu-aberto">Notícias</a>
+                                    <a href="../blog.html" class="link__blog___menu-aberto">Notícias</a>
 
-                                    <a href="./blog.html" class="link__blog___menu-aberto">O Melhor para mim</a>
+                                    <a href="../blog.html" class="link__blog___menu-aberto">O Melhor para mim</a>
 
-                                    <a href="./blog.html" class="link__blog___menu-aberto">Sustentabilidade</a>
+                                    <a href="../blog.html" class="link__blog___menu-aberto">Sustentabilidade</a>
 
                                 </section>
 
@@ -698,26 +883,26 @@
 
                 <section class="secao__conteudo___link-menu tabcontentLinkMenuAberto" id="todos-produtos">
 
-                    <div class="container__perfil___menu-aberto">
+                    <div class="container__perfil___menu-aberto container__perfil___menu-aberto-logado">
 
                         <section class="secao__perfil-logado">
                         <div class="container__perfil">
                             <a class="container__perfil-logado" id="container__perfil-logado">
 
-                                <img src="./Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
+                                <img src="../Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
                             
                                 <span class="nome__perfil-logado" id="nome__perfil-logado___menu-aberto">Cameron Williamson</span>
                             
-                                <button type="button" class="botao__abre-info___perfil"></button>
+                                <button type="button" class="botao__abre-info___perfil" id="botao__abre-info___perfil-menu-aberto"></button>
 
                             </a>
                         </div>
                     <section class="secao__dropdown-perfil" id="dropdown">
 
-                        <a href="./seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
-                        <a href="./feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
+                        <a href="../seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
+                        <a href="../feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
                         <a href="#" class="link__dropdown-perfil">Minhas opiniões</a>
-                        <a href="./login.html" class="link__dropdown-sair">SAIR</a>
+                        <a href="../login.html" class="link__dropdown-sair">SAIR</a>
     
                     </section>
                 </section>
@@ -743,19 +928,19 @@
 
                             <h4 class="titulo__links___conteudo-menu">Cozinha</h4>
 
-                            <a href="./produtos.html" class="item__lista___link-conteudo-menu">
+                            <a href="../produtos.html" class="item__lista___link-conteudo-menu">
 
                                 Eletrodomèsticos
 
                             </a>
 
-                            <a href="./produtos.html" class="item__lista___link-conteudo-menu">
+                            <a href="../produtos.html" class="item__lista___link-conteudo-menu">
 
                                 Eletroportáteis
 
                             </a>
 
-                            <a href="./produtos.html" class="item__lista___link-conteudo-menu">
+                            <a href="../produtos.html" class="item__lista___link-conteudo-menu">
 
                                 Café, Chá e Expresso
 
@@ -769,26 +954,26 @@
 
                 <section class="secao__conteudo___link-menu tabcontentLinkMenuAberto" id="casa">
 
-                    <div class="container__perfil___menu-aberto">
+                    <div class="container__perfil___menu-aberto container__perfil___menu-aberto-logado">
 
                         <section class="secao__perfil-logado">
                         <div class="container__perfil">
                             <a class="container__perfil-logado" id="container__perfil-logado">
 
-                                <img src="./Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
+                                <img src="../Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
                             
                                 <span class="nome__perfil-logado" id="nome__perfil-logado___menu-aberto">Cameron Williamson</span>
                             
-                                <button type="button" class="botao__abre-info___perfil"></button>
+                                <button type="button" class="botao__abre-info___perfil" id="botao__abre-info___perfil-menu-aberto"></button>
 
                             </a>
                         </div>
                     <section class="secao__dropdown-perfil" id="dropdown">
 
-                        <a href="./seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
-                        <a href="./feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
+                        <a href="../seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
+                        <a href="../feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
                         <a href="#" class="link__dropdown-perfil">Minhas opiniões</a>
-                        <a href="./login.html" class="link__dropdown-sair">SAIR</a>
+                        <a href="../login.html" class="link__dropdown-sair">SAIR</a>
     
                     </section>
                 </section>
@@ -814,19 +999,19 @@
 
                             <h4 class="titulo__links___conteudo-menu">Casa</h4>
 
-                            <a href="./produtos.html" class="item__lista___link-conteudo-menu">
+                            <a href="../produtos.html" class="item__lista___link-conteudo-menu">
 
                                 Eletrodomèsticos
 
                             </a>
 
-                            <a href="./produtos.html" class="item__lista___link-conteudo-menu">
+                            <a href="../produtos.html" class="item__lista___link-conteudo-menu">
 
                                 Eletroportáteis
 
                             </a>
 
-                            <a href="./produtos.html" class="item__lista___link-conteudo-menu">
+                            <a href="../produtos.html" class="item__lista___link-conteudo-menu">
 
                                 Café, Chá e Expresso
 
@@ -843,7 +1028,8 @@
         </header>
 
 
-        <main class="conteudo">
+
+        <main class="conteudo" onclick="fechaPerfilDropdown(), fechaResultadoPesquisaMobile()">
 
             <section class="secao__paginacao___produtos">
 
@@ -918,7 +1104,7 @@
                                 <path d="M25.53 20.75C25.24 20.46 24.76 20.46 24.47 20.75L22.02 23.2V7C22.02 6.59 21.68 6.25 21.27 6.25C20.86 6.25 20.52 6.59 20.52 7V23.19L18.08 20.75C17.79 20.46 17.31 20.46 17.02 20.75C16.73 21.04 16.73 21.52 17.02 21.81L20.73 25.52C20.8 25.59 20.89 25.65 20.99 25.69C21 25.69 21.01 25.69 21.02 25.7C21.1 25.73 21.19 25.75 21.28 25.75C21.48 25.75 21.67 25.67 21.81 25.53L25.53 21.81C25.82 21.51 25.82 21.04 25.53 20.75Z" fill="#292D32"/>
                             </svg>
 
-                            Mais Recente
+                            <span class="texto__cabecalho___mais-recente">Mais Recente
                         </button>
 
                     </div>
@@ -1645,13 +1831,15 @@
 
                     <div class="container__botoes___comparativos">
 
-                        <button class="botao__remover___comparativos" onclick="fechaComparativoProduto()">Remover tudo</button>
+                        <button class="botao__remover___comparativos botao__remover___comparativos-desktop" onclick="fechaComparativoProduto()">Remover tudo</button>
 
                         <a href="#" class="botao__comparar___itens">Fazer a comparação</a>
 
                     </div>
 
                 </section>
+
+                <button class="botao__remover___comparativos botao__remover___comparativos-mobile"botao__remover___comparativos-mobile" onclick="fechaComparativoProduto()">Remover tudo</button>
 
                 <ul class="lista__comparativos">
 
@@ -1713,9 +1901,9 @@
         </main>
 
 
-        <footer class="rodape" id="rodape__feed">
+        <footer class="rodape rodape-produtos" id="rodape__feed">
 
-            <address class="secao__marca">
+            <address class="secao__marca" id="secao__marca-desktop">
 
                 <img src="./Assets/Vetores/logo-detalhei-footer.svg" alt="Logo Detalhei" class="logo___detalhei-footer">
 
@@ -1736,18 +1924,20 @@
                 </div>
             </address>
 
+            <img src="./Assets/Vetores/logo-detalhei-footer.svg" alt="Logo Detalhei" class="logo___detalhei-footer-mobile">
+
             <section class="secao__lista" id="secao__lista-footer-margin">
 
                 <h8 class="titulo__lista-footer">Detalhei</h8>
                 
                 <ul class="lista__detalhei">
 
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Consultoria</a></li>
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Contato</a></li>
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Privacidade</a></li>
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Ofertas</a></li>
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Minha Garantia</a></li>
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Empresarial</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Consultoria</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Contato</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Privacidade</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Ofertas</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Minha Garantia</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Empresarial</a></li>
     
                 </ul>
             
@@ -1759,11 +1949,11 @@
                 
                 <ul class="lista__detalhei">
 
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Air Flayer</a></li>
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Batedeiras</a></li>
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Eletricos</a></li>
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Liquidificadores</a></li>
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fornos</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Air Flayer</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Batedeiras</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Eletricos</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Liquidificadores</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Fornos</a></li>
     
                 </ul>
             
@@ -1775,13 +1965,32 @@
                 
                 <ul class="lista__detalhei">
 
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Fogões</a></li>
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Desidratador</a></li>
-                    <li class="item__lista-footer"><a class="item__lista-footer" href="#">Churrasqueira</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Fogões</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Desidratador</a></li>
+                    <li class="item__lista-footer"><a class="item__lista-footer" href="./login.html">Churrasqueira</a></li>
     
                 </ul>
             
             </section>
+
+            <address class="secao__marca" id="secao__marca-mobile">
+
+                <p class="texto__copyright">Copyright © 2001-2021 ,Detalhei Todos os direitos reservados.</p>
+
+                <div class="container__redes-sociais">
+
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-FACEBOOK.svg" alt="Facebook Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-TWITTER.svg" alt="Twitter Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-INSTAGRAM.svg" alt="Instagram Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-YOUTUBE.svg" alt="Youtube Detalhei" class="logo__redes-sociais"></a>
+                    
+                    <a href="#"><img src="./Assets/Icones-Redes-Sociais/ICO-LINKEDIN.svg" alt="Linkedin Detalhei" class="logo__redes-sociais"></a>
+
+                </div>
+            </address>
 
         </footer>
 
@@ -1796,6 +2005,9 @@
         <script src="./Componentes/Cabecalho/tabsMenuAbertoLinks.js" type="text/javascript"></script>
         <script src="./Componentes/Cabecalho/abreTop5.js" type="text/javascript"></script>
         <script src="./Componentes/Cabecalho/abreBlog.js" type="text/javascript"></script>
+        <script src="./Componentes/Cabecalho/abrePesquisaResponsivo.js" type="text/javascript"></script>
+        <script src="./Componentes/Cabecalho/abrePerfilDropdown.js" type="text/javascript"></script>
+        <script src="./Componentes/abreOfertasMobile.js" type="text/javascript"></script>
 
         <script>
 

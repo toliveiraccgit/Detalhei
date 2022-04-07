@@ -1,0 +1,351 @@
+@media (min-width:0px){
+    .conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 4.688rem;
+        padding-bottom: 6.75rem;
+    }
+    /*------------CABECALHO-----------*/
+    .secao__cabecalho___cria-opiniao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 59.125rem;
+    }
+    .botao__volta___pagina{
+        width: 2.625rem;
+        height: 2.5rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid #EBEBEB;
+        border-radius: 6px;
+    }
+    .input__pesquisa-opiniao{
+        width: 15.688rem;
+
+        font-family: var(--heading-poppins);
+        font-weight: 500;
+        font-size: 13px;
+
+        padding-top: 0.563rem;
+        padding-bottom: 0.563rem;
+        padding-left: 3.313rem;
+
+        background: #FAFAFA;
+
+        background-repeat: repeat;
+        background-image: none;
+
+        border: 1px solid rgba(217, 217, 217, 0.82);
+        border-radius: 8px;
+
+        background-image: url("../../Assets/Perfil/Vetores/search-normal.svg");
+        background-position: 1.5rem center;
+        background-repeat: no-repeat;
+    }
+    .input__pesquisa-opiniao:focus{
+        outline: none;
+    }
+    .link__cria___opiniao{
+        text-align: center;
+
+        background-color: var(--orange-primary);
+
+        padding-top: 0.594rem;
+        padding-bottom: 0.594rem;
+        padding-right: 1.938rem;
+        padding-left: 1.938rem;
+
+        border-radius: 7px;
+
+        font-family: var(--paragraph-SF-Light);
+        font-weight: var(--paragraph-bold);
+        letter-spacing: .03rem;
+        font-size: 14px;
+    }
+    /*--------------LISTA--------------*/
+    .secao__lista___opinioes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 70.125rem;
+        height: 55.938rem;
+
+        overflow-y: scroll;
+        overscroll-behavior: contain;
+
+        margin-top: 3.063rem;
+    }
+    .lista__opinioes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+
+        background: #F9F9F9;
+
+        padding-top: 1.875rem;
+        padding-bottom: 1.875rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }   
+    .item__lista___opinioes{
+        width: 65rem;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        padding-left: 1.563rem;
+        padding-right: 1.563rem;
+        padding-bottom: 2.25rem;
+
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+    .container__item___lista-opinioes{
+        width: 14.375rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.875rem;
+    }
+    .titulo__item___lista-opinioes{
+        font-family: var(--paragraph-SF-Light);
+        font-size: 14px;
+
+        letter-spacing: 0.03rem;
+
+        color: var(--subheads);
+    }
+    .info__item___lista-opinioes{
+        font-family: var(--paragraph-SF-Medium);
+        font-size: 16px;
+
+        letter-spacing: 0.03rem;
+
+        color: #000000;
+    }
+    .secao__botoes___status{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+    .botao__status{
+        width: 8.25rem;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .botao-aprovado{
+        background-color: #DCFFC7;
+
+        color: #00E009;
+
+        padding: .5rem 0rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-size: 14px;
+
+        letter-spacing: 0.03rem;
+
+        border: none;
+        border-radius: 6px;
+    }
+    .botao-reprovado{
+        background-color: #FFC7C7;
+
+        color: #E00000;
+
+        padding: .5rem 0rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-size: 14px;
+
+        letter-spacing: 0.03rem;
+
+        border: none;
+        border-radius: 6px;
+    }
+    .botao-analise{
+        background-color: #FFFFFF;
+
+        color: #000000;
+
+        padding: .5rem 0rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-size: 14px;
+
+        letter-spacing: 0.03rem;
+
+        border: none;
+        border-radius: 6px;
+    }
+    .botao__editar___status{
+        width: 8.25rem;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #FFFFFF;
+
+        color: #000000;
+
+        padding: .5rem 0rem;
+
+        font-family: var(--paragraph-SF-Medium);
+        font-size: 14px;
+
+        letter-spacing: 0.03rem;
+
+        border: none;
+        border-radius: 6px;
+    }
+    #status-ativado{
+        display: block;
+    }
+    #status-desativado{
+        display: none;
+    }
+    /*----------------MUDA-VISUALIZACAO-------------*/
+    .secao__muda___visualizacao{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        width: 68.063rem;
+
+        margin-top: 2.5rem;
+    }
+    .container__muda___visualizacao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        gap: .5rem;
+
+        margin-bottom: 1.875rem;
+    }
+    .titulo__muda___visualizacao{
+        font-family: var(--paragraph-SF-Medium);
+        font-size: 14px;
+        letter-spacing: 0.03rem;
+        color: #000000;
+    }
+    input[type=number]{
+        -moz-appearance: textfield;
+    }
+    .input__muda___visualizacao{
+
+        all: unset;
+
+        font-family: var(--heading-poppins);
+        font-weight: 500;
+        font-size: 13px;
+
+        padding-top: 0.563rem;
+        padding-bottom: 0.563rem;
+        padding-left: 1.75rem;
+        padding-right: 1.75rem;
+
+        background: #FAFAFA;
+        border-radius: 8px;
+        border: none;
+
+        width: 2rem;
+    }
+    .info__muda___visualizacao{
+        font-family: var(--paragraph-SF-Medium);
+        font-size: 14px;
+        letter-spacing: 0.03rem;
+        color: #000000;
+
+        margin-bottom: 1.875rem;
+    }
+    /*-----------------PAGINAS-PRODUTOS--------------*/
+    .secao__paginas___produtos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: .5rem;
+
+        width: 68.063rem;
+
+        margin-bottom: 5.375rem;
+    }
+    .lista__paginas___produtos{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .5rem;
+    }
+    #botao__desativado{
+        background-color: #919EAB;
+
+        opacity: .5;
+
+        border: none;
+    }
+    .botao__lista___paginas{
+        padding-top: 0.425rem;
+        padding-bottom: 0.425rem;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+
+        border: 1px solid #DFE3E8;
+        border-radius: 4px;
+
+        background-color: #FFFFFF;
+    }
+    .botao__paginas{
+
+        padding-top: 0.425rem;
+        padding-bottom: 0.425rem;
+        padding-left: 0.625rem;
+        padding-right: 0.625rem;
+
+        border: 1px solid #DFE3E8;
+        border-radius: 4px;
+
+        background-color: #FFFFFF;
+
+        font-family: var(--paragraph-SF-Bold);
+        font-weight: var(--paragraph-bold);
+        font-size: 14px;
+
+        line-height: 19px;  
+
+        color: #212B36;
+
+        letter-spacing: .01rem;
+
+        width: 2rem;
+        height: 2rem;
+
+        text-align: center;
+    }
+    #pagina__atual{
+        border: 1px solid #329FC0;
+
+        color: var(--blue-primary);
+    }
+    
+}

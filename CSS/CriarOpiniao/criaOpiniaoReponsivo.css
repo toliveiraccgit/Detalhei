@@ -1,0 +1,127 @@
+@media (max-width:1279px){
+    /*-------------CABECALHO------------*/
+    .secao__cabecalho___cria-opiniao{
+        width: 88vw;
+
+        margin-bottom: 2.179rem;
+    }
+    /*---------------FORM--------------*/
+    .form__cria___opiniao{
+        width: 88vw;
+    }
+    .container__link___amazon{
+        width: 88vw;
+
+        background-position: bottom left;
+
+        padding-bottom: 3.5rem;
+    }
+    .label__link___amazon{
+        width: 88vw;
+    }
+    .input__form___cria-opiniao{
+        width: 88vw;
+    }
+    .container__input___form-cria-opiniao{
+        width: 88vw;
+    }
+    .secao__input-file{
+        flex-direction: column;
+        align-items: flex-start;
+
+        width: 88vw;
+    }
+    .label__input-file{
+        width: 88vw;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container__titulo___cria-texto{
+        width: 88vw;
+    }
+    .descricao__cria-texto{
+        width: 88vw;
+    }
+    .container__textarea___cria-texto{
+        width: 88vw;
+        height: 32.688rem;
+
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .secao__botoes__textarea{
+        width: 2.25rem;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        z-index: 80000;
+
+        left: -43%;
+
+        height: 26.688rem;
+    }
+    .bloco__botao___textarea{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .botao-border-right{
+        border: none;
+        padding: 0%;
+        margin: 0%;
+    }
+    .text-area__input{
+        width: 88vw;
+        height: 27.688rem;
+        position: absolute;
+        top: 11%;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2.875rem;
+    }
+    .titulo__gostei-gostaria{
+        width: 88vw;
+    }
+    .secao__recomenda___cria-opiniao{
+        width: 88vw;
+    }
+    .secao__botoes___cria-opiniao{
+        width: 88vw;
+
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        gap: 1.625rem;
+    }
+    .secao__container___caixa-cria-opiniao{
+        z-index: 900000;
+    }
+    .secao__info___caixa-cria-opiniao{
+        width: 77vw;
+    }
+    .titulo__info___caixa-cria-opiniao{
+        font-size: 20px;
+
+        margin-top: 3.75rem;
+    }
+    .titulo__info___perfil-cria-opiniao{
+        font-size: 18px;
+    }
+    .container__info___perfil-cria-opiniao{
+        flex-direction: column;
+        align-items: center;
+
+        width: 88vw;
+    }
+    .descricao__info___caixa-cria-artigo{
+        width: 88vw;
+    }
+    .botao__compartilhe___url{
+        padding-left: 1.313rem;
+        padding-right: 1.313rem;
+    }
+}   

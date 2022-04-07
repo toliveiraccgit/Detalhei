@@ -1,0 +1,146 @@
+@media (max-width:1279px) {
+    .conteudo{
+        padding-top: 12.9rem;
+    }
+    /*--------------INFO-PERFIL--------------*/
+    .descricao__info-perfil{
+        width: 88vw;
+
+        font-size: 16px;
+    }
+    .numeros-seguidores-info{
+        font-size: 14px;
+    }
+    .secao__botoes___info-perfil{
+        gap: 1.179rem;
+    }
+    .link__rede-info___perfil{
+        width: 2.5rem;
+        height: 2.5rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        padding: 0%;
+    }
+    .link__rede-info___perfil > svg {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .secao__botoes___info-perfil{
+        flex-direction: column;
+
+    }
+    .botao__seguir-info___perfil{
+        padding-left: 3.438rem;
+        padding-right: 3.438rem;
+        padding-top: 0.706rem;
+        padding-bottom: 0.706rem;
+
+        font-size: 14px;
+    }
+    .botao__compartilha-info___perfil{
+        padding-left: 2.044rem;
+        padding-right: 2.044rem;
+        padding-top: 0.706rem;
+        padding-bottom: 0.706rem;
+
+        font-size: 14px;
+    }
+    /*--------------SEGUIDORES--------------*/
+    .secao__cabecalho___seguidores{
+        width: 88vw;
+        justify-content: center;
+
+    }
+    .container__primeiro-cabecalho{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .tabs-cabecalho__seguidores{
+        width: 88vw;
+
+        justify-content: center;
+
+        gap: 1rem;
+    }
+    .tablinks{
+        font-size: 14px;
+    }
+    .secao__card___seguidores{
+        width: 100vw;
+        flex-direction: column-reverse;
+        
+        padding-bottom: 2.313rem;
+    }
+    .botao__ver-todos-seguidores{
+        top: 0%;
+        left: 0%;
+
+        margin-top: 2rem;
+
+    }
+    .lista__seguidores{
+        width: 24rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 1rem;
+        column-gap: 0rem;
+
+    }
+    /*----------------ARTIGOS---------------*/
+    .tabs-cabecalho__artigos{
+        gap: .5rem;
+    }
+    .tablinks-artigos{
+        font-size: 14px;
+    }
+    .lista__cards___artigos{
+        width: 88vw;
+
+        justify-content: center;
+    }
+    .imagem__artigo{
+        width: 20.875rem;
+    }
+    .item__card___artigo{
+        width: 20.875rem;
+    }
+    .container__info___artigo{
+        width: 19.438rem;
+    }
+
+    .secao__cabecalho___seguidores-expandido{
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-top: 2.375rem;
+
+        gap: 3rem;
+    }
+    .secao__seguidores-expandido{
+        width: 100vw;
+
+        padding-bottom: 3rem;
+    }
+    .input__pesquisa{
+        width: 65vw;
+
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    .lista__seguidores-expandido{
+        width: 100vw;
+
+        justify-content: space-between;
+
+        row-gap: 1rem;
+        column-gap: 0rem;
+    }
+    .container__seguidor{
+        width: 11rem;
+    }
+}

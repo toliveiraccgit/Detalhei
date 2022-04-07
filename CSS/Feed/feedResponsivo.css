@@ -5,5 +5,133 @@
 
     .link__escreva___opiniao {
         margin-bottom: 2.3rem;
-      }
+    }
+}
+@media (max-width:1279px){
+    /*-------------------CONTEUDO------------------*/
+    .conteudo{
+        flex-direction: column-reverse;
+
+        padding-left: 0%;
+        padding-right: 0%;
+        padding-bottom: 9.25rem;
+        padding-top: 16.813rem;
+    }
+    /*-----------------SIDEBAR-FEED----------------*/
+    .secao__info___mobile-sidebar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 20.938rem;
+    }
+    .container__cabecalho___info-mobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 20.938rem;
+
+        margin-bottom: 1.188rem;
+    }
+    .titulo__topicos{
+        margin: 0%;
+    }
+    .link__escreva___opiniao{
+        margin: 0%;
+
+        padding-left: 0.975rem;
+        padding-right: 0.975rem;
+        padding-top: 0.64rem;
+        padding-bottom: 0.64rem;
+    }
+    #botao__opiniao-desktop{
+        display: none;
+    }
+    .container__botoes___topicos{
+        width: 20.938rem;
+
+        overflow-y: scroll;
+
+        scrollbar-width: none;
+
+        margin-bottom: 1.125rem;
+    }
+    .container__botoes___topicos::-webkit-scrollbar{
+        display: none;
+    }
+    .container__marcas-drag{
+        width: 20.938rem;
+
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+        /*-----------------ENGAJADOS-FEED----------------*/
+        .imagem__principal___engajados{
+            display: none;
+        }
+        .secao__engajados___semana{
+            width: 20.938rem;
+        }
+        .lista__engajados___semana{
+            padding-left: 0%;
+        }
+        .titulo__secao___engajados{
+            text-align: center;
+        }
+        /*-----------------TOPICOS-FEED----------------*/
+        .secao__topicos___sidebar{
+            width: 20.938rem;
+        }
+        /*-----------------SEGUIDORES-FEED--------------*/
+        .secao__seguidores{
+            width: 20.938rem;
+        }
+        .container__seguidor{
+            width: 16.5rem;
+        }
+    .secao__ultimas-postagens{
+        display: none;
+    }
+    /*-------------------FEED------------------*/
+    #secao-topicos-desktop{
+        display: none;
+    }
+    .secao__produtos___feed{
+        width: 100vw;
+    }
+    .secao__produtos{
+        padding-left: .8rem;
+        padding-right: .8rem;
+    }
+    .cabecalho__secao__produtos{
+        padding-left: 0%;
+        padding-right: 0%;
+
+        gap: 1rem;
+
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .tablinks{
+        font-size: 14px;
+
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .secao__produtos-feed{
+        gap: 2.688rem;
+    }
+    .secao__conteudo___produto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem__produto{
+        width: 20.813rem;
+    }
+    .container__rodape___produto{
+        flex-wrap: wrap;
+        
+    }
 }

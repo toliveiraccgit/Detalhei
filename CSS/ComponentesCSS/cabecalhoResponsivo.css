@@ -1,0 +1,137 @@
+@media (max-width: 1279px){
+    /*---------------------CABECALHO-----------------------*/
+    .cabecalho{
+        position: fixed;
+
+        z-index: 5000;
+    }
+    #container__navegacao___cabecalho-mobile{
+        display: flex;
+    }
+    #secao__pesquisa___cabecalho-desktop{
+        display: none;
+    }
+    .container___cabecalho {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding-left: 1.125rem;
+        padding-right: 1.125rem;
+    }
+    .botao__acessa-conta {
+        width: auto;
+
+        padding: .55rem .6rem .55rem .6rem;
+
+        margin-left: 0rem;
+
+        background-image: none;
+    }
+    .nome__perfil-logado{
+        display: none;
+    }
+    .container__perfil-logado, .secao__perfil-logado {
+        width: 4rem;
+    }
+    .dropdown-cabecalho{
+        left: -96%;
+        z-index: 10000000000;
+    }
+    .dropdown-perfil-menu{
+        left: 82%;
+        
+        border: 1px solid #F0F0F0;
+    }
+    .container__perfil___menu-aberto-logado{
+        gap: 11rem;
+    }
+    /*---------------------NAVEGACAO----------------------*/
+    #container__navegacao___cabecalho-desktop{
+        display: none;
+    }
+    .container__navegacao___cabecalho {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.888rem;
+        background-color: var(--blue-primary);
+        padding: 0.813rem 3.313rem 0.875rem 1.688rem;
+    }
+    .secao__pesquisa___cabecalho {
+        width: 67vw;
+        height: 3.125rem;
+
+        z-index: 2000000000;
+
+        position: relative;
+        top: .5rem;
+    }
+    .input__busca-navegacao-mobile{
+        width: 67vw;
+
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-regular);
+        font-size: 12.8px;
+
+        color: var(--subheads);
+
+        padding: 0.563rem 1rem 0.563rem 3rem;
+
+        background-color: #FFFFFF;
+        background-image: url("../../Assets/Vetores/ICO-BUSCA.svg");
+        background-repeat: no-repeat;
+        background-position-x: 1.3rem;
+        background-position-y: center;
+
+        border-radius: 8px;
+        border: none;
+    }
+    
+   
+    /*------------------PESQUISA-MENU-ABERTO---------------*/
+    .lista__pesquisa___cabecalho {
+        height: 16.813rem;
+    }
+    .secao__resultado___pesquisa-cabecalho-mobile {
+        display: none;
+        flex-direction: column;
+        gap: 0.75rem;
+
+        width: 101vw;
+
+        background: #FFFFFF;
+
+        border-radius: 3px;
+
+        z-index: 2000000000;
+
+        position: relative;
+        top: 0.625rem;
+        left: -5rem;
+        
+        padding-top: 1.125rem;
+        padding-bottom: 1.125rem;
+        padding-right: 1.875rem;
+        padding-left: 0.948rem;
+    }
+    .secao__info___produto-pesquisa {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 74vw;
+    }
+    /*------------------LINK-MENU-ABERTO---------------*/
+    @keyframes animaAbaLinksMenuAberto{
+        0%{
+            opacity: 0;
+            right: -14rem;
+        }
+        100%{
+            opacity: 1;
+            right: 0rem;
+        }
+    }
+}

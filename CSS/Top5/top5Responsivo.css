@@ -1,0 +1,92 @@
+@media (max-width:1279px){
+    .conteudo {
+        padding-top: 17.375rem;
+    }
+    /*-------------BANNER-------------*/
+    .titulo__banner{
+        font-size: 20px;
+
+        margin-bottom: 1.688rem;
+    }
+    .imagem__banner{
+        width: 100vw;
+    }
+    .secao__info___banner{
+        width: 88vw;
+
+        align-items: center;
+        text-align: center;
+
+        margin-top: 3.188rem;
+    }
+    .descricao__info___banner {
+        font-size: 14px;
+    }
+    /*-----------LISTA-TOP-5--------*/
+    .secao__top-5{
+        width: 88vw;
+    }
+    .item__lista___top-5{
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem__item___lista{
+        width: 8.75rem;
+    }
+    .container__cabecalho___lista{
+        width: 73.4vw;
+    }
+    .titulo__cabecalho___lista{
+        font-size: 20px;
+    }
+    .nota__item___lista{
+        font-size: 16px;
+    }
+    .posicao__item___lista-desktop{
+        display: none;
+    }
+    .descricao__info___item-lista{
+        width: 73.4vw;
+
+        font-size: 14px;
+    }
+    .secao__info___destaque{
+        flex-direction: column;
+        align-items: flex-start
+    }
+    .titulo__destaque{
+        font-size: 16px;
+    }
+    .secao__estrelas{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .secao__compra___destaque{
+        flex-direction: column;
+        gap: 1.803rem;
+    }
+    .secao__valores___destaque{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.75rem;
+
+        width: 73.4vw;
+    }
+    .secao__botoes__compra{
+        width: 73.4vw;
+
+        justify-content: center;
+    }
+    .botao__compra___agora {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+
+        font-size: 12px;
+    }
+    .botao__avaliacao___destaque {
+        padding-left: 0.8rem;
+        padding-right: 0.8rem;
+
+        font-size: 12px;
+    }
+}   

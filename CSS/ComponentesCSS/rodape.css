@@ -80,4 +80,10 @@
 
         transition: all .1s ease-out;
     }
+    #secao__marca-mobile{
+        display: none;
+    }
+    .logo___detalhei-footer-mobile{
+        display: none;
+    }
 }

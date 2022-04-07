@@ -149,7 +149,7 @@
 
         position: relative;
         top: 36%;
-        width: 18rem;
+        width: 15rem;
         height: 4rem;
     }
     #container__cabecalho___logado{
@@ -483,13 +483,13 @@
 
         line-height: 24px;
     }
-    .container__custo-beneficio{
+    .container__custo-beneficio-cabecalho{
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 0.5rem;
     }
-    .titulo__custo-beneficio{
+    .titulo__custo-beneficio-cabecalho{
         font-family: var(--heading-poppins);
         font-weight: var(--heading-medium);
         font-size: 14px;
@@ -500,13 +500,13 @@
 
         line-height: 24px;
     }
-    .container__nota___custo-beneficio{
+    .container__nota___custo-beneficio-cabecalho{
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 0.375rem;
     }
-    .nota__custo-beneficio{
+    .nota__custo-beneficio-cabecalho{
         width: 0.875rem;
         height: 0.875rem;
 
@@ -515,16 +515,16 @@
 
         border: none;
     }
-    .nota__custo-beneficio:nth-child(1){
+    .nota__custo-beneficio-cabecalho:nth-child(1){
         background-color: #329FC0;
     }
-    .nota__custo-beneficio:nth-child(2){
+    .nota__custo-beneficio-cabecalho:nth-child(2){
         background-color: #329FC0;
     }
-    .nota__custo-beneficio:nth-child(3){
+    .nota__custo-beneficio-cabecalho:nth-child(3){
         background-color: #329FC0;
     }
-    .nota__custo-beneficio:nth-child(4){
+    .nota__custo-beneficio-cabecalho:nth-child(4){
         background-color: #329FC0;
     }
 
@@ -615,7 +615,7 @@
 
         scrollbar-width: none;
 
-        position: relative;
+        position: absolute;
 
         animation: animaMenuAberto .3s ease-in-out forwards;
     }
@@ -643,11 +643,23 @@
         flex-direction: row;
         align-items: center;
         gap: 0rem;
-
-        padding-left: 0.813rem;
+        padding-left: 2.813rem;
         padding-right: 3.313rem;
         padding-bottom: 3.438rem;
 
+    }
+    #botao__abre-info___perfil-menu-aberto{
+        background-color: transparent;
+        border: none;
+        background-image: url("../../Assets/Vetores/vetor-perfil-dropdown.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        width: 0.875rem;
+        height: 0.5rem;
+        margin-left: .2rem;
+    }
+    .dropdown-perfil-menu{
+        border: 1px solid #F0F0F0;
     }
     .botao__acessa-conta___menu-aberto{
 
@@ -903,8 +915,8 @@
         overflow-y: scroll;
         scrollbar-width: none;
 
-        position: relative;
-        right: 14;
+        position: absolute;
+        left: 0rem;
     
         width: 23.438rem;
 
@@ -1009,5 +1021,8 @@
         opacity: 1;
 
         transition: all .15s ease-in-out;
+    }
+    #container__navegacao___cabecalho-mobile{
+        display: none;
     }
 }

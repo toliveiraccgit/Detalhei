@@ -1,0 +1,231 @@
+@media (max-width:1279px){
+    .conteudo{
+        padding-top: 16.188rem;
+    }
+    .titulo__banner___conteudo-mobile{
+        font-family: var(--heading-poppins);
+        font-size: 20px;
+
+        font-weight: 600;
+
+        line-height: 160%;
+
+        color: #1A1A1A;
+
+        margin: 0%;
+        margin-bottom: 2.063rem;
+    }
+    .nome__produto___comparativo{
+        font-family: var(--heading-poppins);
+        font-size: 20px;
+
+        font-weight: 600;
+
+        line-height: 160%;
+
+        color: #1A1A1A;
+
+        margin: 0%;
+    }
+    .container__titulos___comparativos-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    .numeros__comparativos{
+        font-size: 16px;
+    }
+    /*--------------PAGINACAO-------------*/
+    .secao__paginacao___produtos{
+        width: 88vw;
+    }
+    .secao__cabecalho___produto{
+        width: 88vw;
+    }
+    .secao__conteudo___cabecalho{
+        width: 88vw;
+    }
+    .container__filtros___cabecalho{
+        width: 88vw;
+        justify-content: space-between;
+    }
+    .container__botao___filtro{
+        height: 3rem;
+    }
+    #titulo__filtros-desktop{
+        display: none;
+    }
+    #numeros__filtros-desktop{
+        display: none;
+    }
+    #botoes__cabecalho___desktop{
+        display: none;
+    }
+    .secao__comparativos{
+        width: 88vw;
+    }
+    .container__carrousel___comprativos{
+        width: 88vw;
+        position: relative;
+        left: -7rem;
+    }
+    .container__lista___comparativos{
+        width: 88vw;
+
+        overflow-x: scroll;
+        overflow-y: visible;
+    }
+    .item__lista___comparativos{
+        width: 23.438rem;
+    }
+    #botao-carrousel-anterior{
+        display: none;
+    }
+    #botao-carrousel-proximo{
+        display: none;
+    }
+    .item__legendas___comparativos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 2.875rem;
+        padding-bottom: 2.875rem;
+        padding-left: 1rem;
+        padding-right: 4rem;
+        width: 7.438rem;
+        height: 6.881rem;
+    }
+    .secao__caracteristicas___comparativos {
+        position: relative;
+        left: 29%;
+    }
+    .secao__legendas___comparativos{
+        background-color: #FFFFFF;
+
+        z-index: 500;
+    }
+    .container__botoes___cabecalho{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.25rem;
+    }
+    /*------------------OFERTAS-MOBILE---------------*/
+    .secao__comparativo___mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+
+        position: fixed;
+        bottom: 0%;
+
+        border-top: 1px solid #C4C4C4;
+        background-color: #FFFFFF;
+
+        z-index: 6000;
+
+    }
+    .secao__lista___comparativo-mobile{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100vw;
+
+        overflow-y: scroll;
+        scrollbar-width: none;
+
+        animation: animaComparativoMobile .3s ease-in-out forwards;
+
+        border-top: 1px solid #C4C4C4;
+        background-color: #FFFFFF;
+
+        z-index: 6000;
+    }
+    @keyframes animaComparativoMobile {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    .lista__removidos{
+        width: 88vw;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        gap: 5rem;
+
+        overflow-y: scroll;
+        scrollbar-width: none;
+    }
+    .container__info___abre-lista-comparativo{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.313rem;
+    }
+    .titulo__info___abre-lista-comparativo{
+        font-family: var(--heading-poppins);
+        font-weight: var(--heading-medium);
+        color: #07070E;
+    }
+    .titulo__cabecalho___removidos{
+        font-size: 16px;
+
+        text-align: left;
+    }
+    .container__botoes___comparativo-mobile{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        width: 100vw;
+    }
+    .botao__desfazer{
+        font-family: var(--paragraph-SF-Bold);
+        font-size: 14px;
+
+        color: #FFFFFF;
+
+        background: #EE0004;
+
+        border-radius: 8px;
+        border: none;
+        
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
+        padding-left: 2.813rem;
+        padding-right: 2.813rem;
+    }
+    
+    #fecha-lista-comparativo{
+        display: none;
+    }
+    .botao__abre___lista-comparativo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        width: 100vw;
+
+        padding-left: 1.813rem;
+        padding-right: 1.813rem;
+        padding-top: 1.875rem;
+        padding-bottom: 2.188rem;
+
+        border: none;
+        background-color: #FFFFFF;
+
+        cursor: pointer;
+    }
+
+}
