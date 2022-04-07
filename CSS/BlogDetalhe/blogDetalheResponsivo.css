@@ -75,8 +75,18 @@
 
         gap: .875rem;
     }
+    .texto__botao___avaliador{
+        display: none;
+    }
+    .botao__favoritos{
+        height: 3rem;
+    }
+    .botao__comentarios{
+        height: 3rem;
+    }
     .botao__compartilhar{
         font-size: 14px;
+        height: 3rem;
     }
     /*-----------CONTEUDO-BLOG----------*/
     .secao__conteudo___blog{
