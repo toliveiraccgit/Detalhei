@@ -1,0 +1,88 @@
+	/----------------REGRAS-MENU-----------------/
+	*NA LISTA DE ITENS DO MENU, DEVE-SE CRIAR UMA SECTION PARA CADA LINK
+		EXEMPLO:
+			
+
+               		<li class="item__link___menu-aberto">
+
+                                <button class="tablinksLinkMenuAberto botao__link___menu-aberto" onclick="openTabMenuAbertoLink(event, 'todos-				produtos')" >Todos os Produtos 
+                                    
+                                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path opacity="0.4" d="M22.2109 12.8928C22.2109 7.36997 17.7338 2.89282 12.2109 2.89282C6.68809 2.89282 2.21094 7.36997 2.21094 12.8928C2.21094 18.4157 6.68809 22.8928 12.2109 22.8928C17.7338 22.8928 22.2109 18.4157 22.2109 12.8928Z" fill="#CACACA"/>
+                                    <path d="M15.2209 12.8929C15.2209 13.0829 15.1509 13.2729 15.0009 13.4229L11.4709 16.9529C11.1809 17.2429 10.7009 17.2429 10.4109 16.9529C10.1209 16.6629 10.1209 16.1829 10.4109 15.8929L13.4109 12.8929L10.4109 9.89291C10.1209 9.60291 10.1209 9.12291 10.4109 8.83291C10.7009 8.54291 11.1809 8.54291 11.4709 8.83291L15.0009 12.3629C15.1509 12.5129 15.2209 12.7029 15.2209 12.8929Z" fill="#292D32"/>
+                                    </svg>
+
+                                </button>
+
+                          </li>
+
+ 				<section class="secao__conteudo___link-menu tabcontentLinkMenuAberto" id="todos-produtos">
+
+                    		<div class="container__perfil___menu-aberto container__perfil___menu-aberto-logado">
+
+                        		<section class="secao__perfil-logado">
+                        		<div class="container__perfil">
+                            			<a class="container__perfil-logado" id="container__perfil-logado">
+
+                                			<img src="./Assets/Icones-Perfis/icone-perfil-logado.png" alt="Icone Perfil Logado" class="icone__perfil-logado">
+                            
+                                			<span class="nome__perfil-logado" id="nome__perfil-logado___menu-aberto">Cameron Williamson</span>
+                            
+                                			<button type="button" class="botao__abre-info___perfil" id="botao__abre-info___perfil-menu-aberto"></button>
+
+                            			</a>
+                        		</div>
+                    		<section class="secao__dropdown-perfil" id="dropdown">
+
+                        		<a href="./seu-perfil.html" class="link__dropdown-perfil">Perfil</a>
+                        		<a href="./feed-detalhei.html" class="link__dropdown-perfil">Feed</a>
+                        		<a href="./minhas-opinioes.html" class="link__dropdown-perfil">Minhas opiniões</a>
+                        		<a href="./login.html" class="link__dropdown-sair">SAIR</a>
+    
+                    		</section>
+                	</section>
+
+                        <button class="botao__fecha___menu-aberto" onclick="fechaMenuAberto()"></button>
+
+                    	</div>
+
+                    		<section class="secao__links___conteudo___menu">
+
+                        <button onclick="voltaMenuAberto()" class="botao__volta___menu-aberto">  
+                            
+                            <svg id="vetor-volta-menu-aberto" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path opacity="0.4" d="M22.2109 12.8928C22.2109 7.36997 17.7338 2.89282 12.2109 2.89282C6.68809 2.89282 2.21094 7.36997 2.21094 12.8928C2.21094 18.4157 6.68809 22.8928 12.2109 22.8928C17.7338 22.8928 22.2109 18.4157 22.2109 12.8928Z" fill="#CACACA"/>
+                            <path d="M15.2209 12.8929C15.2209 13.0829 15.1509 13.2729 15.0009 13.4229L11.4709 16.9529C11.1809 17.2429 10.7009 17.2429 10.4109 16.9529C10.1209 16.6629 10.1209 16.1829 10.4109 15.8929L13.4109 12.8929L10.4109 9.89291C10.1209 9.60291 10.1209 9.12291 10.4109 8.83291C10.7009 8.54291 11.1809 8.54291 11.4709 8.83291L15.0009 12.3629C15.1509 12.5129 15.2209 12.7029 15.2209 12.8929Z" fill="#292D32"/>
+                            </svg>
+                            
+                            Voltar
+                        
+                        </button>
+
+                        <ul class="lista__links___conteudo-menu">
+
+                            <h4 class="titulo__links___conteudo-menu">Cozinha</h4>
+
+                            <a href="./produtos.html" class="item__lista___link-conteudo-menu">
+
+                                Eletrodomèsticos
+
+                            </a>
+
+                            <a href="./produtos.html" class="item__lista___link-conteudo-menu">
+
+                                Eletroportáteis
+
+                            </a>
+
+                            <a href="./produtos.html" class="item__lista___link-conteudo-menu">
+
+                                Café, Chá e Expresso
+
+                            </a>
+
+                        </ul>
+
+                    </section>
+
+                </section>
