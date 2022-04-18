@@ -100,13 +100,15 @@
     .botao__vincular__google{
         padding-top: 0.85rem;
         padding-bottom: 0.85rem;
-        padding-left: 7.2rem;
+        padding-left: 4.2rem;
         padding-right: 3.1rem;  
+
+        margin-right: 3rem;
 
         background-color: var(--blue-primary);
         background-image: url("../../Assets/Login/icone-google-vincular.svg");
         background-repeat: no-repeat;
-        background-position-x: 4rem;
+        background-position-x: 2rem;
         background-position-y: center;
 
 

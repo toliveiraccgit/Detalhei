@@ -58,6 +58,9 @@
         background-position: -1rem center, 13rem center;
         background-size: 35vw auto, 35vw auto;
     }
+    .botao__vincular__google{
+        margin: 0%;
+    }
     .secao__input___login {
         gap: 1.5rem;
         width: 88vw;

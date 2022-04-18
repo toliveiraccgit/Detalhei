@@ -1,4 +1,7 @@
 @media (min-width:0px){
+    #contaienr__perfil___menu-aberto-deslogado{
+        gap: 3rem;
+    }
     /*---------------------CABECALHO-----------------------*/
     .cabecalho{
         display: flex;

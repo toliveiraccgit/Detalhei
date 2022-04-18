@@ -6,7 +6,7 @@ const botaoVerMenos = document.querySelector('#botao-ver-menos-menu-aberto')
 
 function abreVerTodosProdutos(){
 
-    listaProdutosMenuAberto.style.height = ` 38.326rem `
+    listaProdutosMenuAberto.style.height = ` 25.326rem `
     listaProdutosMenuAberto.style.overflowY = ` scroll `
 
     botaoVerMais.style.display = ` none `
