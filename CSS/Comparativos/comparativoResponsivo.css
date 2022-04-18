@@ -66,12 +66,12 @@
         width: 88vw;
     }
     .container__carrousel___comprativos{
-        width: 88vw;
+        width: 100vw;
         position: relative;
-        left: -7rem;
+        left: -9rem;
     }
     .container__lista___comparativos{
-        width: 88vw;
+        width: 100vw;
 
         overflow-x: scroll;
         overflow-y: visible;
@@ -125,7 +125,7 @@
         border-top: 1px solid #C4C4C4;
         background-color: #FFFFFF;
 
-        z-index: 6000;
+        z-index: 4000;
 
     }
     .secao__lista___comparativo-mobile{
@@ -219,8 +219,8 @@
 
         padding-left: 1.813rem;
         padding-right: 1.813rem;
-        padding-top: 1.875rem;
-        padding-bottom: 2.188rem;
+        padding-top: 0.875rem;
+        padding-bottom: 1.188rem;
 
         border: none;
         background-color: #FFFFFF;

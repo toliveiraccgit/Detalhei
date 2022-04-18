@@ -2,6 +2,9 @@
     #body{
         background-color: #E7EAF2;
     }
+    #botao-tipo-mobile{
+        display: none;
+    }
     /*-----------------FEED--------------------*/
     .conteudo{
         display: flex;

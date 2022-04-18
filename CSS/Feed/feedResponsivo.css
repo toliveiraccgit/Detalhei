@@ -18,6 +18,9 @@
         padding-top: 16.813rem;
     }
     /*-----------------SIDEBAR-FEED----------------*/
+    .secao__sidebar___feed{
+        display: none;
+    }
     .secao__info___mobile-sidebar{
         display: flex;
         flex-direction: column;
@@ -133,5 +136,12 @@
     .container__rodape___produto{
         flex-wrap: wrap;
         
+    }
+    #botao-tipo-desktop{
+        display: none;
+    }
+    #botao-tipo-mobile{
+        display: block;
+        margin-left: 1rem;
     }
 }

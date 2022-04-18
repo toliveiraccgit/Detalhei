@@ -111,7 +111,7 @@
 
     }
     .lista__seguidores{
-        width: 24rem;
+        width: 23rem;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;

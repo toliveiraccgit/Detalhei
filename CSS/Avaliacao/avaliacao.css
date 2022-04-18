@@ -2535,9 +2535,14 @@
 
         position: fixed;
         right: 0%;
-        top: 76%;
+        top: 70%;
 
         z-index: 10000;
+    }
+    @media (max-height:658px){
+        .secao__tab___avaliacao{
+            top: 65%;
+        }
     }
     .botao__tab___avaliacao{
         font-family: var(--heading-poppins);

@@ -820,6 +820,7 @@
         top: -3.2rem;
     }
     .tempo__info___artigo{
+        display: none;
         font-family: var(--heading-poppins);
         font-weight: 600;
         font-size: 12px;

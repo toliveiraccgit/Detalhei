@@ -490,7 +490,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 1.438rem;
+        gap: .5rem;
     }
     .titulo__custo-beneficio-cabecalho{
         font-family: var(--heading-poppins);
