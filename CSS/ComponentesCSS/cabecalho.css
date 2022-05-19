@@ -693,6 +693,9 @@
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
+
+        position: relative;
+        top: .2rem;
     }
     .logo__detalhei___menu-aberto{
         padding-left: 2.813rem;
